@@ -1,0 +1,31 @@
+{
+  "version": "pilot16_v1",
+  "generated_at": "2026-09-01T21:10:43.161543",
+  "total_questions": 16,
+  "successful_questions": 16,
+  "total_records": 80,
+  "final_top_k": 5,
+  "index_source": "81源正式库_混合检索",
+  "embedding_model": "text-embedding-v4",
+  "rerank_model": "gte-rerank-v2",
+  "retrieval_method": "Dense+BM25 RRF -> gte-rerank-v2 -> source-dedup",
+  "question_ids": [
+    "NEW_PL001_invest_ratio",
+    "NEW_PL006_invest_ratio",
+    "NEW_PL006_living_wastewater",
+    "NEW_PL007_ro_water",
+    "NEW_PL010_invest_ratio",
+    "NEW_PL015_invest_ratio",
+    "PL001_Emission_固体",
+    "PL002_V01_Q01",
+    "PL004_V01_Q01",
+    "PL005_Emission_固体",
+    "PL007_CaptureEfficiency_Q01",
+    "PL008_DesignAirflow_Q01",
+    "PL008_VOCSTotal_Q01",
+    "PL010_VOCSTotal_Q01",
+    "PL013_HazardousWaste_Q01",
+    "PL014_CaptureAirflow_Q01"
+  ],
+  "output_file": "pilot16_rag_snapshot.jsonl"
+}

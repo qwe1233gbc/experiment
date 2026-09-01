@@ -1,0 +1,20 @@
+{
+  "status": "FROZEN_v3",
+  "generated_at": "2026-08-28T22:27:55.888042+08:00",
+  "question_count": 8,
+  "top_k": 5,
+  "snapshot_row_count": 40,
+  "question_ids": [
+    "E1P1V3_H18_Coefficient_Injection_Q01",
+    "E1P1V3_H33_Noise_Q01",
+    "E1P1V3_H22_Emission_大气挤出_Q01",
+    "E1P1V3_H18_Emission_废水_Q01",
+    "E1P1V3_H18_Noise_Q01",
+    "E1P1V3_H22_Coefficient_Extrusion_Q01",
+    "E1P1V3_H22_HW_PackagingDrum_Q01",
+    "E1P1V3_H33_HW_SolderDross_Q01"
+  ],
+  "knowledge_base": "81-source extended v3.1",
+  "retrieval_method": "BM25 + dense RRF + gte-rerank-v2 + parent expansion",
+  "snapshot_sha256": "d1816b2b89f9e1d2df6883d867e44157bec2cd6b6c78393f4a97c742c49f915b"
+}

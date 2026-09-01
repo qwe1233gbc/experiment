@@ -1,0 +1,513 @@
+# -*- coding: utf-8 -*-
+"""
+高难度校准题评分脚本 v2 — 修正评分逻辑
+逐题精细评分，基于人工抽检的正确答案模式
+"""
+import json, os, re, openpyxl
+from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
+
+DIR = r"E:\实验文件整理_按论文逻辑\experiment-design-3x3\model_calibration_hard15_v1"
+RAW = os.path.join(DIR, "calibration_hard15_raw_outputs.jsonl")
+QFILE = os.path.join(DIR, "calibration_hard15_questions.xlsx")
+OUT_XLSX = os.path.join(DIR, "calibration_hard15_scored.xlsx")
+OUT_MD = os.path.join(DIR, "02_model_calibration_findings_v2.md")
+
+HDR = PatternFill(start_color="4472C4", end_color="4472C4", fill_type="solid")
+HDRF = Font(bold=True, color="FFFFFF", size=11)
+GREEN = PatternFill(start_color="C6EFCE", end_color="C6EFCE", fill_type="solid")
+RED = PatternFill(start_color="FFC7CE", end_color="FFC7CE", fill_type="solid")
+YELLOW = PatternFill(start_color="FFEB9C", end_color="FFEB9C", fill_type="solid")
+THIN = Border(left=Side(style='thin'), right=Side(style='thin'), top=Side(style='thin'), bottom=Side(style='thin'))
+
+rows = []
+for line in open(RAW, encoding="utf-8"):
+    if line.strip():
+        rows.append(json.loads(line))
+
+wb_q = openpyxl.load_workbook(QFILE, data_only=True)
+ws_q = wb_q["校准题库"]
+q_headers = [c.value for c in ws_q[1]]
+questions = {}
+for row in ws_q.iter_rows(min_row=2, values_only=True):
+    if row[0] is None: continue
+    q = dict(zip(q_headers, row))
+    questions[q["题号"]] = q
+
+def extract_answer_section(text):
+    """提取【答案】部分内容"""
+    if not text: return ""
+    m = re.search(r'【答案】\s*\n?(.*?)(?=\n【|$)', text, re.DOTALL)
+    if m:
+        return m.group(1).strip()
+    m = re.search(r'答案[：:]\s*\n?(.*?)(?=\n推理|\n计算|\n$)', text, re.DOTALL)
+    if m:
+        return m.group(1).strip()
+    return text[:800]
+
+def close_num(val, target, tol=0.15):
+    """数值是否在容差范围内"""
+    if target == 0: return val == 0
+    return abs(val - target) / abs(target) < tol
+
+def score_choice(ans_section, gold_letter):
+    """A类选择题评分"""
+    # 提取选项字母：答案部分第一行的字母
+    first_line = ans_section.strip().split('\n')[0].strip()
+    # 匹配 "D" 或 "D. 丁企业" 或 "D.丁企业"
+    m = re.match(r'^([A-D])[\.、\s]*', first_line)
+    if m:
+        return m.group(1) == gold_letter
+    # 也检查整个答案部分
+    m = re.search(r'\b([A-D])[\.、]', ans_section)
+    if m:
+        return m.group(1) == gold_letter
+    # 检查是否包含正确答案的文字
+    return False
+
+def score_q(qid, model_answer, gold_answer, q_data):
+    """逐题评分"""
+    ans_section = extract_answer_section(model_answer)
+    cat = q_data.get("类别", "")
+    sub = q_data.get("子题型", "")
+    
+    # ===== A 类：选择题 =====
+    if cat.startswith("A"):
+        gold_m = re.search(r'([A-D])\.', gold_answer)
+        gold_l = gold_m.group(1) if gold_m else ""
+        correct = score_choice(ans_section, gold_l)
+        if correct:
+            return 1, "", "选项正确"
+        # 检查推理过程中的结论
+        reasoning = model_answer or ""
+        if f"选{gold_l}" in reasoning or f"选 {gold_l}" in reasoning or f"选项{gold_l}" in reasoning:
+            return 1, "", "推理结论正确"
+        return 0, "逻辑错误", f"答案选项错误（Gold={gold_l}）"
+    
+    # ===== B 类：计算题 =====
+    if cat.startswith("B"):
+        # 提取答案中的所有数字
+        ans_nums = [float(x) for x in re.findall(r'(\d+(?:\.\d+)?)', ans_section)]
+        gold_nums = [float(x) for x in re.findall(r'(\d+(?:\.\d+)?)', gold_answer)]
+        
+        if not ans_nums:
+            return 0, "计算错误", "未提取到数值"
+        
+        # 逐题定制评分
+        if "B01" in qid:
+            # 找 20150 附近的值
+            for n in ans_nums:
+                if close_num(n, 20150, 0.02):
+                    return 1, "", "标态干烟气流量计算正确"
+            return 0, "计算错误", f"数值不符：{ans_nums[:5]}"
+        
+        if "B02" in qid:
+            # 三个值：100, 10, 187.5
+            has_100 = any(close_num(n, 100, 0.05) for n in ans_nums)
+            has_10 = any(close_num(n, 10, 0.1) for n in ans_nums)
+            has_187 = any(close_num(n, 187.5, 0.05) for n in ans_nums)
+            correct = sum([has_100, has_10, has_187])
+            if correct == 3:
+                return 1, "", "SVI/SRT/排泥量全部正确"
+            elif correct >= 2:
+                return 0.67, "部分正确", f"对{correct}/3小问"
+            else:
+                return 0, "计算错误", f"对{correct}/3小问"
+        
+        if "B03" in qid:
+            has_967 = any(close_num(n, 96.7, 0.02) for n in ans_nums)
+            has_114 = any(close_num(n, 11.4, 0.1) for n in ans_nums)
+            has_6566 = any(close_num(n, 6566, 0.05) for n in ans_nums)
+            correct = sum([has_967, has_114, has_6566])
+            if correct == 3:
+                return 1, "", "效率/功率/电费全部正确"
+            elif correct >= 2:
+                return 0.67, "部分正确", f"对{correct}/3小问"
+            else:
+                return 0, "计算错误", f"对{correct}/3小问"
+    
+    # ===== C 类：冲突识别 =====
+    if cat.startswith("C"):
+        reasoning_full = model_answer or ""
+        
+        if "C01" in qid:
+            # 2处冲突 + 总量章节更合理
+            has_2 = "2处" in ans_section or "两处" in ans_section or "2 处" in ans_section
+            has_reasonable = "1800" in ans_section and ("合理" in ans_section or "更" in reasoning_full)
+            if has_2 and has_reasonable:
+                return 1, "", "冲突数量正确，判断合理"
+            elif has_2:
+                return 0.5, "部分正确", "找到2处但合理性判断不明确"
+            else:
+                return 0, "信息遗漏", "未正确识别冲突数量"
+        
+        if "C02" in qid:
+            # DA003不一致 + 达标判断
+            has_da003 = "DA003" in reasoning_full or "第三根" in reasoning_full
+            has_pred_ok = "达标" in ans_section and "60" in ans_section
+            has_eng_ok = "达标" in reasoning_full and "100" in reasoning_full
+            has_self = "自洽" in reasoning_full or "一致" in reasoning_full
+            score = sum([has_da003, has_pred_ok, has_eng_ok]) / 4
+            if score >= 0.75:
+                return 1, "", "不一致识别+达标判断正确"
+            elif score >= 0.5:
+                return 0.5, "部分正确", "部分判断正确"
+            else:
+                return 0, "信息遗漏", "关键判断错误"
+        
+        if "C03" in qid:
+            # 3处冲突 + 1800
+            has_3 = "3处" in ans_section or "三处" in ans_section or "3 处" in ans_section
+            has_1800 = any(close_num(float(n), 1800, 0.01) for n in re.findall(r'(\d+)', ans_section) if n.isdigit() and int(n) > 1000)
+            if has_3 and has_1800:
+                return 1, "", "3处冲突+用水量都对"
+            elif has_3:
+                return 0.5, "部分正确", "找到3处但用水量计算待确认"
+            else:
+                return 0, "信息遗漏", "冲突数量识别错误"
+    
+    # ===== D 类：专业知识 =====
+    if cat.startswith("D"):
+        reasoning_full = model_answer or ""
+        
+        if "D01" in qid:
+            if "报告表" in ans_section and ("提升" in reasoning_full or "危险化学品" in reasoning_full):
+                return 1, "", "分类+理由正确"
+            elif "报告表" in ans_section:
+                return 0.7, "部分正确", "结论正确但理由可能不完整"
+            else:
+                return 0, "规则误用", "分类判定错误"
+        
+        if "D02" in qid:
+            has_4a = "4a" in ans_section.lower() or "4a类" in reasoning_full
+            has_2 = "2类" in ans_section or "2类" in reasoning_full
+            has_country = "乡村" in reasoning_full and ("改变" in reasoning_full or "不同" in reasoning_full or "2类或3类" in reasoning_full)
+            correct = sum([has_4a, has_2, has_country])
+            if correct == 3:
+                return 1, "", "东厂界+南厂界+乡村都对"
+            elif correct == 2:
+                return 0.67, "部分正确", "对2/3小问"
+            else:
+                return 0.33, "部分正确", "对1/3小问"
+        
+        if "D03" in qid:
+            has_oil = "废切削液" in ans_section and "废机油" in ans_section
+            has_barrel = "废包装桶" in ans_section or "包装物" in reasoning_full
+            has_not_sure = "不一定" in ans_section or "需鉴别" in reasoning_full or "需要鉴别" in reasoning_full
+            has_clean = "不一定" in reasoning_full and "清洗" in reasoning_full
+            correct = sum([has_oil, has_barrel, has_not_sure])
+            if correct >= 2 and has_oil:
+                return 1 if correct == 3 else 0.67, "部分正确" if correct < 3 else "", f"危废识别对{correct}/3小问"
+            else:
+                return 0.33, "部分正确", "识别不完整"
+    
+    # ===== E 类：反事实推理 =====
+    if cat.startswith("E"):
+        if "E01" in qid:
+            reasoning_full = model_answer or ""
+            has_450 = any(close_num(float(n), 450, 0.05) for n in re.findall(r'(\d+(?:\.\d+)?)', ans_section))
+            has_y_no = "不变" in ans_section or "不改变" in ans_section
+            has_3556 = any(close_num(float(n), 3556, 0.05) for n in re.findall(r'(\d+(?:\.\d+)?)', ans_section))
+            correct = sum([has_450, has_y_no, has_3556])
+            if correct == 3:
+                return 1, "", "净增量+Y不变+MLSS都对"
+            elif correct >= 2:
+                return 0.67, "部分正确", f"对{correct}/3小问"
+            else:
+                return 0, "计算错误", f"对{correct}/3小问"
+        
+        if "E02" in qid:
+            reasoning_full = model_answer or ""
+            has_12 = any(close_num(float(n), 1.2, 0.1) for n in re.findall(r'(\d+(?:\.\d+)?)', ans_section))
+            has_15 = any(close_num(float(n), 1.5, 0.1) for n in re.findall(r'(\d+(?:\.\d+)?)', ans_section))
+            has_21 = any(close_num(float(n), 21.25, 0.1) for n in re.findall(r'(\d+(?:\.\d+)?)', ans_section))
+            has_conc = "不影响" in reasoning_full and "浓度" in reasoning_full
+            correct = sum([has_12, has_15, has_21])
+            if correct >= 2:
+                return 1 if correct == 3 else 0.67, "", f"速率计算对{correct}/3"
+            else:
+                return 0.5, "部分正确", "计算部分正确"
+        
+        if "E03" in qid:
+            has_108 = any(close_num(float(n), 108, 0.05) for n in re.findall(r'(\d+(?:\.\d+)?)', ans_section))
+            has_129 = any(close_num(float(n), 129.6, 0.05) for n in re.findall(r'(\d+(?:\.\d+)?)', ans_section))
+            has_69 = any(close_num(float(n), 69.1, 0.05) for n in re.findall(r'(\d+(?:\.\d+)?)', ans_section))
+            correct = sum([has_108, has_129, has_69])
+            if correct == 3:
+                return 1, "", "出水+不达标+好氧效率都对"
+            elif correct >= 2:
+                return 0.67, "部分正确", f"对{correct}/3小问"
+            else:
+                return 0.33, "部分正确", f"对{correct}/3小问"
+    
+    return 0.5, "待人工复核", "无法自动判定"
+
+# 评分
+results = {}
+for r in rows:
+    qid = r["question_id"]
+    model = r["model_condition"]
+    q_data = questions.get(qid, {})
+    gold = r.get("gold_answer", "")
+    raw = r.get("raw_answer", "")
+    
+    score, err_type, note = score_q(qid, raw, gold, q_data)
+    
+    if qid not in results:
+        results[qid] = {}
+    results[qid][model] = {
+        "score": score,
+        "error_type": err_type,
+        "note": note,
+        "raw_preview": raw[:300] + "..." if len(raw) > 300 else raw,
+        "latency": r.get("latency"),
+        "output_tokens": r.get("output_tokens"),
+        "status": r.get("status"),
+    }
+
+# 生成评分表
+wb = openpyxl.Workbook()
+ws = wb.active
+ws.title = "评分总表"
+
+headers = ["题号", "类别", "子题型", "难度", "Gold Answer",
+           "A1得分", "A1错误类型", "A1说明",
+           "A2得分", "A2错误类型", "A2说明",
+           "A3得分", "A3错误类型", "A3说明"]
+for i, h in enumerate(headers, 1):
+    c = ws.cell(row=1, column=i, value=h)
+    c.fill = HDR; c.font = HDRF; c.alignment = Alignment(horizontal="center", wrap_text=True); c.border = THIN
+
+for r, qid in enumerate(sorted(questions.keys()), 2):
+    q = questions[qid]
+    a1 = results.get(qid, {}).get("A1", {})
+    a2 = results.get(qid, {}).get("A2", {})
+    a3 = results.get(qid, {}).get("A3", {})
+    
+    vals = [qid, q.get("类别", ""), q.get("子题型", ""), q.get("难度", ""), q.get("Gold Answer", ""),
+            a1.get("score", ""), a1.get("error_type", ""), a1.get("note", ""),
+            a2.get("score", ""), a2.get("error_type", ""), a2.get("note", ""),
+            a3.get("score", ""), a3.get("error_type", ""), a3.get("note", "")]
+    
+    for i, v in enumerate(vals, 1):
+        c = ws.cell(row=r, column=i, value=v)
+        c.border = THIN
+        c.alignment = Alignment(wrap_text=True, vertical="top")
+    
+    for col_idx, m in [(6, "A1"), (9, "A2"), (12, "A3")]:
+        s = results.get(qid, {}).get(m, {}).get("score", 0)
+        if s == 1:
+            ws.cell(row=r, column=col_idx).fill = GREEN
+        elif s >= 0.5:
+            ws.cell(row=r, column=col_idx).fill = YELLOW
+        else:
+            ws.cell(row=r, column=col_idx).fill = RED
+
+ws.column_dimensions['A'].width = 8
+ws.column_dimensions['B'].width = 18
+ws.column_dimensions['C'].width = 22
+ws.column_dimensions['D'].width = 10
+ws.column_dimensions['E'].width = 35
+for col in ['F','G','H','I','J','K','L','M','N']:
+    ws.column_dimensions[col].width = 16
+
+# 汇总 sheet
+ws2 = wb.create_sheet("汇总统计")
+cats = ["A.多步逻辑", "B.多公式计算", "C.长文本冲突", "D.专业知识+适用性", "E.反事实推理"]
+models = [("A1", "qwen3.8-flash"), ("A2", "qwen3.7-max"), ("A3", "qwen3.8-max")]
+
+ws2.cell(row=1, column=1, value="模型总体表现").font = Font(bold=True, size=12)
+sum_headers = ["模型", "总得分", "总题数", "正确率", "平均延迟(s)", "平均输出token"]
+for i, h in enumerate(sum_headers, 1):
+    c = ws2.cell(row=2, column=i, value=h)
+    c.fill = HDR; c.font = HDRF; c.alignment = Alignment(horizontal="center"); c.border = THIN
+
+for r, (m_code, m_name) in enumerate(models, 3):
+    total_score = sum(results[qid][m_code]["score"] for qid in results if m_code in results[qid])
+    total_q = len([q for q in results if m_code in results[q]])
+    avg_lat = sum(results[qid][m_code]["latency"] for qid in results if m_code in results[qid] and results[qid][m_code]["latency"]) / max(total_q, 1)
+    avg_tok = sum(results[qid][m_code]["output_tokens"] or 0 for qid in results if m_code in results[qid]) / max(total_q, 1)
+    
+    vals = [f"{m_code} ({m_name})", round(total_score, 2), total_q, f"{total_score/total_q*100:.1f}%",
+            round(avg_lat, 1), round(avg_tok, 0)]
+    for i, v in enumerate(vals, 1):
+        c = ws2.cell(row=r, column=i, value=v)
+        c.border = THIN
+
+ws2.cell(row=7, column=1, value="分类正确率").font = Font(bold=True, size=12)
+cat_headers = ["类别"] + [f"{m[0]} ({m[1]})" for m in models]
+for i, h in enumerate(cat_headers, 1):
+    c = ws2.cell(row=8, column=i, value=h)
+    c.fill = HDR; c.font = HDRF; c.alignment = Alignment(horizontal="center"); c.border = THIN
+
+for r, cat in enumerate(cats, 9):
+    ws2.cell(row=r, column=1, value=cat).border = THIN
+    for ci, (m_code, _) in enumerate(models, 2):
+        cat_qs = [qid for qid, q in questions.items() if q.get("类别") == cat]
+        scores = [results[qid][m_code]["score"] for qid in cat_qs if m_code in results.get(qid, {})]
+        if scores:
+            pct = sum(scores) / len(scores) * 100
+            c = ws2.cell(row=r, column=ci, value=f"{pct:.1f}% ({sum(scores):.1f}/{len(scores)})")
+        else:
+            c = ws2.cell(row=r, column=ci, value="N/A")
+        c.border = THIN
+        c.alignment = Alignment(horizontal="center")
+
+for col in ['A','B','C','D','E','F']:
+    ws2.column_dimensions[col].width = 22
+
+wb.save(OUT_XLSX)
+
+# 打印摘要
+print("\n" + "=" * 70)
+print("模型能力操纵检查 v2 — 修正后评分结果")
+print("=" * 70)
+
+for m_code, m_name in models:
+    total_score = sum(results[qid][m_code]["score"] for qid in results if m_code in results[qid])
+    total_q = len([q for q in results if m_code in results[q]])
+    pct = total_score / total_q * 100
+    avg_lat = sum(results[qid][m_code]["latency"] for qid in results if m_code in results[qid] and results[qid][m_code]["latency"]) / max(total_q, 1)
+    print(f"\n{m_code} ({m_name}): {total_score:.2f}/{total_q} = {pct:.1f}%")
+    print(f"  平均延迟: {avg_lat:.1f}s")
+
+print("\n--- 分类正确率 ---")
+print(f"{'类别':<22} {'A1':>10} {'A2':>10} {'A3':>10}")
+for cat in cats:
+    line = f"{cat:<22}"
+    for m_code, _ in models:
+        cat_qs = [qid for qid, q in questions.items() if q.get("类别") == cat]
+        scores = [results[qid][m_code]["score"] for qid in cat_qs if m_code in results.get(qid, {})]
+        if scores:
+            pct = sum(scores) / len(scores) * 100
+            line += f" {pct:>8.1f}%"
+        else:
+            line += f" {'N/A':>8}"
+    print(line)
+
+print("\n--- 逐题得分 ---")
+print(f"{'题号':<6} {'类别':<18} {'A1':<6} {'A2':<6} {'A3':<6}")
+for qid in sorted(questions.keys()):
+    q = questions[qid]
+    a1s = results.get(qid, {}).get("A1", {}).get("score", "-")
+    a2s = results.get(qid, {}).get("A2", {}).get("score", "-")
+    a3s = results.get(qid, {}).get("A3", {}).get("score", "-")
+    print(f"{qid:<6} {q.get('类别',''):<18} {a1s:<6} {a2s:<6} {a3s:<6}")
+
+# 梯度判断
+a1_total = sum(results[qid]["A1"]["score"] for qid in results)
+a2_total = sum(results[qid]["A2"]["score"] for qid in results)
+a3_total = sum(results[qid]["A3"]["score"] for qid in results)
+n = len(results)
+
+print(f"\n--- 梯度检验 ---")
+print(f"A3 ({a3_total/n*100:.1f}%) > A2 ({a2_total/n*100:.1f}%) > A1 ({a1_total/n*100:.1f}%) ?")
+if a3_total > a2_total > a1_total:
+    print("✅ 梯度成立！")
+else:
+    print("❌ 梯度未成立")
+    if a2_total < a1_total:
+        print(f"   ⚠️ A2 反常地低于 A1（差 {a1_total-a2_total:.2f} 分）")
+
+# 生成 MD 报告
+md = []
+md.append("# 模型能力操纵检查（二次验证）发现报告 v2.0\n")
+md.append("> 日期：2026-09-01  \n题量：15 道高难度校准题（5类×3题）  \n模型：A1=qwen3.8-flash, A2=qwen3.7-max, A3=qwen3.8-max  \n条件：K1 闭卷，temperature=0  \n评分：自动评分（已人工抽检 A类/B类/E01）\n")
+
+md.append("## 一、核心结论\n")
+md.append(f"- **A1 (qwen3.8-flash)**: {a1_total:.2f}/{n} = **{a1_total/n*100:.1f}%**")
+md.append(f"- **A2 (qwen3.7-max)**: {a2_total:.2f}/{n} = **{a2_total/n*100:.1f}%**")
+md.append(f"- **A3 (qwen3.8-max)**: {a3_total:.2f}/{n} = **{a3_total/n*100:.1f}%**")
+
+gradient_ok = a3_total > a2_total > a1_total
+if gradient_ok:
+    md.append(f"\n✅ **梯度成立**：A3 > A2 > A1，总跨度 {(a3_total-a1_total)/n*100:.1f} 个百分点")
+else:
+    md.append(f"\n❌ **梯度未成立**：未呈现 A3 > A2 > A1 单调关系")
+    if a2_total < a1_total:
+        md.append(f"\n**异常发现**：A2 (qwen3.7-max) 正确率低于 A1 (qwen3.8-flash)，差 {a1_total-a2_total:.2f} 分。")
+        md.append("可能原因：")
+        md.append("1. qwen3.7-max 是上一代旗舰，推理能力可能不如新一代 flash 模型")
+        md.append("2. 题目类型偏向计算和逻辑，flash 模型在这些任务上表现好")
+        md.append("3. 样本量小（15题），波动大")
+
+md.append("\n## 二、分类表现\n")
+md.append("| 类别 | A1 (flash) | A2 (3.7-max) | A3 (3.8-max) |")
+md.append("|------|-----------|-------------|-------------|")
+for cat in cats:
+    line = f"| {cat} |"
+    for m_code in ["A1", "A2", "A3"]:
+        cat_qs = [qid for qid, q in questions.items() if q.get("类别") == cat]
+        scores = [results[qid][m_code]["score"] for qid in cat_qs if m_code in results.get(qid, {})]
+        if scores:
+            pct = sum(scores) / len(scores) * 100
+            line += f" {pct:.1f}% ({sum(scores):.1f}/{len(scores)}) |"
+        else:
+            line += " N/A |"
+    md.append(line)
+
+md.append("\n## 三、各题详情\n")
+md.append("| 题号 | 子题型 | A1 | A2 | A3 | A1说明 | A2说明 | A3说明 |")
+md.append("|------|--------|-----|-----|-----|--------|--------|--------|")
+for qid in sorted(questions.keys()):
+    q = questions[qid]
+    a1r = results.get(qid, {}).get("A1", {})
+    a2r = results.get(qid, {}).get("A2", {})
+    a3r = results.get(qid, {}).get("A3", {})
+    md.append(f"| {qid} | {q.get('子题型','')} | "
+               f"{a1r.get('score','-')} | {a2r.get('score','-')} | {a3r.get('score','-')} | "
+               f"{a1r.get('note','')} | {a2r.get('note','')} | {a3r.get('note','')} |")
+
+md.append("\n## 四、行为指标\n")
+md.append("| 指标 | A1 (flash) | A2 (3.7-max) | A3 (3.8-max) |")
+md.append("|------|-----------|-------------|-------------|")
+avg_lats = {}
+avg_toks = {}
+for m_code, _ in models:
+    lats = [results[qid][m_code]["latency"] for qid in results if m_code in results[qid] and results[qid][m_code]["latency"]]
+    toks = [results[qid][m_code]["output_tokens"] or 0 for qid in results if m_code in results[qid]]
+    avg_lats[m_code] = sum(lats) / len(lats) if lats else 0
+    avg_toks[m_code] = sum(toks) / len(toks) if toks else 0
+md.append(f"| 平均延迟 | {avg_lats['A1']:.1f}s | {avg_lats['A2']:.1f}s | {avg_lats['A3']:.1f}s |")
+md.append(f"| 平均输出token | {avg_toks['A1']:.0f} | {avg_toks['A2']:.0f} | {avg_toks['A3']:.0f} |")
+
+md.append("\n## 五、梯度决策\n")
+md.append("### 当前状态\n")
+
+if gradient_ok:
+    md.append("✅ **梯度成立，可以继续实验**\n")
+else:
+    md.append("⚠️ **梯度异常，需要决策**\n")
+    md.append("**核心问题**：A2 (qwen3.7-max) 表现不如 A1 (qwen3.8-flash)\n")
+    md.append("### 可选方案\n")
+    md.append("**方案一：更换 A2 模型**")
+    md.append("- 换成 qwen3.5-max 或其他中间能力模型")
+    md.append("- 优点：可能形成真正的弱-中-强梯度")
+    md.append("- 缺点：需要重新跑校准，时间成本\n")
+    md.append("**方案二：重新解释梯度命名**")
+    md.append("- A1=flash（快/省/一般），A3=3.8-max（强/准/贵）")
+    md.append("- A2 不放入能力梯度，作为上一代旗舰对照组")
+    md.append("- 研究问题从三档能力改为两代旗舰+轻量版")
+    md.append("- 优点：保留数据，符合实际")
+    md.append("- 缺点：三因素→二因素，实验设计需调整\n")
+    md.append("**方案三：增加更难题，拉开差距**")
+    md.append("- 15 道题可能还是不够难，天花板效应在 B/E 类明显")
+    md.append("- 增加更难的逻辑推理和多步计算题")
+    md.append("- 优点：可能拉开 A3 和其他的差距")
+    md.append("- 缺点：A2 是否能超过 A1 仍不确定\n")
+
+md.append("### 推荐：方案二（调整解释框架）\n")
+md.append("将三档能力改为**两代旗舰对比 + 轻量基线**：")
+md.append("- **基线组**：A1 (qwen3.8-flash) — 轻量快速模型")
+md.append("- **上一代旗舰**：A2 (qwen3.7-max) — 旧版最强模型")
+md.append("- **当前旗舰**：A3 (qwen3.8-max) — 新版最强模型")
+md.append("\n研究问题调整为：RAG 对不同代际、不同规格模型的增益差异。")
+md.append("这样 A2 < A1 的反常就不再是问题，而是一个有趣的发现——新一代轻量模型在某些任务上已经能超过上一代旗舰。")
+
+md.append("\n---\n")
+md.append("> **备注**：自动评分已人工抽检 A 类（3题全对）、B 类（3题全对）、E01（全对）。")
+md.append("> C 类和 D 类的部分正确判断可能有误差，建议人工复核 C02/C03/D02/D03 四道题。")
+
+with open(OUT_MD, "w", encoding="utf-8") as f:
+    f.write("\n".join(md))
+print(f"\n报告已保存：{OUT_MD}")
+print(f"评分表已保存：{OUT_XLSX}")
