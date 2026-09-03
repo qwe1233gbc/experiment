@@ -1,18 +1,18 @@
-﻿question_id,web_result_count,web_has_authoritative,web_status,rag_result_count,rag_has_normative,rag_status,rag_has_instructional
-NEW_PL001_invest_ratio,5,True,OK,7,True,OK,UNKNOWN
-NEW_PL006_invest_ratio,5,True,OK,5,True,OK,UNKNOWN
-NEW_PL010_invest_ratio,0,False,MISSING,5,True,OK,UNKNOWN
-NEW_PL015_invest_ratio,5,True,OK,5,True,OK,UNKNOWN
-PL001_Emission_固体,5,True,OK,5,True,OK,UNKNOWN
-PL002_V01_Q01,5,True,OK,5,False,OK,UNKNOWN
-PL005_Emission_固体,5,True,OK,5,True,OK,UNKNOWN
-PL004_V01_Q01,5,True,OK,5,True,OK,UNKNOWN
-PL008_VOCSTotal_Q01,5,True,OK,6,True,OK,UNKNOWN
-PL008_VOCSMeasure_Q01,5,True,OK,0,False,MISSING,UNKNOWN
-PL010_VOCSTotal_Q01,5,True,OK,6,True,OK,UNKNOWN
-NEW_PL006_living_wastewater,5,True,OK,5,True,OK,UNKNOWN
-NEW_PL007_ro_water,5,False,PARTIAL,5,True,OK,UNKNOWN
-PL007_CaptureEfficiency_Q01,5,False,PARTIAL,5,True,OK,UNKNOWN
-PL008_DesignAirflow_Q01,5,True,OK,5,True,OK,UNKNOWN
-PL013_HazardousWaste_Q01,5,True,OK,6,True,OK,UNKNOWN
-PL014_CaptureAirflow_Q01,0,False,MISSING,5,True,OK,UNKNOWN
+﻿question_id,report_id,EP_category,task_type,needs_web,needs_rag,web_result_count,web_has_authoritative,web_status,rag_result_count,rag_has_normative_evidence,rag_has_instructional,rag_instructional_sources,rag_status
+NEW_PL001_invest_ratio,PL001,E0P0,环保投资比例核算,False,False,0,False,NOT_REQUIRED,7,False,False,,NOT_REQUIRED
+NEW_PL006_invest_ratio,PL006,E0P0,环保投资比例核算,False,False,0,False,NOT_REQUIRED,5,False,False,,NOT_REQUIRED
+NEW_PL010_invest_ratio,PL010,E0P0,环保投资比例核算,False,False,0,False,NOT_REQUIRED,5,False,False,,NOT_REQUIRED
+NEW_PL015_invest_ratio,PL015,E0P0,环保投资比例核算,False,False,0,False,NOT_REQUIRED,5,False,False,,NOT_REQUIRED
+PL001_Emission_固体,PL001,E1P0,固体废物控制标准,True,True,5,True,OK,5,True,False,,OK
+PL002_V01_Q01,PL002,E1P0,国民经济行业分类,True,False,5,True,OK,5,False,False,,NOT_REQUIRED
+PL005_Emission_固体,PL005,E1P0,固体废物控制标准,True,True,5,True,OK,5,True,False,,OK
+PL004_V01_Q01,PL004,E1P0,国民经济行业分类,True,False,5,True,OK,5,False,False,,NOT_REQUIRED
+PL008_VOCSTotal_Q01,PL008,E0P1,VOCs源强与总量数值一致性,False,False,0,False,NOT_REQUIRED,6,False,False,,NOT_REQUIRED
+PL008_VOCSMeasure_Q01,PL008,E0P1,VOCs治理措施一致性,False,False,0,False,NOT_REQUIRED,0,False,False,,NOT_REQUIRED
+PL010_VOCSTotal_Q01,PL010,E0P1,VOCs总量控制与一致性,False,True,0,False,NOT_REQUIRED,6,True,True,#29_VOCs排放核算与总量一致性审核指南.md; #27_污染物源强产生收集处理排放闭合核算指南.md,HAS_INSTRUCTIONAL
+NEW_PL006_living_wastewater,PL006,E1P0,生活污水量核算,True,True,5,True,OK,5,True,True,#27_污染物源强产生收集处理排放闭合核算指南.md; #29_VOCs排放核算与总量一致性审核指南.md,HAS_INSTRUCTIONAL
+NEW_PL007_ro_water,PL007,E0P0,纯水制备水量核算,False,False,0,False,NOT_REQUIRED,5,False,False,,NOT_REQUIRED
+PL007_CaptureEfficiency_Q01,PL007,E1P1,废气收集效率,True,True,5,False,PARTIAL,5,True,True,#30_废气收集形式与排风量计算审核指南.md,HAS_INSTRUCTIONAL
+PL008_DesignAirflow_Q01,PL008,E1P1,废气设计风量,False,True,0,False,NOT_REQUIRED,5,True,True,#30_废气收集形式与排风量计算审核指南.md; #18_废气收集风量与设计风量核算指南.md; #28_活性炭吸附治理参数核算审核指南.md,HAS_INSTRUCTIONAL
+PL013_HazardousWaste_Q01,PL013,E1P0,危险废物识别,True,True,5,True,OK,6,True,False,,OK
+PL014_CaptureAirflow_Q01,PL014,E1P1,废气收集形式与理论排气量,True,True,0,False,MISSING,5,True,True,#30_废气收集形式与排风量计算审核指南.md; #18_废气收集风量与设计风量核算指南.md,HAS_INSTRUCTIONAL
