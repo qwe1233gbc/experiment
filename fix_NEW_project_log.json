@@ -1,0 +1,107 @@
+{
+  "fix_type": "NEW_* question project field",
+  "backup_file": "E:\\实验文件整理_按论文逻辑\\实验\\02_evaluation_set\\pilot16_questions_v2_before_fix_NEW_project.xlsx",
+  "modified_file": "E:\\实验文件整理_按论文逻辑\\实验\\02_evaluation_set\\pilot16_questions_v2.xlsx",
+  "sheets_modified": [
+    "01_题目清单",
+    "99_原始题目备份"
+  ],
+  "mapping": {
+    "NEW_PL001_invest_ratio": "PL001",
+    "NEW_PL006_invest_ratio": "PL006",
+    "NEW_PL006_living_wastewater": "PL006",
+    "NEW_PL007_ro_water": "PL007",
+    "NEW_PL010_invest_ratio": "PL010",
+    "NEW_PL015_invest_ratio": "PL015"
+  },
+  "changes": [
+    {
+      "sheet": "01_题目清单",
+      "question_id": "NEW_PL001_invest_ratio",
+      "old": "NEW",
+      "new": "PL001",
+      "report_file": "PL001_佛山市亮正新材料有限公司新建项目.json"
+    },
+    {
+      "sheet": "01_题目清单",
+      "question_id": "NEW_PL006_invest_ratio",
+      "old": "NEW",
+      "new": "PL006",
+      "report_file": "PL006_佛山市顺德区乐鲸科技有限公司年产五金拉手300万个新建项目.json"
+    },
+    {
+      "sheet": "01_题目清单",
+      "question_id": "NEW_PL010_invest_ratio",
+      "old": "NEW",
+      "new": "PL010",
+      "report_file": "PL010_悍高集团股份有限公司功能拉篮车间搬迁扩建项目.json"
+    },
+    {
+      "sheet": "01_题目清单",
+      "question_id": "NEW_PL015_invest_ratio",
+      "old": "NEW",
+      "new": "PL015",
+      "report_file": "PL015_佛山市镪优金属制品有限公司迁扩建项目.json"
+    },
+    {
+      "sheet": "01_题目清单",
+      "question_id": "NEW_PL006_living_wastewater",
+      "old": "NEW",
+      "new": "PL006",
+      "report_file": "PL006_佛山市顺德区乐鲸科技有限公司年产五金拉手300万个新建项目.json"
+    },
+    {
+      "sheet": "01_题目清单",
+      "question_id": "NEW_PL007_ro_water",
+      "old": "NEW",
+      "new": "PL007",
+      "report_file": "PL007_007_广东云晟新材料有限公司年产水性涂料2400吨新建项目.json"
+    },
+    {
+      "sheet": "99_原始题目备份",
+      "question_id": "NEW_PL001_invest_ratio",
+      "old": "NEW",
+      "new": "PL001",
+      "report_file": "PL001_佛山市亮正新材料有限公司新建项目.json"
+    },
+    {
+      "sheet": "99_原始题目备份",
+      "question_id": "NEW_PL006_invest_ratio",
+      "old": "NEW",
+      "new": "PL006",
+      "report_file": "PL006_佛山市顺德区乐鲸科技有限公司年产五金拉手300万个新建项目.json"
+    },
+    {
+      "sheet": "99_原始题目备份",
+      "question_id": "NEW_PL010_invest_ratio",
+      "old": "NEW",
+      "new": "PL010",
+      "report_file": "PL010_悍高集团股份有限公司功能拉篮车间搬迁扩建项目.json"
+    },
+    {
+      "sheet": "99_原始题目备份",
+      "question_id": "NEW_PL015_invest_ratio",
+      "old": "NEW",
+      "new": "PL015",
+      "report_file": "PL015_佛山市镪优金属制品有限公司迁扩建项目.json"
+    },
+    {
+      "sheet": "99_原始题目备份",
+      "question_id": "NEW_PL006_living_wastewater",
+      "old": "NEW",
+      "new": "PL006",
+      "report_file": "PL006_佛山市顺德区乐鲸科技有限公司年产五金拉手300万个新建项目.json"
+    },
+    {
+      "sheet": "99_原始题目备份",
+      "question_id": "NEW_PL007_ro_water",
+      "old": "NEW",
+      "new": "PL007",
+      "report_file": "PL007_007_广东云晟新材料有限公司年产水性涂料2400吨新建项目.json"
+    }
+  ],
+  "validation": {
+    "passed": 6,
+    "failed": 0
+  }
+}
