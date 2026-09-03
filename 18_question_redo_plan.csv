@@ -1,0 +1,18 @@
+﻿question_id,task_type,runs,valid_runs,truncated,empty_truncated,format_bad,no_report,input_defects,verdict,prerequisites
+NEW_PL001_invest_ratio,环保投资比例核算,9,0,0,0,9,9,I1_NO_REPORT;I4_RAG_INSTRUCTION;I5_WEB_SNAPSHOT_DRIFT,先修输入再重跑,修复报告JSON加载;启用RAG v3_4过滤快照;重新冻结Web快照并对齐hash
+NEW_PL006_invest_ratio,环保投资比例核算,9,0,0,0,9,9,I1_NO_REPORT;I4_RAG_INSTRUCTION;I5_WEB_SNAPSHOT_DRIFT,先修输入再重跑,修复报告JSON加载;启用RAG v3_4过滤快照;重新冻结Web快照并对齐hash
+NEW_PL006_living_wastewater,生活污水量核算,9,0,0,0,9,9,I1_NO_REPORT;I4_RAG_INSTRUCTION;I5_WEB_SNAPSHOT_DRIFT,先修输入再重跑,修复报告JSON加载;启用RAG v3_4过滤快照;重新冻结Web快照并对齐hash
+NEW_PL007_ro_water,纯水制备水量核算,9,0,0,0,9,9,I1_NO_REPORT;I4_RAG_INSTRUCTION;I5_WEB_SNAPSHOT_DRIFT,先修输入再重跑,修复报告JSON加载;启用RAG v3_4过滤快照;重新冻结Web快照并对齐hash
+NEW_PL010_invest_ratio,环保投资比例核算,9,0,0,0,9,9,I1_NO_REPORT;I3_WEB_EMPTY;I4_RAG_INSTRUCTION;I5_WEB_SNAPSHOT_DRIFT,先修输入再重跑,修复报告JSON加载;重写Web搜索query并重新冻结快照;启用RAG v3_4过滤快照;重新冻结Web快照并对齐hash
+NEW_PL015_invest_ratio,环保投资比例核算,9,0,0,0,9,9,I1_NO_REPORT;I4_RAG_INSTRUCTION;I5_WEB_SNAPSHOT_DRIFT,先修输入再重跑,修复报告JSON加载;启用RAG v3_4过滤快照;重新冻结Web快照并对齐hash
+PL001_Emission_固体,固体废物控制标准,9,0,6,5,3,0,I3_WEB_EMPTY;I5_WEB_SNAPSHOT_DRIFT,先修输入再重跑,重写Web搜索query并重新冻结快照;重新冻结Web快照并对齐hash
+PL002_V01_Q01,国民经济行业分类,9,0,0,0,9,0,I5_WEB_SNAPSHOT_DRIFT,先修输入再重跑,重新冻结Web快照并对齐hash
+PL004_V01_Q01,国民经济行业分类,9,0,0,0,9,0,I5_WEB_SNAPSHOT_DRIFT,先修输入再重跑,重新冻结Web快照并对齐hash
+PL005_Emission_固体,固体废物控制标准,9,0,6,5,3,0,I3_WEB_EMPTY;I5_WEB_SNAPSHOT_DRIFT,先修输入再重跑,重写Web搜索query并重新冻结快照;重新冻结Web快照并对齐hash
+PL007_CaptureEfficiency_Q01,废气收集效率,9,0,3,1,6,0,I4_RAG_INSTRUCTION;I5_WEB_SNAPSHOT_DRIFT,先修输入再重跑,启用RAG v3_4过滤快照;重新冻结Web快照并对齐hash
+PL008_DesignAirflow_Q01,废气设计风量,9,0,0,0,9,0,I4_RAG_INSTRUCTION;I5_WEB_SNAPSHOT_DRIFT,先修输入再重跑,启用RAG v3_4过滤快照;重新冻结Web快照并对齐hash
+PL008_VOCSMeasure_Q01,VOCs治理措施一致性,9,0,0,0,9,0,I5_WEB_SNAPSHOT_DRIFT,先修输入再重跑,重新冻结Web快照并对齐hash
+PL008_VOCSTotal_Q01,VOCs源强与总量数值一致性,9,0,6,6,3,0,I4_RAG_INSTRUCTION;I5_WEB_SNAPSHOT_DRIFT,先修输入再重跑,启用RAG v3_4过滤快照;重新冻结Web快照并对齐hash
+PL010_VOCSTotal_Q01,VOCs总量控制与一致性,9,0,6,3,3,0,I2_CTX_SECTION_DEFECT;I4_RAG_INSTRUCTION;I5_WEB_SNAPSHOT_DRIFT,先修输入再重跑,修复PL010章节分类;启用RAG v3_4过滤快照;重新冻结Web快照并对齐hash
+PL013_HazardousWaste_Q01,危险废物识别,9,0,5,2,4,0,I5_WEB_SNAPSHOT_DRIFT,先修输入再重跑,重新冻结Web快照并对齐hash
+PL014_CaptureAirflow_Q01,废气收集形式与理论排气量,9,0,6,2,3,0,I3_WEB_EMPTY;I4_RAG_INSTRUCTION;I5_WEB_SNAPSHOT_DRIFT,先修输入再重跑,重写Web搜索query并重新冻结快照;启用RAG v3_4过滤快照;重新冻结Web快照并对齐hash
