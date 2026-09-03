@@ -1,0 +1,62 @@
+{
+  "phase": "phase1_standard_search_normalization",
+  "regression_tests_passed": true,
+  "regression_test_count": 12,
+  "verification": {
+    "PL001": {
+      "GB18599-2020": {
+        "old_method_hit": true,
+        "new_method_hit": true,
+        "occurrence_count": 1
+      },
+      "GB18597-2023": {
+        "old_method_hit": true,
+        "new_method_hit": true,
+        "occurrence_count": 2
+      },
+      "GB34330-2017": {
+        "old_method_hit": true,
+        "new_method_hit": true,
+        "occurrence_count": 1
+      },
+      "GB/T39198-2020": {
+        "old_method_hit": true,
+        "new_method_hit": true,
+        "occurrence_count": 1
+      },
+      "国家危险废物名录": {
+        "old_method_hit": true,
+        "new_method_hit": true,
+        "occurrence_count": 2
+      }
+    },
+    "PL005": {
+      "GB18599-2020": {
+        "old_method_hit": false,
+        "new_method_hit": false,
+        "occurrence_count": 0
+      },
+      "GB18597-2023": {
+        "old_method_hit": true,
+        "new_method_hit": true,
+        "occurrence_count": 2
+      },
+      "GB34330-2017": {
+        "old_method_hit": false,
+        "new_method_hit": false,
+        "occurrence_count": 0
+      },
+      "GB/T39198-2020": {
+        "old_method_hit": true,
+        "new_method_hit": true,
+        "occurrence_count": 2
+      },
+      "国家危险废物名录": {
+        "old_method_hit": true,
+        "new_method_hit": true,
+        "occurrence_count": 5
+      }
+    }
+  },
+  "conclusion": "PL001和PL005的GB标准在JSON中均存在，之前的0命中是搜索格式不匹配导致，不是Word→JSON解析丢失。修复规范化搜索后可正确命中。"
+}

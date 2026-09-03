@@ -1,0 +1,10 @@
+{
+  "repair_version": "v3.4_repair_20260903",
+  "repair_timestamp": "20260903_150927",
+  "repair_dir": "E:\\实验文件整理_按论文逻辑\\实验\\07_results_v2\\pilot17_repair_20260903",
+  "experiment_root": "E:\\实验文件整理_按论文逻辑\\实验",
+  "audit_scope_before": "PARTIAL_3_OF_17",
+  "benchmark_decision_before": "BENCHMARK_NOT_READY",
+  "total_files_inventoried": 44,
+  "input_inventory_hash": "1d422e8a82568bf5a57d62b83118e15528d6c2adaa385a9f78827f3bf18d3bd9"
+}
