@@ -1,0 +1,163 @@
+[
+  {
+    "question_id": "NEW_PL010_invest_ratio",
+    "stage1_blind_judgment": {
+      "conclusion": "",
+      "reason": "",
+      "evidence": []
+    },
+    "stage2_gold_verdict": "AGREE_WITH_GOLD / DISAGREE_WITH_GOLD / BOUNDARY_ISSUE",
+    "gold_basis_check": [
+      {
+        "金标依据要点": "",
+        "核验结果": "",
+        "说明": ""
+      }
+    ],
+    "gold_fact_conflict_check": "",
+    "model_label_consistency": "",
+    "disagreement_root_cause": "",
+    "gold_error_analysis": "",
+    "final_recommendation": "",
+    "revised_gold_if_any": "",
+    "confidence": ""
+  },
+  {
+    "question_id": "PL013_HazardousWaste_Q01",
+    "stage1_blind_judgment": {
+      "conclusion": "",
+      "reason": "",
+      "evidence": []
+    },
+    "stage2_gold_verdict": "AGREE_WITH_GOLD / DISAGREE_WITH_GOLD / BOUNDARY_ISSUE",
+    "gold_basis_check": [
+      {
+        "金标依据要点": "",
+        "核验结果": "",
+        "说明": ""
+      }
+    ],
+    "gold_fact_conflict_check": "",
+    "model_label_consistency": "",
+    "disagreement_root_cause": "",
+    "gold_error_analysis": "",
+    "final_recommendation": "",
+    "revised_gold_if_any": "",
+    "confidence": ""
+  },
+  {
+    "question_id": "PL014_CaptureAirflow_Q01",
+    "stage1_blind_judgment": {
+      "conclusion": "",
+      "reason": "",
+      "evidence": []
+    },
+    "stage2_gold_verdict": "AGREE_WITH_GOLD / DISAGREE_WITH_GOLD / BOUNDARY_ISSUE",
+    "gold_basis_check": [
+      {
+        "金标依据要点": "",
+        "核验结果": "",
+        "说明": ""
+      }
+    ],
+    "gold_fact_conflict_check": "",
+    "model_label_consistency": "",
+    "disagreement_root_cause": "",
+    "gold_error_analysis": "",
+    "final_recommendation": "",
+    "revised_gold_if_any": "",
+    "confidence": ""
+  },
+  {
+    "question_id": "PL010_VOCSTotal_Q01",
+    "stage1_blind_judgment": {
+      "conclusion": "",
+      "reason": "",
+      "evidence": []
+    },
+    "stage2_gold_verdict": "AGREE_WITH_GOLD / DISAGREE_WITH_GOLD / BOUNDARY_ISSUE",
+    "gold_basis_check": [
+      {
+        "金标依据要点": "",
+        "核验结果": "",
+        "说明": ""
+      }
+    ],
+    "gold_fact_conflict_check": "",
+    "model_label_consistency": "",
+    "disagreement_root_cause": "",
+    "gold_error_analysis": "",
+    "final_recommendation": "",
+    "revised_gold_if_any": "",
+    "confidence": ""
+  },
+  {
+    "question_id": "PL005_Emission_固体",
+    "stage1_blind_judgment": {
+      "conclusion": "",
+      "reason": "",
+      "evidence": []
+    },
+    "stage2_gold_verdict": "AGREE_WITH_GOLD / DISAGREE_WITH_GOLD / BOUNDARY_ISSUE",
+    "gold_basis_check": [
+      {
+        "金标依据要点": "",
+        "核验结果": "",
+        "说明": ""
+      }
+    ],
+    "gold_fact_conflict_check": "",
+    "model_label_consistency": "",
+    "disagreement_root_cause": "",
+    "gold_error_analysis": "",
+    "final_recommendation": "",
+    "revised_gold_if_any": "",
+    "confidence": ""
+  },
+  {
+    "question_id": "PL007_CaptureEfficiency_Q01",
+    "stage1_blind_judgment": {
+      "conclusion": "",
+      "reason": "",
+      "evidence": []
+    },
+    "stage2_gold_verdict": "AGREE_WITH_GOLD / DISAGREE_WITH_GOLD / BOUNDARY_ISSUE",
+    "gold_basis_check": [
+      {
+        "金标依据要点": "",
+        "核验结果": "",
+        "说明": ""
+      }
+    ],
+    "gold_fact_conflict_check": "",
+    "model_label_consistency": "",
+    "disagreement_root_cause": "",
+    "gold_error_analysis": "",
+    "final_recommendation": "",
+    "revised_gold_if_any": "",
+    "confidence": ""
+  },
+  {
+    "question_id": "PL008_DesignAirflow_Q01",
+    "stage1_blind_judgment": {
+      "conclusion": "",
+      "reason": "",
+      "evidence": []
+    },
+    "stage2_gold_verdict": "AGREE_WITH_GOLD / DISAGREE_WITH_GOLD / BOUNDARY_ISSUE",
+    "gold_basis_check": [
+      {
+        "金标依据要点": "",
+        "核验结果": "",
+        "说明": ""
+      }
+    ],
+    "gold_fact_conflict_check": "",
+    "model_label_consistency": "",
+    "disagreement_root_cause": "",
+    "gold_error_analysis": "",
+    "final_recommendation": "",
+    "revised_gold_if_any": "",
+    "confidence": ""
+  }
+]
