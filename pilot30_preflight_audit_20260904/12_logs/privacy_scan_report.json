@@ -1,0 +1,61 @@
+{
+  "files_scanned": 31,
+  "findings_count": 9,
+  "findings": [
+    {
+      "file": "05_rag_knowledge_base\\pilot17_rag_snapshot_v3_4.jsonl",
+      "secret_type": "手机号（疑似）",
+      "occurrences": 91,
+      "sample": "15430942109"
+    },
+    {
+      "file": "05_rag_knowledge_base\\pilot17_rag_snapshot_v3_4.jsonl",
+      "secret_type": "身份证号（疑似）",
+      "occurrences": 9,
+      "sample": "020111214515902101"
+    },
+    {
+      "file": "05_rag_knowledge_base\\pilot17_web_snapshot_v3_4.jsonl",
+      "secret_type": "手机号（疑似）",
+      "occurrences": 3,
+      "sample": "19291153967"
+    },
+    {
+      "file": "05_rag_knowledge_base\\pilot17_web_snapshot_v3_4.jsonl",
+      "secret_type": "身份证号（疑似）",
+      "occurrences": 4,
+      "sample": "020200810704809603"
+    },
+    {
+      "file": "06_retrieval_snapshots\\pilot17_rag_snapshot_v3_4.jsonl",
+      "secret_type": "手机号（疑似）",
+      "occurrences": 91,
+      "sample": "15430942109"
+    },
+    {
+      "file": "06_retrieval_snapshots\\pilot17_rag_snapshot_v3_4.jsonl",
+      "secret_type": "身份证号（疑似）",
+      "occurrences": 9,
+      "sample": "020111214515902101"
+    },
+    {
+      "file": "06_retrieval_snapshots\\pilot17_web_snapshot_v3_4.jsonl",
+      "secret_type": "手机号（疑似）",
+      "occurrences": 3,
+      "sample": "19291153967"
+    },
+    {
+      "file": "06_retrieval_snapshots\\pilot17_web_snapshot_v3_4.jsonl",
+      "secret_type": "身份证号（疑似）",
+      "occurrences": 4,
+      "sample": "020200810704809603"
+    },
+    {
+      "file": "08_model_outputs\\pilot17_v3_5_full_results_144.jsonl",
+      "secret_type": "手机号（疑似）",
+      "occurrences": 1,
+      "sample": "16333333333"
+    }
+  ],
+  "status": "FAIL"
+}

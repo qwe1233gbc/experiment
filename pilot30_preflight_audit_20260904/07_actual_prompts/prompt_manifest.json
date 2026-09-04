@@ -1,0 +1,8 @@
+{
+  "prompt_dir_actual": "E:\\实验文件整理_按论文逻辑\\实验\\07_results_v2\\pilot17_v3_4_experiment\\prompts",
+  "prompt_count_expected": 144,
+  "prompt_count_found": 153,
+  "system_prompt_file": "system_prompt_FROZEN_v2.txt",
+  "prompt_template_file": "prompt_template_FROZEN_v1.md",
+  "note": "完整"
+}

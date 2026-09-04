@@ -1,0 +1,50 @@
+{
+  "count": 9,
+  "items": [
+    {
+      "item": "11个项目的原始Word报告",
+      "category": "原始报告",
+      "impact": "无法做Word-to-parsed保真度审计"
+    },
+    {
+      "item": "BM25候选列表",
+      "category": "检索中间过程",
+      "impact": "无法追溯检索失败是召回阶段还是排序阶段"
+    },
+    {
+      "item": "Dense retrieval候选列表",
+      "category": "检索中间过程",
+      "impact": "同上"
+    },
+    {
+      "item": "Rerank前/后排名对比",
+      "category": "检索中间过程",
+      "impact": "无法判断reranker是否丢掉了关键证据"
+    },
+    {
+      "item": "原始检索query",
+      "category": "检索中间过程",
+      "impact": "无法验证query改写质量"
+    },
+    {
+      "item": "正式多维度GPT打分",
+      "category": "评分",
+      "impact": "当前只有结构化结论自动评分，缺少证据质量/推理严谨性等维度"
+    },
+    {
+      "item": "7道疑点题人工盲评结果",
+      "category": "金标确认",
+      "impact": "金标状态仍为PROVISIONAL或DISPUTED"
+    },
+    {
+      "item": "7道heldout新题人工金标确认",
+      "category": "金标确认",
+      "impact": "heldout题无法正式进入实验"
+    },
+    {
+      "item": "H04/H05暂缓题补充材料",
+      "category": "题目证据",
+      "impact": "2道题证据不足，无法判定"
+    }
+  ]
+}
