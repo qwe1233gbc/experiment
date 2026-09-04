@@ -1,0 +1,9 @@
+{
+  "system_prompt_file": "system_prompt_FROZEN_v2.txt",
+  "prompt_template_file": "prompt_template_FROZEN_v1.md",
+  "conclusion_example_has_anchor": true,
+  "status": "NEEDS_FIX",
+  "note": "system prompt中JSON示例的conclusion字段为CORRECT，存在标签锚定风险，需改为空占位符",
+  "fixed_file": "system_prompt_v4_deanchored.txt",
+  "fixed_status": "DEANCHORED"
+}

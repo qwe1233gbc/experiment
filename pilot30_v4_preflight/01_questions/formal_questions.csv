@@ -1,0 +1,24 @@
+﻿question_id,project_id,task_type,ep_category,question_text,gold_verdict,gold_status,human_confirmed,rounding_rule,acceptable_boundary,version
+NEW_PL001_invest_ratio,PL001,环保投资比例核算,E0P0,按'环保投资÷总投资×100%'复算，PL001项目环保投资占比应为多少？与报告填报值是否一致？,CORRECT,PROVISIONAL,NO,按报告原文精度,见金标答案,v4.0_20260904_preflight
+NEW_PL006_invest_ratio,PL006,环保投资比例核算,E0P0,按'环保投资÷总投资×100%'复算，PL006项目环保投资占比应为多少？与报告填报值是否一致？,CORRECT,PROVISIONAL,NO,按报告原文精度,见金标答案,v4.0_20260904_preflight
+NEW_PL010_invest_ratio,PL010,环保投资比例核算,E0P0,PL010报告总投资为15000万元、环保投资为174.5万元。按“环保投资÷总投资×100%”复算，并严格四舍五入保留1位小数，环保投资占比是多少？与报告填报的1.1%是否一致？,INCORRECT,PROVISIONAL_DISPUTED,NO,按报告原文精度,见金标答案,v4.0_20260904_preflight
+NEW_PL015_invest_ratio,PL015,环保投资比例核算,E0P0,按'环保投资÷总投资×100%'复算，PL015项目环保投资占比应为多少？与报告填报值是否一致？,CORRECT,PROVISIONAL,NO,按报告原文精度,见金标答案,v4.0_20260904_preflight
+PL001_Emission_固体,PL001,固体废物控制标准,E1P0,结合报告中一般工业固体废物采用库房暂存以及危险废物识别、贮存情况，判断固体废物管理依据是否适用、完整。请分别列明一般固废和危险废物依据，并指出不适用或缺失项。,PARTIALLY_CORRECT,PROVISIONAL_AI_REVISED,NO,按报告原文精度,见金标答案,v4.0_20260904_preflight
+PL002_V01_Q01,PL002,国民经济行业分类,E1P0,请结合项目产品、原辅材料和生产工艺，判断该报告是否适合作为塑胶行业种子问答样本，并判断行业类别是否基本合理。,CORRECT,PROVISIONAL,NO,按报告原文精度,见金标答案,v4.0_20260904_preflight
+PL005_Emission_固体,PL005,固体废物控制标准,E1P0,结合报告中一般工业固体废物采用库房暂存以及危险废物识别、贮存情况，判断固体废物管理依据是否适用、完整。请分别列明一般固废和危险废物依据，并指出是否缺少必须引用的标准。,CORRECT,PROVISIONAL_AI_REVIEWED,NO,按报告原文精度,见金标答案,v4.0_20260904_preflight
+PL004_V01_Q01,PL004,国民经济行业分类,E1P0,请结合项目产品、原辅材料和生产工艺，判断该报告行业类别是否基本合理。,CORRECT,PROVISIONAL,NO,按报告原文精度,见金标答案,v4.0_20260904_preflight
+PL008_VOCSTotal_Q01,PL008,VOCs源强与总量数值一致性,E0P1,核对PL008报告VOCs源强核算表的明细、合计及总量控制指标：各明细产生量能否汇总至表中合计，收集率和75%去除率能否与有组织、无组织排放量形成闭合计算链？,INCORRECT,PROVISIONAL,NO,按报告原文精度,见金标答案,v4.0_20260904_preflight
+PL008_VOCSMeasure_Q01,PL008,VOCs治理措施一致性,E0P1,核对PL008报告工程分析、运营期环境保护措施及环境保护措施监督检查清单中的VOCs收集治理设施名称和排气筒信息是否一致。,CORRECT,PROVISIONAL,NO,按报告原文精度,见金标答案,v4.0_20260904_preflight
+NEW_PL006_living_wastewater,PL006,生活污水量核算,E0P1,按排放系数0.9复算，PL006项目生活污水量应为多少？与报告废水核算章节填报值是否一致？,CORRECT,PROVISIONAL,NO,按报告原文精度,见金标答案,v4.0_20260904_preflight
+NEW_PL007_ro_water,PL007,纯水制备水量核算,E0P1,按纯水制备率80%复算，PL007项目纯水机进水总量与浓水排放量各为多少？与报告是否一致？,CORRECT,PROVISIONAL,NO,按报告原文精度,见金标答案,v4.0_20260904_preflight
+PL007_CaptureEfficiency_Q01,PL007,废气收集效率,E1P1,请根据废气产生工序、收集设施类型、密闭或集气罩条件及报告采用的收集效率，判断废气收集效率取值是否合理。,INCORRECT,PROVISIONAL_AI_REVISED,NO,按报告原文精度,见金标答案,v4.0_20260904_preflight
+PL008_DesignAirflow_Q01,PL008,废气设计风量,E1P1,请根据理论排气量、收集点数量、同时运行情况、治理设施处理能力和排气筒风量，判断报告采用的废气设计风量是否合理。,PARTIALLY_CORRECT,PROVISIONAL_DISPUTED,NO,按报告原文精度,见金标答案,v4.0_20260904_preflight
+PL013_HazardousWaste_Q01,PL013,危险废物识别,E1P1,请根据项目原辅材料、设备维护、废气治理设施及固体废物清单，判断危险废物识别是否完整，危废类别和代码是否与产生环节相匹配。,INCORRECT,PROVISIONAL_DISPUTED,NO,按报告原文精度,见金标答案,v4.0_20260904_preflight
+PL014_CaptureAirflow_Q01,PL014,废气收集形式与理论排气量,E1P1,请根据废气产生工序、收集方式、集气罩尺寸、污染源至罩口距离、控制风速和收集点数量，判断废气收集形式及理论排气量核算是否合理。,INCORRECT,PROVISIONAL_DISPUTED,NO,按报告原文精度,见金标答案,v4.0_20260904_preflight
+H01_PL004_DesignAirflow,PL004,设计风量复算（集气罩公式法）,E1P1,根据报告中集气罩设计参数（形状、尺寸、控制风速、数量），采用控制风速法复核设计风量是否满足规范要求。,PARTIALLY_CORRECT,AI_PRECHECKED,NO,保留整数 m³/h，误差±5%以内可接受,PARTIALLY: 数值接近但表述不严谨,v4.0_20260904_preflight
+H02_PL004_VOCsMassBalance,PL004,VOCs产排链条一致性核查,E1P1,核查报告中VOCs产生量、收集量、处理后排放量、排放浓度之间的物料平衡关系是否自洽。,CORRECT,AI_PRECHECKED,NO,保留2位小数 kg/h，舍入差异≤1%可接受,CORRECT: 产排链条自洽,v4.0_20260904_preflight
+H03_PL004_HWClassify_OilBarrel,PL004,危废归类判定（废油桶 HW08 vs HW49）,E1P0,报告中将沾染矿物油的废机油桶归类为危险废物，判断其危废类别（HW代码）和危险特性归类是否准确。,PARTIALLY_CORRECT,AI_PRECHECKED,NO,N/A,PARTIALLY: 类别正确但特性标识有误,v4.0_20260904_preflight
+H06_PL010_VOCsTotalSubstitution,PL010,VOCs总量替代判定,E1P0,判断报告中VOCs总量控制指标（总量替代比例、削减量）是否符合当地VOCs总量管理要求。,INCORRECT,AI_PRECHECKED,NO,N/A,INCORRECT: 总量替代比例不满足要求,v4.0_20260904_preflight
+H07_PL015_HWStorageStandard,PL015,危废贮存标准判定,E1P0,判断报告中危险废物贮存设施的描述是否符合《危险废物贮存污染控制标准》要求。,PARTIALLY_CORRECT,AI_PRECHECKED,NO,N/A,PARTIALLY: 部分符合但缺少关键要求,v4.0_20260904_preflight
+H09_PL006_FencelineNMHC,PL006,厂区内无组织NMHC达标判定,E1P0,根据报告中厂区内无组织NMHC排放浓度数据，判断是否满足《挥发性有机物无组织排放控制标准》的监控点浓度限值要求。,INCORRECT,AI_PRECHECKED,NO,保留2位小数 mg/m³,INCORRECT: 超过监控点浓度限值,v4.0_20260904_preflight
+H10_PL002_StackHeightRate,PL002,排气筒高度与排放速率关系,E1P0,判断报告中排气筒高度与排放速率的对应关系是否符合大气污染物排放标准中的高度修正要求。,PARTIALLY_CORRECT,AI_PRECHECKED,NO,N/A,PARTIALLY: 高度满足但速率修正不完整,v4.0_20260904_preflight

@@ -1,0 +1,31 @@
+{
+  "files_scanned": 2,
+  "findings": [
+    {
+      "file": "system_prompt_v4_deanchored.txt",
+      "pattern": "CORRECT",
+      "occurrences": 2,
+      "assessment": "EXPECTED_SCHEMA_EXAMPLE"
+    },
+    {
+      "file": "system_prompt_v4_deanchored.txt",
+      "pattern": "INCORRECT",
+      "occurrences": 1,
+      "assessment": "EXPECTED_SCHEMA_EXAMPLE"
+    },
+    {
+      "file": "user_prompt_template_v4.md",
+      "pattern": "CORRECT",
+      "occurrences": 4,
+      "assessment": "POTENTIAL_LEAKAGE"
+    },
+    {
+      "file": "user_prompt_template_v4.md",
+      "pattern": "INCORRECT",
+      "occurrences": 2,
+      "assessment": "EXPECTED_SCHEMA_EXAMPLE"
+    }
+  ],
+  "verdict": "NO_LEAKAGE_DETECTED",
+  "note": "结论枚举值作为JSON Schema示例出现属正常现象；未发现具体题目的金标答案泄漏"
+}

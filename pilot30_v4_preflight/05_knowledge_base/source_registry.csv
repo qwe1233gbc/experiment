@@ -1,0 +1,39 @@
+﻿source_id,title,issuing_authority,publish_date,effective_date,expiry_date,version,source_url,source_type,applicable_scope,original_sha256,card_sha256,traceability_status
+std_000,国民经济行业分类代码字段规范化与匹配,待确认,待确认,待确认,现行有效,v1.0,待确认,standard,待确认,待补原文后计算,56d18983d0c6c7c0,CARD_EXISTS_BUT_ORIGINAL_SOURCE_NOT_VERIFIED
+std_001,塑料制品业 C292 适用边界,待确认,待确认,待确认,现行有效,v1.0,待确认,standard,待确认,待补原文后计算,99312f6c31e431b9,CARD_EXISTS_BUT_ORIGINAL_SOURCE_NOT_VERIFIED
+std_002,总投资与项目规模匹配性审核,待确认,待确认,待确认,现行有效,v1.0,待确认,standard,待确认,待补原文后计算,c2304d7079a8fa59,CARD_EXISTS_BUT_ORIGINAL_SOURCE_NOT_VERIFIED
+std_003,顺德三线一单管控单元匹配,待确认,待确认,待确认,现行有效,v1.0,待确认,standard,待确认,待补原文后计算,b7eaa79ed81f31ef,CARD_EXISTS_BUT_ORIGINAL_SOURCE_NOT_VERIFIED
+std_004,顺德管控单元准入清单一致性审核,待确认,待确认,待确认,现行有效,v1.0,待确认,standard,待确认,待补原文后计算,300cdcd28ac9a17a,CARD_EXISTS_BUT_ORIGINAL_SOURCE_NOT_VERIFIED
+std_005,建设内容工程组成完整性,待确认,待确认,待确认,现行有效,v1.0,待确认,standard,待确认,待补原文后计算,63de61b4fddaf3d2,CARD_EXISTS_BUT_ORIGINAL_SOURCE_NOT_VERIFIED
+std_006,顺德区环境状态公报数据引用核对,待确认,待确认,待确认,现行有效,v1.0,待确认,standard,待确认,待补原文后计算,d7809e9d39931241,CARD_EXISTS_BUT_ORIGINAL_SOURCE_NOT_VERIFIED
+std_007,环境空气质量标准 GB3095 一级/二级适用,待确认,待确认,待确认,现行有效,v1.0,待确认,standard,待确认,待补原文后计算,e638cfb16ba7bc85,CARD_EXISTS_BUT_ORIGINAL_SOURCE_NOT_VERIFIED
+std_008,地表水环境质量标准 GB3838 类别限值,待确认,待确认,待确认,现行有效,v1.0,待确认,standard,待确认,待补原文后计算,fb60a031b7df3f03,CARD_EXISTS_BUT_ORIGINAL_SOURCE_NOT_VERIFIED
+std_009,顺德污水厂受纳水体与地表水类别速查,待确认,待确认,待确认,现行有效,v1.0,待确认,standard,待确认,待补原文后计算,f0efd5e8542d85bf,CARD_EXISTS_BUT_ORIGINAL_SOURCE_NOT_VERIFIED
+std_010,声环境质量标准 GB3096 功能区限值,待确认,待确认,待确认,现行有效,v1.0,待确认,standard,待确认,待补原文后计算,b2320221aab19654,CARD_EXISTS_BUT_ORIGINAL_SOURCE_NOT_VERIFIED
+std_011,塑料制品业 NMHC 有组织排放 GB31572 限值,待确认,待确认,待确认,现行有效,v1.0,待确认,standard,待确认,待补原文后计算,69aa83a50ecd0dc3,CARD_EXISTS_BUT_ORIGINAL_SOURCE_NOT_VERIFIED
+std_012,广东固定污染源 VOCs 综合排放 DB44/2367 限值,待确认,待确认,待确认,现行有效,v1.0,待确认,standard,待确认,待补原文后计算,71d3621315f8493e,CARD_EXISTS_BUT_ORIGINAL_SOURCE_NOT_VERIFIED
+std_013,臭气浓度 GB14554 有组织与厂界无组织限值,待确认,待确认,待确认,现行有效,v1.0,待确认,standard,待确认,待补原文后计算,a84e93ddca1d15e2,CARD_EXISTS_BUT_ORIGINAL_SOURCE_NOT_VERIFIED
+std_014,颗粒物 DB44/27 第二时段限值,待确认,待确认,待确认,现行有效,v1.0,待确认,standard,待确认,待补原文后计算,6fc8f5512e28b7bd,CARD_EXISTS_BUT_ORIGINAL_SOURCE_NOT_VERIFIED
+std_015,工业企业厂界环境噪声排放 GB12348 限值,待确认,待确认,待确认,现行有效,v1.0,待确认,standard,待确认,待补原文后计算,67ad5cab2f407f3a,CARD_EXISTS_BUT_ORIGINAL_SOURCE_NOT_VERIFIED
+std_016,生活污水预处理与尾水排放标准衔接,待确认,待确认,待确认,现行有效,v1.0,待确认,standard,待确认,待补原文后计算,f144a08cc82dbc0b,CARD_EXISTS_BUT_ORIGINAL_SOURCE_NOT_VERIFIED
+std_017,塑料制品业废气产污系数选用边界,待确认,待确认,待确认,现行有效,v1.0,待确认,standard,待确认,待补原文后计算,eb82cc523953b98b,CARD_EXISTS_BUT_ORIGINAL_SOURCE_NOT_VERIFIED
+std_018,产污量定量核算公式完整性,待确认,待确认,待确认,现行有效,v1.0,待确认,standard,待确认,待补原文后计算,da1b995dfc7dee94,CARD_EXISTS_BUT_ORIGINAL_SOURCE_NOT_VERIFIED
+std_019,废气收集形式与控制风速要求,待确认,待确认,待确认,现行有效,v1.0,待确认,standard,待确认,待补原文后计算,7602975d513a7b57,CARD_EXISTS_BUT_ORIGINAL_SOURCE_NOT_VERIFIED
+std_020,集气罩排气量计算公式,待确认,待确认,待确认,现行有效,v1.0,待确认,standard,待确认,待补原文后计算,a68939aa58935135,CARD_EXISTS_BUT_ORIGINAL_SOURCE_NOT_VERIFIED
+std_021,设计风量、漏风系数与风机匹配,待确认,待确认,待确认,现行有效,v1.0,待确认,standard,待确认,待补原文后计算,707a635427a0641c,CARD_EXISTS_BUT_ORIGINAL_SOURCE_NOT_VERIFIED
+std_022,废气管道与排气筒设计风速,待确认,待确认,待确认,现行有效,v1.0,待确认,standard,待确认,待补原文后计算,5a69377551ac7a12,CARD_EXISTS_BUT_ORIGINAL_SOURCE_NOT_VERIFIED
+std_023,VOCs 废气收集效率取值表,待确认,待确认,待确认,现行有效,v1.0,待确认,standard,待确认,待补原文后计算,2de770cb1e3a75f6,CARD_EXISTS_BUT_ORIGINAL_SOURCE_NOT_VERIFIED
+std_024,活性炭吸附治理参数完整性,待确认,待确认,待确认,现行有效,v1.0,待确认,standard,待确认,待补原文后计算,ad3d80021a749de1,CARD_EXISTS_BUT_ORIGINAL_SOURCE_NOT_VERIFIED
+std_025,危险废物识别、贮存与一般固废区分,待确认,待确认,待确认,现行有效,v1.0,待确认,standard,待确认,待补原文后计算,e46bd7a84692a8fe,CARD_EXISTS_BUT_ORIGINAL_SOURCE_NOT_VERIFIED
+std_026,VOCs 产生量、收集量、削减量、排放量总量链条,待确认,待确认,待确认,现行有效,v1.0,待确认,standard,待确认,待补原文后计算,5fe3b68682b9915e,CARD_EXISTS_BUT_ORIGINAL_SOURCE_NOT_VERIFIED
+std_027,大气污染物综合排放标准 GB16297,待确认,待确认,待确认,现行有效,v1.0,待确认,standard,待确认,待补原文后计算,2a1cc381cc3628bd,CARD_EXISTS_BUT_ORIGINAL_SOURCE_NOT_VERIFIED
+std_028,广东家具制造行业挥发性有机化合物排放标准 DB44/814,待确认,待确认,待确认,现行有效,v1.0,待确认,standard,待确认,待补原文后计算,190cc4c9a975f72a,CARD_EXISTS_BUT_ORIGINAL_SOURCE_NOT_VERIFIED
+std_029,广东印刷行业挥发性有机化合物排放标准 DB44/815,待确认,待确认,待确认,现行有效,v1.0,待确认,standard,待确认,待补原文后计算,37e65804d27bb201,CARD_EXISTS_BUT_ORIGINAL_SOURCE_NOT_VERIFIED
+std_030,胶粘剂挥发性有机化合物限量 GB33372,待确认,待确认,待确认,现行有效,v1.0,待确认,standard,待确认,待补原文后计算,57151424a5d446d5,CARD_EXISTS_BUT_ORIGINAL_SOURCE_NOT_VERIFIED
+std_031,清洗剂挥发性有机化合物含量限值 GB38508,待确认,待确认,待确认,现行有效,v1.0,待确认,standard,待确认,待补原文后计算,7b2dc86a557f0e2d,CARD_EXISTS_BUT_ORIGINAL_SOURCE_NOT_VERIFIED
+std_032,印刷工业大气污染物排放标准 GB41616,待确认,待确认,待确认,现行有效,v1.0,待确认,standard,待确认,待补原文后计算,50d832b927beed23,CARD_EXISTS_BUT_ORIGINAL_SOURCE_NOT_VERIFIED
+std_033,排污许可证申请与核发技术规范 橡胶和塑料制品工业 HJ1122,待确认,待确认,待确认,现行有效,v1.0,待确认,standard,待确认,待补原文后计算,caf922c9f159c345,CARD_EXISTS_BUT_ORIGINAL_SOURCE_NOT_VERIFIED
+std_034,排污单位自行监测技术指南 橡胶和塑料制品 HJ1207,待确认,待确认,待确认,现行有效,v1.0,待确认,standard,待确认,待补原文后计算,6c00c0571e83937f,CARD_EXISTS_BUT_ORIGINAL_SOURCE_NOT_VERIFIED
+std_035,排污单位自行监测技术指南 总则 HJ819,待确认,待确认,待确认,现行有效,v1.0,待确认,standard,待确认,待补原文后计算,1c40066b9a77e99f,CARD_EXISTS_BUT_ORIGINAL_SOURCE_NOT_VERIFIED
+std_036,污染源源强核算技术指南 准则 HJ884,待确认,待确认,待确认,现行有效,v1.0,待确认,standard,待确认,待补原文后计算,5728289468da2162,CARD_EXISTS_BUT_ORIGINAL_SOURCE_NOT_VERIFIED
+std_037,城市污水再生利用 城市杂用水水质 GB/T 18920-2020 限值,待确认,待确认,待确认,现行有效,v1.0,待确认,standard,待确认,待补原文后计算,ccf115d5e589358d,CARD_EXISTS_BUT_ORIGINAL_SOURCE_NOT_VERIFIED

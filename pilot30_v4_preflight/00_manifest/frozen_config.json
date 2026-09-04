@@ -1,0 +1,69 @@
+{
+  "experiment_version": "v4.0",
+  "experiment_date": "2026-09-04",
+  "research_question": "逐步增加外部知识后，环评审核问答质量是否改善？",
+  "models": {
+    "primary": {
+      "id": "qwen3.8-max",
+      "vendor": "alibaba",
+      "generation": "3.8",
+      "tier": "flagship",
+      "thinking_mode": "disabled"
+    },
+    "validation": {
+      "id": "kimi-k2.6",
+      "vendor": "moonshot",
+      "generation": "K2.6",
+      "tier": "standard",
+      "thinking_mode": "disabled"
+    }
+  },
+  "knowledge_conditions": {
+    "K1": "report_context_only",
+    "K2": "K1 + frozen_web_topk",
+    "K3": "K2_same_web + frozen_rag_topk"
+  },
+  "parameters": {
+    "temperature": 0.0,
+    "max_completion_tokens": 1200,
+    "response_format": "json_object",
+    "seed": 42,
+    "top_p": 1.0
+  },
+  "scoring_weights": {
+    "conclusion": 0.4,
+    "evidence": 0.2,
+    "reasoning": 0.25,
+    "knowledge_utilization": 0.15
+  },
+  "paths": {
+    "questions": "01_questions/formal_questions.jsonl",
+    "report_parsed": "03_report_parsing/",
+    "report_chunks": "04_report_chunks/",
+    "knowledge_base": "05_knowledge_base/",
+    "retrieval_snapshots": "06_retrieval_snapshots/",
+    "prompts": "07_prompts/",
+    "results": "11_results_private/"
+  },
+  "preflight_gates": [
+    "question_complete",
+    "human_gold_confirmed",
+    "original_report_registered",
+    "word_parsed_fidelity_pass",
+    "required_report_evidence_in_prompt",
+    "required_external_clause_in_topk",
+    "K2_web_hash_equals_K3_web_hash",
+    "prompt_gold_leakage_zero",
+    "unresolved_pending_audit_zero",
+    "runnable_from_clean_checkout"
+  ],
+  "smoke_test": {
+    "n_questions": 3,
+    "stratification": "easy/mid/hard",
+    "conditions": [
+      "K1",
+      "K2",
+      "K3"
+    ]
+  }
+}
