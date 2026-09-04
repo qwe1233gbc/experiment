@@ -1,2 +1,10 @@
-// 检索query（从题干、任务类型、污染物/工艺、标准名称生成，不含金标答案倒推）
-// 状态: PENDING_RETRIEVAL
+{
+  "question_id": "PL013_HazardousWaste_Q01",
+  "query": "请根据项目原辅材料、设备维护、废气治理设施及固体废物清单，判断危险废物识别是否完整，危废类别和代码是否与产生环节相匹配。 任务类型：危险废物识别 危险废物 危废名录 危废代码 HW类别",
+  "query_provenance": [
+    "question_text (first 300 chars)",
+    "task_type (from question metadata)",
+    "question_id keyword hint: 危险废物识别"
+  ],
+  "gold_leakage_check": "PASSED (query built from question text + task type + domain keywords only; no gold verdict/answer leaked)"
+}

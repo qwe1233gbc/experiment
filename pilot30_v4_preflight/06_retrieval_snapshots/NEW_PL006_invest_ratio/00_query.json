@@ -1,0 +1,8 @@
+{
+  "question_id": "NEW_PL006_invest_ratio",
+  "query": "N/A（REPORT_ONLY_CONTROL题不需要RAG检索）",
+  "query_provenance": [
+    "REPORT_ONLY_CONTROL: no RAG needed"
+  ],
+  "abstained": true
+}

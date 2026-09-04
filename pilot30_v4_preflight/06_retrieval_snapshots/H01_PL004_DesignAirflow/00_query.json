@@ -1,2 +1,10 @@
-// 检索query（从题干、任务类型、污染物/工艺、标准名称生成，不含金标答案倒推）
-// 状态: PENDING_RETRIEVAL
+{
+  "question_id": "H01_PL004_DesignAirflow",
+  "query": "根据报告中集气罩设计参数（形状、尺寸、控制风速、数量），采用控制风速法复核设计风量是否满足规范要求。 任务类型：设计风量复算（集气罩公式法） 设计风量 集气罩 控制风速 排气量计算",
+  "query_provenance": [
+    "question_text (first 300 chars)",
+    "task_type (from question metadata)",
+    "question_id keyword hint: 设计风量复算（集气罩公式法）"
+  ],
+  "gold_leakage_check": "PASSED (query built from question text + task type + domain keywords only; no gold verdict/answer leaked)"
+}

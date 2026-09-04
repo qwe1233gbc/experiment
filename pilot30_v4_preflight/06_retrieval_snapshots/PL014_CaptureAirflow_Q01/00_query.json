@@ -1,2 +1,10 @@
-// 检索query（从题干、任务类型、污染物/工艺、标准名称生成，不含金标答案倒推）
-// 状态: PENDING_RETRIEVAL
+{
+  "question_id": "PL014_CaptureAirflow_Q01",
+  "query": "请根据废气产生工序、收集方式、集气罩尺寸、污染源至罩口距离、控制风速和收集点数量，判断废气收集形式及理论排气量核算是否合理。 任务类型：废气收集形式与理论排气量 废气收集形式 理论排气量 集气罩 风量",
+  "query_provenance": [
+    "question_text (first 300 chars)",
+    "task_type (from question metadata)",
+    "question_id keyword hint: 废气收集形式与理论排气量"
+  ],
+  "gold_leakage_check": "PASSED (query built from question text + task type + domain keywords only; no gold verdict/answer leaked)"
+}

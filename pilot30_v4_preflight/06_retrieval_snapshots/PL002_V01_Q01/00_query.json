@@ -1,2 +1,10 @@
-// 检索query（从题干、任务类型、污染物/工艺、标准名称生成，不含金标答案倒推）
-// 状态: PENDING_RETRIEVAL
+{
+  "question_id": "PL002_V01_Q01",
+  "query": "请结合项目产品、原辅材料和生产工艺，判断该报告是否适合作为塑胶行业种子问答样本，并判断行业类别是否基本合理。 任务类型：国民经济行业分类",
+  "query_provenance": [
+    "question_text (first 300 chars)",
+    "task_type (from question metadata)",
+    "question_id keyword hint: 国民经济行业分类"
+  ],
+  "gold_leakage_check": "PASSED (query built from question text + task type + domain keywords only; no gold verdict/answer leaked)"
+}

@@ -1,2 +1,10 @@
-// 检索query（从题干、任务类型、污染物/工艺、标准名称生成，不含金标答案倒推）
-// 状态: PENDING_RETRIEVAL
+{
+  "question_id": "H03_PL004_HWClassify_OilBarrel",
+  "query": "报告中将沾染矿物油的废机油桶归类为危险废物，判断其危废类别（HW代码）和危险特性归类是否准确。 任务类型：危废归类判定（废油桶 HW08 vs HW49） 危险废物归类 危废代码 HW08 HW49",
+  "query_provenance": [
+    "question_text (first 300 chars)",
+    "task_type (from question metadata)",
+    "question_id keyword hint: 危废归类判定（废油桶 HW08 vs HW49）"
+  ],
+  "gold_leakage_check": "PASSED (query built from question text + task type + domain keywords only; no gold verdict/answer leaked)"
+}
