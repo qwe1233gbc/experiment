@@ -33,7 +33,7 @@
 ```
 K1 = 报告上下文（最小充分证据包）
 K2 = K1 + 冻结 Web 搜索 Top-K（同一份 Web 证据）
-K3 = K2 同一 Web 证据 + 冻结领域 RAG Top-K
+K3 = K2 同一 Web 证据 + 冻结领域 RAG Top-K（REPORT_ONLY_CONTROL题允许rag_items=[]并记录retrieval_abstained=true）
 ```
 
 - K3 **必须复用** K2 的完全相同的 Web 证据（同一快照、同一顺序）
@@ -44,8 +44,9 @@ K3 = K2 同一 Web 证据 + 冻结领域 RAG Top-K
 
 ### 2.3 题集
 
-- **正式题数：23 题**（H04、H05 因证据不足暂缓，不进入 run_matrix）
-- EP 分布：E1P0 × 12，E1P1 × 11
+- **正式题数：23 题**（H04、H05 暂缓）
+- **分析角色**：RAG_PRIMARY × 14（需要外部知识的主效应题），REPORT_ONLY_CONTROL × 9（纯报告内计算/核查题，RAG 应拒答）
+- EP 分布：E0P0 × 4，E0P1 × 5，E1P0 × 6，E1P1 × 8
 - 金标分布：CORRECT × 8，PARTIALLY_CORRECT × 7，INCORRECT × 8
 - 难度结构目标：易 30% / 中 40% / 难 30%（待实验后实际校准）
 

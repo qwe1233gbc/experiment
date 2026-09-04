@@ -1,0 +1,14 @@
+﻿task_type,question_id,task,current_status,input_file,output
+GOLD_PASSAGE_VERIFY,PL001_Emission_固体,从 5 条候选中确认哪条（或是否有）是gold passage,CANDIDATES_EXTRACTED_AWAITING_HUMAN,qa_rag_gold_passages_candidates.jsonl,标记 is_gold_passage=true/false + human_reviewer + review_date
+GOLD_PASSAGE_VERIFY,PL002_V01_Q01,从 5 条候选中确认哪条（或是否有）是gold passage,CANDIDATES_EXTRACTED_AWAITING_HUMAN,qa_rag_gold_passages_candidates.jsonl,标记 is_gold_passage=true/false + human_reviewer + review_date
+GOLD_PASSAGE_VERIFY,PL004_V01_Q01,从 5 条候选中确认哪条（或是否有）是gold passage,CANDIDATES_EXTRACTED_AWAITING_HUMAN,qa_rag_gold_passages_candidates.jsonl,标记 is_gold_passage=true/false + human_reviewer + review_date
+GOLD_PASSAGE_VERIFY,PL005_Emission_固体,从 5 条候选中确认哪条（或是否有）是gold passage,CANDIDATES_EXTRACTED_AWAITING_HUMAN,qa_rag_gold_passages_candidates.jsonl,标记 is_gold_passage=true/false + human_reviewer + review_date
+GOLD_PASSAGE_VERIFY,PL007_CaptureEfficiency_Q01,从 4 条候选中确认哪条（或是否有）是gold passage,CANDIDATES_EXTRACTED_AWAITING_HUMAN,qa_rag_gold_passages_candidates.jsonl,标记 is_gold_passage=true/false + human_reviewer + review_date
+GOLD_PASSAGE_VERIFY,PL008_DesignAirflow_Q01,从 2 条候选中确认哪条（或是否有）是gold passage,CANDIDATES_EXTRACTED_AWAITING_HUMAN,qa_rag_gold_passages_candidates.jsonl,标记 is_gold_passage=true/false + human_reviewer + review_date
+GOLD_PASSAGE_VERIFY,PL013_HazardousWaste_Q01,从 6 条候选中确认哪条（或是否有）是gold passage,CANDIDATES_EXTRACTED_AWAITING_HUMAN,qa_rag_gold_passages_candidates.jsonl,标记 is_gold_passage=true/false + human_reviewer + review_date
+GOLD_PASSAGE_VERIFY,PL014_CaptureAirflow_Q01,从 3 条候选中确认哪条（或是否有）是gold passage,CANDIDATES_EXTRACTED_AWAITING_HUMAN,qa_rag_gold_passages_candidates.jsonl,标记 is_gold_passage=true/false + human_reviewer + review_date
+SOURCE_VERIFY_AND_ADD,PL007_CaptureEfficiency_Q01,找到官方原文并核对版本/适用边界，更新 source_registry,DERIVED_CARD_ONLY,source_registry_v2_candidate.csv,review_status=HUMAN_VERIFIED + official_url + original_sha256
+SOURCE_VERIFY_AND_ADD,PL008_DesignAirflow_Q01,找到官方原文并核对版本/适用边界，更新 source_registry,DERIVED_CARD_ONLY,source_registry_v2_candidate.csv,review_status=HUMAN_VERIFIED + official_url + original_sha256
+SOURCE_VERIFY_AND_ADD,PL014_CaptureAirflow_Q01,找到官方原文并核对版本/适用边界，更新 source_registry,DERIVED_CARD_ONLY,source_registry_v2_candidate.csv,review_status=HUMAN_VERIFIED + official_url + original_sha256
+SOURCE_VERIFY_AND_ADD,H01_PL004_DesignAirflow,找到官方原文并核对版本/适用边界，更新 source_registry,DERIVED_CARD_ONLY,source_registry_v2_candidate.csv,review_status=HUMAN_VERIFIED + official_url + original_sha256
+KB_CONTENT_ADD,H06_PL010_VOCsTotalSubstitution,确认报告日期和属地后，补充适用的法规/政策官方原文,KB_CONTENT_MISSING,source_registry_v2_candidate.csv,新增来源 + review_status=HUMAN_VERIFIED
