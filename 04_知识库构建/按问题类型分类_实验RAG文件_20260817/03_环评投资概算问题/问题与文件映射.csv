@@ -1,0 +1,2 @@
+﻿"category","question_id","project_id","question","skill_id","core_answer_sources","actual_top5_sources"
+"环评投资概算","PL003_V01_Q03","PL003","请根据报告中的总投资、环保投资和环保工程投资明细，判断环保投资核算是否前后一致、比例是否正确。","calculate-eia-environmental-investment-ratio","#2_环评投资核算指南.md","#2_环评投资核算指南.md；HJ_884-2018.md；DB44_26-2001.md；EVID_HW_LIST_2025.md；plastic_rubber_industry_classification_checked.md"

@@ -1,0 +1,36 @@
+{
+  "status": "complete",
+  "generated_at": "2026-08-12T08:07:20.189867+00:00",
+  "source_count": 70,
+  "parent_count": 398,
+  "child_count": 3433,
+  "embedding_model": "text-embedding-v4",
+  "embedding_dimensions": 1024,
+  "dense_index": "FAISS IndexFlatIP over L2-normalized vectors (cosine similarity)",
+  "sparse_index": "BM25 postings (Chinese unigram/bigram + ASCII tokens)",
+  "retrieval_flow": "dense + BM25 child recall -> parent_id context expansion -> optional reranking",
+  "files": {
+    "child_embeddings_l2_normalized.npy": {
+      "sha256": "c96b4ddc1f6a723f7d8a4c99ee0cf0ed9549c0b1edf4f17e1d44df106208a658",
+      "bytes": 14061696
+    },
+    "child_cosine_flat.index": {
+      "sha256": "65201ceba9a23b1852044cc6e06ea86792b9b3a0977412fafbcbb6117f3d4667",
+      "bytes": 14061613
+    },
+    "child_metadata.jsonl": {
+      "sha256": "5cbb17e910d7b49d5733e470bca88d5387f0c010ce3c258cc190ed824bff7d65",
+      "bytes": 6287495
+    },
+    "parent_contexts.jsonl": {
+      "sha256": "bde28e505a52f7ad8040b02753aece5f9e6d93446874b4a830ed6f4fe88d578c",
+      "bytes": 4442059
+    },
+    "bm25_index.json": {
+      "sha256": "ebcbd15aef98a94addf64567a196dbe9e5e4edcbc1c0110c99f7f149c77e9550",
+      "bytes": 56719591
+    }
+  },
+  "bm25_terms": 98798,
+  "bm25_average_document_length": 676.0113603262453
+}

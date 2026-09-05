@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skill执行异常根因分析</title>
+<style>
+:root {
+  --bg: #f7f8fa;
+  --surface: #ffffff;
+  --border: #e5e7eb;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --caption: #9ca3af;
+  --brand: #7c3aed;
+  --brand-bg: #f5f3ff;
+  --green: #10b981;
+  --green-bg: rgba(16,185,129,0.1);
+  --red: #ef4444;
+  --red-bg: rgba(239,68,68,0.1);
+  --amber: #f59e0b;
+  --amber-bg: rgba(245,158,11,0.1);
+  --blue: #6366f1;
+  --blue-bg: rgba(99,102,241,0.1);
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Microsoft YaHei', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; padding: 20px; max-width: 1200px; margin: 0 auto; }
+h1 { font-size: 22px; margin-bottom: 4px; }
+.subtitle { color: var(--muted); font-size: 14px; margin-bottom: 24px; }
+h2 { font-size: 18px; margin: 28px 0 12px; padding-bottom: 8px; border-bottom: 2px solid var(--brand); }
+h3 { font-size: 15px; margin: 18px 0 8px; color: var(--brand); }
+
+/* 异常卡片 */
+.anomaly-card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 16px; margin-bottom: 16px; border-left: 4px solid var(--red); }
+.anomaly-card.f2 { border-left-color: var(--amber); }
+.anomaly-card.f3 { border-left-color: var(--blue); }
+.anomaly-card.f4 { border-left-color: var(--green); }
+.anomaly-card.f5 { border-left-color: var(--brand); }
+.anomaly-card .a-header { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+.anomaly-card .a-num { background: var(--red-bg); color: var(--red); font-size: 12px; font-weight: 700; padding: 2px 8px; border-radius: 4px; }
+.anomaly-card.f2 .a-num { background: var(--amber-bg); color: var(--amber); }
+.anomaly-card.f3 .a-num { background: var(--blue-bg); color: var(--blue); }
+.anomaly-card.f4 .a-num { background: var(--green-bg); color: var(--green); }
+.anomaly-card.f5 .a-num { background: var(--brand-bg); color: var(--brand); }
+.anomaly-card .a-title { font-size: 15px; font-weight: 600; }
+.anomaly-card .a-body { font-size: 13px; color: var(--text); margin-bottom: 8px; }
+.anomaly-card .a-body strong { color: var(--text); }
+.anomaly-card .a-evidence { background: var(--bg); border-radius: 6px; padding: 10px; font-size: 12px; color: var(--muted); margin-top: 8px; }
+.anomaly-card .a-evidence code { background: var(--surface); padding: 1px 4px; border-radius: 3px; font-size: 11px; color: var(--brand); }
+.anomaly-card .a-fix { background: var(--green-bg); border-radius: 6px; padding: 8px 10px; font-size: 12px; margin-top: 8px; color: var(--green); }
+.anomaly-card .a-fix strong { color: #047857; }
+
+/* 表格 */
+table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 13px; background: var(--surface); border-radius: 8px; overflow: hidden; border: 1px solid var(--border); }
+th { background: var(--bg); padding: 8px 10px; text-align: left; font-weight: 600; color: var(--muted); font-size: 12px; }
+td { padding: 6px 10px; border-top: 1px solid var(--border); vertical-align: top; }
+tr:hover td { background: var(--bg); }
+
+/* 对比块 */
+.compare-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 12px 0; }
+.compare-block { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 12px; }
+.compare-block.c { border-top: 3px solid var(--red); }
+.compare-block.d { border-top: 3px solid var(--green); }
+.compare-block .c-label { font-size: 12px; font-weight: 700; margin-bottom: 6px; }
+.compare-block.c .c-label { color: var(--red); }
+.compare-block.d .c-label { color: var(--green); }
+.compare-block .c-content { font-size: 12px; color: var(--muted); }
+.compare-block .c-content code { background: var(--bg); padding: 1px 4px; border-radius: 3px; font-size: 11px; }
+
+/* prompt结构 */
+.prompt-flow { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 14px; margin: 12px 0; }
+.prompt-flow .p-step { display: flex; gap: 8px; padding: 6px 0; border-bottom: 1px dashed var(--border); font-size: 13px; }
+.prompt-flow .p-step:last-child { border-bottom: none; }
+.prompt-flow .p-num { width: 20px; height: 20px; background: var(--brand); color: white; border-radius: 50%; font-size: 11px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.prompt-flow .p-text { flex: 1; }
+.prompt-flow .p-text strong { color: var(--brand); }
+.prompt-flow .p-note { font-size: 11px; color: var(--red); margin-top: 2px; }
+
+/* 结论 */
+.conclusion { background: var(--brand-bg); border-radius: 8px; padding: 16px; margin-top: 20px; }
+.conclusion h3 { color: var(--brand); margin-top: 0; }
+.conclusion p { font-size: 14px; color: var(--text); margin-bottom: 8px; }
+
+/* 流程图 */
+.flow-diagram { display: flex; align-items: center; gap: 4px; flex-wrap: wrap; margin: 12px 0; }
+.flow-node { padding: 6px 12px; border-radius: 6px; font-size: 12px; font-weight: 600; }
+.flow-node.skill { background: var(--brand-bg); color: var(--brand); border: 1px solid var(--brand); }
+.flow-node.model { background: var(--blue-bg); color: var(--blue); border: 1px solid var(--blue); }
+.flow-node.output { background: var(--green-bg); color: var(--green); border: 1px solid var(--green); }
+.flow-node.eval { background: var(--red-bg); color: var(--red); border: 1px solid var(--red); }
+.flow-node.blocked { background: var(--amber-bg); color: var(--amber); border: 1px solid var(--amber); text-decoration: line-through; }
+.flow-arrow { color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+
+<h1>Skill执行异常根因分析</h1>
+<div class="subtitle">skill_package 目录 × Qwen3.8-Max × 21题C组 | 5类异常 × 证据链 × 修复方向</div>
+
+<h2>一、执行架构：Skill如何传递给模型</h2>
+
+<div class="prompt-flow">
+  <div class="p-step"><div class="p-num">1</div><div class="p-text"><strong>报告上下文</strong>：从JSON文件提取报告原文（含【JSON位置】标记），作为prompt前半部分</div></div>
+  <div class="p-step"><div class="p-num">2</div><div class="p-text"><strong>Skill路由</strong>：根据routing_manifest.csv匹配skill_id，读取对应SKILL.md全文</div></div>
+  <div class="p-step"><div class="p-num">3</div><div class="p-text"><strong>Prompt拼接</strong>：报告原文 + 【审核Skill】标记 + SKILL.md全文 + output_schema.json模板 + 末尾指令</div></div>
+  <div class="p-step"><div class="p-num">4</div><div class="p-text"><strong>末尾指令</strong>："请完成报告内部审核。缺少RAG时不得整题拒答，只将外部规范核验标记为not_performed。"</div></div>
+  <div class="p-step"><div class="p-num">5</div><div class="p-text"><strong>API调用</strong>：发送到Qwen3.8-Max的/v1/responses端点，reasoning.effort=low</div></div>
+  <div class="p-step"><div class="p-num">6</div><div class="p-text"><strong>输出解析</strong>：模型返回JSON，脚本解析后存入parsed_outputs/C/</div></div>
+</div>
+
+<div class="flow-diagram">
+  <div class="flow-node skill">SKILL.md (纯文本)</div>
+  <span class="flow-arrow">→</span>
+  <div class="flow-node model">Qwen3.8-Max</div>
+  <span class="flow-arrow">→</span>
+  <div class="flow-node blocked">scripts/*.py (不可执行)</div>
+  <span class="flow-arrow">→</span>
+  <div class="flow-node blocked">references/*.xlsx (不可读取)</div>
+  <span class="flow-arrow">→</span>
+  <div class="flow-node output">JSON输出</div>
+  <span class="flow-arrow">→</span>
+  <div class="flow-node eval">评审大模型打分</div>
+</div>
+
+<p style="font-size:13px;color:var(--red);margin-top:8px"><strong>关键发现</strong>：Skill以纯文本形式嵌入prompt，模型无法执行Python脚本或读取Excel参考文件。Skill 01内嵌的分类注释Excel和搜索脚本完全未被使用。</p>
+
+<h2>二、5类执行异常的根因分析</h2>
+
+<!-- 异常1 -->
+<div class="anomaly-card">
+  <div class="a-header">
+    <span class="a-num">异常1</span>
+    <span class="a-title">禁止规则导致"部分完成"评级困境（影响8/21题）</span>
+  </div>
+  <div class="a-body">
+    <p><strong>异常表现</strong>：8道题的模型输出 <code>judgement="部分完成"</code>，评审大模型给35分。而D组同样的内部审核结果但 <code>judgement="正确"</code>，得分90-100。</p>
+    <p><strong>根因链</strong>：</p>
+    <p>Skill 07 §9禁止事项明确规定："不使用模型参数记忆补充限值；不把报告自己引用的标准视为已经被外部验证" → 无RAG时 <code>external_validation_result.status="not_performed"</code> → Skill §8结论规则要求输出"部分完成：报告内部一致，外部适用性未核验" → 评审大模型将"部分完成"等同于"无法判断"，结论正确性维度直接给最低分。</p>
+    <p>模型实际已完成完整的内部审核（路径一致性、标准混用检查、数值核验），但因禁止规则被迫降级为"部分完成"。</p>
+  </div>
+  <div class="a-evidence">
+    <strong>证据 — PL004_Emission_水污（C组 vs D组对比）</strong><br><br>
+    <strong>C组输出</strong>：<code>judgement="部分完成"</code>，内部审核完整通过（3项check全pass），外部审核 <code>not_performed</code>，得分 <strong style="color:var(--red)">35分</strong><br>
+    <strong>D组输出</strong>：<code>judgement="正确"</code>，内部审核结果几乎相同（3项check 2pass+1uncertain），外部审核 <code>verified</code>，得分 <strong style="color:var(--green)">100分</strong><br><br>
+    <strong>关键</strong>：D组的RAG并未提供具体限值表（"具体限值表未在RAG中提供，无法逐项核验数值"），仅确认了标准适用范围。但 <code>status="verified"</code> 允许模型输出"正确"，评审给满分。
+  </div>
+  <div class="a-fix">
+    <strong>修复方向</strong>：将 §9禁止规则从"不使用模型参数记忆补充限值"改为"可用参数知识做初步判断，但必须标注<code>confidence=unverified</code>；不得将参数知识作为最终结论"。允许模型在无RAG时输出"正确（内部已核验，外部限值待复核）"而非"部分完成"。
+  </div>
+</div>
+
+<!-- 异常2 -->
+<div class="anomaly-card f2">
+  <div class="a-header">
+    <span class="a-num">异常2</span>
+    <span class="a-title">框架不支持工具调用，内嵌参考完全失效（影响4/21题）</span>
+  </div>
+  <div class="a-body">
+    <p><strong>异常表现</strong>：Skill 01的目录下有 <code>references/2017国民经济行业分类注释.xlsx</code>（1MB）和 <code>scripts/search_industry_classification.py</code>，但模型从未使用它们。</p>
+    <p><strong>根因</strong>：实验框架将SKILL.md作为纯文本拼接到prompt中，模型没有function calling能力。Skill 01 §4审核流程明确要求"使用内置检索脚本查询分类注释"，但模型无法执行Python脚本，也无法读取Excel文件。</p>
+    <p>Skill 01的 <code>reference_mode: "embedded_verified_classification"</code> 声明了内嵌参考已验证，但框架不读取此字段。4道行业分类题全部输出 <code>external_validation_result.status="not_performed"</code>，尽管参考文件就在同目录下。</p>
+  </div>
+  <div class="a-evidence">
+    <strong>证据 — Skill 01 SKILL.md §4</strong>：<br>
+    <code>3. 使用内置检索脚本查询分类注释：<br>
+    &nbsp;&nbsp;- 按代码：python scripts/search_industry_classification.py --code C2929<br>
+    &nbsp;&nbsp;- 按关键词：python scripts/search_industry_classification.py --keyword 塑料薄膜</code><br><br>
+    <strong>实际prompt</strong>：SKILL.md全文以文本形式嵌入，上述代码只是文字说明，模型无法调用。<br><br>
+    <strong>对比</strong>：PL002_V01_Q01和PL003_V01_Q01因报告内部产品信息明确（如"塑料制品"），模型仅靠内部审核就得100分。PL004_V01_Q01因产品"改性SEBS塑料"分类存在歧义（可能C2929或C2919），模型无法查Excel确认，判"正确"但金标可能不同，得35分。
+  </div>
+  <div class="a-fix">
+    <strong>修复方向</strong>：(1) 在框架层增加function calling支持，让模型能调用脚本；(2) 或在prepare阶段预执行脚本，将结果作为文本注入prompt；(3) 或将Excel关键行直接转为文本嵌入SKILL.md的references段落。
+  </div>
+</div>
+
+<!-- 异常3 -->
+<div class="anomaly-card f3">
+  <div class="a-header">
+    <span class="a-num">异常3</span>
+    <span class="a-title">模型发现真实问题但评分仍低（影响3/21题）</span>
+  </div>
+  <div class="a-body">
+    <p><strong>异常表现</strong>：模型在内部审核中发现了真实的报告错误，输出 <code>judgement="存在问题"</code>，但评审仍给35分。</p>
+    <p><strong>根因</strong>：评审大模型的金标可能期望发现不同的问题，或者评审量规将"外部审核未执行"作为硬性扣分项，即使内部审核已发现真实问题。Skill的"双层结论"设计在评审时未被分开评分——评审只看 <code>final_answer.judgement</code>，不看 <code>report_internal_result</code> 的质量。</p>
+  </div>
+  <div class="a-evidence">
+    <strong>证据1 — PL002_Emission_大气（C组得分35）</strong>：<br>
+    模型发现：表4-7监测计划非甲烷总烃限值写为100mg/m³，与表3-3的60mg/m³（GB31572表5特别排放限值）矛盾。这是真实错误。<br>
+    输出：<code>judgement="存在问题"</code>，issues列出2项。外部审核 <code>not_performed</code>。<br>
+    评审仍给35分——可能因为评审金标认为主要问题是标准适用性而非限值不一致。<br><br>
+    <strong>证据2 — PL002_EnvQuality_Q01（C组得分35）</strong>：<br>
+    模型发现：表3-1标题"2022年"但数据列为2020/2021（年份错配）；PM10和PM2.5下降但变化率标正值（符号错误）。这些都是真实问题。<br>
+    输出：<code>judgement="部分完成"</code>，manual_review_needed=true。评审给35分。<br><br>
+    <strong>核心矛盾</strong>：模型在无RAG时实际比D组更能发现问题（D组可能因有RAG而专注于外部核验，忽略了内部不一致）。
+  </div>
+  <div class="a-fix">
+    <strong>修复方向</strong>：(1) 在评审量规中增加"内部审核发现率"维度，独立于外部审核评分；(2) 或将评审拆分为"内部审核质量分"和"外部审核完整度分"两个独立指标。
+  </div>
+</div>
+
+<!-- 异常4 -->
+<div class="anomaly-card f4">
+  <div class="a-header">
+    <span class="a-num">异常4</span>
+    <span class="a-title">D组RAG质量不足以核验限值，但评分远高于C组（系统性偏差）</span>
+  </div>
+  <div class="a-body">
+    <p><strong>异常表现</strong>：D组的RAG在多数题目中只提供了标准的适用范围确认，未提供具体限值表。但D组因 <code>status="verified"</code> 而输出"正确"，得分远高于C组。</p>
+    <p><strong>根因</strong>：Skill §3双层结论的设计中，<code>external_validation_result.status</code> 只有4个值：<code>verified</code>、<code>not_required</code>、<code>not_performed</code>、<code>insufficient_reference</code>。D组只要RAG中有任何相关内容，模型就倾向标 <code>verified</code>。但实际上D组多数题目的RAG核验是不充分的（"具体限值表未在RAG中提供"）。</p>
+  </div>
+  <div class="a-evidence">
+    <strong>证据 — PL004_Emission_水污 D组输出</strong>：<br>
+    <code>external_validation_result.status = "verified"</code><br>
+    conclusion: "冻结RAG确认：(1)DB44/26-2001适用于广东省；(2)GB18918-2002适用于城镇污水处理厂；(3)GB/T18920-2020冲厕限值与报告一致。"<strong>但</strong>："具体限值表（DB44/26-2001各时段数值、GB18918-2002一级A数值）未在RAG中提供，无法逐项核验数值。"<br><br>
+    即：D组只验证了"标准适用"而非"限值正确"，但因 <code>status="verified"</code> → <code>judgement="正确"</code> → 得100分。<br>
+    C组内部审核同样通过，但 <code>status="not_performed"</code> → <code>judgement="部分完成"</code> → 得35分。<br><br>
+    <strong>分差来源</strong>：不是审核质量差异，而是 <code>status</code> 字段值的评级权重差异。<code>verified</code> vs <code>not_performed</code> → 100分 vs 35分，但实际审核深度差异很小。
+  </div>
+  <div class="a-fix">
+    <strong>修复方向</strong>：(1) 增加 <code>status="partially_verified"</code>（适用性已确认但限值未核验）；(2) 或将 <code>verified</code> 细分为 <code>scope_verified</code> 和 <code>limit_verified</code>；(3) 评审量规应根据 <code>missing_references</code> 的内容动态调整外部审核分。
+  </div>
+</div>
+
+<!-- 异常5 -->
+<div class="anomaly-card f5">
+  <div class="a-header">
+    <span class="a-num">异常5</span>
+    <span class="a-title">模型知识局限性导致错误结论（影响1-2/21题）</span>
+  </div>
+  <div class="a-body">
+    <p><strong>异常表现</strong>：模型输出 <code>judgement="正确"</code>，但评审给35分，说明金标认为结论错误。这不是Skill设计问题，而是模型本身的知识局限性。</p>
+    <p><strong>根因</strong>：Qwen3.8-Max在环评专业领域的知识存在盲区。对于"改性SEBS塑料"这类边界产品，模型可能无法准确区分C2929（其他塑料制品）和C2919（橡胶制品）或C2651（初级形态塑料）。Skill的禁止规则"不使用模型参数记忆"本意是防止幻觉，但也阻止了模型利用已有知识做合理推断。</p>
+  </div>
+  <div class="a-evidence">
+    <strong>证据 — PL004_V01_Q01（C组）</strong>：<br>
+    模型判断：产品"改性SEBS塑料"→C2929其他塑料制品制造，<code>judgement="正确"</code><br>
+    评审得分：35分（金标可能认为应为C2919或其他类别）<br><br>
+    <strong>矛盾点</strong>：Skill 01 §7禁止"仅按原料关键词直接定类"，模型确实做了工艺分析（挤出→切粒→塑料加工），但如果分类注释原文（Excel）中有排除项，模型无法看到，导致误判。
+  </div>
+  <div class="a-fix">
+    <strong>修复方向</strong>：(1) 将Excel分类注释的关键排除项以文本形式嵌入SKILL.md；(2) 对边界产品（SEBS、TPU等热塑性弹性体）增加专门判断规则；(3) 允许模型标注"可能分类"并列出候选，而非强制选择一个。
+  </div>
+</div>
+
+<h2>三、异常影响范围汇总</h2>
+
+<table>
+  <tr>
+    <th>异常类型</th>
+    <th>影响题数</th>
+    <th>根因层级</th>
+    <th>涉及Skill</th>
+    <th>修复难度</th>
+  </tr>
+  <tr>
+    <td><strong>异常1</strong> 禁止规则导致"部分完成"</td>
+    <td>8题</td>
+    <td>Skill设计</td>
+    <td>07 (主要), 05</td>
+    <td style="color:var(--green)">低 — 改SKILL.md §9措辞</td>
+  </tr>
+  <tr>
+    <td><strong>异常2</strong> 内嵌参考未调用</td>
+    <td>4题</td>
+    <td>框架限制</td>
+    <td>01</td>
+    <td style="color:var(--amber)">中 — 需框架改造或预处理</td>
+  </tr>
+  <tr>
+    <td><strong>异常3</strong> 发现真实问题但低分</td>
+    <td>3题</td>
+    <td>评审量规</td>
+    <td>07, 05</td>
+    <td style="color:var(--red)">高 — 需改评审标准</td>
+  </tr>
+  <tr>
+    <td><strong>异常4</strong> D组RAG虚高</td>
+    <td>系统性</td>
+    <td>Skill设计+评审</td>
+    <td>07 (主要)</td>
+    <td style="color:var(--amber)">中 — 增加 status 细分</td>
+  </tr>
+  <tr>
+    <td><strong>异常5</strong> 模型知识局限</td>
+    <td>1-2题</td>
+    <td>模型能力</td>
+    <td>01</td>
+    <td style="color:var(--amber)">中 — 嵌入排除项文本</td>
+  </tr>
+</table>
+
+<h2>四、Skill设计层面的结构性问题</h2>
+
+<h3>问题A：双层结论与评审量规的错配</h3>
+<p style="font-size:14px;margin-bottom:8px">Skill设计了 <code>report_internal_result</code> + <code>external_validation_result</code> + <code>final_answer</code> 三层输出，意图是即使外部审核未完成也保留内部审核价值。但评审大模型只看 <code>final_answer.judgement</code> 一个字段，"部分完成"被当作低质量输出。双层结论的设计目标（保留部分价值）在评审环节完全落空。</p>
+
+<h3>问题B：禁止事项过于绝对</h3>
+<p style="font-size:14px;margin-bottom:8px">Skill 07 §9的5条禁止事项中，"不使用模型参数记忆补充限值"是最致命的。Qwen3.8-Max在预训练中见过大量中国环保标准文本，本可以提供合理的初步限值判断。但禁止规则迫使模型在无RAG时放弃回答，转而输出"部分完成"。对比A组（无Skill约束），模型自由使用参数知识，即使不完美也得了较高分。</p>
+
+<h3>问题C：支持模块形同虚设</h3>
+<p style="font-size:14px;margin-bottom:8px"><code>retrieve-eia-discharge-standard-knowledge</code> 支持模块设计为"将正式标准整理为结构化知识并检索"，但在C组（无RAG）实验中完全不可用。Skill 07 §2输入字段 <code>reference_bundle</code> 为空时，支持模块无输入可处理。README明确说"环境质量和排放标准Skill可以读取用户提供的正式参考资料包"，但C组实验定义就是不提供资料包——这是设计意图与实验设定的矛盾。</p>
+
+<h3>问题D：output_schema的枚举值不够细致</h3>
+<p style="font-size:14px;margin-bottom:8px"><code>external_validation_result.status</code> 只有4个枚举值，无法表达"标准适用性已确认但限值未核验"这种中间状态。模型在D组中被迫二选一：<code>verified</code>（已验证）或 <code>insufficient_reference</code>（参考不足），而实际情况是"部分验证"。这导致D组的 <code>verified</code> 含水量很高。</p>
+
+<div class="conclusion">
+  <h3>核心结论</h3>
+  <p><strong>1. 最大异常源是Skill 07 §9的禁止规则</strong>："不使用模型参数记忆补充限值"直接导致8/21题被判"部分完成"，评分35分。这是Skill设计层面的问题，修改SKILL.md一句话即可显著改善。</p>
+  <p><strong>2. 框架不支持工具调用是第二大异常源</strong>：Skill 01的Excel和Python脚本完全未被使用，4道行业分类题的内嵌参考失效。需要框架层改造或在prepare阶段预处理。</p>
+  <p><strong>3. 评审量规与Skill双层设计不匹配是系统性偏差</strong>：评审只看 <code>final_answer.judgement</code>，不看内部审核质量。导致"发现真实问题"的输出和"什么都没发现"的输出得分一样低。</p>
+  <p><strong>4. D组RAG虚高是对照设计问题</strong>：D组RAG多数只确认标准适用范围，未提供限值表，但因 <code>status="verified"</code> 而得满分。C-D分差（平均-40.4分）被高估。</p>
+  <p><strong>5. 改进优先级</strong>：①修改禁止规则措辞（最低成本最高收益）→ ②增加status枚举值 → ③预处理嵌入Skill 01参考 → ④调整评审量规增加内部审核维度。</p>
+</div>
+
+</body>
+</html>

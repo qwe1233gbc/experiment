@@ -1,0 +1,130 @@
+== PL006_ActivatedCarbon_Q01  nhits=5  unique_parent=5
+  rank=1 score=0.37358067692761043 source_id=SRC068 child_id=SRC068_P0008_C001 parent_id=SRC068_P0008 file=三线一单_顺德管控单元_完整.json
+    content: 禁止类】严格生产空间和生活空间管控，工业企业原则上禁止选址生活空间，生产空间原则上禁止建设居民住宅等敏感建筑。 |",  "| |1-4.【产业/综合类】园区工业用地或企业与村庄、学校等环境敏感点之间的区域应合理设置控制开发区域（产业控制带），产业控制带内优先引进无污染 |",  "| |的生产性服务业，或可适当布置废
+  rank=2 score=0.3351624949489319 source_id=SRC070 child_id=SRC070_P0005_C005 parent_id=SRC070_P0005 file=三线一单_顺德管控单元准入清单.md
+    content: 区规划环评及批  - 复（审查意见）禁止引进项目。  - 1-3.【产业/禁止类】严格生产空间和生活空间管控，工业企业原则上禁止选址生活空间，生产空间原则上禁止建设居民住宅等敏感建筑。  - 1-4.【产业/综合类】园区工业用地或企业与村庄、学校等环境敏感点之间的区域应合理设置控制开发区域（产业控制带），产业控制带内优
+  rank=3 score=0.3053685946411602 source_id=SRC069 child_id=SRC069_P0008_C002 parent_id=SRC069_P0008 file=三线一单_顺德管控单元准入清单.json
+    content: 污染物、持久性有机污染物的项目，不得引进园区规划环评及批 |",  "| |复（审查意见）禁止引进项目。 |",  "| |1-3.【产业/禁止类】严格生产空间和生活空间管控，工业企业原则上禁止选址生活空间，生产空间原则上禁止建设居民住宅等敏感建筑。 |",  "| |1-4.【产业/综合类】园区工业用地或企业与村庄、
+  rank=4 score=0.2727062261142525 source_id=SRC066 child_id=SRC066_P0003_C002 parent_id=SRC066_P0003 file=三线一单_全部管控单元表格.json
+    content: 址生活空间，生产空间原则上禁止建设居民住宅等敏感建筑。 |",  "| |1-5.【产业/综合类】园区工业用地或企业与村庄、学校等环境敏感点之间的区域应合理设置控制开发区域（产业控制带），产业控制带内优先引进无污染的生产性服务业|",  "| |，或可适当布置废气排放量小、工业噪声影响小的产业。 |",  "| |1-
+  rank=5 score=0.2375608674877001 source_id=SRC021 child_id=SRC021_P0001_C009 parent_id=SRC021_P0001 file=DB44_815-2010.md
+    content: =1 colspan=1>30</td><td rowspan=1 colspan=1>15</td><td rowspan=1 colspan=1>1.8a</td><td rowspan=1 colspan=1>1. 6a</td></tr><tr><td rowspan=1 colspan=1>总VOCs</td
+== PL008_Construction_Q01  nhits=5  unique_parent=5
+  rank=1 score=0.2904633791635101 source_id=SRC064 child_id=SRC064_P0009_C005 parent_id=SRC064_P0009 file=national_economic_classification.jsonl
+    content: 活动", "standard_code": "C2641", "industry_code": "2641"} {"door": "C", "major": "26", "middle": "264", "minor": "2642", "name": "油墨及类似产品制造", "description": "指由颜料
+  rank=2 score=0.23075364438067458 source_id=SRC063 child_id=SRC063_P0009_C007 parent_id=SRC063_P0009 file=national_economic_classification.json
+    content: ": "涂料制造",  "description": "指在天然树脂或合成树脂中加入颜料、溶剂和辅助材料，经加工后制成的覆盖材料的生产活动",  "standard_code": "C2641",  "industry_code": "2641"  },  {  "door": "C",  "major": "26",
+  rank=3 score=0.1998283796080705 source_id=SRC057 child_id=SRC057_P0017_C006 parent_id=SRC057_P0017 file=HJ_169-2018.md
+    content: ><td>2</td></tr><tr><td colspan="4">注：单位为mg/m²，有毒物质接触时间单位为min，以上数据来源于荷兰TNO紫皮书（Guidelines forQuantitative）。</td></tr></table></body></html>  # 附录 J  # （规范性附录）  #
+  rank=4 score=0.18803282667420582 source_id=SRC068 child_id=SRC068_P0007_C007 parent_id=SRC068_P0007 file=三线一单_顺德管控单元_完整.json
+    content: 板生产项目和化工项目应 |",  "| |在配套污水集中处置的工业园区或生活污水管网覆盖区域内建设；纯加工型印花项目，含酸洗、磷化的金属表面处理、金属制品项目（与自身高新技术企业|",  "| |配套的除外），含酸洗、喷涂、拉丝、表面抛光等工艺的不锈钢型材加工项目，应进入以此类项目为主导产业、有相应废水集中治理设施的工
+  rank=5 score=0.1849239995966258 source_id=SRC069 child_id=SRC069_P0007_C008 parent_id=SRC069_P0007 file=三线一单_顺德管控单元准入清单.json
+    content: 排放废水的项目。新建、扩建含蚀刻工序的线路板生产项目和化工项目应 |",  "| |在配套污水集中处置的工业园区或生活污水管网覆盖区域内建设；纯加工型印花项目，含酸洗、磷化的金属表面处理、金属制品项目（与自身高新技术企业|",  "| |配套的除外），含酸洗、喷涂、拉丝、表面抛光等工艺的不锈钢型材加工项目，应进入以此类
+== PL009_Construction_Q01  nhits=4  unique_parent=4
+  rank=1 score=0.260004544862745 source_id=SRC066 child_id=SRC066_P0003_C010 parent_id=SRC066_P0003 file=三线一单_全部管控单元表格.json
+    content: 集 |",  "|贸市场、餐饮以及学校等4大类排水户污水接入市政管网工作。 |",  "|6.【大气/限制类】大气环境布局敏感重点管控区内，严格限制新建生产和使用高挥发性有机物原辅材料项目，优先开展低VOCs含量原辅材料替代，强化无组织排放控制。原则上不再新建、|",  "|扩建新增氮氧化物、烟（粉）尘排放量较大的建设
+  rank=2 score=0.19360921485975652 source_id=SRC068 child_id=SRC068_P0005_C006 parent_id=SRC068_P0005 file=三线一单_顺德管控单元_完整.json
+    content: 设施，继续完善污水支管网建设，提高污水收集处理率，新建|",  "| |龙潭村、吉祐村、右滩村、南朗村、光华村、东村、北水村等农村分散式生活污水处理设施，其余行政村（社区）继续完善污水管网建设，收集农村污 |",  "| |水进入市政污水系统，有条件的区域实施雨污分流改造，到2030年全面雨污分流，污水纳入杏坛城镇污水
+  rank=3 score=0.17947906563217259 source_id=SRC070 child_id=SRC070_P0003_C008 parent_id=SRC070_P0003 file=三线一单_顺德管控单元准入清单.md
+    content: 及物流仓储用地的新建与改造。  - 1-3.【产业/限制类】受纳水体或监控断面不达标的，不得新建、扩建向河涌直接排放废水的项目。新建、扩建含蚀刻工序的线路板生产项目和化工项目应  - 在配套污水集中处置的工业园区或生活污水管网覆盖区域内建设；纯加工型印花项目，含酸洗、磷化的金属表面处理、金属制品项目（与自身高新技术企业
+  rank=4 score=0.17739400375867445 source_id=SRC069 child_id=SRC069_P0007_C008 parent_id=SRC069_P0007 file=三线一单_顺德管控单元准入清单.json
+    content: 排放废水的项目。新建、扩建含蚀刻工序的线路板生产项目和化工项目应 |",  "| |在配套污水集中处置的工业园区或生活污水管网覆盖区域内建设；纯加工型印花项目，含酸洗、磷化的金属表面处理、金属制品项目（与自身高新技术企业|",  "| |配套的除外），含酸洗、喷涂、拉丝、表面抛光等工艺的不锈钢型材加工项目，应进入以此类
+== PL011_Construction_Q01  nhits=5  unique_parent=5
+  rank=1 score=0.26840711865710587 source_id=SRC068 child_id=SRC068_P0001_C003 parent_id=SRC068_P0001 file=三线一单_顺德管控单元_完整.json
+    content: 保护措施，防止水污染物直接排入饮用水水体，确保饮用水安全。 |",  "|7.【水/综合类】加强顺德水道供水通道干流沿岸以及羊额-北滘水厂、佛山市顺德藤溪水厂、广州市南洲水厂顺德水道取水口、沙湾水厂番禺侧饮用水水源保护区环境风险防控， |",  "|完善突发环境事件应急管理体系。 |",  "|8.【大气/限制类】大气
+  rank=2 score=0.2465244594034036 source_id=SRC069 child_id=SRC069_P0001_C003 parent_id=SRC069_P0001 file=三线一单_顺德管控单元准入清单.json
+    content: 区内采取工程措施或者建 |",  "|造湿地、水源涵养林等生态保护措施，防止水污染物直接排入饮用水水体，确保饮用水安全。 |",  "|7.【水/综合类】加强顺德水道供水通道干流沿岸以及羊额-北滘水厂、佛山市顺德藤溪水厂、广州市南洲水厂顺德水道取水口、沙湾水厂番禺侧饮用水水源保护区环境风险防控， |",  "|完善突发
+  rank=3 score=0.1993787186028137 source_id=SRC039 child_id=SRC039_P0004_C004 parent_id=SRC039_P0004 file=EVID_NOISE_FOSHAN_2024.md
+    content: 成的闭合区域； 8.07  ## PDF第23页  — 23 — 编码 声环境功 能区类别 区划单元名称 区划单元边界 区划单元 面积 （km2） 3321 3 类区 杏坛东部工业 区片区 桑麻工业区北边界-桑麻村大道-新 涌大河-顺德支流-堤围路-围堤路- 高桂南七路-高桂路-水乡大道闭合 区域； 5.14 3322
+  rank=4 score=0.1972017576410444 source_id=SRC064 child_id=SRC064_P0022_C005 parent_id=SRC064_P0022 file=national_economic_classification.jsonl
+    content:  "minor": "5199", "name": "其他未列明批发业", "description": "", "standard_code": "F5199", "industry_code": "5199"} {"door": "F", "major": "52", "middle": "", "minor": 
+  rank=5 score=0.19655243104807515 source_id=SRC076 child_id=SRC076_P0001_C001 parent_id=SRC076_P0001 file=#25_涂料制造行业产污系数手册摘录_2641.md
+    content: # #25 涂料制造行业产污系数手册摘录（2641）  ## 适用任务 - `review-eia-pollutant-coefficient-applicability` - `calculate-eia-pollutant-source-strength`  重点支持： - PL007_SourceStrength
+== PL012_CaptureAirflow_Q01  nhits=5  unique_parent=5
+  rank=1 score=0.6109584488541088 source_id=SRC020 child_id=SRC020_P0001_C002 parent_id=SRC020_P0001 file=DB44_814-2010.md
+    content: 了家具制造行业生产过程挥发性有机化合物(Volatile Organic Compounds，简称VOCS)排放浓度限值及排放速率、无组织排放监控点浓度限值、监测要求，提出了VOCs监测方法及家具制造行业控制VOCs排放的生产工艺和管理要求。  本标准依据 GB/T 1.1-2009 规则进行起草。  自本标准各时段排
+  rank=2 score=0.3152967407318719 source_id=SRC069 child_id=SRC069_P0006_C002 parent_id=SRC069_P0006 file=三线一单_顺德管控单元准入清单.json
+    content: 散式生活污水处理设施，其余行政村（社区）继续完善污水管网建设，实现农村污水100%收集进入市政污水系统，有条件的区域 |",  "| |实施雨污分流改造，到2030年全面雨污分流，污水纳入龙江城镇污水处理系统。 |",  "| |3-6.【大气/综合类】大力推进低VOCs含量原辅材料替代。家具生产优先发展区内新建含喷漆
+  rank=3 score=0.3146369781645896 source_id=SRC055 child_id=SRC055_P0019_C003 parent_id=SRC055_P0019 file=HJ_1122-2020.md
+    content: 出机、密炼机、涂胶机、烘 干箱</td><td rowspan="3">挥发废气</td><td>颗粒物、非甲烷总烃、臭气浓度b、 恶臭特征污染物b</td><td>GB 31572 GB 14554</td><td rowspan="3"></td><td rowspan="3"></td><td rowspan="
+  rank=4 score=0.21054840120013696 source_id=SRC070 child_id=SRC070_P0003_C006 parent_id=SRC070_P0003 file=三线一单_顺德管控单元准入清单.md
+    content: 项目新增水环境重点污染物实行区域“减二增一”替代（工业、生活或综合集中废水处理设施、民生项目除外）。  - 3-3.【水/综合类】结合村级工业园改造，全面提升产业层次与集聚度，促进污染集中整治。  - 3-4.【水/综合类】稳步推进排水设施“三个一体化”管理模式，补齐城乡污水收集和处理短板，推动龙江污水处理厂提质增效，
+  rank=5 score=0.19663118767803597 source_id=SRC066 child_id=SRC066_P0007_C009 parent_id=SRC066_P0007 file=三线一单_全部管控单元表格.json
+    content: -6.【水/综合类】稳步推进排水设施“三个一体化”管理模式，补齐城乡污水收集和处理短板，推动西樵汇之源、西樵樵泰、西樵西岸污水处理厂提质增效，加快消除城|",  "| |中村、老旧城区、城乡结合部等污水收集管网空白区，逐步实现城乡污水收集处理全覆盖。 |",  "| |3-7.【大气/限制类】大力推进低VOCs含量原辅
+== PL006_CaptureEfficiency_Q01  nhits=5  unique_parent=5
+  rank=1 score=0.6946744074270447 source_id=SRC061 child_id=SRC061_P0002_C001 parent_id=SRC061_P0002 file=HJ_884-2018.md
+    content: <html><body><table><tr><td rowspan="2">工序/ 生产线</td><td rowspan="2">装置</td><td rowspan="2">污染源</td><td rowspan="2">污染物</td><td colspan="4">污染物产生</td><td colspan=
+  rank=2 score=0.4810996070596404 source_id=SRC078 child_id=SRC078_P0001_C001 parent_id=SRC078_P0001 file=#27_污染物源强产生收集处理排放闭合核算指南.md
+    content: # #27 污染物源强产生—收集—处理—排放闭合核算指南  ## 适用任务 - `calculate-eia-pollutant-source-strength` - 可辅助 `review-eia-vocs-total-control`  重点支持： PL006、PL007、PL008、PL010、PL013的源强定
+  rank=3 score=0.3435872538131818 source_id=SRC068 child_id=SRC068_P0008_C001 parent_id=SRC068_P0008 file=三线一单_顺德管控单元_完整.json
+    content: 禁止类】严格生产空间和生活空间管控，工业企业原则上禁止选址生活空间，生产空间原则上禁止建设居民住宅等敏感建筑。 |",  "| |1-4.【产业/综合类】园区工业用地或企业与村庄、学校等环境敏感点之间的区域应合理设置控制开发区域（产业控制带），产业控制带内优先引进无污染 |",  "| |的生产性服务业，或可适当布置废
+  rank=4 score=0.34294113347139465 source_id=SRC066 child_id=SRC066_P0018_C001 parent_id=SRC066_P0018 file=三线一单_全部管控单元表格.json
+    content: 查意 |",  "| |见）禁止引进项目 |",  "| |1-3.【产业/限制类】严格限制不符合园区发展定位的项目入驻。 |",  "| |1-4.【产业/禁止类】严格生产空间和生活空间管控，工业企业原则上禁止选址生活空间，生产空间原则上禁止建设居民住宅等敏感建筑。 |",  "| |1-5.【产业/综合类】园区工业
+  rank=5 score=0.3399216197117645 source_id=SRC017 child_id=SRC017_P0002_C009 parent_id=SRC017_P0002 file=DB44_2367-2022.md
+    content: 废气收集处理系统。  ## 5.4.1.5 配料加工和含 VOCs 产品的包装  VOCs物料混合、搅拌、研磨、造粒、切片、压块等配料加工过程，以及含VOCs产品的包装（灌装、分装）过程应当采用密闭设备或者在密闭空间内操作，废气应当排至VOCs废气收集处理系统；无法密闭的，应当采取局部气体收集措施，废气应当排至VOCs
+== PL006_SourceStrength_Q01  nhits=5  unique_parent=5
+  rank=1 score=0.6409388888023603 source_id=SRC078 child_id=SRC078_P0001_C001 parent_id=SRC078_P0001 file=#27_污染物源强产生收集处理排放闭合核算指南.md
+    content: # #27 污染物源强产生—收集—处理—排放闭合核算指南  ## 适用任务 - `calculate-eia-pollutant-source-strength` - 可辅助 `review-eia-vocs-total-control`  重点支持： PL006、PL007、PL008、PL010、PL013的源强定
+  rank=2 score=0.4594248614829026 source_id=SRC061 child_id=SRC061_P0001_C005 parent_id=SRC061_P0001 file=HJ_884-2018.md
+    content: 污染源源强核算技术指南给定的产污系数，依据单位时间产品产量计算出污染物产生量，并结合所采用治理措施情况，核算污染物单位时间排放量的方法。  3.12  排污系数法pollutant-discharge coefficient method  指根据不同的原辅料及燃料、产品、工艺、规模和治理措施，选取相关行业污染源源强核
+  rank=3 score=0.32297133097547615 source_id=SRC069 child_id=SRC069_P0008_C002 parent_id=SRC069_P0008 file=三线一单_顺德管控单元准入清单.json
+    content: 污染物、持久性有机污染物的项目，不得引进园区规划环评及批 |",  "| |复（审查意见）禁止引进项目。 |",  "| |1-3.【产业/禁止类】严格生产空间和生活空间管控，工业企业原则上禁止选址生活空间，生产空间原则上禁止建设居民住宅等敏感建筑。 |",  "| |1-4.【产业/综合类】园区工业用地或企业与村庄、
+  rank=4 score=0.3157364132252403 source_id=SRC068 child_id=SRC068_P0008_C001 parent_id=SRC068_P0008 file=三线一单_顺德管控单元_完整.json
+    content: 禁止类】严格生产空间和生活空间管控，工业企业原则上禁止选址生活空间，生产空间原则上禁止建设居民住宅等敏感建筑。 |",  "| |1-4.【产业/综合类】园区工业用地或企业与村庄、学校等环境敏感点之间的区域应合理设置控制开发区域（产业控制带），产业控制带内优先引进无污染 |",  "| |的生产性服务业，或可适当布置废
+  rank=5 score=0.30426130985008093 source_id=SRC066 child_id=SRC066_P0022_C009 parent_id=SRC066_P0022 file=三线一单_全部管控单元表格.json
+    content:  |1-1.【产业/鼓励引导类】园区重点发展健康食品，智能制造，电子信息（电器），新材料、新能源、新能源汽车等产业。 |",  "| |1-2.【产业/禁止类】不得引入专业电镀、漂染等污染物排放量大或排放一类水污染物、持久性有机污染物的项目，不得引进园区规划环评及批复（审查意见）禁止引进 |",  "| |项目。 |"
+== PL007_DesignAirflow_Q01  nhits=5  unique_parent=5
+  rank=1 score=0.6397866718270722 source_id=SRC081 child_id=SRC081_P0001_C001 parent_id=SRC081_P0001 file=#30_废气收集形式与排风量计算审核指南.md
+    content: # #30 废气收集形式与排风量计算审核指南  ## 适用任务 - `calculate-eia-exhaust-capture-airflow` - `review-eia-exhaust-design-airflow` - 可辅助 `review-eia-exhaust-capture-efficiency`  重
+  rank=2 score=0.556961902401139 source_id=SRC003 child_id=SRC003_P0001_C001 parent_id=SRC003_P0001 file=#18_废气收集风量与设计风量核算指南.md
+    content: # 废气收集风量与设计风量核算审核指南  > 来源: HJ 2026-2013 6.2; 广东省工业源VOCs减排量核算方法(2023修订版)  ## 风量核算 1. 设计风量 = 各支管风量之和 x (1+漏风系数) 2. 漏风系数一般取10-20% 3. 风量应与风机选型匹配  ## 设计风速要求 | 管道 | 风
+  rank=3 score=0.4360031644474237 source_id=SRC079 child_id=SRC079_P0001_C001 parent_id=SRC079_P0001 file=#28_活性炭吸附治理参数核算审核指南.md
+    content: # #28 活性炭吸附治理参数核算审核指南  ## 适用任务 - `review-eia-activated-carbon-parameters`  重点支持： - PL006_ActivatedCarbon_Q01 - PL011_ActivatedCarbon_Q01 - PL012_ActivatedCarbon
+  rank=4 score=0.39170998934513757 source_id=SRC021 child_id=SRC021_P0002_C004 parent_id=SRC021_P0002 file=DB44_815-2010.md
+    content: 管道组成的排气系统。  A.3 安装 VOCS 处理设施的企业，其 VOCS 处理设施应达到设计处理效率。  A.4 密闭排气系统、污染控制设备应与工艺设施同步运转。废气收集装置和治理装置必须按照规范参数条件运行。  A.5 企业经营者应每月记录企业使用的含 VOCs 原料名称、厂家、品牌、型号、VOCs 含量、购入量
+  rank=5 score=0.35045888583692103 source_id=SRC002 child_id=SRC002_P0001_C001 parent_id=SRC002_P0001 file=#17_废气收集形式及排气量计算指南.md
+    content: # 废气收集形式及排气量计算审核指南  > 来源: HJ 2026-2013 6.2; GB 37822-2019  ## 收集形式 | 收集方式 | 说明 | 控制要求 | |---|---|---| | 密闭负压 | 设备/车间密闭，负压收集 | 控制风速不作要求 | | 包围式集气罩 | 三面围挡，一面开口 | 
+== PL008_VOCSTotal_Q01  nhits=5  unique_parent=5
+  rank=1 score=1.2935898612646688 source_id=SRC018 child_id=SRC018_P0001_C002 parent_id=SRC018_P0001 file=DB44_26-2001.md
+    content: 污染物排放标准》的修订。 本标准与 DB 4426-1989 相比主要变化如下：一按 GB/T 1.1-2000 的要求进行编制;-明确适用范围;-增加术语和定义;-调整控制区划分及标准分级;采用年限制;-第一时间段新增控制项目 16 项，原有项目标准值基本维持原标准的一、二级标准值；第二时间段新增控制项目 46 项，
+  rank=2 score=0.19678865942500554 source_id=SRC010 child_id=SRC010_P0001_C004 parent_id=SRC010_P0001 file=#7_收纳水体地表水执行标准.csv
+    content: 1）第二时段一级标准的较严值 陈村污水处理厂,顺德区陈村污水处理厂入河排污口,陈村水道,城镇污水处理厂排污口,陈村水道,III,地表水水质评价标准为III类，执行《地表水环境质量标准》（GB3838-2002）中的III类标准,《城镇污水处理厂污染物排放标准》（GB18918-2002）一级A标准及广东省地方标准《水污
+  rank=3 score=0.196059890973084 source_id=SRC011 child_id=SRC011_P0002_C009 parent_id=SRC011_P0002 file=#7_环境质量标准限值速查.md
+    content: 污染物排放标准》（GB18918-2002）一级 A 标准及广东省地方标准《水污染物排放限值》（DB44/26-2001）第二时段一级标准的较严值 ### 城镇污水厂简称：乐从污水处理厂 排污口名称：顺德区乐从污水处理厂入河排污口 排入水体：九沙涌 排污口类型：城镇污水处理厂排污口 受纳水体名称：九沙涌 地表水评价标准
+  rank=4 score=0.19243888272131043 source_id=SRC066 child_id=SRC066_P0015_C003 parent_id=SRC066_P0015 file=三线一单_全部管控单元表格.json
+    content: 治。 |",  "| |3-5.【水/综合类】稳步推进排水设施“三个一体化”管理模式，补齐城乡污水收集和处理短板，推动杏坛污水处理厂提质增效，加快消除城中村、老旧城|",  "| |区、城乡结合部等污水收集管网空白区，逐步实现城乡污水收集处理全覆盖。2025年前完成杏坛污水处理厂扩建，尾水应执行《城镇污水处理厂污染物排
+  rank=5 score=0.1922203931911622 source_id=SRC070 child_id=SRC070_P0003_C002 parent_id=SRC070_P0003 file=三线一单_顺德管控单元准入清单.md
+    content: 消除城中村、老旧城  - 区、城乡结合部等污水收集管网空白区，逐步实现城乡污水收集处理全覆盖。2025年前完成杏坛污水处理厂扩建，尾水应执行《城镇污水处理厂污染物排  - 放标准》（GB18918-2002）一级A标准及《广东省水污染物排放限值》（DB44/26-2001）的较严值。  - 3-6.【水/综合类】近期保
+== PL009_Coefficient_Q01  nhits=5  unique_parent=5
+  rank=1 score=0.7228433480698131 source_id=SRC023 child_id=SRC023_P0001_C001 parent_id=SRC023_P0001 file=EVID_ENV_SHUNDE_2022.md
+    content: # 2022年度佛山市顺德区生态环境状况公报及佛环顺函〔2023〕26号  - evidence_id: ENV_SHUNDE_2022 - authority_url: local-official-pdf - version_status: current_for_2022_observation - archiv
+  rank=2 score=0.5007397530686345 source_id=SRC013 child_id=SRC013_P0001_C002 parent_id=SRC013_P0001 file=#8_塑料制品业典型污染源及执行标准.csv
+    content: 密度聚乙烯（HDPE）、高压聚乙烯（LDPE）、线性低密度聚乙烯（LLDPE）、聚酰胺（PA）、聚对苯二甲酸丁二醇酯（PBT）、聚丙烯（PP）、尼龙塑料聚酰胺6或尼龙6（PA6）、聚碳酸酯（PC）、高抗聚苯乙烯（GPPS）、热塑性聚氨酯弹性体（TPU）、丙烯腈(A)丁二烯(B)苯乙烯(S)三元共聚物（ABS）、聚苯乙烯
+  rank=3 score=0.4423089104959676 source_id=SRC015 child_id=SRC015_P0004_C003 parent_id=SRC015_P0004 file=#9_塑料制品业产污系数_废气_官方手册.md
+    content: 末端治理技 术平均去除 效率（%） ②  参考 k 值计算公式*1 / 塑料 零件 树 脂、 助剂 配料- 混合- 挤出/ 注塑 所 有 规 模 废气 工业废 气量 标立方 米/吨- 产品 1.20× 105 / / / 挥发性 有机物 ①  千克/ 吨-产 品 2.70 活性炭吸附 21 k=废气治理设施运行 时间（
+  rank=4 score=0.4246645015428964 source_id=SRC069 child_id=SRC069_P0008_C004 parent_id=SRC069_P0008 file=三线一单_顺德管控单元准入清单.json
+    content: 园区环境应急监测机制，强化园区风险防控。 |"  ]  },  {  "name": "广东省佛山市顺德区重点管控单元12准入清单（园区型重点管控单元）",  "rows": [  "|ZH440606200012 |佛山高新技术产业开发区（容 |广东省 |佛山市 |顺德区 |园区型重点管控单元2 |水环境工业—城镇生
+  rank=5 score=0.42346308112038195 source_id=SRC016 child_id=SRC016_P0001_C004 parent_id=SRC016_P0001 file=#9_塑料制品业产污系数_废气_速查.md
+    content: 算方法和系数手册》（生态环境部公告2021年第24号）；“292 塑料制品业系数手册”中的 “2929塑料零件及其他塑料制品制造行业”产污系数表 | 挥发性有机物（VOCs）产污系数 | 4.60千克/吨-产品 | 适用于塑料零件及其他塑料制品制造行业中，通过 改性粒料造粒工艺（如添加填充剂、阻燃剂等改性剂）生产塑料粒
+== PL011_HazardousWaste_Q01  nhits=5  unique_parent=5
+  rank=1 score=1.1876725333073108 source_id=SRC018 child_id=SRC018_P0001_C004 parent_id=SRC018_P0001 file=DB44_26-2001.md
+    content: 切排污单位。  # 4 技术内容  # 4.1 控制区划分和标准分级  # 4.1.1 控制区划分  根据 GHZB 1 和 GB 3097，将全省水域、海域划分为下列三类控制区：  a）特殊控制区，指根据 GHZB 1划分为I、II类的水域和III类水域中划定的保护区、游泳区及GB 3097 划分为一类的海域； b）
+  rank=2 score=0.19902646379609146 source_id=SRC010 child_id=SRC010_P0001_C003 parent_id=SRC010_P0001 file=#7_收纳水体地表水执行标准.csv
+    content: 镇污水处理厂污染物排放标准》（GB18918-2002）一级A标准及广东省地方标准《水污染物排放限值》（DB44/26-2001）第二时段一级标准的较严值 北滘污水处理厂,顺德区北滘污水处理厂入河排污口,潭洲水道,城镇污水处理厂排污口,潭州水道,III,地表水水质评价标准为III类，执行《地表水环境质量标准》（GB38
+  rank=3 score=0.19890897855930967 source_id=SRC066 child_id=SRC066_P0015_C003 parent_id=SRC066_P0015 file=三线一单_全部管控单元表格.json
+    content: 治。 |",  "| |3-5.【水/综合类】稳步推进排水设施“三个一体化”管理模式，补齐城乡污水收集和处理短板，推动杏坛污水处理厂提质增效，加快消除城中村、老旧城|",  "| |区、城乡结合部等污水收集管网空白区，逐步实现城乡污水收集处理全覆盖。2025年前完成杏坛污水处理厂扩建，尾水应执行《城镇污水处理厂污染物排
+  rank=4 score=0.19757517910566397 source_id=SRC011 child_id=SRC011_P0002_C008 parent_id=SRC011_P0002 file=#7_环境质量标准限值速查.md
+    content: 标准为 II 类，执行《地表水环境质量标准》（GB3838-2002）中的 II 类标准 尾水污染物排放标准：《城镇污水处理厂污染物排放标准》（GB18918-2002）一级 A 标准及广东省地方标准《水污染物排放限值》（DB44/26-2001）第二时段一级标准的较严值 ### 城镇污水厂简称：北滘污水处理厂 排污口
+  rank=5 score=0.19491516923177318 source_id=SRC070 child_id=SRC070_P0003_C002 parent_id=SRC070_P0003 file=三线一单_顺德管控单元准入清单.md
+    content: 消除城中村、老旧城  - 区、城乡结合部等污水收集管网空白区，逐步实现城乡污水收集处理全覆盖。2025年前完成杏坛污水处理厂扩建，尾水应执行《城镇污水处理厂污染物排  - 放标准》（GB18918-2002）一级A标准及《广东省水污染物排放限值》（DB44/26-2001）的较严值。  - 3-6.【水/综合类】近期保
+== PL007_SourceStrength_Q01  nhits=5  unique_parent=5
+  rank=1 score=1.2659132533418367 source_id=SRC019 child_id=SRC019_P0001_C003 parent_id=SRC019_P0001 file=DB44_27-2001.md
+    content: 9《大气污染物排放标准》的修订。  本标准与DB 4427-1989相比主要变化如下：  —按 GB/T 1.1-2000 的要求进行编制；  明确适用范围；  增加术语和定义；  调整控制区划分；  采用年限制；  指标体系新增加最高允许排放速率和无组织排放浓度限值两项指标；  对火电厂、锅炉、水泥厂的大气污染物排放
+  rank=2 score=0.7652606995446837 source_id=SRC078 child_id=SRC078_P0001_C001 parent_id=SRC078_P0001 file=#27_污染物源强产生收集处理排放闭合核算指南.md
+    content: # #27 污染物源强产生—收集—处理—排放闭合核算指南  ## 适用任务 - `calculate-eia-pollutant-source-strength` - 可辅助 `review-eia-vocs-total-control`  重点支持： PL006、PL007、PL008、PL010、PL013的源强定
+  rank=3 score=0.7164880190791617 source_id=SRC061 child_id=SRC061_P0001_C005 parent_id=SRC061_P0001 file=HJ_884-2018.md
+    content: 污染源源强核算技术指南给定的产污系数，依据单位时间产品产量计算出污染物产生量，并结合所采用治理措施情况，核算污染物单位时间排放量的方法。  3.12  排污系数法pollutant-discharge coefficient method  指根据不同的原辅料及燃料、产品、工艺、规模和治理措施，选取相关行业污染源源强核
+  rank=4 score=0.5878120397796768 source_id=SRC020 child_id=SRC020_P0001_C001 parent_id=SRC020_P0001 file=DB44_814-2010.md
+    content: ICS 13 040 40  Z 60  DB44  方 标 准  DB 44/814-2010  # 家具制造行业挥发性有机化合物排放标准  # Emission standard of volatile organic compounds for furniture manufacturing operations
+  rank=5 score=0.4701430067640421 source_id=SRC055 child_id=SRC055_P0027_C002 parent_id=SRC055_P0027 file=HJ_1122-2020.md
+    content: 是否符合要求等。  废水产排污环节、污染物及污染防治设施应填报废水类别、污染物种类、污染防治设施名称及工艺、是否为可行技术、排放规律、排放去向、排放口编号及名称、排放口类型（一般排放口）、排放口设置是否符合要求等。  # 5.1.5.2 废气  # 5.1.5.2.1废气主要产污环节、污染物种类、排放形式及污染防治设施

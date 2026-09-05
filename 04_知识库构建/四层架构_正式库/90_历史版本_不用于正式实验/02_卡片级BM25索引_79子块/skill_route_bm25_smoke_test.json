@@ -1,0 +1,692 @@
+[
+  {
+    "skill_id": "01_国民经济行业类别",
+    "query": "01_国民经济行业类别  GB/T4754 national_economic_classification 行业代码 塑料制品业 C292 C2921",
+    "top5": [
+      {
+        "rank": 1,
+        "child_id": "STD-DIFY-01-001_C001",
+        "parent_id": "STD-DIFY-01-001_P001",
+        "source_id": "STD-DIFY-01-001",
+        "score": 120.07621948,
+        "content_preview": "{\n \"standard_id\": \"STD-DIFY-01-001\",\n \"title\": \"国民经济行业分类代码字段规范化与匹配\",\n \"domain\": \"行业分类\",\n \"card_type\": \"lookup\",\n \"skill_ids\": [\n  \"01_国民经济行业类别\"\n ],\n \"workflow_ids\": [\n  \"1-国民经济分类判断\"\n ],\n \"source_files\": [\n  \"03_指南解析_明文标准库/Dify工作流知识库/nationa"
+      },
+      {
+        "rank": 2,
+        "child_id": "STD-DIFY-01-002_C001",
+        "parent_id": "STD-DIFY-01-002_P001",
+        "source_id": "STD-DIFY-01-002",
+        "score": 93.78135562,
+        "content_preview": "{\n \"standard_id\": \"STD-DIFY-01-002\",\n \"title\": \"塑料制品业 C292 适用边界\",\n \"domain\": \"行业分类\",\n \"card_type\": \"boundary\",\n \"skill_ids\": [\n  \"01_国民经济行业类别\"\n ],\n \"workflow_ids\": [\n  \"1-国民经济分类判断\"\n ],\n \"source_files\": [\n  \"03_指南解析_明文标准库/Dify工作流知识库/plastic_"
+      },
+      {
+        "rank": 3,
+        "child_id": "STD-DIFY-01-001_C002",
+        "parent_id": "STD-DIFY-01-001_P001",
+        "source_id": "STD-DIFY-01-001",
+        "score": 64.61960379,
+        "content_preview": "。\"\n ],\n \"thresholds\": [],\n \"formulas\": [],\n \"check_logic\": [\n  \"提取报告中的行业代码与行业名称。\",\n  \"检索标准库中同代码条目。\",\n  \"若代码存在但名称不一致，判为名称不一致；若代码不存在，判为未命中标准分类。\",\n  \"若产品/工艺明显落入塑料制品或橡胶制品边界，但代码填报为无关行业，判为行业分类疑似错误。\"\n ],\n \"output_fields\": [\n  \"standard_id\",\n  \"mat"
+      },
+      {
+        "rank": 4,
+        "child_id": "STD-DIFY-01-002_C002",
+        "parent_id": "STD-DIFY-01-002_P001",
+        "source_id": "STD-DIFY-01-002",
+        "score": 49.47078078,
+        "content_preview": " ],\n \"thresholds\": [],\n \"formulas\": [],\n \"check_logic\": [\n  \"以产品为主、工艺为辅进行行业分类核对。\",\n  \"报告只写“塑料制品业”但未细分到四位代码时，提示补充细分类别。\",\n  \"存在橡胶硫化、炼胶等工艺时，不应简单归入塑料制品业。\"\n ],\n \"output_fields\": [\n  \"standard_id\",\n  \"matched_evidence\",\n  \"judgement\",\n  \"risk_lev"
+      },
+      {
+        "rank": 5,
+        "child_id": "STD-DIFY-08-001_C002",
+        "parent_id": "STD-DIFY-08-001_P001",
+        "source_id": "STD-DIFY-08-001",
+        "score": 30.56919323,
+        "content_preview": "s\": [\n  \"产污系数选用应与行业类别和产品类型匹配。\",\n  \"VOCs 产污系数须有来源依据。\"\n ],\n \"thresholds\": [\n  {\n   \"product\": \"塑料薄膜\",\n   \"process\": \"配料-挤出\",\n   \"factor\": \"2.50 kg/t\"\n  },\n  {\n   \"product\": \"塑料包装容器\",\n   \"factor\": \"2.70 kg/t\"\n  },\n  {\n   \"product\": \"日用塑料制品\",\n "
+      }
+    ]
+  },
+  {
+    "skill_id": "02_环保投资",
+    "query": "02_环保投资  环保投资 总投资 环办环评[2020]33号",
+    "top5": [
+      {
+        "rank": 1,
+        "child_id": "STD-DIFY-02-001_C002",
+        "parent_id": "STD-DIFY-02-001_P001",
+        "source_id": "STD-DIFY-02-001",
+        "score": 89.58247798,
+        "content_preview": "\"\n  }\n ],\n \"formulas\": [\n  {\n   \"name\": \"环保投资占比\",\n   \"expression\": \"环保投资 / 总投资 × 100%\"\n  }\n ],\n \"check_logic\": [\n  \"计算环保投资占比。\",\n  \"逐项核对环保投资是否覆盖废气、废水、噪声、固体废物/危废治理。\",\n  \"环保投资偏低但治理工程复杂时，输出人工复核。\"\n ],\n \"output_fields\": [\n  \"standard_id\",\n  \"matc"
+      },
+      {
+        "rank": 2,
+        "child_id": "STD-DIFY-02-001_C001",
+        "parent_id": "STD-DIFY-02-001_P001",
+        "source_id": "STD-DIFY-02-001",
+        "score": 88.15194391,
+        "content_preview": "{\n \"standard_id\": \"STD-DIFY-02-001\",\n \"title\": \"总投资与项目规模匹配性审核\",\n \"domain\": \"项目基本情况\",\n \"card_type\": \"review_rule\",\n \"skill_ids\": [\n  \"02_环保投资\"\n ],\n \"workflow_ids\": [\n  \"2-环评投资核算\"\n ],\n \"source_files\": [\n  \"03_指南解析_明文标准库/Dify工作流知识库/#2_环评投资核算指南"
+      },
+      {
+        "rank": 3,
+        "child_id": "STD-DIFY-04-001_C001",
+        "parent_id": "STD-DIFY-04-001_P001",
+        "source_id": "STD-DIFY-04-001",
+        "score": 30.13865652,
+        "content_preview": "{\n \"standard_id\": \"STD-DIFY-04-001\",\n \"title\": \"建设内容工程组成完整性\",\n \"domain\": \"建设内容\",\n \"card_type\": \"rule\",\n \"skill_ids\": [\n  \"04_建设内容\"\n ],\n \"workflow_ids\": [\n  \"5-建设内容编制完整性判断\"\n ],\n \"source_files\": [\n  \"03_指南解析_明文标准库/Dify工作流知识库/#5_建设内容编制完整性指南.md"
+      },
+      {
+        "rank": 4,
+        "child_id": "STD-DIFY-04-001_C002",
+        "parent_id": "STD-DIFY-04-001_P001",
+        "source_id": "STD-DIFY-04-001",
+        "score": 9.27234393,
+        "content_preview": "\n \"formulas\": [],\n \"check_logic\": [\n  \"抽取工程组成表。\",\n  \"逐项检查五类工程是否出现。\",\n  \"对改扩建项目强制检查依托工程和现有工程关系。\"\n ],\n \"output_fields\": [\n  \"standard_id\",\n  \"matched_evidence\",\n  \"judgement\",\n  \"risk_level\",\n  \"reason\",\n  \"suggested_revision\"\n ],\n \"manual_re"
+      },
+      {
+        "rank": 5,
+        "child_id": "STD-DIFY-06-002_C001",
+        "parent_id": "STD-DIFY-06-002_P001",
+        "source_id": "STD-DIFY-06-002",
+        "score": 7.29540084,
+        "content_preview": "{\n \"standard_id\": \"STD-DIFY-06-002\",\n \"title\": \"地表水环境质量标准 GB3838 类别限值\",\n \"domain\": \"环境质量标准\",\n \"card_type\": \"limit\",\n \"skill_ids\": [\n  \"06_环境质量执行标准\"\n ],\n \"workflow_ids\": [\n  \"7-环境质量执行标准准确性判断\"\n ],\n \"source_files\": [\n  \"03_指南解析_明文标准库/Dify工作流知识"
+      }
+    ]
+  },
+  {
+    "skill_id": "03_三线一单",
+    "query": "03_三线一单  三线一单 顺德 管控单元 准入清单 空间布局约束 污染物排放管控",
+    "top5": [
+      {
+        "rank": 1,
+        "child_id": "STD-DIFY-03-002_C001",
+        "parent_id": "STD-DIFY-03-002_P001",
+        "source_id": "STD-DIFY-03-002",
+        "score": 172.90956362,
+        "content_preview": "{\n \"standard_id\": \"STD-DIFY-03-002\",\n \"title\": \"顺德管控单元准入清单一致性审核\",\n \"domain\": \"三线一单\",\n \"card_type\": \"rule\",\n \"skill_ids\": [\n  \"03_三线一单\"\n ],\n \"workflow_ids\": [\n  \"4-三线一单管控内容一致性判定\"\n ],\n \"source_files\": [\n  \"03_指南解析_明文标准库/Dify工作流知识库/三线一单_顺德管控单元"
+      },
+      {
+        "rank": 2,
+        "child_id": "STD-DIFY-03-001_C001",
+        "parent_id": "STD-DIFY-03-001_P001",
+        "source_id": "STD-DIFY-03-001",
+        "score": 105.76613575,
+        "content_preview": "{\n \"standard_id\": \"STD-DIFY-03-001\",\n \"title\": \"顺德三线一单管控单元匹配\",\n \"domain\": \"三线一单\",\n \"card_type\": \"lookup\",\n \"skill_ids\": [\n  \"03_三线一单\"\n ],\n \"workflow_ids\": [\n  \"4-三线一单管控内容一致性判定\"\n ],\n \"source_files\": [\n  \"03_指南解析_明文标准库/Dify工作流知识库/三线一单_顺德管控单元_"
+      },
+      {
+        "rank": 3,
+        "child_id": "STD-DIFY-03-002_C002",
+        "parent_id": "STD-DIFY-03-002_P001",
+        "source_id": "STD-DIFY-03-002",
+        "score": 105.25986959,
+        "content_preview": "对应准入清单。\",\n  \"按四类管控要求拆分核对报告文本。\",\n  \"报告结论为符合但缺少逐项分析时，判为依据不足。\"\n ],\n \"output_fields\": [\n  \"standard_id\",\n  \"matched_evidence\",\n  \"judgement\",\n  \"risk_level\",\n  \"reason\",\n  \"suggested_revision\"\n ],\n \"manual_review\": [],\n \"retrieval_tags\": [\n  \"准"
+      },
+      {
+        "rank": 4,
+        "child_id": "STD-DIFY-03-001_C002",
+        "parent_id": "STD-DIFY-03-001_P001",
+        "source_id": "STD-DIFY-03-001",
+        "score": 84.41991797,
+        "content_preview": "候选匹配。\",\n  \"若报告管控单元与项目地址不一致，判为三线一单引用疑似错误。\"\n ],\n \"output_fields\": [\n  \"standard_id\",\n  \"matched_evidence\",\n  \"judgement\",\n  \"risk_level\",\n  \"reason\",\n  \"suggested_revision\"\n ],\n \"manual_review\": [\n  \"项目地址无法定位到唯一管控单元。\",\n  \"报告只写“符合三线一单”但未列管控单元。"
+      },
+      {
+        "rank": 5,
+        "child_id": "STD-DIFY-07-002_C001",
+        "parent_id": "STD-DIFY-07-002_P001",
+        "source_id": "STD-DIFY-07-002",
+        "score": 20.90501132,
+        "content_preview": "{\n \"standard_id\": \"STD-DIFY-07-002\",\n \"title\": \"广东固定污染源 VOCs 综合排放 DB44/2367 限值\",\n \"domain\": \"排放标准\",\n \"card_type\": \"limit\",\n \"skill_ids\": [\n  \"07_污染物排放标准\"\n ],\n \"workflow_ids\": [\n  \"8-污染物排放标准内容判断\"\n ],\n \"source_files\": [\n  \"03_指南解析_明文标准库/Dify工"
+      }
+    ]
+  },
+  {
+    "skill_id": "04_建设内容",
+    "query": "04_建设内容  建设内容 工程组成 主体工程 HJ_884-2018 污染源源强核算技术指南 准则 HJ884",
+    "top5": [
+      {
+        "rank": 1,
+        "child_id": "STD-DIFY-SRC-010_C001",
+        "parent_id": "STD-DIFY-SRC-010_P001",
+        "source_id": "STD-DIFY-SRC-010",
+        "score": 109.38515021,
+        "content_preview": "{\n \"standard_id\": \"STD-DIFY-SRC-010\",\n \"title\": \"污染源源强核算技术指南 准则 HJ884\",\n \"domain\": \"标准全文引用\",\n \"card_type\": \"source_text\",\n \"skill_ids\": [\n  \"04_建设内容\",\n  \"09_产污系数定量核算\"\n ],\n \"workflow_ids\": [\n  \"source_text_reference\"\n ],\n \"source_files\": [\n "
+      },
+      {
+        "rank": 2,
+        "child_id": "STD-DIFY-SRC-010_C002",
+        "parent_id": "STD-DIFY-SRC-010_P001",
+        "source_id": "STD-DIFY-SRC-010",
+        "score": 90.77975726,
+        "content_preview": "risk_level\",\n  \"reason\",\n  \"suggested_revision\"\n ],\n \"manual_review\": [],\n \"retrieval_tags\": [\n  \"HJ_884-2018\",\n  \"污染源源强核算技术指南 准则 HJ884\"\n ],\n \"confidence\": \"parsed_from_dify_kb\",\n \"notes\": \"\"\n}"
+      },
+      {
+        "rank": 3,
+        "child_id": "STD-DIFY-04-001_C001",
+        "parent_id": "STD-DIFY-04-001_P001",
+        "source_id": "STD-DIFY-04-001",
+        "score": 89.23750658,
+        "content_preview": "{\n \"standard_id\": \"STD-DIFY-04-001\",\n \"title\": \"建设内容工程组成完整性\",\n \"domain\": \"建设内容\",\n \"card_type\": \"rule\",\n \"skill_ids\": [\n  \"04_建设内容\"\n ],\n \"workflow_ids\": [\n  \"5-建设内容编制完整性判断\"\n ],\n \"source_files\": [\n  \"03_指南解析_明文标准库/Dify工作流知识库/#5_建设内容编制完整性指南.md"
+      },
+      {
+        "rank": 4,
+        "child_id": "STD-DIFY-04-001_C002",
+        "parent_id": "STD-DIFY-04-001_P001",
+        "source_id": "STD-DIFY-04-001",
+        "score": 80.81977629,
+        "content_preview": "\n \"formulas\": [],\n \"check_logic\": [\n  \"抽取工程组成表。\",\n  \"逐项检查五类工程是否出现。\",\n  \"对改扩建项目强制检查依托工程和现有工程关系。\"\n ],\n \"output_fields\": [\n  \"standard_id\",\n  \"matched_evidence\",\n  \"judgement\",\n  \"risk_level\",\n  \"reason\",\n  \"suggested_revision\"\n ],\n \"manual_re"
+      },
+      {
+        "rank": 5,
+        "child_id": "STD-DIFY-SRC-009_C001",
+        "parent_id": "STD-DIFY-SRC-009_P001",
+        "source_id": "STD-DIFY-SRC-009",
+        "score": 30.27689798,
+        "content_preview": "{\n \"standard_id\": \"STD-DIFY-SRC-009\",\n \"title\": \"排污单位自行监测技术指南 总则 HJ819\",\n \"domain\": \"标准全文引用\",\n \"card_type\": \"source_text\",\n \"skill_ids\": [\n  \"07_污染物排放标准\"\n ],\n \"workflow_ids\": [\n  \"source_text_reference\"\n ],\n \"source_files\": [\n  \"03_指南解析_明文标"
+      }
+    ]
+  },
+  {
+    "skill_id": "05_环境质量现状数据",
+    "query": "05_环境质量现状数据  环境状态公报 顺德 环境质量现状",
+    "top5": [
+      {
+        "rank": 1,
+        "child_id": "STD-DIFY-05-001_C001",
+        "parent_id": "STD-DIFY-05-001_P001",
+        "source_id": "STD-DIFY-05-001",
+        "score": 113.83609936,
+        "content_preview": "{\n \"standard_id\": \"STD-DIFY-05-001\",\n \"title\": \"顺德区环境状态公报数据引用核对\",\n \"domain\": \"环境质量现状\",\n \"card_type\": \"evidence_source\",\n \"skill_ids\": [\n  \"05_环境质量现状数据\"\n ],\n \"workflow_ids\": [\n  \"6-环境质量现状数据引用是否有误\"\n ],\n \"source_files\": [\n  \"03_指南解析_明文标准库/Dify"
+      },
+      {
+        "rank": 2,
+        "child_id": "STD-DIFY-05-001_C002",
+        "parent_id": "STD-DIFY-05-001_P001",
+        "source_id": "STD-DIFY-05-001",
+        "score": 101.21309838,
+        "content_preview": "[],\n \"formulas\": [],\n \"check_logic\": [\n  \"抽取报告现状数据来源名称和年份。\",\n  \"检索对应年度公报。\",\n  \"比对报告中引用的监测因子、浓度或达标结论。\",\n  \"数据年份过旧、来源不明或行政区不一致时提示人工复核。\"\n ],\n \"output_fields\": [\n  \"standard_id\",\n  \"matched_evidence\",\n  \"judgement\",\n  \"risk_level\",\n  \"reason\",\n"
+      },
+      {
+        "rank": 3,
+        "child_id": "STD-DIFY-06-003_C001",
+        "parent_id": "STD-DIFY-06-003_P001",
+        "source_id": "STD-DIFY-06-003",
+        "score": 27.83701296,
+        "content_preview": "{\n \"standard_id\": \"STD-DIFY-06-003\",\n \"title\": \"顺德污水厂受纳水体与地表水类别速查\",\n \"domain\": \"环境质量标准\",\n \"card_type\": \"lookup\",\n \"skill_ids\": [\n  \"06_环境质量执行标准\"\n ],\n \"workflow_ids\": [\n  \"7-环境质量执行标准准确性判断\"\n ],\n \"source_files\": [\n  \"03_指南解析_明文标准库/Dify工作流知识库/#"
+      },
+      {
+        "rank": 4,
+        "child_id": "STD-DIFY-06-001_C001",
+        "parent_id": "STD-DIFY-06-001_P001",
+        "source_id": "STD-DIFY-06-001",
+        "score": 23.13965281,
+        "content_preview": "{\n \"standard_id\": \"STD-DIFY-06-001\",\n \"title\": \"环境空气质量标准 GB3095 一级/二级适用\",\n \"domain\": \"环境质量标准\",\n \"card_type\": \"limit\",\n \"skill_ids\": [\n  \"06_环境质量执行标准\"\n ],\n \"workflow_ids\": [\n  \"7-环境质量执行标准准确性判断\"\n ],\n \"source_files\": [\n  \"03_指南解析_明文标准库/Dify工作流"
+      },
+      {
+        "rank": 5,
+        "child_id": "STD-DIFY-06-004_C001",
+        "parent_id": "STD-DIFY-06-004_P001",
+        "source_id": "STD-DIFY-06-004",
+        "score": 22.67362482,
+        "content_preview": "{\n \"standard_id\": \"STD-DIFY-06-004\",\n \"title\": \"声环境质量标准 GB3096 功能区限值\",\n \"domain\": \"环境质量标准\",\n \"card_type\": \"limit\",\n \"skill_ids\": [\n  \"06_环境质量执行标准\"\n ],\n \"workflow_ids\": [\n  \"7-环境质量执行标准准确性判断\"\n ],\n \"source_files\": [\n  \"03_指南解析_明文标准库/Dify工作流知识库"
+      }
+    ]
+  },
+  {
+    "skill_id": "06_环境质量执行标准",
+    "query": "06_环境质量执行标准  GB3095 环境空气质量标准 大气环境 GB3838 地表水 COD 顺德污水厂 受纳水体 地表水执行标准 GB3096",
+    "top5": [
+      {
+        "rank": 1,
+        "child_id": "STD-DIFY-06-003_C001",
+        "parent_id": "STD-DIFY-06-003_P001",
+        "source_id": "STD-DIFY-06-003",
+        "score": 120.03653365,
+        "content_preview": "{\n \"standard_id\": \"STD-DIFY-06-003\",\n \"title\": \"顺德污水厂受纳水体与地表水类别速查\",\n \"domain\": \"环境质量标准\",\n \"card_type\": \"lookup\",\n \"skill_ids\": [\n  \"06_环境质量执行标准\"\n ],\n \"workflow_ids\": [\n  \"7-环境质量执行标准准确性判断\"\n ],\n \"source_files\": [\n  \"03_指南解析_明文标准库/Dify工作流知识库/#"
+      },
+      {
+        "rank": 2,
+        "child_id": "STD-DIFY-06-003_C002",
+        "parent_id": "STD-DIFY-06-003_P001",
+        "source_id": "STD-DIFY-06-003",
+        "score": 97.01833823,
+        "content_preview": " [\n  \"抽取报告接入污水处理厂。\",\n  \"检索标准库中的对应排污口、排入水体、受纳水体和水质类别。\",\n  \"比对报告写法，输出一致/不一致/缺证据。\"\n ],\n \"output_fields\": [\n  \"standard_id\",\n  \"matched_evidence\",\n  \"judgement\",\n  \"risk_level\",\n  \"reason\",\n  \"suggested_revision\"\n ],\n \"manual_review\": [],\n \"ret"
+      },
+      {
+        "rank": 3,
+        "child_id": "STD-DIFY-06-002_C001",
+        "parent_id": "STD-DIFY-06-002_P001",
+        "source_id": "STD-DIFY-06-002",
+        "score": 93.6856671,
+        "content_preview": "{\n \"standard_id\": \"STD-DIFY-06-002\",\n \"title\": \"地表水环境质量标准 GB3838 类别限值\",\n \"domain\": \"环境质量标准\",\n \"card_type\": \"limit\",\n \"skill_ids\": [\n  \"06_环境质量执行标准\"\n ],\n \"workflow_ids\": [\n  \"7-环境质量执行标准准确性判断\"\n ],\n \"source_files\": [\n  \"03_指南解析_明文标准库/Dify工作流知识"
+      },
+      {
+        "rank": 4,
+        "child_id": "STD-DIFY-06-001_C001",
+        "parent_id": "STD-DIFY-06-001_P001",
+        "source_id": "STD-DIFY-06-001",
+        "score": 80.78128357,
+        "content_preview": "{\n \"standard_id\": \"STD-DIFY-06-001\",\n \"title\": \"环境空气质量标准 GB3095 一级/二级适用\",\n \"domain\": \"环境质量标准\",\n \"card_type\": \"limit\",\n \"skill_ids\": [\n  \"06_环境质量执行标准\"\n ],\n \"workflow_ids\": [\n  \"7-环境质量执行标准准确性判断\"\n ],\n \"source_files\": [\n  \"03_指南解析_明文标准库/Dify工作流"
+      },
+      {
+        "rank": 5,
+        "child_id": "STD-DIFY-06-001_C002",
+        "parent_id": "STD-DIFY-06-001_P001",
+        "source_id": "STD-DIFY-06-001",
+        "score": 59.37991135,
+        "content_preview": "s\": [\n  {\n   \"factor\": \"SO2\",\n   \"period\": \"年平均\",\n   \"level1\": \"20 μg/m³\",\n   \"level2\": \"60 μg/m³\"\n  },\n  {\n   \"factor\": \"PM10\",\n   \"period\": \"年平均\",\n   \"level1\": \"40 μg/m³\",\n   \"level2\": \"70 μg/m³\"\n  },\n  {\n   \"factor\": \"PM2.5\",\n   \"period\""
+      }
+    ]
+  },
+  {
+    "skill_id": "07_污染物排放标准",
+    "query": "07_污染物排放标准  GB31572 非甲烷总烃 有组织排放 DB44/2367 VOCs 厂区内无组织 GB14554 臭气浓度 恶臭污染物 DB44/27",
+    "top5": [
+      {
+        "rank": 1,
+        "child_id": "STD-DIFY-07-002_C002",
+        "parent_id": "STD-DIFY-07-002_P001",
+        "source_id": "STD-DIFY-07-002",
+        "score": 106.0824412,
+        "content_preview": ",\n  \"Dify 典型污染源文件中还列出适用场景下有组织 NMHC 80 mg/m³。\"\n ],\n \"thresholds\": [\n  {\n   \"factor\": \"非甲烷总烃\",\n   \"scenario\": \"厂区内无组织\",\n   \"period\": \"1h平均\",\n   \"limit\": \"6 mg/m³\"\n  },\n  {\n   \"factor\": \"非甲烷总烃\",\n   \"scenario\": \"厂区内无组织\",\n   \"period\": \"任意一次\",\n  "
+      },
+      {
+        "rank": 2,
+        "child_id": "STD-DIFY-07-002_C001",
+        "parent_id": "STD-DIFY-07-002_P001",
+        "source_id": "STD-DIFY-07-002",
+        "score": 105.04784375,
+        "content_preview": "{\n \"standard_id\": \"STD-DIFY-07-002\",\n \"title\": \"广东固定污染源 VOCs 综合排放 DB44/2367 限值\",\n \"domain\": \"排放标准\",\n \"card_type\": \"limit\",\n \"skill_ids\": [\n  \"07_污染物排放标准\"\n ],\n \"workflow_ids\": [\n  \"8-污染物排放标准内容判断\"\n ],\n \"source_files\": [\n  \"03_指南解析_明文标准库/Dify工"
+      },
+      {
+        "rank": 3,
+        "child_id": "STD-DIFY-07-003_C001",
+        "parent_id": "STD-DIFY-07-003_P001",
+        "source_id": "STD-DIFY-07-003",
+        "score": 104.76160775,
+        "content_preview": "{\n \"standard_id\": \"STD-DIFY-07-003\",\n \"title\": \"臭气浓度 GB14554 有组织与厂界无组织限值\",\n \"domain\": \"排放标准\",\n \"card_type\": \"limit\",\n \"skill_ids\": [\n  \"07_污染物排放标准\"\n ],\n \"workflow_ids\": [\n  \"8-污染物排放标准内容判断\"\n ],\n \"source_files\": [\n  \"03_指南解析_明文标准库/Dify工作流知识库/"
+      },
+      {
+        "rank": 4,
+        "child_id": "STD-DIFY-07-001_C001",
+        "parent_id": "STD-DIFY-07-001_P001",
+        "source_id": "STD-DIFY-07-001",
+        "score": 96.64284103,
+        "content_preview": "{\n \"standard_id\": \"STD-DIFY-07-001\",\n \"title\": \"塑料制品业 NMHC 有组织排放 GB31572 限值\",\n \"domain\": \"排放标准\",\n \"card_type\": \"limit\",\n \"skill_ids\": [\n  \"07_污染物排放标准\"\n ],\n \"workflow_ids\": [\n  \"8-污染物排放标准内容判断\"\n ],\n \"source_files\": [\n  \"03_指南解析_明文标准库/Dify工作流知"
+      },
+      {
+        "rank": 5,
+        "child_id": "STD-DIFY-07-003_C002",
+        "parent_id": "STD-DIFY-07-003_P001",
+        "source_id": "STD-DIFY-07-003",
+        "score": 87.67904113,
+        "content_preview": " {\n   \"factor\": \"臭气浓度\",\n   \"scenario\": \"厂界无组织\",\n   \"limit\": \"20（无量纲）\"\n  }\n ],\n \"formulas\": [],\n \"check_logic\": [],\n \"output_fields\": [\n  \"standard_id\",\n  \"matched_evidence\",\n  \"judgement\",\n  \"risk_level\",\n  \"reason\",\n  \"suggested_revision\"\n"
+      }
+    ]
+  },
+  {
+    "skill_id": "08_产污系数合理性",
+    "query": "08_产污系数合理性  HJ1122 产污系数 塑料制品业 HJ_1122-2020 排污许可证申请与核发技术规范 橡胶和塑料制品工业 HJ1122",
+    "top5": [
+      {
+        "rank": 1,
+        "child_id": "STD-DIFY-SRC-007_C001",
+        "parent_id": "STD-DIFY-SRC-007_P001",
+        "source_id": "STD-DIFY-SRC-007",
+        "score": 190.71791032,
+        "content_preview": "{\n \"standard_id\": \"STD-DIFY-SRC-007\",\n \"title\": \"排污许可证申请与核发技术规范 橡胶和塑料制品工业 HJ1122\",\n \"domain\": \"标准全文引用\",\n \"card_type\": \"source_text\",\n \"skill_ids\": [\n  \"08_产污系数合理性\",\n  \"09_产污系数定量核算\"\n ],\n \"workflow_ids\": [\n  \"source_text_reference\"\n ],\n \"sour"
+      },
+      {
+        "rank": 2,
+        "child_id": "STD-DIFY-SRC-007_C002",
+        "parent_id": "STD-DIFY-SRC-007_P001",
+        "source_id": "STD-DIFY-SRC-007",
+        "score": 170.11470969,
+        "content_preview": "_evidence\",\n  \"judgement\",\n  \"risk_level\",\n  \"reason\",\n  \"suggested_revision\"\n ],\n \"manual_review\": [],\n \"retrieval_tags\": [\n  \"HJ_1122-2020\",\n  \"排污许可证申请与核发技术规范 橡胶和塑料制品工业 HJ1122\"\n ],\n \"confidence\": \"parsed_from_dify_kb\",\n \"notes\": \"\"\n}"
+      },
+      {
+        "rank": 3,
+        "child_id": "STD-DIFY-08-001_C001",
+        "parent_id": "STD-DIFY-08-001_P001",
+        "source_id": "STD-DIFY-08-001",
+        "score": 75.23540182,
+        "content_preview": "{\n \"standard_id\": \"STD-DIFY-08-001\",\n \"title\": \"塑料制品业废气产污系数选用边界\",\n \"domain\": \"产污系数\",\n \"card_type\": \"lookup\",\n \"skill_ids\": [\n  \"08_产污系数合理性\",\n  \"09_产污系数定量核算\"\n ],\n \"workflow_ids\": [\n  \"9-运营期间产污系数使用合理性判断\",\n  \"10-运营期间产污系数与定量核算判定\"\n ],\n \"source_f"
+      },
+      {
+        "rank": 4,
+        "child_id": "STD-DIFY-08-001_C002",
+        "parent_id": "STD-DIFY-08-001_P001",
+        "source_id": "STD-DIFY-08-001",
+        "score": 57.23241978,
+        "content_preview": "s\": [\n  \"产污系数选用应与行业类别和产品类型匹配。\",\n  \"VOCs 产污系数须有来源依据。\"\n ],\n \"thresholds\": [\n  {\n   \"product\": \"塑料薄膜\",\n   \"process\": \"配料-挤出\",\n   \"factor\": \"2.50 kg/t\"\n  },\n  {\n   \"product\": \"塑料包装容器\",\n   \"factor\": \"2.70 kg/t\"\n  },\n  {\n   \"product\": \"日用塑料制品\",\n "
+      },
+      {
+        "rank": 5,
+        "child_id": "STD-DIFY-SRC-008_C001",
+        "parent_id": "STD-DIFY-SRC-008_P001",
+        "source_id": "STD-DIFY-SRC-008",
+        "score": 54.16505615,
+        "content_preview": "{\n \"standard_id\": \"STD-DIFY-SRC-008\",\n \"title\": \"排污单位自行监测技术指南 橡胶和塑料制品 HJ1207\",\n \"domain\": \"标准全文引用\",\n \"card_type\": \"source_text\",\n \"skill_ids\": [\n  \"07_污染物排放标准\"\n ],\n \"workflow_ids\": [\n  \"source_text_reference\"\n ],\n \"source_files\": [\n  \"03_指南"
+      }
+    ]
+  },
+  {
+    "skill_id": "09_产污系数定量核算",
+    "query": "09_产污系数定量核算  HJ1122 产污系数 塑料制品业 产污量 定量核算 E=sum HJ_1122-2020 排污许可证申请与核发技术规范 橡胶和塑料制品工业 HJ1122 HJ_884-2018 污染源源强核算技术指南 准则 HJ884",
+    "top5": [
+      {
+        "rank": 1,
+        "child_id": "STD-DIFY-SRC-007_C001",
+        "parent_id": "STD-DIFY-SRC-007_P001",
+        "source_id": "STD-DIFY-SRC-007",
+        "score": 190.40113398,
+        "content_preview": "{\n \"standard_id\": \"STD-DIFY-SRC-007\",\n \"title\": \"排污许可证申请与核发技术规范 橡胶和塑料制品工业 HJ1122\",\n \"domain\": \"标准全文引用\",\n \"card_type\": \"source_text\",\n \"skill_ids\": [\n  \"08_产污系数合理性\",\n  \"09_产污系数定量核算\"\n ],\n \"workflow_ids\": [\n  \"source_text_reference\"\n ],\n \"sour"
+      },
+      {
+        "rank": 2,
+        "child_id": "STD-DIFY-SRC-007_C002",
+        "parent_id": "STD-DIFY-SRC-007_P001",
+        "source_id": "STD-DIFY-SRC-007",
+        "score": 170.11470969,
+        "content_preview": "_evidence\",\n  \"judgement\",\n  \"risk_level\",\n  \"reason\",\n  \"suggested_revision\"\n ],\n \"manual_review\": [],\n \"retrieval_tags\": [\n  \"HJ_1122-2020\",\n  \"排污许可证申请与核发技术规范 橡胶和塑料制品工业 HJ1122\"\n ],\n \"confidence\": \"parsed_from_dify_kb\",\n \"notes\": \"\"\n}"
+      },
+      {
+        "rank": 3,
+        "child_id": "STD-DIFY-SRC-010_C001",
+        "parent_id": "STD-DIFY-SRC-010_P001",
+        "source_id": "STD-DIFY-SRC-010",
+        "score": 115.40843204,
+        "content_preview": "{\n \"standard_id\": \"STD-DIFY-SRC-010\",\n \"title\": \"污染源源强核算技术指南 准则 HJ884\",\n \"domain\": \"标准全文引用\",\n \"card_type\": \"source_text\",\n \"skill_ids\": [\n  \"04_建设内容\",\n  \"09_产污系数定量核算\"\n ],\n \"workflow_ids\": [\n  \"source_text_reference\"\n ],\n \"source_files\": [\n "
+      },
+      {
+        "rank": 4,
+        "child_id": "STD-DIFY-SRC-010_C002",
+        "parent_id": "STD-DIFY-SRC-010_P001",
+        "source_id": "STD-DIFY-SRC-010",
+        "score": 90.77975726,
+        "content_preview": "risk_level\",\n  \"reason\",\n  \"suggested_revision\"\n ],\n \"manual_review\": [],\n \"retrieval_tags\": [\n  \"HJ_884-2018\",\n  \"污染源源强核算技术指南 准则 HJ884\"\n ],\n \"confidence\": \"parsed_from_dify_kb\",\n \"notes\": \"\"\n}"
+      },
+      {
+        "rank": 5,
+        "child_id": "STD-DIFY-08-001_C001",
+        "parent_id": "STD-DIFY-08-001_P001",
+        "source_id": "STD-DIFY-08-001",
+        "score": 87.87684538,
+        "content_preview": "{\n \"standard_id\": \"STD-DIFY-08-001\",\n \"title\": \"塑料制品业废气产污系数选用边界\",\n \"domain\": \"产污系数\",\n \"card_type\": \"lookup\",\n \"skill_ids\": [\n  \"08_产污系数合理性\",\n  \"09_产污系数定量核算\"\n ],\n \"workflow_ids\": [\n  \"9-运营期间产污系数使用合理性判断\",\n  \"10-运营期间产污系数与定量核算判定\"\n ],\n \"source_f"
+      }
+    ]
+  },
+  {
+    "skill_id": "10_废气收集形式及排气量",
+    "query": "10_废气收集形式及排气量  废气收集 集气罩 控制风速 Q=3600Fv 排气量 罩口面积",
+    "top5": [
+      {
+        "rank": 1,
+        "child_id": "STD-DIFY-10-002_C001",
+        "parent_id": "STD-DIFY-10-002_P001",
+        "source_id": "STD-DIFY-10-002",
+        "score": 154.73880843,
+        "content_preview": "{\n \"standard_id\": \"STD-DIFY-10-002\",\n \"title\": \"集气罩排气量计算公式\",\n \"domain\": \"废气收集\",\n \"card_type\": \"formula\",\n \"skill_ids\": [\n  \"10_废气收集形式及排气量\"\n ],\n \"workflow_ids\": [\n  \"17-废气收集形式及排气量计算\"\n ],\n \"source_files\": [\n  \"03_指南解析_明文标准库/Dify工作流知识库/#17_废气收"
+      },
+      {
+        "rank": 2,
+        "child_id": "STD-DIFY-10-001_C001",
+        "parent_id": "STD-DIFY-10-001_P001",
+        "source_id": "STD-DIFY-10-001",
+        "score": 128.39689411,
+        "content_preview": "{\n \"standard_id\": \"STD-DIFY-10-001\",\n \"title\": \"废气收集形式与控制风速要求\",\n \"domain\": \"废气收集\",\n \"card_type\": \"rule\",\n \"skill_ids\": [\n  \"10_废气收集形式及排气量\"\n ],\n \"workflow_ids\": [\n  \"17-废气收集形式及排气量计算\"\n ],\n \"source_files\": [\n  \"03_指南解析_明文标准库/Dify工作流知识库/#17_废气收"
+      },
+      {
+        "rank": 3,
+        "child_id": "STD-DIFY-10-001_C002",
+        "parent_id": "STD-DIFY-10-001_P001",
+        "source_id": "STD-DIFY-10-001",
+        "score": 105.97216227,
+        "content_preview": "口，开口面控制风速 ≥0.5 m/s。\",\n  \"外部集气罩：顶吸/侧吸，控制风速 ≥0.3 m/s。\"\n ],\n \"thresholds\": [\n  {\n   \"collection_type\": \"包围式集气罩\",\n   \"control_velocity\": \"≥0.5 m/s\"\n  },\n  {\n   \"collection_type\": \"外部集气罩\",\n   \"control_velocity\": \"≥0.3 m/s\"\n  }\n ],\n \"formulas\": ["
+      },
+      {
+        "rank": 4,
+        "child_id": "STD-DIFY-10-002_C002",
+        "parent_id": "STD-DIFY-10-002_P001",
+        "source_id": "STD-DIFY-10-002",
+        "score": 66.95007454,
+        "content_preview": "罩口 Q。\",\n  \"多罩口按数量累加。\",\n  \"若报告只给设计风量未给计算过程，判为计算依据不足。\"\n ],\n \"output_fields\": [\n  \"standard_id\",\n  \"matched_evidence\",\n  \"judgement\",\n  \"risk_level\",\n  \"reason\",\n  \"suggested_revision\"\n ],\n \"manual_review\": [],\n \"retrieval_tags\": [\n  \"Q=3600Fv"
+      },
+      {
+        "rank": 5,
+        "child_id": "STD-DIFY-11-002_C001",
+        "parent_id": "STD-DIFY-11-002_P001",
+        "source_id": "STD-DIFY-11-002",
+        "score": 53.10799394,
+        "content_preview": "{\n \"standard_id\": \"STD-DIFY-11-002\",\n \"title\": \"废气管道与排气筒设计风速\",\n \"domain\": \"废气收集\",\n \"card_type\": \"threshold\",\n \"skill_ids\": [\n  \"11_废气收集风量与设计风量\"\n ],\n \"workflow_ids\": [\n  \"18-废气收集风量与设计风量核算\"\n ],\n \"source_files\": [\n  \"03_指南解析_明文标准库/Dify工作流知识库/#"
+      }
+    ]
+  },
+  {
+    "skill_id": "11_废气收集风量与设计风量",
+    "query": "11_废气收集风量与设计风量  设计风量 漏风系数 风机 管道风速 支管 主管",
+    "top5": [
+      {
+        "rank": 1,
+        "child_id": "STD-DIFY-11-001_C001",
+        "parent_id": "STD-DIFY-11-001_P001",
+        "source_id": "STD-DIFY-11-001",
+        "score": 125.84212609,
+        "content_preview": "{\n \"standard_id\": \"STD-DIFY-11-001\",\n \"title\": \"设计风量、漏风系数与风机匹配\",\n \"domain\": \"废气收集\",\n \"card_type\": \"formula\",\n \"skill_ids\": [\n  \"11_废气收集风量与设计风量\"\n ],\n \"workflow_ids\": [\n  \"18-废气收集风量与设计风量核算\"\n ],\n \"source_files\": [\n  \"03_指南解析_明文标准库/Dify工作流知识库/#"
+      },
+      {
+        "rank": 2,
+        "child_id": "STD-DIFY-11-002_C001",
+        "parent_id": "STD-DIFY-11-002_P001",
+        "source_id": "STD-DIFY-11-002",
+        "score": 120.74461515,
+        "content_preview": "{\n \"standard_id\": \"STD-DIFY-11-002\",\n \"title\": \"废气管道与排气筒设计风速\",\n \"domain\": \"废气收集\",\n \"card_type\": \"threshold\",\n \"skill_ids\": [\n  \"11_废气收集风量与设计风量\"\n ],\n \"workflow_ids\": [\n  \"18-废气收集风量与设计风量核算\"\n ],\n \"source_files\": [\n  \"03_指南解析_明文标准库/Dify工作流知识库/#"
+      },
+      {
+        "rank": 3,
+        "child_id": "STD-DIFY-11-001_C002",
+        "parent_id": "STD-DIFY-11-001_P001",
+        "source_id": "STD-DIFY-11-001",
+        "score": 82.89729012,
+        "content_preview": "\n  {\n   \"name\": \"漏风系数\",\n   \"range\": \"10%-20%\"\n  },\n  {\n   \"name\": \"排气筒高度\",\n   \"operator\": \">=\",\n   \"value\": \"15 m\"\n  }\n ],\n \"formulas\": [\n  {\n   \"name\": \"设计风量\",\n   \"expression\": \"Q_design = ΣQ_branch × (1 + leakage_ratio)\"\n  }\n ],\n \"check_l"
+      },
+      {
+        "rank": 4,
+        "child_id": "STD-DIFY-11-002_C002",
+        "parent_id": "STD-DIFY-11-002_P001",
+        "source_id": "STD-DIFY-11-002",
+        "score": 79.84308254,
+        "content_preview": "{\n   \"pipe_type\": \"排气筒出口\",\n   \"velocity\": \"15-20 m/s\"\n  }\n ],\n \"formulas\": [],\n \"check_logic\": [\n  \"若报告给出管径与风量，计算风速。\",\n  \"若只给出风机风量，不给管径或风速，判为设计参数不足。\",\n  \"风速低于区间可能沉积或收集不足；高于区间可能阻力和噪声偏大。\"\n ],\n \"output_fields\": [\n  \"standard_id\",\n  \"matched_ev"
+      },
+      {
+        "rank": 5,
+        "child_id": "STD-DIFY-10-002_C001",
+        "parent_id": "STD-DIFY-10-002_P001",
+        "source_id": "STD-DIFY-10-002",
+        "score": 48.26576933,
+        "content_preview": "{\n \"standard_id\": \"STD-DIFY-10-002\",\n \"title\": \"集气罩排气量计算公式\",\n \"domain\": \"废气收集\",\n \"card_type\": \"formula\",\n \"skill_ids\": [\n  \"10_废气收集形式及排气量\"\n ],\n \"workflow_ids\": [\n  \"17-废气收集形式及排气量计算\"\n ],\n \"source_files\": [\n  \"03_指南解析_明文标准库/Dify工作流知识库/#17_废气收"
+      }
+    ]
+  },
+  {
+    "skill_id": "12_废气收集效率",
+    "query": "12_废气收集效率  收集效率 VOCs 表23",
+    "top5": [
+      {
+        "rank": 1,
+        "child_id": "STD-DIFY-12-001_C001",
+        "parent_id": "STD-DIFY-12-001_P001",
+        "source_id": "STD-DIFY-12-001",
+        "score": 50.58998234,
+        "content_preview": "{\n \"standard_id\": \"STD-DIFY-12-001\",\n \"title\": \"VOCs 废气收集效率取值表\",\n \"domain\": \"废气收集\",\n \"card_type\": \"threshold\",\n \"skill_ids\": [\n  \"12_废气收集效率\"\n ],\n \"workflow_ids\": [\n  \"19-废气收集效率判定\"\n ],\n \"source_files\": [\n  \"03_指南解析_明文标准库/Dify工作流知识库/#19_废气收集效"
+      },
+      {
+        "rank": 2,
+        "child_id": "STD-DIFY-15-001_C001",
+        "parent_id": "STD-DIFY-15-001_P001",
+        "source_id": "STD-DIFY-15-001",
+        "score": 37.04764,
+        "content_preview": "{\n \"standard_id\": \"STD-DIFY-15-001\",\n \"title\": \"VOCs 产生量、收集量、削减量、排放量总量链条\",\n \"domain\": \"总量控制\",\n \"card_type\": \"formula_chain\",\n \"skill_ids\": [\n  \"15_VOCs总量控制\"\n ],\n \"workflow_ids\": [\n  \"15-VOCs总量控制审核\"\n ],\n \"source_files\": [\n  \"03_指南解析_明文标准库/Di"
+      },
+      {
+        "rank": 3,
+        "child_id": "STD-DIFY-12-001_C003",
+        "parent_id": "STD-DIFY-12-001_P001",
+        "source_id": "STD-DIFY-12-001",
+        "score": 36.19196828,
+        "content_preview": "时判为不合理。\",\n  \"密闭负压、直连、包围式均需对应证据，不应只写结论。\"\n ],\n \"output_fields\": [\n  \"standard_id\",\n  \"matched_evidence\",\n  \"judgement\",\n  \"risk_level\",\n  \"reason\",\n  \"suggested_revision\"\n ],\n \"manual_review\": [],\n \"retrieval_tags\": [\n  \"收集效率\",\n  \"VOCs\",\n  \"表"
+      },
+      {
+        "rank": 4,
+        "child_id": "STD-DIFY-10-001_C002",
+        "parent_id": "STD-DIFY-10-001_P001",
+        "source_id": "STD-DIFY-10-001",
+        "score": 33.70243861,
+        "content_preview": "口，开口面控制风速 ≥0.5 m/s。\",\n  \"外部集气罩：顶吸/侧吸，控制风速 ≥0.3 m/s。\"\n ],\n \"thresholds\": [\n  {\n   \"collection_type\": \"包围式集气罩\",\n   \"control_velocity\": \"≥0.5 m/s\"\n  },\n  {\n   \"collection_type\": \"外部集气罩\",\n   \"control_velocity\": \"≥0.3 m/s\"\n  }\n ],\n \"formulas\": ["
+      },
+      {
+        "rank": 5,
+        "child_id": "STD-DIFY-15-001_C002",
+        "parent_id": "STD-DIFY-15-001_P001",
+        "source_id": "STD-DIFY-15-001",
+        "score": 32.29417594,
+        "content_preview": "污系数、收集效率、治理效率联动一致。\",\n  \"收集效率取值不得高于对应收集方式标准卡上限。\",\n  \"排放量应等于有组织排放量与无组织排放量之和。\"\n ],\n \"thresholds\": [],\n \"formulas\": [\n  {\n   \"name\": \"收集量\",\n   \"expression\": \"收集量 = 产生量 × 收集效率\"\n  },\n  {\n   \"name\": \"未收集量\",\n   \"expression\": \"未收集量 = 产生量 × (1 - 收集效率"
+      }
+    ]
+  },
+  {
+    "skill_id": "13_活性炭参数",
+    "query": "13_活性炭参数  活性炭 VOCs治理 吸附",
+    "top5": [
+      {
+        "rank": 1,
+        "child_id": "STD-DIFY-13-001_C001",
+        "parent_id": "STD-DIFY-13-001_P001",
+        "source_id": "STD-DIFY-13-001",
+        "score": 75.39881164,
+        "content_preview": "{\n \"standard_id\": \"STD-DIFY-13-001\",\n \"title\": \"活性炭吸附治理参数完整性\",\n \"domain\": \"废气治理\",\n \"card_type\": \"rule\",\n \"skill_ids\": [\n  \"13_活性炭参数\"\n ],\n \"workflow_ids\": [\n  \"13-活性炭参数审核\"\n ],\n \"source_files\": [\n  \"03_指南解析_明文标准库/Dify工作流知识库/HJ_2026-2013.md\",\n"
+      },
+      {
+        "rank": 2,
+        "child_id": "STD-DIFY-13-001_C002",
+        "parent_id": "STD-DIFY-13-001_P001",
+        "source_id": "STD-DIFY-13-001",
+        "score": 68.37245728,
+        "content_preview": "VOCs 削减量、吸附容量、运行时间相互校核。\",\n  \"废活性炭应进入危险废物识别与贮存审核。\"\n ],\n \"thresholds\": [],\n \"formulas\": [],\n \"check_logic\": [\n  \"抽取活性炭箱数量、单箱填装量、总填装量和更换周期。\",\n  \"基于 VOCs 削减量反推理论更换周期。\",\n  \"若更换周期明显偏长、填装量缺失或吸附效率无依据，输出人工复核。\",\n  \"联动调用危险废物识别 skill 检查废活性炭属性。\"\n ],\n \"o"
+      },
+      {
+        "rank": 3,
+        "child_id": "STD-DIFY-14-001_C002",
+        "parent_id": "STD-DIFY-14-001_P001",
+        "source_id": "STD-DIFY-14-001",
+        "score": 26.53720994,
+        "content_preview": "-2023。\",\n  \"一般工业固体废物贮存应执行 GB18599-2020。\",\n  \"涉及吸附有机废气的废活性炭应作为重点危废候选项审核。\"\n ],\n \"thresholds\": [],\n \"formulas\": [],\n \"check_logic\": [\n  \"抽取固废清单。\",\n  \"按名称、成分、产生环节检索危废候选项。\",\n  \"危废代码缺失、属性前后不一致或暂存要求错误时输出问题。\",\n  \"一般固废与危废混写时标记高风险。\"\n ],\n \"output_fiel"
+      },
+      {
+        "rank": 4,
+        "child_id": "STD-DIFY-14-001_C001",
+        "parent_id": "STD-DIFY-14-001_P001",
+        "source_id": "STD-DIFY-14-001",
+        "score": 22.15019996,
+        "content_preview": "{\n \"standard_id\": \"STD-DIFY-14-001\",\n \"title\": \"危险废物识别、贮存与一般固废区分\",\n \"domain\": \"固体废物\",\n \"card_type\": \"rule\",\n \"skill_ids\": [\n  \"14_危险废物识别\"\n ],\n \"workflow_ids\": [\n  \"14-危险废物识别审核\"\n ],\n \"source_files\": [\n  \"03_指南解析_明文标准库/Dify工作流知识库/GB_18597-202"
+      },
+      {
+        "rank": 5,
+        "child_id": "STD-DIFY-15-001_C002",
+        "parent_id": "STD-DIFY-15-001_P001",
+        "source_id": "STD-DIFY-15-001",
+        "score": 20.13477198,
+        "content_preview": "污系数、收集效率、治理效率联动一致。\",\n  \"收集效率取值不得高于对应收集方式标准卡上限。\",\n  \"排放量应等于有组织排放量与无组织排放量之和。\"\n ],\n \"thresholds\": [],\n \"formulas\": [\n  {\n   \"name\": \"收集量\",\n   \"expression\": \"收集量 = 产生量 × 收集效率\"\n  },\n  {\n   \"name\": \"未收集量\",\n   \"expression\": \"未收集量 = 产生量 × (1 - 收集效率"
+      }
+    ]
+  },
+  {
+    "skill_id": "14_危险废物识别",
+    "query": "14_危险废物识别  危险废物 GB18597 GB18599",
+    "top5": [
+      {
+        "rank": 1,
+        "child_id": "STD-DIFY-14-001_C001",
+        "parent_id": "STD-DIFY-14-001_P001",
+        "source_id": "STD-DIFY-14-001",
+        "score": 54.89534446,
+        "content_preview": "{\n \"standard_id\": \"STD-DIFY-14-001\",\n \"title\": \"危险废物识别、贮存与一般固废区分\",\n \"domain\": \"固体废物\",\n \"card_type\": \"rule\",\n \"skill_ids\": [\n  \"14_危险废物识别\"\n ],\n \"workflow_ids\": [\n  \"14-危险废物识别审核\"\n ],\n \"source_files\": [\n  \"03_指南解析_明文标准库/Dify工作流知识库/GB_18597-202"
+      },
+      {
+        "rank": 2,
+        "child_id": "STD-DIFY-13-001_C002",
+        "parent_id": "STD-DIFY-13-001_P001",
+        "source_id": "STD-DIFY-13-001",
+        "score": 32.96257418,
+        "content_preview": "VOCs 削减量、吸附容量、运行时间相互校核。\",\n  \"废活性炭应进入危险废物识别与贮存审核。\"\n ],\n \"thresholds\": [],\n \"formulas\": [],\n \"check_logic\": [\n  \"抽取活性炭箱数量、单箱填装量、总填装量和更换周期。\",\n  \"基于 VOCs 削减量反推理论更换周期。\",\n  \"若更换周期明显偏长、填装量缺失或吸附效率无依据，输出人工复核。\",\n  \"联动调用危险废物识别 skill 检查废活性炭属性。\"\n ],\n \"o"
+      },
+      {
+        "rank": 3,
+        "child_id": "STD-DIFY-14-001_C002",
+        "parent_id": "STD-DIFY-14-001_P001",
+        "source_id": "STD-DIFY-14-001",
+        "score": 32.14269926,
+        "content_preview": "-2023。\",\n  \"一般工业固体废物贮存应执行 GB18599-2020。\",\n  \"涉及吸附有机废气的废活性炭应作为重点危废候选项审核。\"\n ],\n \"thresholds\": [],\n \"formulas\": [],\n \"check_logic\": [\n  \"抽取固废清单。\",\n  \"按名称、成分、产生环节检索危废候选项。\",\n  \"危废代码缺失、属性前后不一致或暂存要求错误时输出问题。\",\n  \"一般固废与危废混写时标记高风险。\"\n ],\n \"output_fiel"
+      },
+      {
+        "rank": 4,
+        "child_id": "STD-DIFY-13-001_C001",
+        "parent_id": "STD-DIFY-13-001_P001",
+        "source_id": "STD-DIFY-13-001",
+        "score": 20.50310192,
+        "content_preview": "{\n \"standard_id\": \"STD-DIFY-13-001\",\n \"title\": \"活性炭吸附治理参数完整性\",\n \"domain\": \"废气治理\",\n \"card_type\": \"rule\",\n \"skill_ids\": [\n  \"13_活性炭参数\"\n ],\n \"workflow_ids\": [\n  \"13-活性炭参数审核\"\n ],\n \"source_files\": [\n  \"03_指南解析_明文标准库/Dify工作流知识库/HJ_2026-2013.md\",\n"
+      },
+      {
+        "rank": 5,
+        "child_id": "STD-DIFY-02-001_C002",
+        "parent_id": "STD-DIFY-02-001_P001",
+        "source_id": "STD-DIFY-02-001",
+        "score": 9.61018948,
+        "content_preview": "\"\n  }\n ],\n \"formulas\": [\n  {\n   \"name\": \"环保投资占比\",\n   \"expression\": \"环保投资 / 总投资 × 100%\"\n  }\n ],\n \"check_logic\": [\n  \"计算环保投资占比。\",\n  \"逐项核对环保投资是否覆盖废气、废水、噪声、固体废物/危废治理。\",\n  \"环保投资偏低但治理工程复杂时，输出人工复核。\"\n ],\n \"output_fields\": [\n  \"standard_id\",\n  \"matc"
+      }
+    ]
+  },
+  {
+    "skill_id": "15_VOCs总量控制",
+    "query": "15_VOCs总量控制  VOCs总量 削减量 排放量",
+    "top5": [
+      {
+        "rank": 1,
+        "child_id": "STD-DIFY-15-001_C001",
+        "parent_id": "STD-DIFY-15-001_P001",
+        "source_id": "STD-DIFY-15-001",
+        "score": 72.95712265,
+        "content_preview": "{\n \"standard_id\": \"STD-DIFY-15-001\",\n \"title\": \"VOCs 产生量、收集量、削减量、排放量总量链条\",\n \"domain\": \"总量控制\",\n \"card_type\": \"formula_chain\",\n \"skill_ids\": [\n  \"15_VOCs总量控制\"\n ],\n \"workflow_ids\": [\n  \"15-VOCs总量控制审核\"\n ],\n \"source_files\": [\n  \"03_指南解析_明文标准库/Di"
+      },
+      {
+        "rank": 2,
+        "child_id": "STD-DIFY-15-001_C002",
+        "parent_id": "STD-DIFY-15-001_P001",
+        "source_id": "STD-DIFY-15-001",
+        "score": 56.21984908,
+        "content_preview": "污系数、收集效率、治理效率联动一致。\",\n  \"收集效率取值不得高于对应收集方式标准卡上限。\",\n  \"排放量应等于有组织排放量与无组织排放量之和。\"\n ],\n \"thresholds\": [],\n \"formulas\": [\n  {\n   \"name\": \"收集量\",\n   \"expression\": \"收集量 = 产生量 × 收集效率\"\n  },\n  {\n   \"name\": \"未收集量\",\n   \"expression\": \"未收集量 = 产生量 × (1 - 收集效率"
+      },
+      {
+        "rank": 3,
+        "child_id": "STD-DIFY-13-001_C002",
+        "parent_id": "STD-DIFY-13-001_P001",
+        "source_id": "STD-DIFY-13-001",
+        "score": 21.43003862,
+        "content_preview": "VOCs 削减量、吸附容量、运行时间相互校核。\",\n  \"废活性炭应进入危险废物识别与贮存审核。\"\n ],\n \"thresholds\": [],\n \"formulas\": [],\n \"check_logic\": [\n  \"抽取活性炭箱数量、单箱填装量、总填装量和更换周期。\",\n  \"基于 VOCs 削减量反推理论更换周期。\",\n  \"若更换周期明显偏长、填装量缺失或吸附效率无依据，输出人工复核。\",\n  \"联动调用危险废物识别 skill 检查废活性炭属性。\"\n ],\n \"o"
+      },
+      {
+        "rank": 4,
+        "child_id": "STD-DIFY-13-001_C001",
+        "parent_id": "STD-DIFY-13-001_P001",
+        "source_id": "STD-DIFY-13-001",
+        "score": 13.55943915,
+        "content_preview": "{\n \"standard_id\": \"STD-DIFY-13-001\",\n \"title\": \"活性炭吸附治理参数完整性\",\n \"domain\": \"废气治理\",\n \"card_type\": \"rule\",\n \"skill_ids\": [\n  \"13_活性炭参数\"\n ],\n \"workflow_ids\": [\n  \"13-活性炭参数审核\"\n ],\n \"source_files\": [\n  \"03_指南解析_明文标准库/Dify工作流知识库/HJ_2026-2013.md\",\n"
+      },
+      {
+        "rank": 5,
+        "child_id": "STD-DIFY-10-002_C001",
+        "parent_id": "STD-DIFY-10-002_P001",
+        "source_id": "STD-DIFY-10-002",
+        "score": 13.51996934,
+        "content_preview": "{\n \"standard_id\": \"STD-DIFY-10-002\",\n \"title\": \"集气罩排气量计算公式\",\n \"domain\": \"废气收集\",\n \"card_type\": \"formula\",\n \"skill_ids\": [\n  \"10_废气收集形式及排气量\"\n ],\n \"workflow_ids\": [\n  \"17-废气收集形式及排气量计算\"\n ],\n \"source_files\": [\n  \"03_指南解析_明文标准库/Dify工作流知识库/#17_废气收"
+      }
+    ]
+  }
+]

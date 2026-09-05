@@ -1,0 +1,29 @@
+{
+  "id": "chatcmpl-53c6fa86-0753-4bea-b861-1e7fe8a346fa",
+  "object": "chat.completion",
+  "created": 1786533512,
+  "model": "qwen3.8-max",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"scores\": [{\"response_id\": \"R1\", \"correctness\": 2, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": null, \"skill_workflow\": null, \"rationale\": \"结论正确，准确总结功能区、标准及限值并分析一致性。证据定位清晰，无问题时明确保持项与边界，符合rag/skill不可用约束。\"}, {\"response_id\": \"R2\", \"correctness\": 2, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": 2, \"skill_workflow\": null, \"rationale\": \"结论正确且经RAG核验限值无误。证据充分，无问题下明确保持项与未核验边界，法规依据完整，skill不可用处理合规。\"}, {\"response_id\": \"R3\", \"correctness\": 1, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": null, \"skill_workflow\": 2, \"rationale\": \"核心标准选取判断正确，但将预测缺失等超纲问题纳入导致结论降级为部分完成，属过度结论。证据与流程完整，指出了真实额外问题。\"}, {\"response_id\": \"R4\", \"correctness\": 1, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": 2, \"skill_workflow\": 2, \"rationale\": \"标准选取分析正确，但因缺外部区划文件判定部分完成，对已提供证据支持的内部一致性审核而言属过度保守。法规与流程完备。\"}]}"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4747,
+    "completion_tokens": 341,
+    "total_tokens": 5088,
+    "prompt_tokens_details": {
+      "text_tokens": 4747
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  }
+}

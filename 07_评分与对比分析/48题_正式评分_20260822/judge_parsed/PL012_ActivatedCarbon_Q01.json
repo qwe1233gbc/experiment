@@ -1,0 +1,42 @@
+{
+  "question_id": "PL012_ActivatedCarbon_Q01",
+  "prompt_chars": 12360,
+  "scores": [
+    {
+      "response_id": "R1",
+      "correctness": 2,
+      "evidence_use": 2,
+      "actionability": 2,
+      "regulatory_basis": null,
+      "skill_workflow": null,
+      "rationale": "准确识别二级炭尺寸与装填量矛盾及风速口径不清等真实问题，证据定位精准，修改建议具体可执行。虽结论与参考答案不同，但属报告证据支持的额外真实问题，不扣分。"
+    },
+    {
+      "response_id": "R2",
+      "correctness": 2,
+      "evidence_use": 2,
+      "actionability": 2,
+      "regulatory_basis": 2,
+      "skill_workflow": null,
+      "rationale": "除内部参数矛盾外，依据RAG补充了风量裕量、颗粒物浓度及危废周期不一致等合规性问题，证据链完整，法规引用准确，行动建议具体明确。"
+    },
+    {
+      "response_id": "R3",
+      "correctness": 2,
+      "evidence_use": 2,
+      "actionability": 2,
+      "regulatory_basis": null,
+      "skill_workflow": 2,
+      "rationale": "完整体现分步核查流程，敏锐发现VOCs收集速率/浓度与总量不闭合的算术错误及串联风速计算问题，证据扎实，指出了参考答案未覆盖的真实数据缺陷。"
+    },
+    {
+      "response_id": "R4",
+      "correctness": 2,
+      "evidence_use": 2,
+      "actionability": 2,
+      "regulatory_basis": 2,
+      "skill_workflow": 2,
+      "rationale": "综合表现最优，既完整执行审核工作流，又结合RAG验证了风量、颗粒物、湿度等多维合规性，同时指出内部参数矛盾，证据与法规支撑充分，建议极具操作性。"
+    }
+  ]
+}

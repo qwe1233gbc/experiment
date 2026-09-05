@@ -1,0 +1,42 @@
+{
+  "question_id": "PL008_DesignAirflow_Q01",
+  "prompt_chars": 11911,
+  "scores": [
+    {
+      "response_id": "R1",
+      "correctness": 1,
+      "evidence_use": 2,
+      "actionability": 2,
+      "regulatory_basis": null,
+      "skill_workflow": null,
+      "rationale": "指出数据矛盾及同时运行缺失等真实问题，但未采纳参考答案中16.6%余量合理的结论，判定过严。证据详实，修改建议具体可执行。因无RAG且标签非R3，法规与流程评分为null。"
+    },
+    {
+      "response_id": "R2",
+      "correctness": 1,
+      "evidence_use": 2,
+      "actionability": 2,
+      "regulatory_basis": 2,
+      "skill_workflow": null,
+      "rationale": "识别出数据不一致及120%逻辑冲突，结合RAG验证了规范依据，但结论偏向待复核而非直接判定合理。证据链完整，整改建议明确。因skill_available=false，流程评分为null。"
+    },
+    {
+      "response_id": "R3",
+      "correctness": 1,
+      "evidence_use": 2,
+      "actionability": 2,
+      "regulatory_basis": null,
+      "skill_workflow": 2,
+      "rationale": "精准复算发现表内合计错误及120%原则偏差，体现了完整审核工作流。虽未得出“合理”结论，但指出的内部矛盾属实。因无RAG，法规评分为null。"
+    },
+    {
+      "response_id": "R4",
+      "correctness": 2,
+      "evidence_use": 2,
+      "actionability": 2,
+      "regulatory_basis": 2,
+      "skill_workflow": 2,
+      "rationale": "既确认16.6%余量符合知识库范围（与金标一致），又指出数据矛盾与自述120%不符的真实问题。证据、法规、工作流均完备，结论平衡且具可操作性。"
+    }
+  ]
+}

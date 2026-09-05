@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "tested_at": "2026-08-10T14:43:16.107625+00:00",
+  "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings",
+  "model": "text-embedding-v4",
+  "dimensions": 1024,
+  "sample_child_id": "SRC001_P0001_C001",
+  "usage": {
+    "prompt_tokens": 276,
+    "total_tokens": 276
+  }
+}

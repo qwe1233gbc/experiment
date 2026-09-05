@@ -1,0 +1,29 @@
+{
+  "id": "chatcmpl-64089a9f-a399-4a27-90ad-7be2f1b1a188",
+  "object": "chat.completion",
+  "created": 1787378839,
+  "model": "qwen3.8-max",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"scores\": [{\"response_id\": \"R1\", \"correctness\": 2, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": null, \"skill_workflow\": null, \"rationale\": \"结论与参考答案一致，判定50%取值合理且保守。虽无RAG，但基于报告内部逻辑和通用工程常识完成了有效审核，并额外识别了风量表述差异问题，证据引用准确，行动建议具体可行。\"}, {\"response_id\": \"R2\", \"correctness\": 2, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": 2, \"skill_workflow\": null, \"rationale\": \"结论正确，充分利用RAG验证了50%低于80%上限及95%符合密闭要求。证据定位精准，法规依据完整支撑结论，且对喷粉房密闭条件给出了明确的边界提示和核验建议，表现最优。\"}, {\"response_id\": \"R3\", \"correctness\": 1, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": null, \"skill_workflow\": 2, \"rationale\": \"因缺乏外部依据将本应合理的取值判为待复核，结论方向有偏差。但体现了完整的内部核查工作流，发现了燃烧废气产污系数不一致这一真实额外问题，证据使用扎实，扣分仅因过度保守。\"}, {\"response_id\": \"R4\", \"correctness\": 1, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": 1, \"skill_workflow\": 2, \"rationale\": \"有RAG支持但仍判待复核，未能理解50%低于80%上限即为合理保守取值，导致结论偏离金标。虽体现了完整工作流并指出风量不一致等真实问题，但对核心问题的判断逻辑存在实质遗漏。\"}]}"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5056,
+    "completion_tokens": 407,
+    "total_tokens": 5463,
+    "prompt_tokens_details": {
+      "text_tokens": 5056
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  }
+}

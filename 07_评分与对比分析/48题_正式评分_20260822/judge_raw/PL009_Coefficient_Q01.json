@@ -1,0 +1,29 @@
+{
+  "id": "chatcmpl-3ea246c3-5977-4c35-8303-3c136cea730a",
+  "object": "chat.completion",
+  "created": 1787378805,
+  "model": "qwen3.8-max",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"scores\": [{\"response_id\": \"R1\", \"correctness\": 1, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": null, \"skill_workflow\": null, \"rationale\": \"识别出机加工系数不匹配，但遗漏参考答案中破碎工序适用边界不一致的关键问题，且将注塑基准判为不确定与金标不符；证据定位准确，提出了VOCs换算等额外真实问题，修改建议具体可执行。\"}, {\"response_id\": \"R2\", \"correctness\": 2, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": 2, \"skill_workflow\": null, \"rationale\": \"结论与参考答案一致，准确指出破碎边界不一致及机加工工艺不匹配两大核心问题；引用RAG证据充分，对注塑基准判定符合手册说明，并补充了焊锡表征等额外有效问题，建议具体可行。\"}, {\"response_id\": \"R3\", \"correctness\": 1, \"evidence_use\": 2, \"actionability\": 1, \"regulatory_basis\": null, \"skill_workflow\": 2, \"rationale\": \"识别出机加工和破碎问题，但结论为待复核而非明确的部分不适用，且对注塑基准仅存疑未确认；体现了完整审核工作流，发现了VOCs计算错误等额外问题，但因缺乏外部依据导致行动建议受限。\"}, {\"response_id\": \"R4\", \"correctness\": 2, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": 2, \"skill_workflow\": 2, \"rationale\": \"结论与参考答案完全一致，精准命中破碎边界不符和机加工工艺不匹配；结合RAG与报告证据链完整，工作流规范，对注塑基准的分析深入且符合法规逻辑，指出的问题具体且修改方向明确。\"}]}"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6528,
+    "completion_tokens": 406,
+    "total_tokens": 6934,
+    "prompt_tokens_details": {
+      "text_tokens": 6528
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  }
+}

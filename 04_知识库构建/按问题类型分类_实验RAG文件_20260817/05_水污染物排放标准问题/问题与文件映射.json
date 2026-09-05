@@ -1,0 +1,190 @@
+[
+  {
+    "audit_type": "水污染物排放标准",
+    "question_id": "PL003_Emission_水污",
+    "project_id": "PL003",
+    "question": "请根据报告中的废水类型、预处理方式、排放去向、企业排口标准、污水处理厂名称、尾水排放河道和尾水执行标准，判断水污染物排放标准选取是否合理。要求对比：生活污水排放标准+排入污水处理厂名称+尾水排放河道+尾水排放执行标准，报告与知识库是否一致。",
+    "skill_id": "review-eia-pollutant-discharge-standards",
+    "core_answer_sources": [
+      {
+        "base_source_id": "SRC010",
+        "source_file": "#7_收纳水体地表水执行标准.csv"
+      },
+      {
+        "base_source_id": "SRC018",
+        "source_file": "DB44_26-2001.md"
+      }
+    ],
+    "actual_frozen_top5_hits": [
+      {
+        "rank": 1,
+        "enhanced_source_id": "SRC051",
+        "source_file": "GB_3838-2002.md",
+        "parent_id": "SRC051_P0001",
+        "child_id": "SRC051_P0001_C001",
+        "score": 1.3392736655702495
+      },
+      {
+        "rank": 2,
+        "enhanced_source_id": "SRC018",
+        "source_file": "DB44_26-2001.md",
+        "parent_id": "SRC018_P0001",
+        "child_id": "SRC018_P0001_C001",
+        "score": 1.295150755036927
+      },
+      {
+        "rank": 3,
+        "enhanced_source_id": "SRC046",
+        "source_file": "GB_3095-2012.md",
+        "parent_id": "SRC046_P0001",
+        "child_id": "SRC046_P0001_C009",
+        "score": 1.16316783183062
+      },
+      {
+        "rank": 4,
+        "enhanced_source_id": "SRC011",
+        "source_file": "#7_环境质量标准限值速查.md",
+        "parent_id": "SRC011_P0002",
+        "child_id": "SRC011_P0002_C008",
+        "score": 0.4559508978119549
+      },
+      {
+        "rank": 5,
+        "enhanced_source_id": "SRC010",
+        "source_file": "#7_收纳水体地表水执行标准.csv",
+        "parent_id": "SRC010_P0001",
+        "child_id": "SRC010_P0001_C003",
+        "score": 0.4164251478389035
+      }
+    ],
+    "snapshot_sha256": "2f9f9ecebdb1cf49b3b34cf2d6be9f117bb68445845ea629c6ef9976de65465c"
+  },
+  {
+    "audit_type": "水污染物排放标准",
+    "question_id": "PL004_Emission_水污",
+    "project_id": "PL004",
+    "question": "请根据报告中的废水类型、预处理方式、排放去向、企业排口标准、污水处理厂名称、尾水排放河道和尾水执行标准，判断水污染物排放标准选取是否合理。要求对比：生活污水排放标准+排入污水处理厂名称+尾水排放河道+尾水排放执行标准，报告与知识库是否一致。",
+    "skill_id": "review-eia-pollutant-discharge-standards",
+    "core_answer_sources": [
+      {
+        "base_source_id": "SRC010",
+        "source_file": "#7_收纳水体地表水执行标准.csv"
+      },
+      {
+        "base_source_id": "SRC018",
+        "source_file": "DB44_26-2001.md"
+      },
+      {
+        "base_source_id": "SRC036",
+        "source_file": "GB_T_18920-2020.md"
+      }
+    ],
+    "actual_frozen_top5_hits": [
+      {
+        "rank": 1,
+        "enhanced_source_id": "SRC054",
+        "source_file": "GB_T_18920-2020.md",
+        "parent_id": "SRC054_P0001",
+        "child_id": "SRC054_P0001_C002",
+        "score": 1.3502447125920907
+      },
+      {
+        "rank": 2,
+        "enhanced_source_id": "SRC013",
+        "source_file": "#8_塑料制品业典型污染源及执行标准.csv",
+        "parent_id": "SRC013_P0001",
+        "child_id": "SRC013_P0001_C006",
+        "score": 0.8146244427212479
+      },
+      {
+        "rank": 3,
+        "enhanced_source_id": "SRC014",
+        "source_file": "#8_塑料制品业典型污染源及执行标准.md",
+        "parent_id": "SRC014_P0001",
+        "child_id": "SRC014_P0001_C003",
+        "score": 0.7188559121334862
+      },
+      {
+        "rank": 4,
+        "enhanced_source_id": "SRC011",
+        "source_file": "#7_环境质量标准限值速查.md",
+        "parent_id": "SRC011_P0002",
+        "child_id": "SRC011_P0002_C009",
+        "score": 0.6763011254688233
+      },
+      {
+        "rank": 5,
+        "enhanced_source_id": "SRC025",
+        "source_file": "EVID_GB18918_CURRENT.md",
+        "parent_id": "SRC025_P0001",
+        "child_id": "SRC025_P0001_C005",
+        "score": 0.6446637066861216
+      }
+    ],
+    "snapshot_sha256": "1d3cf12eb36ffd518541e688b8412ed3ccf7580f9b3dcae5a276b2138944d022"
+  },
+  {
+    "audit_type": "水污染物排放标准",
+    "question_id": "PL005_Emission_水污",
+    "project_id": "PL005",
+    "question": "请根据报告中的废水类型、预处理方式、排放去向、企业排口标准、污水处理厂名称、尾水排放河道和尾水执行标准，判断水污染物排放标准选取是否合理。要求对比：生活污水排放标准+排入污水处理厂名称+尾水排放河道+尾水排放执行标准，报告与知识库是否一致。",
+    "skill_id": "review-eia-pollutant-discharge-standards",
+    "core_answer_sources": [
+      {
+        "base_source_id": "SRC010",
+        "source_file": "#7_收纳水体地表水执行标准.csv"
+      },
+      {
+        "base_source_id": "SRC018",
+        "source_file": "DB44_26-2001.md"
+      },
+      {
+        "base_source_id": "SRC036",
+        "source_file": "GB_T_18920-2020.md"
+      }
+    ],
+    "actual_frozen_top5_hits": [
+      {
+        "rank": 1,
+        "enhanced_source_id": "SRC054",
+        "source_file": "GB_T_18920-2020.md",
+        "parent_id": "SRC054_P0001",
+        "child_id": "SRC054_P0001_C001",
+        "score": 1.4196487552906083
+      },
+      {
+        "rank": 2,
+        "enhanced_source_id": "SRC018",
+        "source_file": "DB44_26-2001.md",
+        "parent_id": "SRC018_P0001",
+        "child_id": "SRC018_P0001_C001",
+        "score": 1.2076300636349027
+      },
+      {
+        "rank": 3,
+        "enhanced_source_id": "SRC011",
+        "source_file": "#7_环境质量标准限值速查.md",
+        "parent_id": "SRC011_P0002",
+        "child_id": "SRC011_P0002_C009",
+        "score": 0.3781928684031807
+      },
+      {
+        "rank": 4,
+        "enhanced_source_id": "SRC010",
+        "source_file": "#7_收纳水体地表水执行标准.csv",
+        "parent_id": "SRC010_P0001",
+        "child_id": "SRC010_P0001_C004",
+        "score": 0.30337488946902014
+      },
+      {
+        "rank": 5,
+        "enhanced_source_id": "SRC014",
+        "source_file": "#8_塑料制品业典型污染源及执行标准.md",
+        "parent_id": "SRC014_P0001",
+        "child_id": "SRC014_P0001_C003",
+        "score": 0.2953736115401985
+      }
+    ],
+    "snapshot_sha256": "ffbbe58d60bbb9919cb989be273d68edca0d49dac1702241a8f0ad0af985015c"
+  }
+]

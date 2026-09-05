@@ -1,0 +1,42 @@
+{
+  "question_id": "PL002_EnvQuality_Q01",
+  "prompt_chars": 12674,
+  "scores": [
+    {
+      "response_id": "R1",
+      "correctness": 1,
+      "evidence_use": 2,
+      "actionability": 2,
+      "regulatory_basis": null,
+      "skill_workflow": null,
+      "rationale": "无RAG下准确识别表3-1年份错位及变化率符号缺失等真实问题，证据定位精准且修改建议具体。因无法外部核验公报原文，未能确认核心数据正确性，故正确性扣1分，但符合盲评对额外真实问题的容错原则。"
+    },
+    {
+      "response_id": "R2",
+      "correctness": 2,
+      "evidence_use": 2,
+      "actionability": 2,
+      "regulatory_basis": 2,
+      "skill_workflow": null,
+      "rationale": "利用RAG验证核心数据与公报一致，同时指出表格年份标注及变化率符号错误，结论全面准确。证据链完整，法规依据充分，修改建议具体可执行，体现了高质量的外部核验与内部审查结合。"
+    },
+    {
+      "response_id": "R3",
+      "correctness": 1,
+      "evidence_use": 2,
+      "actionability": 2,
+      "regulatory_basis": null,
+      "skill_workflow": 2,
+      "rationale": "技能工作流完整，通过算术复算发现变化率符号及年份错位问题，证据使用得当。但因缺乏外部数据源，判定为“部分完成”略显保守，未明确肯定已验证部分的准确性，故正确性评1分。"
+    },
+    {
+      "response_id": "R4",
+      "correctness": 2,
+      "evidence_use": 2,
+      "actionability": 2,
+      "regulatory_basis": 2,
+      "skill_workflow": 2,
+      "rationale": "综合表现最佳。既通过RAG确认数据准确性，又精准指出表格年份误写、符号缺失及章节间引用年份不统一等问题。技能流完整，法规依据正确，修改建议具体，完全覆盖参考答案并补充了有效细节。"
+    }
+  ]
+}

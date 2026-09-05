@@ -1,0 +1,42 @@
+{
+  "question_id": "PL005_Emission_水污",
+  "prompt_chars": 12398,
+  "scores": [
+    {
+      "response_id": "R1",
+      "correctness": 1,
+      "evidence_use": 2,
+      "actionability": 1,
+      "regulatory_basis": null,
+      "skill_workflow": null,
+      "rationale": "RAG不可用下正确完成内部核查并声明无法外部比对，证据定位准确。但因未完成题目要求的知识库一致性对比，结论完整性受限，仅给方向性复核建议。"
+    },
+    {
+      "response_id": "R2",
+      "correctness": 2,
+      "evidence_use": 2,
+      "actionability": 2,
+      "regulatory_basis": 2,
+      "skill_workflow": null,
+      "rationale": "利用RAG发现报告尾水河道与知识库不一致的真实问题，未因参考答案未提及而忽略。证据链完整，法规依据正确，给出了具体修改建议和补充核实动作。"
+    },
+    {
+      "response_id": "R3",
+      "correctness": 1,
+      "evidence_use": 2,
+      "actionability": 1,
+      "regulatory_basis": null,
+      "skill_workflow": 2,
+      "rationale": "Skill可用且流程完整，内部核查细致并发现氨氮限值缺失等额外真实问题。但受限于RAG不可用无法完成外部一致性核心要求，结论为部分完成，行动建议受限。"
+    },
+    {
+      "response_id": "R4",
+      "correctness": 2,
+      "evidence_use": 2,
+      "actionability": 2,
+      "regulatory_basis": 2,
+      "skill_workflow": 2,
+      "rationale": "RAG与Skill均可用，完整执行分步核查。准确识别尾水河道不一致及表内数据矛盾等真实问题，证据与法规引用精准，修改建议具体可执行，各项指标均达满分标准。"
+    }
+  ]
+}

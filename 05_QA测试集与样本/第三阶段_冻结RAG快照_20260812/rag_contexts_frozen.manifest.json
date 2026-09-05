@@ -1,0 +1,14 @@
+{
+  "status": "complete",
+  "generated_at": "2026-08-12T08:35:12.384089+00:00",
+  "question_count": 21,
+  "jsonl_sha256": "fc3cc897cc99d2fb32deb6f68c75cf8a410da7b7a33f57ad0edba4eac02e1dd1",
+  "hashes_sha256": "9d164b2c412580e1bcaf8bbeed30d947153e97c1ba1ec6efbf2959cc94de3a1c",
+  "rerank_enabled": true,
+  "candidate_top_k": 30,
+  "final_top_k": 5,
+  "query_policy": "question + report_evidence only; excludes reference_answer, basis_status and manual conclusions",
+  "input_dataset_version": "phase2-v1.0-20260812",
+  "input_dataset_sha256": "37bf435ae24630da5ad4cba41f47a24e8917cd981d153ea0e0c1c96f765047f0",
+  "index_registry_sha256": "ca9e84248fbabd75284f47d5f081936e2ac890aa425c448900f7cc0382fb1c90"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "chatcmpl-4c237aa8-afe0-4377-a791-93952a8e1af9",
+  "object": "chat.completion",
+  "created": 1787378757,
+  "model": "qwen3.8-max",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"scores\": [{\"response_id\": \"R1\", \"correctness\": 2, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": null, \"skill_workflow\": null, \"rationale\": \"结论与参考答案一致，准确总结功能区、标准及限值并分析一致性。证据定位清晰，无问题时明确保持项和边界，符合评分规则。因rag/skill不可用，相关维度置null。\"}, {\"response_id\": \"R2\", \"correctness\": 2, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": 2, \"skill_workflow\": null, \"rationale\": \"结论正确且与金标一致，利用RAG验证了标准限值，证据充分。无问题下明确了核验边界与保持项，行动建议具体。法规依据引用准确完整。skill不可用置null。\"}, {\"response_id\": \"R3\", \"correctness\": 1, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": null, \"skill_workflow\": 2, \"rationale\": \"核心标准选取判断正确，但判定“部分完成”属过度结论，偏离题目仅核查标准选取合理性的范围。指出了预测值缺失等真实额外问题不扣分。体现了完整审核工作流。\"}, {\"response_id\": \"R4\", \"correctness\": 1, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": 2, \"skill_workflow\": 2, \"rationale\": \"标准选取分析正确，但因缺外部区划文件判“部分完成”属过度结论，题目仅要求基于报告内容分析。指出了区划核验缺失的真实边界问题。法规与工作流体现完整。\"}]}"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4747,
+    "completion_tokens": 379,
+    "total_tokens": 5126,
+    "prompt_tokens_details": {
+      "text_tokens": 4747
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  }
+}

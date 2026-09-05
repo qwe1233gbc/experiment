@@ -1,0 +1,29 @@
+{
+  "id": "chatcmpl-2b21774c-8bfc-496d-a8aa-39b7eedf5ae1",
+  "object": "chat.completion",
+  "created": 1787378826,
+  "model": "qwen3.8-max",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"scores\": [{\"response_id\": \"R1\", \"correctness\": 1, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": null, \"skill_workflow\": null, \"rationale\": \"结论与参考答案相反，但指出了效率取值逻辑矛盾及入口温湿度缺失等真实问题。证据定位准确，修改建议具体可执行。因无RAG且标签非R1，法规依据评分为null。\"}, {\"response_id\": \"R2\", \"correctness\": 1, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": 2, \"skill_workflow\": null, \"rationale\": \"结论虽与参考答案不同，但基于RAG指出效率不达标及吸附比例依据不足等实质问题，未盲目采信报告数据。证据与法规引用精准，整改建议明确，体现了深度审核能力。\"}, {\"response_id\": \"R3\", \"correctness\": 1, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": null, \"skill_workflow\": 2, \"rationale\": \"判定部分完成，虽未完全肯定合理性，但通过详细复算验证了参数闭合性，并补充发现了负荷速率不一致等新问题。工作流完整体现分步核查，无RAG故法规项为null。\"}, {\"response_id\": \"R4\", \"correctness\": 1, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": 2, \"skill_workflow\": 2, \"rationale\": \"综合表现最佳。既完成了内部参数闭合验算，又利用RAG核验了外部合规性，指出了效率、比例及负荷多重问题。证据链完整，法规依据充分，工作流规范，虽结论异于金标但审核质量高。\"}]}"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6075,
+    "completion_tokens": 394,
+    "total_tokens": 6469,
+    "prompt_tokens_details": {
+      "text_tokens": 6075
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  }
+}

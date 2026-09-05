@@ -1,0 +1,29 @@
+{
+  "id": "chatcmpl-11f5d9e6-6e67-4db9-b6e5-c45be167dcb2",
+  "object": "chat.completion",
+  "created": 1787378842,
+  "model": "qwen3.8-max",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"scores\": [{\"response_id\": \"R1\", \"correctness\": 2, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": null, \"skill_workflow\": null, \"rationale\": \"结论与参考答案一致，准确识别喷粉基准不一致问题。额外指出天然气颗粒物计算错误及VOCs基准疑问，属证据支持的合理发现。证据定位精准，修改建议具体可执行。\"}, {\"response_id\": \"R2\", \"correctness\": 2, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": 1, \"skill_workflow\": null, \"rationale\": \"核心结论正确，识别出喷粉基准不一致及天然气计算错误等实质问题。引用了通用审核指南但未提供具体系数手册条款支撑外部适用性判断，法规依据部分充分。\"}, {\"response_id\": \"R3\", \"correctness\": 2, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": null, \"skill_workflow\": 2, \"rationale\": \"虽判定为待复核，但完整体现了分步核查与复算流程。准确识别基准不一致及天然气计算错误，证据链完整。在无RAG条件下合规 abstain，工作流体现充分。\"}, {\"response_id\": \"R4\", \"correctness\": 2, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": 1, \"skill_workflow\": 2, \"rationale\": \"核查流程完整，准确发现基准不一致及复算错误。虽因RAG缺失判定待复核，但内部审核扎实。引用通用指南而非具体系数条款，法规依据部分充分，整体质量高。\"}]}"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5758,
+    "completion_tokens": 373,
+    "total_tokens": 6131,
+    "prompt_tokens_details": {
+      "text_tokens": 5758
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  }
+}

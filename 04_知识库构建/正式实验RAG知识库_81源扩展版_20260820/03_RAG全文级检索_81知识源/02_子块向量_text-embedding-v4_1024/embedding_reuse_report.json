@@ -1,0 +1,7 @@
+{
+  "requested": true,
+  "source_embedding_file": "E:\\实验文件整理_按论文逻辑\\04_知识库构建\\四层架构_正式库\\03_RAG全文级检索_52知识源\\02_子块向量_text-embedding-v4_1024\\embedding_index_child.jsonl",
+  "available_old_vectors": 2747,
+  "reused": 0,
+  "pending_after_reuse": 3433
+}

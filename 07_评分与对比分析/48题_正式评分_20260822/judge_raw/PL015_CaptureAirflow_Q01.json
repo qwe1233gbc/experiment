@@ -1,0 +1,29 @@
+{
+  "id": "chatcmpl-e4eae9a4-883d-464b-9f92-ddb3534bb463",
+  "object": "chat.completion",
+  "created": 1787378838,
+  "model": "qwen3.8-max",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"scores\": [{\"response_id\": \"R1\", \"correctness\": 2, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": null, \"skill_workflow\": null, \"rationale\": \"结论虽与参考答案不同，但指出了报告内部风量数据不一致（40000 vs 30000）及参数缺失等真实问题，符合评分规则中关于额外真实问题的豁免条款。证据定位准确，修改建议具体可执行。\"}, {\"response_id\": \"R2\", \"correctness\": 2, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": 2, \"skill_workflow\": null, \"rationale\": \"在验证理论风量合理的同时，依据RAG和报告证据发现了风量表间矛盾及集气罩数量表述不清等实质缺陷。法规引用正确支持了控制风速判断，指出的问题具体且具备可操作性，符合额外真实问题不扣分原则。\"}, {\"response_id\": \"R3\", \"correctness\": 2, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": null, \"skill_workflow\": 2, \"rationale\": \"完整体现了分步核查流程，复算了理论风量并敏锐发现报告内部风量体系不一致及参数歧义问题。虽因无RAG未做外部合规判断，但对报告自身逻辑矛盾的指出属于有效审核，行动建议明确。\"}, {\"response_id\": \"R4\", \"correctness\": 2, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": 2, \"skill_workflow\": 2, \"rationale\": \"综合内外部依据，既验证了收集形式合理性，又指出了风量不一致、公式参数缺失及设计余量偏低等多重实质问题。技能工作流完整，法规依据充分，发现的问题超出了参考答案范围但真实有效，不予扣分。\"}]}"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6540,
+    "completion_tokens": 413,
+    "total_tokens": 6953,
+    "prompt_tokens_details": {
+      "text_tokens": 6540
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  }
+}

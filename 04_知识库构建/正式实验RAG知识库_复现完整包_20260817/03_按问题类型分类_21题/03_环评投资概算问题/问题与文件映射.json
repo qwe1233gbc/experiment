@@ -1,0 +1,56 @@
+{
+  "audit_type": "环评投资概算",
+  "question_id": "PL003_V01_Q03",
+  "project_id": "PL003",
+  "question": "请根据报告中的总投资、环保投资和环保工程投资明细，判断环保投资核算是否前后一致、比例是否正确。",
+  "skill_id": "calculate-eia-environmental-investment-ratio",
+  "core_answer_sources": [
+    {
+      "base_source_id": "SRC005",
+      "source_file": "#2_环评投资核算指南.md"
+    }
+  ],
+  "actual_frozen_top5_hits": [
+    {
+      "rank": 1,
+      "enhanced_source_id": "SRC005",
+      "source_file": "#2_环评投资核算指南.md",
+      "parent_id": "SRC005_P0001",
+      "child_id": "SRC005_P0001_C001",
+      "score": 0.5357279412411401
+    },
+    {
+      "rank": 2,
+      "enhanced_source_id": "SRC061",
+      "source_file": "HJ_884-2018.md",
+      "parent_id": "SRC061_P0001",
+      "child_id": "SRC061_P0001_C002",
+      "score": 0.2663669493496843
+    },
+    {
+      "rank": 3,
+      "enhanced_source_id": "SRC018",
+      "source_file": "DB44_26-2001.md",
+      "parent_id": "SRC018_P0001",
+      "child_id": "SRC018_P0001_C002",
+      "score": 0.2565867637231406
+    },
+    {
+      "rank": 4,
+      "enhanced_source_id": "SRC038",
+      "source_file": "EVID_HW_LIST_2025.md",
+      "parent_id": "SRC038_P0001",
+      "child_id": "SRC038_P0001_C002",
+      "score": 0.19229985437911187
+    },
+    {
+      "rank": 5,
+      "enhanced_source_id": "SRC065",
+      "source_file": "plastic_rubber_industry_classification_checked.md",
+      "parent_id": "SRC065_P0001",
+      "child_id": "SRC065_P0001_C001",
+      "score": 0.18174172634274793
+    }
+  ],
+  "snapshot_sha256": "55555750573787fa4dee528e8b7aeed0d33091495c46ac903266bccedf90f8c4"
+}

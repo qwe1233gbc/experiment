@@ -1,0 +1,64 @@
+{
+  "audit_type": "大气污染物排放标准",
+  "question_id": "PL002_Emission_大气",
+  "project_id": "PL002",
+  "question": "请根据项目行业类别、生产工艺和污染因子，判断大气污染物排放标准选取是否合理。要求分析：污染源覆盖是否完整（列出所有大气污染源及对应标准），是否存在缺漏的污染源或标准。",
+  "skill_id": "review-eia-pollutant-discharge-standards",
+  "core_answer_sources": [
+    {
+      "base_source_id": "SRC030",
+      "source_file": "GB_31572-2015.md"
+    },
+    {
+      "base_source_id": "SRC024",
+      "source_file": "GB_14554-93.md"
+    },
+    {
+      "base_source_id": "SRC017",
+      "source_file": "DB44_2367-2022.md"
+    }
+  ],
+  "actual_frozen_top5_hits": [
+    {
+      "rank": 1,
+      "enhanced_source_id": "SRC017",
+      "source_file": "DB44_2367-2022.md",
+      "parent_id": "SRC017_P0001",
+      "child_id": "SRC017_P0001_C002",
+      "score": 1.3917099893451375
+    },
+    {
+      "rank": 2,
+      "enhanced_source_id": "SRC048",
+      "source_file": "GB_31572-2015.md",
+      "parent_id": "SRC048_P0001",
+      "child_id": "SRC048_P0001_C001",
+      "score": 1.3570800002310819
+    },
+    {
+      "rank": 3,
+      "enhanced_source_id": "SRC042",
+      "source_file": "GB_14554-93.md",
+      "parent_id": "SRC042_P0001",
+      "child_id": "SRC042_P0001_C009",
+      "score": 1.2964874115759166
+    },
+    {
+      "rank": 4,
+      "enhanced_source_id": "SRC012",
+      "source_file": "#8_GB31572表4排放限值.md",
+      "parent_id": "SRC012_P0001",
+      "child_id": "SRC012_P0001_C001",
+      "score": 0.5900445276964925
+    },
+    {
+      "rank": 5,
+      "enhanced_source_id": "SRC055",
+      "source_file": "HJ_1122-2020.md",
+      "parent_id": "SRC055_P0022",
+      "child_id": "SRC055_P0022_C005",
+      "score": 0.49927492446717997
+    }
+  ],
+  "snapshot_sha256": "a648b20455fc8d18005faa78c029a00a801a5015bb3d07b5f5f2937436895525"
+}

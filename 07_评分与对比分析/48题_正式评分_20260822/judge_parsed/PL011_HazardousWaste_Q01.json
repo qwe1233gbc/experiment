@@ -1,0 +1,42 @@
+{
+  "question_id": "PL011_HazardousWaste_Q01",
+  "prompt_chars": 10950,
+  "scores": [
+    {
+      "response_id": "R1",
+      "correctness": 2,
+      "evidence_use": 2,
+      "actionability": 2,
+      "regulatory_basis": null,
+      "skill_workflow": null,
+      "rationale": "虽结论与参考答案不同，但准确指出报告中包装桶属性前后矛盾及清洗废液识别缺失等实质问题，证据定位精准，修改建议具体可执行，符合评分规则中关于额外真实问题的豁免条款。"
+    },
+    {
+      "response_id": "R2",
+      "correctness": 2,
+      "evidence_use": 2,
+      "actionability": 2,
+      "regulatory_basis": 1,
+      "skill_workflow": null,
+      "rationale": "识别出包装桶矛盾及产生量测算不闭合等深层问题，证据详实且行动建议具体。因RAG缺失导致HW49外部核验受限，法规依据部分充分，但内部逻辑核查质量极高，符合额外问题豁免标准。"
+    },
+    {
+      "response_id": "R3",
+      "correctness": 2,
+      "evidence_use": 2,
+      "actionability": 2,
+      "regulatory_basis": null,
+      "skill_workflow": 2,
+      "rationale": "完整体现审核工作流，精准识别包装桶属性冲突及清洗废液论证不足等关键遗漏。在无RAG情况下严守边界，未臆造法规，指出的问题真实有效且建议可执行，符合额外真实问题不扣分原则。"
+    },
+    {
+      "response_id": "R4",
+      "correctness": 2,
+      "evidence_use": 2,
+      "actionability": 2,
+      "regulatory_basis": 1,
+      "skill_workflow": 2,
+      "rationale": "工作流完整，除发现包装桶矛盾外，还核实了物料平衡计算错误及表格间不一致。虽因RAG限制法规依据仅部分充分，但对报告内部实质性缺陷的挖掘深入且建议具体，符合额外问题豁免条件。"
+    }
+  ]
+}

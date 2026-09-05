@@ -1,0 +1,29 @@
+{
+  "id": "chatcmpl-daf52d6a-2384-4108-8272-89ec2e9faabe",
+  "object": "chat.completion",
+  "created": 1786533490,
+  "model": "qwen3.8-max",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"scores\": [{\"response_id\": \"R1\", \"correctness\": 2, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": null, \"skill_workflow\": null, \"rationale\": \"结论正确，证据引用准确。因rag/skill不可用，法规与流程评分为null。明确边界并提示C2921归类需核验，无问题时给出保持项与边界，可执行性强。\"}, {\"response_id\": \"R2\", \"correctness\": 2, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": 2, \"skill_workflow\": null, \"rationale\": \"结论与证据均正确，引用了分类标准支持判断。建议补充说明以增强论证，具备可操作性。skill不可用故流程为null，法规依据充分。\"}, {\"response_id\": \"R3\", \"correctness\": 2, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": null, \"skill_workflow\": 2, \"rationale\": \"结论正确，证据详实。完整体现分步核查与边界分析，指出主次关系判定缺失及标准原文未附，提供了具体核验方向。rag不可用故法规为null。\"}, {\"response_id\": \"R4\", \"correctness\": 2, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": 2, \"skill_workflow\": 2, \"rationale\": \"结论正确，证据链完整。结合RAG验证了分类定义，完整执行审核工作流，明确了印刷工序不单独归类的边界，分析全面且依据充分。\"}]}"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4924,
+    "completion_tokens": 361,
+    "total_tokens": 5285,
+    "prompt_tokens_details": {
+      "text_tokens": 4924
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  }
+}

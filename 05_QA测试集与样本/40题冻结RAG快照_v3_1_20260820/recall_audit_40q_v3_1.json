@@ -1,0 +1,1449 @@
+{
+ "grade_counts": {
+  "A": 37,
+  "B": 2,
+  "C": 1
+ },
+ "results": [
+  {
+   "question_id": "PL006_Construction_Q01",
+   "audit_type": "建设内容完整性",
+   "grade": "B",
+   "top5_sources": [
+    "SRC015",
+    "SRC050",
+    "SRC061",
+    "SRC021",
+    "SRC055"
+   ],
+   "expected_hits": [
+    "SRC061"
+   ],
+   "missing_expected": [
+    "SRC001",
+    "SRC006"
+   ],
+   "markers_hit_in_expected": [],
+   "markers_in_top5": [],
+   "rationale": "Top-5命中预期知识源但核心要点缺失（缺：['建设内容', '主体工程', '工程分析', '产污环节', '建设性质']）"
+  },
+  {
+   "question_id": "PL006_SourceStrength_Q01",
+   "audit_type": "污染源强定量核算",
+   "grade": "A",
+   "top5_sources": [
+    "SRC078",
+    "SRC021",
+    "SRC080",
+    "SRC015",
+    "SRC050"
+   ],
+   "expected_hits": [
+    "SRC015",
+    "SRC078",
+    "SRC080"
+   ],
+   "missing_expected": [
+    "SRC001",
+    "SRC013",
+    "SRC014",
+    "SRC016",
+    "SRC074",
+    "SRC075",
+    "SRC076"
+   ],
+   "markers_hit_in_expected": [
+    "源强",
+    "产生量",
+    "排放量",
+    "收集效率",
+    "去除效率",
+    "有组织",
+    "无组织",
+    "闭合"
+   ],
+   "markers_in_top5": [
+    "源强",
+    "产生量",
+    "排放量",
+    "收集效率",
+    "去除效率",
+    "有组织",
+    "无组织",
+    "闭合"
+   ],
+   "rationale": "Top-5命中预期知识源3个（SRC015,SRC078,SRC080），且命中核心要点：['源强', '产生量', '排放量', '收集效率', '去除效率']"
+  },
+  {
+   "question_id": "PL006_CaptureEfficiency_Q01",
+   "audit_type": "废气收集效率",
+   "grade": "A",
+   "top5_sources": [
+    "SRC004",
+    "SRC081",
+    "SRC002",
+    "SRC017",
+    "SRC021"
+   ],
+   "expected_hits": [
+    "SRC004",
+    "SRC081"
+   ],
+   "missing_expected": [],
+   "markers_hit_in_expected": [
+    "收集效率",
+    "密闭",
+    "集气罩",
+    "换气次数"
+   ],
+   "markers_in_top5": [
+    "收集效率",
+    "密闭",
+    "集气罩",
+    "无组织",
+    "换气次数"
+   ],
+   "rationale": "Top-5命中预期知识源2个（SRC004,SRC081），且命中核心要点：['收集效率', '密闭', '集气罩', '换气次数']"
+  },
+  {
+   "question_id": "PL006_ActivatedCarbon_Q01",
+   "audit_type": "活性炭治理设施参数",
+   "grade": "A",
+   "top5_sources": [
+    "SRC055",
+    "SRC015",
+    "SRC053",
+    "SRC081",
+    "SRC079"
+   ],
+   "expected_hits": [
+    "SRC079"
+   ],
+   "missing_expected": [],
+   "markers_hit_in_expected": [
+    "活性炭",
+    "碘值",
+    "装填",
+    "过滤风速",
+    "吸附",
+    "更换周期"
+   ],
+   "markers_in_top5": [
+    "活性炭",
+    "碘值",
+    "装填",
+    "过滤风速",
+    "吸附",
+    "更换周期"
+   ],
+   "rationale": "Top-5命中预期知识源1个（SRC079），且命中核心要点：['活性炭', '碘值', '装填', '过滤风速', '吸附']"
+  },
+  {
+   "question_id": "PL007_Construction_Q01",
+   "audit_type": "建设内容完整性",
+   "grade": "A",
+   "top5_sources": [
+    "SRC006",
+    "SRC061",
+    "SRC021",
+    "SRC055",
+    "SRC071"
+   ],
+   "expected_hits": [
+    "SRC006",
+    "SRC061"
+   ],
+   "missing_expected": [
+    "SRC001"
+   ],
+   "markers_hit_in_expected": [
+    "建设内容",
+    "主体工程"
+   ],
+   "markers_in_top5": [
+    "建设内容",
+    "主体工程",
+    "产污环节"
+   ],
+   "rationale": "Top-5命中预期知识源2个（SRC006,SRC061），且命中核心要点：['建设内容', '主体工程']"
+  },
+  {
+   "question_id": "PL007_SourceStrength_Q01",
+   "audit_type": "污染源强定量核算",
+   "grade": "A",
+   "top5_sources": [
+    "SRC078",
+    "SRC055",
+    "SRC061",
+    "SRC020",
+    "SRC080"
+   ],
+   "expected_hits": [
+    "SRC078",
+    "SRC080"
+   ],
+   "missing_expected": [
+    "SRC001",
+    "SRC013",
+    "SRC014",
+    "SRC015",
+    "SRC016",
+    "SRC074",
+    "SRC075",
+    "SRC076"
+   ],
+   "markers_hit_in_expected": [
+    "源强",
+    "产生量",
+    "排放量",
+    "收集效率",
+    "有组织",
+    "无组织",
+    "闭合"
+   ],
+   "markers_in_top5": [
+    "源强",
+    "产生量",
+    "排放量",
+    "收集效率",
+    "有组织",
+    "无组织",
+    "闭合"
+   ],
+   "rationale": "Top-5命中预期知识源2个（SRC078,SRC080），且命中核心要点：['源强', '产生量', '排放量', '收集效率', '有组织']"
+  },
+  {
+   "question_id": "PL007_DesignAirflow_Q01",
+   "audit_type": "废气设计风量",
+   "grade": "A",
+   "top5_sources": [
+    "SRC003",
+    "SRC081",
+    "SRC002",
+    "SRC004",
+    "SRC079"
+   ],
+   "expected_hits": [
+    "SRC003",
+    "SRC081"
+   ],
+   "missing_expected": [
+    "SRC059"
+   ],
+   "markers_hit_in_expected": [
+    "设计风量",
+    "漏风系数",
+    "120%",
+    "风机",
+    "风量"
+   ],
+   "markers_in_top5": [
+    "设计风量",
+    "漏风系数",
+    "120%",
+    "风机",
+    "风量"
+   ],
+   "rationale": "Top-5命中预期知识源2个（SRC003,SRC081），且命中核心要点：['设计风量', '漏风系数', '120%', '风机', '风量']"
+  },
+  {
+   "question_id": "PL007_CaptureEfficiency_Q01",
+   "audit_type": "废气收集效率",
+   "grade": "A",
+   "top5_sources": [
+    "SRC019",
+    "SRC004",
+    "SRC017",
+    "SRC050",
+    "SRC055"
+   ],
+   "expected_hits": [
+    "SRC004"
+   ],
+   "missing_expected": [
+    "SRC081"
+   ],
+   "markers_hit_in_expected": [
+    "收集效率",
+    "密闭",
+    "集气罩"
+   ],
+   "markers_in_top5": [
+    "收集效率",
+    "密闭",
+    "集气罩",
+    "无组织"
+   ],
+   "rationale": "Top-5命中预期知识源1个（SRC004），且命中核心要点：['收集效率', '密闭', '集气罩']"
+  },
+  {
+   "question_id": "PL008_Construction_Q01",
+   "audit_type": "建设内容完整性",
+   "grade": "A",
+   "top5_sources": [
+    "SRC076",
+    "SRC056",
+    "SRC061",
+    "SRC071",
+    "SRC006"
+   ],
+   "expected_hits": [
+    "SRC006",
+    "SRC061"
+   ],
+   "missing_expected": [
+    "SRC001"
+   ],
+   "markers_hit_in_expected": [
+    "建设内容",
+    "主体工程"
+   ],
+   "markers_in_top5": [
+    "建设内容",
+    "主体工程"
+   ],
+   "rationale": "Top-5命中预期知识源2个（SRC006,SRC061），且命中核心要点：['建设内容', '主体工程']"
+  },
+  {
+   "question_id": "PL008_SourceStrength_Q01",
+   "audit_type": "污染源强定量核算",
+   "grade": "A",
+   "top5_sources": [
+    "SRC076",
+    "SRC080",
+    "SRC061",
+    "SRC078",
+    "SRC015"
+   ],
+   "expected_hits": [
+    "SRC015",
+    "SRC076",
+    "SRC078",
+    "SRC080"
+   ],
+   "missing_expected": [
+    "SRC001",
+    "SRC013",
+    "SRC014",
+    "SRC016",
+    "SRC074",
+    "SRC075"
+   ],
+   "markers_hit_in_expected": [
+    "源强",
+    "产生量",
+    "排放量",
+    "收集效率",
+    "去除效率",
+    "有组织",
+    "无组织",
+    "闭合"
+   ],
+   "markers_in_top5": [
+    "源强",
+    "产生量",
+    "排放量",
+    "收集效率",
+    "去除效率",
+    "有组织",
+    "无组织",
+    "闭合"
+   ],
+   "rationale": "Top-5命中预期知识源4个（SRC015,SRC076,SRC078,SRC080），且命中核心要点：['源强', '产生量', '排放量', '收集效率', '去除效率']"
+  },
+  {
+   "question_id": "PL008_DesignAirflow_Q01",
+   "audit_type": "废气设计风量",
+   "grade": "A",
+   "top5_sources": [
+    "SRC002",
+    "SRC003",
+    "SRC081",
+    "SRC059",
+    "SRC079"
+   ],
+   "expected_hits": [
+    "SRC003",
+    "SRC059",
+    "SRC081"
+   ],
+   "missing_expected": [],
+   "markers_hit_in_expected": [
+    "设计风量",
+    "漏风系数",
+    "120%",
+    "风机",
+    "风量"
+   ],
+   "markers_in_top5": [
+    "设计风量",
+    "漏风系数",
+    "120%",
+    "风机",
+    "风量"
+   ],
+   "rationale": "Top-5命中预期知识源3个（SRC003,SRC059,SRC081），且命中核心要点：['设计风量', '漏风系数', '120%', '风机', '风量']"
+  },
+  {
+   "question_id": "PL008_VOCSTotal_Q01",
+   "audit_type": "VOCs总量控制与一致性",
+   "grade": "A",
+   "top5_sources": [
+    "SRC050",
+    "SRC080",
+    "SRC020",
+    "SRC078",
+    "SRC017"
+   ],
+   "expected_hits": [
+    "SRC078",
+    "SRC080"
+   ],
+   "missing_expected": [
+    "SRC001"
+   ],
+   "markers_hit_in_expected": [
+    "有组织",
+    "无组织",
+    "排放量",
+    "削减",
+    "替代",
+    "一致性"
+   ],
+   "markers_in_top5": [
+    "有组织",
+    "无组织",
+    "排放量",
+    "削减",
+    "替代",
+    "一致性"
+   ],
+   "rationale": "Top-5命中预期知识源2个（SRC078,SRC080），且命中核心要点：['有组织', '无组织', '排放量', '削减', '替代']"
+  },
+  {
+   "question_id": "PL009_Construction_Q01",
+   "audit_type": "建设内容完整性",
+   "grade": "B",
+   "top5_sources": [
+    "SRC015",
+    "SRC055",
+    "SRC060",
+    "SRC061",
+    "SRC056"
+   ],
+   "expected_hits": [
+    "SRC061"
+   ],
+   "missing_expected": [
+    "SRC001",
+    "SRC006"
+   ],
+   "markers_hit_in_expected": [],
+   "markers_in_top5": [],
+   "rationale": "Top-5命中预期知识源但核心要点缺失（缺：['建设内容', '主体工程', '工程分析', '产污环节', '建设性质']）"
+  },
+  {
+   "question_id": "PL009_Coefficient_Q01",
+   "audit_type": "产污系数适用性",
+   "grade": "A",
+   "top5_sources": [
+    "SRC014",
+    "SRC015",
+    "SRC075",
+    "SRC016",
+    "SRC077"
+   ],
+   "expected_hits": [
+    "SRC014",
+    "SRC015",
+    "SRC016",
+    "SRC075",
+    "SRC077"
+   ],
+   "missing_expected": [
+    "SRC013",
+    "SRC055",
+    "SRC074",
+    "SRC076"
+   ],
+   "markers_hit_in_expected": [
+    "产污系数",
+    "kg/t",
+    "系数表",
+    "核算方法"
+   ],
+   "markers_in_top5": [
+    "产污系数",
+    "kg/t",
+    "系数表",
+    "核算方法"
+   ],
+   "rationale": "Top-5命中预期知识源5个（SRC014,SRC015,SRC016,SRC075,SRC077），且命中核心要点：['产污系数', 'kg/t', '系数表', '核算方法']"
+  },
+  {
+   "question_id": "PL009_DesignAirflow_Q01",
+   "audit_type": "废气设计风量",
+   "grade": "A",
+   "top5_sources": [
+    "SRC003",
+    "SRC015",
+    "SRC004",
+    "SRC079",
+    "SRC017"
+   ],
+   "expected_hits": [
+    "SRC003"
+   ],
+   "missing_expected": [
+    "SRC059",
+    "SRC081"
+   ],
+   "markers_hit_in_expected": [
+    "设计风量",
+    "漏风系数",
+    "风机",
+    "风量"
+   ],
+   "markers_in_top5": [
+    "设计风量",
+    "漏风系数",
+    "120%",
+    "风机",
+    "风量"
+   ],
+   "rationale": "Top-5命中预期知识源1个（SRC003），且命中核心要点：['设计风量', '漏风系数', '风机', '风量']"
+  },
+  {
+   "question_id": "PL009_CaptureEfficiency_Q01",
+   "audit_type": "废气收集效率",
+   "grade": "A",
+   "top5_sources": [
+    "SRC002",
+    "SRC004",
+    "SRC059",
+    "SRC055",
+    "SRC017"
+   ],
+   "expected_hits": [
+    "SRC004"
+   ],
+   "missing_expected": [
+    "SRC081"
+   ],
+   "markers_hit_in_expected": [
+    "收集效率",
+    "密闭",
+    "集气罩"
+   ],
+   "markers_in_top5": [
+    "收集效率",
+    "密闭",
+    "集气罩",
+    "无组织"
+   ],
+   "rationale": "Top-5命中预期知识源1个（SRC004），且命中核心要点：['收集效率', '密闭', '集气罩']"
+  },
+  {
+   "question_id": "PL010_SourceStrength_Q01",
+   "audit_type": "污染源强定量核算",
+   "grade": "A",
+   "top5_sources": [
+    "SRC078",
+    "SRC061",
+    "SRC074",
+    "SRC015",
+    "SRC080"
+   ],
+   "expected_hits": [
+    "SRC015",
+    "SRC074",
+    "SRC078",
+    "SRC080"
+   ],
+   "missing_expected": [
+    "SRC001",
+    "SRC013",
+    "SRC014",
+    "SRC016",
+    "SRC075",
+    "SRC076"
+   ],
+   "markers_hit_in_expected": [
+    "源强",
+    "产生量",
+    "排放量",
+    "收集效率",
+    "有组织",
+    "无组织",
+    "闭合"
+   ],
+   "markers_in_top5": [
+    "源强",
+    "产生量",
+    "排放量",
+    "收集效率",
+    "有组织",
+    "无组织",
+    "闭合"
+   ],
+   "rationale": "Top-5命中预期知识源4个（SRC015,SRC074,SRC078,SRC080），且命中核心要点：['源强', '产生量', '排放量', '收集效率', '有组织']"
+  },
+  {
+   "question_id": "PL010_Coefficient_Q01",
+   "audit_type": "产污系数适用性",
+   "grade": "A",
+   "top5_sources": [
+    "SRC074",
+    "SRC001",
+    "SRC055",
+    "SRC061",
+    "SRC016"
+   ],
+   "expected_hits": [
+    "SRC016",
+    "SRC055",
+    "SRC074"
+   ],
+   "missing_expected": [
+    "SRC013",
+    "SRC014",
+    "SRC015",
+    "SRC075",
+    "SRC076",
+    "SRC077"
+   ],
+   "markers_hit_in_expected": [
+    "产污系数",
+    "kg/t",
+    "系数表",
+    "核算方法"
+   ],
+   "markers_in_top5": [
+    "产污系数",
+    "kg/t",
+    "系数表",
+    "核算方法"
+   ],
+   "rationale": "Top-5命中预期知识源3个（SRC016,SRC055,SRC074），且命中核心要点：['产污系数', 'kg/t', '系数表', '核算方法']"
+  },
+  {
+   "question_id": "PL010_CaptureAirflow_Q01",
+   "audit_type": "废气收集形式与理论排气量",
+   "grade": "A",
+   "top5_sources": [
+    "SRC081",
+    "SRC003",
+    "SRC002",
+    "SRC021",
+    "SRC004"
+   ],
+   "expected_hits": [
+    "SRC002",
+    "SRC081"
+   ],
+   "missing_expected": [],
+   "markers_hit_in_expected": [
+    "集气罩",
+    "控制风速",
+    "排气量",
+    "罩口",
+    "3600",
+    "周长法",
+    "排风量"
+   ],
+   "markers_in_top5": [
+    "集气罩",
+    "控制风速",
+    "排气量",
+    "罩口",
+    "3600",
+    "周长法",
+    "排风量"
+   ],
+   "rationale": "Top-5命中预期知识源2个（SRC002,SRC081），且命中核心要点：['集气罩', '控制风速', '排气量', '罩口', '3600']"
+  },
+  {
+   "question_id": "PL010_VOCSTotal_Q01",
+   "audit_type": "VOCs总量控制与一致性",
+   "grade": "A",
+   "top5_sources": [
+    "SRC080",
+    "SRC066",
+    "SRC078",
+    "SRC053",
+    "SRC021"
+   ],
+   "expected_hits": [
+    "SRC078",
+    "SRC080"
+   ],
+   "missing_expected": [
+    "SRC001"
+   ],
+   "markers_hit_in_expected": [
+    "有组织",
+    "无组织",
+    "排放量",
+    "削减",
+    "替代",
+    "一致性"
+   ],
+   "markers_in_top5": [
+    "有组织",
+    "无组织",
+    "排放量",
+    "削减",
+    "替代",
+    "一致性"
+   ],
+   "rationale": "Top-5命中预期知识源2个（SRC078,SRC080），且命中核心要点：['有组织', '无组织', '排放量', '削减', '替代']"
+  },
+  {
+   "question_id": "PL011_Construction_Q01",
+   "audit_type": "建设内容完整性",
+   "grade": "C",
+   "top5_sources": [
+    "SRC018",
+    "SRC020",
+    "SRC021",
+    "SRC017",
+    "SRC019"
+   ],
+   "expected_hits": [],
+   "missing_expected": [
+    "SRC001",
+    "SRC006",
+    "SRC061"
+   ],
+   "markers_hit_in_expected": [],
+   "markers_in_top5": [],
+   "rationale": "Top-5基本未召回支撑该题审核的有效知识"
+  },
+  {
+   "question_id": "PL011_CaptureAirflow_Q01",
+   "audit_type": "废气收集形式与理论排气量",
+   "grade": "A",
+   "top5_sources": [
+    "SRC002",
+    "SRC059",
+    "SRC003",
+    "SRC004",
+    "SRC081"
+   ],
+   "expected_hits": [
+    "SRC002",
+    "SRC081"
+   ],
+   "missing_expected": [],
+   "markers_hit_in_expected": [
+    "集气罩",
+    "控制风速",
+    "排气量",
+    "罩口",
+    "3600",
+    "周长法",
+    "排风量"
+   ],
+   "markers_in_top5": [
+    "集气罩",
+    "控制风速",
+    "排气量",
+    "罩口",
+    "3600",
+    "周长法",
+    "排风量"
+   ],
+   "rationale": "Top-5命中预期知识源2个（SRC002,SRC081），且命中核心要点：['集气罩', '控制风速', '排气量', '罩口', '3600']"
+  },
+  {
+   "question_id": "PL011_ActivatedCarbon_Q01",
+   "audit_type": "活性炭治理设施参数",
+   "grade": "A",
+   "top5_sources": [
+    "SRC017",
+    "SRC021",
+    "SRC079",
+    "SRC015",
+    "SRC056"
+   ],
+   "expected_hits": [
+    "SRC079"
+   ],
+   "missing_expected": [],
+   "markers_hit_in_expected": [
+    "活性炭",
+    "碘值",
+    "装填",
+    "过滤风速",
+    "吸附",
+    "更换周期"
+   ],
+   "markers_in_top5": [
+    "活性炭",
+    "碘值",
+    "装填",
+    "过滤风速",
+    "吸附",
+    "更换周期"
+   ],
+   "rationale": "Top-5命中预期知识源1个（SRC079），且命中核心要点：['活性炭', '碘值', '装填', '过滤风速', '吸附']"
+  },
+  {
+   "question_id": "PL011_HazardousWaste_Q01",
+   "audit_type": "危险废物识别",
+   "grade": "A",
+   "top5_sources": [
+    "SRC036",
+    "SRC055",
+    "SRC038",
+    "SRC037",
+    "SRC078"
+   ],
+   "expected_hits": [
+    "SRC036",
+    "SRC037",
+    "SRC038"
+   ],
+   "missing_expected": [
+    "SRC028",
+    "SRC029",
+    "SRC030",
+    "SRC031",
+    "SRC032",
+    "SRC033",
+    "SRC034",
+    "SRC035",
+    "SRC040",
+    "SRC044",
+    "SRC045"
+   ],
+   "markers_hit_in_expected": [
+    "危险废物",
+    "代码",
+    "类别",
+    "名录"
+   ],
+   "markers_in_top5": [
+    "危险废物",
+    "代码",
+    "类别",
+    "名录"
+   ],
+   "rationale": "Top-5命中预期知识源3个（SRC036,SRC037,SRC038），且命中核心要点：['危险废物', '代码', '类别', '名录']"
+  },
+  {
+   "question_id": "PL012_CaptureAirflow_Q01",
+   "audit_type": "废气收集形式与理论排气量",
+   "grade": "A",
+   "top5_sources": [
+    "SRC002",
+    "SRC003",
+    "SRC004",
+    "SRC081",
+    "SRC055"
+   ],
+   "expected_hits": [
+    "SRC002",
+    "SRC081"
+   ],
+   "missing_expected": [],
+   "markers_hit_in_expected": [
+    "集气罩",
+    "控制风速",
+    "排气量",
+    "罩口",
+    "3600",
+    "周长法",
+    "排风量"
+   ],
+   "markers_in_top5": [
+    "集气罩",
+    "控制风速",
+    "排气量",
+    "罩口",
+    "3600",
+    "周长法",
+    "排风量"
+   ],
+   "rationale": "Top-5命中预期知识源2个（SRC002,SRC081），且命中核心要点：['集气罩', '控制风速', '排气量', '罩口', '3600']"
+  },
+  {
+   "question_id": "PL012_ActivatedCarbon_Q01",
+   "audit_type": "活性炭治理设施参数",
+   "grade": "A",
+   "top5_sources": [
+    "SRC079",
+    "SRC021",
+    "SRC020",
+    "SRC045",
+    "SRC017"
+   ],
+   "expected_hits": [
+    "SRC079"
+   ],
+   "missing_expected": [],
+   "markers_hit_in_expected": [
+    "活性炭",
+    "碘值",
+    "装填",
+    "过滤风速",
+    "吸附",
+    "更换周期"
+   ],
+   "markers_in_top5": [
+    "活性炭",
+    "碘值",
+    "装填",
+    "过滤风速",
+    "吸附",
+    "更换周期"
+   ],
+   "rationale": "Top-5命中预期知识源1个（SRC079），且命中核心要点：['活性炭', '碘值', '装填', '过滤风速', '吸附']"
+  },
+  {
+   "question_id": "PL012_HazardousWaste_Q01",
+   "audit_type": "危险废物识别",
+   "grade": "A",
+   "top5_sources": [
+    "SRC044",
+    "SRC037",
+    "SRC038",
+    "SRC013",
+    "SRC036"
+   ],
+   "expected_hits": [
+    "SRC036",
+    "SRC037",
+    "SRC038",
+    "SRC044"
+   ],
+   "missing_expected": [
+    "SRC028",
+    "SRC029",
+    "SRC030",
+    "SRC031",
+    "SRC032",
+    "SRC033",
+    "SRC034",
+    "SRC035",
+    "SRC040",
+    "SRC045"
+   ],
+   "markers_hit_in_expected": [
+    "危险废物",
+    "代码",
+    "类别",
+    "名录",
+    "GB18597"
+   ],
+   "markers_in_top5": [
+    "危险废物",
+    "代码",
+    "类别",
+    "名录",
+    "GB18597"
+   ],
+   "rationale": "Top-5命中预期知识源4个（SRC036,SRC037,SRC038,SRC044），且命中核心要点：['危险废物', '代码', '类别', '名录', 'GB18597']"
+  },
+  {
+   "question_id": "PL012_VOCSTotal_Q01",
+   "audit_type": "VOCs总量控制与一致性",
+   "grade": "A",
+   "top5_sources": [
+    "SRC080",
+    "SRC015",
+    "SRC079",
+    "SRC078",
+    "SRC068"
+   ],
+   "expected_hits": [
+    "SRC078",
+    "SRC080"
+   ],
+   "missing_expected": [
+    "SRC001"
+   ],
+   "markers_hit_in_expected": [
+    "有组织",
+    "无组织",
+    "排放量",
+    "削减",
+    "替代",
+    "一致性"
+   ],
+   "markers_in_top5": [
+    "有组织",
+    "无组织",
+    "排放量",
+    "削减",
+    "替代",
+    "一致性"
+   ],
+   "rationale": "Top-5命中预期知识源2个（SRC078,SRC080），且命中核心要点：['有组织', '无组织', '排放量', '削减', '替代']"
+  },
+  {
+   "question_id": "PL013_SourceStrength_Q01",
+   "audit_type": "污染源强定量核算",
+   "grade": "A",
+   "top5_sources": [
+    "SRC078",
+    "SRC015",
+    "SRC017",
+    "SRC061",
+    "SRC055"
+   ],
+   "expected_hits": [
+    "SRC015",
+    "SRC078"
+   ],
+   "missing_expected": [
+    "SRC001",
+    "SRC013",
+    "SRC014",
+    "SRC016",
+    "SRC074",
+    "SRC075",
+    "SRC076",
+    "SRC080"
+   ],
+   "markers_hit_in_expected": [
+    "源强",
+    "产生量",
+    "排放量",
+    "收集效率",
+    "去除效率",
+    "有组织",
+    "无组织",
+    "闭合"
+   ],
+   "markers_in_top5": [
+    "源强",
+    "产生量",
+    "排放量",
+    "收集效率",
+    "去除效率",
+    "有组织",
+    "无组织",
+    "闭合"
+   ],
+   "rationale": "Top-5命中预期知识源2个（SRC015,SRC078），且命中核心要点：['源强', '产生量', '排放量', '收集效率', '去除效率']"
+  },
+  {
+   "question_id": "PL013_Coefficient_Q01",
+   "audit_type": "产污系数适用性",
+   "grade": "A",
+   "top5_sources": [
+    "SRC075",
+    "SRC001",
+    "SRC016",
+    "SRC061",
+    "SRC078"
+   ],
+   "expected_hits": [
+    "SRC016",
+    "SRC075"
+   ],
+   "missing_expected": [
+    "SRC013",
+    "SRC014",
+    "SRC015",
+    "SRC055",
+    "SRC074",
+    "SRC076",
+    "SRC077"
+   ],
+   "markers_hit_in_expected": [
+    "产污系数",
+    "kg/t",
+    "系数表",
+    "核算方法"
+   ],
+   "markers_in_top5": [
+    "产污系数",
+    "kg/t",
+    "系数表",
+    "核算方法"
+   ],
+   "rationale": "Top-5命中预期知识源2个（SRC016,SRC075），且命中核心要点：['产污系数', 'kg/t', '系数表', '核算方法']"
+  },
+  {
+   "question_id": "PL013_ActivatedCarbon_Q01",
+   "audit_type": "活性炭治理设施参数",
+   "grade": "A",
+   "top5_sources": [
+    "SRC079",
+    "SRC021",
+    "SRC081",
+    "SRC050",
+    "SRC059"
+   ],
+   "expected_hits": [
+    "SRC079"
+   ],
+   "missing_expected": [],
+   "markers_hit_in_expected": [
+    "活性炭",
+    "碘值",
+    "装填",
+    "过滤风速",
+    "吸附",
+    "更换周期"
+   ],
+   "markers_in_top5": [
+    "活性炭",
+    "碘值",
+    "装填",
+    "过滤风速",
+    "吸附",
+    "更换周期"
+   ],
+   "rationale": "Top-5命中预期知识源1个（SRC079），且命中核心要点：['活性炭', '碘值', '装填', '过滤风速', '吸附']"
+  },
+  {
+   "question_id": "PL013_HazardousWaste_Q01",
+   "audit_type": "危险废物识别",
+   "grade": "A",
+   "top5_sources": [
+    "SRC040",
+    "SRC036",
+    "SRC035",
+    "SRC044",
+    "SRC055"
+   ],
+   "expected_hits": [
+    "SRC035",
+    "SRC036",
+    "SRC040",
+    "SRC044"
+   ],
+   "missing_expected": [
+    "SRC028",
+    "SRC029",
+    "SRC030",
+    "SRC031",
+    "SRC032",
+    "SRC033",
+    "SRC034",
+    "SRC037",
+    "SRC038",
+    "SRC045"
+   ],
+   "markers_hit_in_expected": [
+    "危险废物",
+    "代码",
+    "类别",
+    "名录",
+    "豁免"
+   ],
+   "markers_in_top5": [
+    "危险废物",
+    "代码",
+    "类别",
+    "名录",
+    "豁免"
+   ],
+   "rationale": "Top-5命中预期知识源4个（SRC035,SRC036,SRC040,SRC044），且命中核心要点：['危险废物', '代码', '类别', '名录', '豁免']"
+  },
+  {
+   "question_id": "PL014_Coefficient_Q01",
+   "audit_type": "产污系数适用性",
+   "grade": "A",
+   "top5_sources": [
+    "SRC048",
+    "SRC076",
+    "SRC015",
+    "SRC021",
+    "SRC078"
+   ],
+   "expected_hits": [
+    "SRC015",
+    "SRC076"
+   ],
+   "missing_expected": [
+    "SRC013",
+    "SRC014",
+    "SRC016",
+    "SRC055",
+    "SRC074",
+    "SRC075",
+    "SRC077"
+   ],
+   "markers_hit_in_expected": [
+    "产污系数",
+    "kg/t",
+    "系数表",
+    "核算方法"
+   ],
+   "markers_in_top5": [
+    "产污系数",
+    "kg/t",
+    "系数表",
+    "核算方法"
+   ],
+   "rationale": "Top-5命中预期知识源2个（SRC015,SRC076），且命中核心要点：['产污系数', 'kg/t', '系数表', '核算方法']"
+  },
+  {
+   "question_id": "PL014_CaptureAirflow_Q01",
+   "audit_type": "废气收集形式与理论排气量",
+   "grade": "A",
+   "top5_sources": [
+    "SRC002",
+    "SRC003",
+    "SRC021",
+    "SRC020",
+    "SRC059"
+   ],
+   "expected_hits": [
+    "SRC002"
+   ],
+   "missing_expected": [
+    "SRC081"
+   ],
+   "markers_hit_in_expected": [
+    "集气罩",
+    "控制风速",
+    "排气量",
+    "罩口",
+    "3600"
+   ],
+   "markers_in_top5": [
+    "集气罩",
+    "控制风速",
+    "排气量",
+    "罩口",
+    "3600"
+   ],
+   "rationale": "Top-5命中预期知识源1个（SRC002），且命中核心要点：['集气罩', '控制风速', '排气量', '罩口', '3600']"
+  },
+  {
+   "question_id": "PL014_DesignAirflow_Q01",
+   "audit_type": "废气设计风量",
+   "grade": "A",
+   "top5_sources": [
+    "SRC003",
+    "SRC002",
+    "SRC081",
+    "SRC071",
+    "SRC053"
+   ],
+   "expected_hits": [
+    "SRC003",
+    "SRC081"
+   ],
+   "missing_expected": [
+    "SRC059"
+   ],
+   "markers_hit_in_expected": [
+    "设计风量",
+    "漏风系数",
+    "120%",
+    "风机",
+    "风量"
+   ],
+   "markers_in_top5": [
+    "设计风量",
+    "漏风系数",
+    "120%",
+    "风机",
+    "风量"
+   ],
+   "rationale": "Top-5命中预期知识源2个（SRC003,SRC081），且命中核心要点：['设计风量', '漏风系数', '120%', '风机', '风量']"
+  },
+  {
+   "question_id": "PL014_VOCSTotal_Q01",
+   "audit_type": "VOCs总量控制与一致性",
+   "grade": "A",
+   "top5_sources": [
+    "SRC023",
+    "SRC078",
+    "SRC017",
+    "SRC080",
+    "SRC020"
+   ],
+   "expected_hits": [
+    "SRC078",
+    "SRC080"
+   ],
+   "missing_expected": [
+    "SRC001"
+   ],
+   "markers_hit_in_expected": [
+    "有组织",
+    "无组织",
+    "排放量",
+    "削减",
+    "替代",
+    "一致性"
+   ],
+   "markers_in_top5": [
+    "有组织",
+    "无组织",
+    "排放量",
+    "削减",
+    "替代",
+    "一致性"
+   ],
+   "rationale": "Top-5命中预期知识源2个（SRC078,SRC080），且命中核心要点：['有组织', '无组织', '排放量', '削减', '替代']"
+  },
+  {
+   "question_id": "PL015_Coefficient_Q01",
+   "audit_type": "产污系数适用性",
+   "grade": "A",
+   "top5_sources": [
+    "SRC001",
+    "SRC015",
+    "SRC076",
+    "SRC057",
+    "SRC016"
+   ],
+   "expected_hits": [
+    "SRC015",
+    "SRC016",
+    "SRC076"
+   ],
+   "missing_expected": [
+    "SRC013",
+    "SRC014",
+    "SRC055",
+    "SRC074",
+    "SRC075",
+    "SRC077"
+   ],
+   "markers_hit_in_expected": [
+    "产污系数",
+    "kg/t",
+    "系数表",
+    "核算方法"
+   ],
+   "markers_in_top5": [
+    "产污系数",
+    "kg/t",
+    "系数表",
+    "核算方法"
+   ],
+   "rationale": "Top-5命中预期知识源3个（SRC015,SRC016,SRC076），且命中核心要点：['产污系数', 'kg/t', '系数表', '核算方法']"
+  },
+  {
+   "question_id": "PL015_CaptureAirflow_Q01",
+   "audit_type": "废气收集形式与理论排气量",
+   "grade": "A",
+   "top5_sources": [
+    "SRC002",
+    "SRC057",
+    "SRC003",
+    "SRC050",
+    "SRC081"
+   ],
+   "expected_hits": [
+    "SRC002",
+    "SRC081"
+   ],
+   "missing_expected": [],
+   "markers_hit_in_expected": [
+    "集气罩",
+    "控制风速",
+    "排气量",
+    "罩口",
+    "3600",
+    "周长法",
+    "排风量"
+   ],
+   "markers_in_top5": [
+    "集气罩",
+    "控制风速",
+    "排气量",
+    "罩口",
+    "3600",
+    "周长法",
+    "排风量"
+   ],
+   "rationale": "Top-5命中预期知识源2个（SRC002,SRC081），且命中核心要点：['集气罩', '控制风速', '排气量', '罩口', '3600']"
+  },
+  {
+   "question_id": "PL015_CaptureEfficiency_Q01",
+   "audit_type": "废气收集效率",
+   "grade": "A",
+   "top5_sources": [
+    "SRC004",
+    "SRC002",
+    "SRC055",
+    "SRC050",
+    "SRC057"
+   ],
+   "expected_hits": [
+    "SRC004"
+   ],
+   "missing_expected": [
+    "SRC081"
+   ],
+   "markers_hit_in_expected": [
+    "收集效率",
+    "密闭",
+    "集气罩"
+   ],
+   "markers_in_top5": [
+    "收集效率",
+    "密闭",
+    "集气罩",
+    "无组织"
+   ],
+   "rationale": "Top-5命中预期知识源1个（SRC004），且命中核心要点：['收集效率', '密闭', '集气罩']"
+  },
+  {
+   "question_id": "PL015_HazardousWaste_Q01",
+   "audit_type": "危险废物识别",
+   "grade": "A",
+   "top5_sources": [
+    "SRC057",
+    "SRC037",
+    "SRC013",
+    "SRC038",
+    "SRC058"
+   ],
+   "expected_hits": [
+    "SRC037",
+    "SRC038"
+   ],
+   "missing_expected": [
+    "SRC028",
+    "SRC029",
+    "SRC030",
+    "SRC031",
+    "SRC032",
+    "SRC033",
+    "SRC034",
+    "SRC035",
+    "SRC036",
+    "SRC040",
+    "SRC044",
+    "SRC045"
+   ],
+   "markers_hit_in_expected": [
+    "代码",
+    "类别"
+   ],
+   "markers_in_top5": [
+    "危险废物",
+    "代码",
+    "类别",
+    "名录",
+    "GB18597"
+   ],
+   "rationale": "Top-5命中预期知识源2个（SRC037,SRC038），且命中核心要点：['代码', '类别']"
+  }
+ ],
+ "manual_review_selection": [
+  "PL011_Construction_Q01",
+  "PL006_SourceStrength_Q01",
+  "PL006_CaptureEfficiency_Q01",
+  "PL006_ActivatedCarbon_Q01",
+  "PL007_DesignAirflow_Q01",
+  "PL008_VOCSTotal_Q01",
+  "PL009_Coefficient_Q01",
+  "PL010_CaptureAirflow_Q01",
+  "PL011_HazardousWaste_Q01",
+  "PL007_SourceStrength_Q01",
+  "PL011_ActivatedCarbon_Q01",
+  "PL012_ActivatedCarbon_Q01"
+ ]
+}

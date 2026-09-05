@@ -1,0 +1,29 @@
+{
+  "id": "chatcmpl-edaef3c5-d0a9-424d-a5f3-940b0a2d8fc7",
+  "object": "chat.completion",
+  "created": 1787378833,
+  "model": "qwen3.8-max",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"scores\": [{\"response_id\": \"R1\", \"correctness\": 2, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": null, \"skill_workflow\": null, \"rationale\": \"准确识别80%效率折减风量错误及正压收集矛盾，结论与金标一致；证据定位精准；虽无RAG但基于报告内部逻辑给出具体修改方向，符合额外真实问题不扣分原则。\"}, {\"response_id\": \"R2\", \"correctness\": 1, \"evidence_use\": 2, \"actionability\": 1, \"regulatory_basis\": 1, \"skill_workflow\": null, \"rationale\": \"发现80%折减问题但未明确判定核算不合理，仅待复核；过度关注RAG公式差异而弱化核心计算逻辑错误；法规依据引用充分但对核心问题的支撑力度被模糊结论稀释。\"}, {\"response_id\": \"R3\", \"correctness\": 1, \"evidence_use\": 2, \"actionability\": 1, \"regulatory_basis\": null, \"skill_workflow\": 2, \"rationale\": \"识别80%折减及正压问题，但结论保守为待复核；额外指出高度取值问题有价值；工作流完整体现分步核查；因未明确否定核算合理性且无RAG，法规项不适用。\"}, {\"response_id\": \"R4\", \"correctness\": 1, \"evidence_use\": 2, \"actionability\": 1, \"regulatory_basis\": 1, \"skill_workflow\": 2, \"rationale\": \"识别80%折减及风量不一致问题，但未直接判定核算不合理；工作流完整；法规引用正确但对核心计算错误的定性支撑不足，结论偏向待复核而非明确纠错。\"}]}"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6219,
+    "completion_tokens": 384,
+    "total_tokens": 6603,
+    "prompt_tokens_details": {
+      "text_tokens": 6219
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  }
+}

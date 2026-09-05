@@ -1,0 +1,349 @@
+{
+  "layer": 4,
+  "layer_name": "Skill程序与路由层",
+  "skill_count": 15,
+  "router_count": 1,
+  "design": "curated human-authored procedural memory with progressive disclosure",
+  "skills": [
+    {
+      "ordinal": 1,
+      "skill_name": "review-eia-industry-classification",
+      "display_name": "国民经济行业类别审核",
+      "description": "从环评报告的产品、原辅材料、生产工艺和主要活动中提取证据，复核国民经济行业小类及代码。用于行业名称、四位代码、产品用途或工艺活动相互冲突时；不用于判断建设项目环境影响评价分类管理名录类别。",
+      "legacy_skill_id": "01_国民经济行业类别",
+      "legacy_workflow": "1-国民经济分类判断.yml",
+      "standard_card_ids": [
+        "STD-DIFY-01-001",
+        "STD-DIFY-01-002"
+      ],
+      "retrieval_query_template": "{skill_id} {report_section} GB/T4754 national_economic_classification 行业代码 塑料制品业 C292 C2921",
+      "skill_path": "E:\\实验文件整理_按论文逻辑\\04_知识库构建\\四层架构_正式库\\04_Skill检索路由_15个Skill\\skills\\review-eia-industry-classification\\SKILL.md",
+      "skill_sha256": "fb35925006e92f372ab4b00233790992f3e2e2da64491d52d4c816a9fa3fbb2f",
+      "contract": {
+        "activation": "description + 触发条件",
+        "procedure": "审核程序 + 计算与内部一致性复核",
+        "termination": "结论分级 + 输出契约",
+        "evidence": "report_evidence + rag_evidence",
+        "degradation": "basis_status + 证据不足与降级规则"
+      }
+    },
+    {
+      "ordinal": 2,
+      "skill_name": "calculate-eia-environmental-investment-ratio",
+      "display_name": "环保投资核算审核",
+      "description": "抽取总投资、环保投资和分项金额，复算环保投资占比及分项合计。用于核对金额单位、统计口径、比例和表间一致性；不用于评价治理技术是否充分。",
+      "legacy_skill_id": "02_环保投资",
+      "legacy_workflow": "2-环评投资核算.yml",
+      "standard_card_ids": [
+        "STD-DIFY-02-001"
+      ],
+      "retrieval_query_template": "{skill_id} {report_section} 环保投资 总投资 环办环评[2020]33号",
+      "skill_path": "E:\\实验文件整理_按论文逻辑\\04_知识库构建\\四层架构_正式库\\04_Skill检索路由_15个Skill\\skills\\calculate-eia-environmental-investment-ratio\\SKILL.md",
+      "skill_sha256": "8f4916b62d42eadfa38b6bc23ab9ba5aba6534ffb6e3a82e8fd77ef6017c07d5",
+      "contract": {
+        "activation": "description + 触发条件",
+        "procedure": "审核程序 + 计算与内部一致性复核",
+        "termination": "结论分级 + 输出契约",
+        "evidence": "report_evidence + rag_evidence",
+        "degradation": "basis_status + 证据不足与降级规则"
+      }
+    },
+    {
+      "ordinal": 3,
+      "skill_name": "review-eia-three-lines-one-list-consistency",
+      "display_name": "三线一单符合性审核",
+      "description": "核对项目位置、环境管控单元名称与编码，并逐条比较生态环境分区管控要求和项目响应。用于佛山、顺德等地区三线一单分析；不用于替代排放标准或环境质量标准审核。",
+      "legacy_skill_id": "03_三线一单",
+      "legacy_workflow": "4-三线一单管控内容一致性判定.yml",
+      "standard_card_ids": [
+        "STD-DIFY-03-001",
+        "STD-DIFY-03-002"
+      ],
+      "retrieval_query_template": "{skill_id} {report_section} 三线一单 顺德 管控单元 准入清单 空间布局约束 污染物排放管控",
+      "skill_path": "E:\\实验文件整理_按论文逻辑\\04_知识库构建\\四层架构_正式库\\04_Skill检索路由_15个Skill\\skills\\review-eia-three-lines-one-list-consistency\\SKILL.md",
+      "skill_sha256": "94ecd07e445bcf0a7451243f9f5f6e4fb3b684d96c394b579238e5590b190ea7",
+      "contract": {
+        "activation": "description + 触发条件",
+        "procedure": "审核程序 + 计算与内部一致性复核",
+        "termination": "结论分级 + 输出契约",
+        "evidence": "report_evidence + rag_evidence",
+        "degradation": "basis_status + 证据不足与降级规则"
+      }
+    },
+    {
+      "ordinal": 4,
+      "skill_name": "review-eia-construction-content-completeness",
+      "display_name": "建设内容完整性审核",
+      "description": "检查污染影响类环评报告中的工程组成、生产设施、原辅材料、产品方案、工艺流程和产排污环节是否完整。用于新建项目建设内容审核；改扩建或技改项目须同时补充原有工程专门审核。",
+      "legacy_skill_id": "04_建设内容",
+      "legacy_workflow": "5-建设内容编制完整性判断.yml",
+      "standard_card_ids": [
+        "STD-DIFY-04-001",
+        "STD-DIFY-SRC-010"
+      ],
+      "retrieval_query_template": "{skill_id} {report_section} 建设内容 工程组成 主体工程 HJ_884-2018 污染源源强核算技术指南 准则 HJ884",
+      "skill_path": "E:\\实验文件整理_按论文逻辑\\04_知识库构建\\四层架构_正式库\\04_Skill检索路由_15个Skill\\skills\\review-eia-construction-content-completeness\\SKILL.md",
+      "skill_sha256": "88bc2eff2f2450cf4ceda19d3410ad87f98d7e14b779cfc046140ff8230c4da7",
+      "contract": {
+        "activation": "description + 触发条件",
+        "procedure": "审核程序 + 计算与内部一致性复核",
+        "termination": "结论分级 + 输出契约",
+        "evidence": "report_evidence + rag_evidence",
+        "degradation": "basis_status + 证据不足与降级规则"
+      }
+    },
+    {
+      "ordinal": 5,
+      "skill_name": "review-eia-environmental-quality-data",
+      "display_name": "环境质量现状数据审核",
+      "description": "核验环评报告引用的大气和地表水环境质量现状数据、公报名称、年份、时效性及原文一致性。用于环境质量公报和现状数据引用审核；不用于判断环境质量标准或排放控制标准。",
+      "legacy_skill_id": "05_环境质量现状数据",
+      "legacy_workflow": "6-环境质量现状数据引用是否有误.yml",
+      "standard_card_ids": [
+        "STD-DIFY-05-001"
+      ],
+      "retrieval_query_template": "{skill_id} {report_section} 环境状态公报 顺德 环境质量现状",
+      "skill_path": "E:\\实验文件整理_按论文逻辑\\04_知识库构建\\四层架构_正式库\\04_Skill检索路由_15个Skill\\skills\\review-eia-environmental-quality-data\\SKILL.md",
+      "skill_sha256": "6b4c19f4d0a6ff9b59dab00605363b8d5e0c87fc0acd596f9d8b8acf9a17952a",
+      "contract": {
+        "activation": "description + 触发条件",
+        "procedure": "审核程序 + 计算与内部一致性复核",
+        "termination": "结论分级 + 输出契约",
+        "evidence": "report_evidence + rag_evidence",
+        "degradation": "basis_status + 证据不足与降级规则"
+      }
+    },
+    {
+      "ordinal": 6,
+      "skill_name": "review-eia-environmental-quality-standards",
+      "display_name": "环境质量执行标准审核",
+      "description": "核验大气、地表水和声环境质量标准与功能区、受纳水体、类别、限值、单位及平均时间是否一致。用于环境质量标准章节；不用于审核监测数据真实性或污染物排放标准。",
+      "legacy_skill_id": "06_环境质量执行标准",
+      "legacy_workflow": "7-环境质量执行标准准确性判断.yml",
+      "standard_card_ids": [
+        "STD-DIFY-06-001",
+        "STD-DIFY-06-002",
+        "STD-DIFY-06-003",
+        "STD-DIFY-06-004"
+      ],
+      "retrieval_query_template": "{skill_id} {report_section} GB3095 环境空气质量标准 大气环境 GB3838 地表水 COD 顺德污水厂 受纳水体 地表水执行标准 GB3096",
+      "skill_path": "E:\\实验文件整理_按论文逻辑\\04_知识库构建\\四层架构_正式库\\04_Skill检索路由_15个Skill\\skills\\review-eia-environmental-quality-standards\\SKILL.md",
+      "skill_sha256": "58f59e859a914ea4b55cf7d2a88839c511a2b3fc1031484136d42dfdbdf3e0f8",
+      "contract": {
+        "activation": "description + 触发条件",
+        "procedure": "审核程序 + 计算与内部一致性复核",
+        "termination": "结论分级 + 输出契约",
+        "evidence": "report_evidence + rag_evidence",
+        "degradation": "basis_status + 证据不足与降级规则"
+      }
+    },
+    {
+      "ordinal": 7,
+      "skill_name": "review-eia-pollutant-discharge-standards",
+      "display_name": "污染物排放标准审核",
+      "description": "综合核验废水、废气、噪声、一般固废和危险废物控制标准的完整性、适用性、版本和限值。用于工序—污染物—排放形式—标准匹配；不用于代替源强核算或环境质量标准审核。",
+      "legacy_skill_id": "07_污染物排放标准",
+      "legacy_workflow": "8-污染物排放标准内容判断.yml",
+      "standard_card_ids": [
+        "STD-DIFY-07-001",
+        "STD-DIFY-07-002",
+        "STD-DIFY-07-003",
+        "STD-DIFY-07-004",
+        "STD-DIFY-07-005",
+        "STD-DIFY-07-006",
+        "STD-DIFY-SRC-001",
+        "STD-DIFY-SRC-002",
+        "STD-DIFY-SRC-003",
+        "STD-DIFY-SRC-004",
+        "STD-DIFY-SRC-005",
+        "STD-DIFY-SRC-006",
+        "STD-DIFY-SRC-008",
+        "STD-DIFY-SRC-009"
+      ],
+      "retrieval_query_template": "{skill_id} {report_section} GB31572 非甲烷总烃 有组织排放 DB44/2367 VOCs 厂区内无组织 GB14554 臭气浓度 恶臭污染物 DB44/27",
+      "skill_path": "E:\\实验文件整理_按论文逻辑\\04_知识库构建\\四层架构_正式库\\04_Skill检索路由_15个Skill\\skills\\review-eia-pollutant-discharge-standards\\SKILL.md",
+      "skill_sha256": "67dac913b75bd75a18a048105510072490ccdea976eca533d62325c0ea442b3f",
+      "contract": {
+        "activation": "description + 触发条件",
+        "procedure": "审核程序 + 计算与内部一致性复核",
+        "termination": "结论分级 + 输出契约",
+        "evidence": "report_evidence + rag_evidence",
+        "degradation": "basis_status + 证据不足与降级规则"
+      }
+    },
+    {
+      "ordinal": 8,
+      "skill_name": "review-eia-pollutant-coefficient-applicability",
+      "display_name": "产污系数适用性审核",
+      "description": "根据行业、产品、原料、工艺、规模和污染物核验产污系数或排污系数的适用性。用于判断系数选取是否匹配项目边界；不负责完成全部源强定量计算。",
+      "legacy_skill_id": "08_产污系数合理性",
+      "legacy_workflow": "9-运营期间产污系数使用合理性判断.yml",
+      "standard_card_ids": [
+        "STD-DIFY-08-001",
+        "STD-DIFY-SRC-007"
+      ],
+      "retrieval_query_template": "{skill_id} {report_section} HJ1122 产污系数 塑料制品业 HJ_1122-2020 排污许可证申请与核发技术规范 橡胶和塑料制品工业 HJ1122",
+      "skill_path": "E:\\实验文件整理_按论文逻辑\\04_知识库构建\\四层架构_正式库\\04_Skill检索路由_15个Skill\\skills\\review-eia-pollutant-coefficient-applicability\\SKILL.md",
+      "skill_sha256": "6b1050cf6c3de9e0abb6f44b91ddd2e8eeae4ca1e7c4a6de593894b335dc9077",
+      "contract": {
+        "activation": "description + 触发条件",
+        "procedure": "审核程序 + 计算与内部一致性复核",
+        "termination": "结论分级 + 输出契约",
+        "evidence": "report_evidence + rag_evidence",
+        "degradation": "basis_status + 证据不足与降级规则"
+      }
+    },
+    {
+      "ordinal": 9,
+      "skill_name": "calculate-eia-pollutant-source-strength",
+      "display_name": "源强定量核算审核",
+      "description": "重建物料、产污系数、收集效率、治理效率、运行时间与有组织/无组织排放量的计算链。用于污染源强定量复算和单位闭合；外部系数及效率必须由可追溯RAG证据提供。",
+      "legacy_skill_id": "09_产污系数定量核算",
+      "legacy_workflow": "10-运营期间产污系数与定量核算判定.yml",
+      "standard_card_ids": [
+        "STD-DIFY-08-001",
+        "STD-DIFY-09-001",
+        "STD-DIFY-SRC-007",
+        "STD-DIFY-SRC-010"
+      ],
+      "retrieval_query_template": "{skill_id} {report_section} HJ1122 产污系数 塑料制品业 产污量 定量核算 E=sum HJ_1122-2020 排污许可证申请与核发技术规范 橡胶和塑料制品工业 HJ1122 HJ_884-2018 污染源源强核算技术指南 准则 HJ884",
+      "skill_path": "E:\\实验文件整理_按论文逻辑\\04_知识库构建\\四层架构_正式库\\04_Skill检索路由_15个Skill\\skills\\calculate-eia-pollutant-source-strength\\SKILL.md",
+      "skill_sha256": "918f052dc2b3e9abfa4d6df110bc802f405296f50f53e03305fdeee47f09d0ca",
+      "contract": {
+        "activation": "description + 触发条件",
+        "procedure": "审核程序 + 计算与内部一致性复核",
+        "termination": "结论分级 + 输出契约",
+        "evidence": "report_evidence + rag_evidence",
+        "degradation": "basis_status + 证据不足与降级规则"
+      }
+    },
+    {
+      "ordinal": 10,
+      "skill_name": "calculate-eia-exhaust-capture-airflow",
+      "display_name": "废气收集形式及排气量审核",
+      "description": "核对废气收集方式、集气罩几何参数、控制风速和理论排气量计算。用于判断密闭、局部集气和罩口风量是否匹配；不负责风机设计余量或治理设施去除效率审核。",
+      "legacy_skill_id": "10_废气收集形式及排气量",
+      "legacy_workflow": "17-废气收集形式及排气量计算.yml",
+      "standard_card_ids": [
+        "STD-DIFY-10-001",
+        "STD-DIFY-10-002"
+      ],
+      "retrieval_query_template": "{skill_id} {report_section} 废气收集 集气罩 控制风速 Q=3600Fv 排气量 罩口面积",
+      "skill_path": "E:\\实验文件整理_按论文逻辑\\04_知识库构建\\四层架构_正式库\\04_Skill检索路由_15个Skill\\skills\\calculate-eia-exhaust-capture-airflow\\SKILL.md",
+      "skill_sha256": "5c95c19aa5a7cc1afea4308422f579cd0c4dca697f74a7f215cba7828774cc2e",
+      "contract": {
+        "activation": "description + 触发条件",
+        "procedure": "审核程序 + 计算与内部一致性复核",
+        "termination": "结论分级 + 输出契约",
+        "evidence": "report_evidence + rag_evidence",
+        "degradation": "basis_status + 证据不足与降级规则"
+      }
+    },
+    {
+      "ordinal": 11,
+      "skill_name": "review-eia-exhaust-design-airflow",
+      "display_name": "废气设计风量审核",
+      "description": "复核理论收集风量、同时工作系数、漏风修正、管道风速、支管合并与风机设计风量。用于废气系统风量闭合；不负责污染物排放限值或活性炭吸附能力审核。",
+      "legacy_skill_id": "11_废气收集风量与设计风量",
+      "legacy_workflow": "18-废气收集风量与设计风量核算.yml",
+      "standard_card_ids": [
+        "STD-DIFY-11-001",
+        "STD-DIFY-11-002"
+      ],
+      "retrieval_query_template": "{skill_id} {report_section} 设计风量 漏风系数 风机 管道风速 支管 主管",
+      "skill_path": "E:\\实验文件整理_按论文逻辑\\04_知识库构建\\四层架构_正式库\\04_Skill检索路由_15个Skill\\skills\\review-eia-exhaust-design-airflow\\SKILL.md",
+      "skill_sha256": "9c288a67f1bc9d4a302f7baede1b31cbc6da3dd367474cf82f82309f84086041",
+      "contract": {
+        "activation": "description + 触发条件",
+        "procedure": "审核程序 + 计算与内部一致性复核",
+        "termination": "结论分级 + 输出契约",
+        "evidence": "report_evidence + rag_evidence",
+        "degradation": "basis_status + 证据不足与降级规则"
+      }
+    },
+    {
+      "ordinal": 12,
+      "skill_name": "review-eia-exhaust-capture-efficiency",
+      "display_name": "废气收集效率审核",
+      "description": "依据设备密闭程度、集气罩位置、负压状态和运行条件核验废气收集效率取值。用于区分收集效率与治理去除效率；经验值只能作为风险提示，不能替代正式依据。",
+      "legacy_skill_id": "12_废气收集效率",
+      "legacy_workflow": "19-废气收集效率判定.yml",
+      "standard_card_ids": [
+        "STD-DIFY-12-001"
+      ],
+      "retrieval_query_template": "{skill_id} {report_section} 收集效率 VOCs 表23",
+      "skill_path": "E:\\实验文件整理_按论文逻辑\\04_知识库构建\\四层架构_正式库\\04_Skill检索路由_15个Skill\\skills\\review-eia-exhaust-capture-efficiency\\SKILL.md",
+      "skill_sha256": "ddd777b73d48fd1435020e8127ae3678850013afdbb53a4d7dc789e999d73699",
+      "contract": {
+        "activation": "description + 触发条件",
+        "procedure": "审核程序 + 计算与内部一致性复核",
+        "termination": "结论分级 + 输出契约",
+        "evidence": "report_evidence + rag_evidence",
+        "degradation": "basis_status + 证据不足与降级规则"
+      }
+    },
+    {
+      "ordinal": 13,
+      "skill_name": "review-eia-activated-carbon-parameters",
+      "display_name": "活性炭参数审核",
+      "description": "重建VOCs入口负荷、有效吸附量、装填量、更换周期、床层参数和废活性炭产生量的闭合关系。用于活性炭设施参数审核；不负责危险废物属性认定或排放标准选择。",
+      "legacy_skill_id": "13_活性炭参数",
+      "legacy_workflow": "13-活性炭参数审核.yml",
+      "standard_card_ids": [
+        "STD-DIFY-13-001"
+      ],
+      "retrieval_query_template": "{skill_id} {report_section} 活性炭 VOCs治理 吸附",
+      "skill_path": "E:\\实验文件整理_按论文逻辑\\04_知识库构建\\四层架构_正式库\\04_Skill检索路由_15个Skill\\skills\\review-eia-activated-carbon-parameters\\SKILL.md",
+      "skill_sha256": "2802ba719e71bea0be9b7bb646a8e21b871f57c2edeb51e549b8761be8315ae3",
+      "contract": {
+        "activation": "description + 触发条件",
+        "procedure": "审核程序 + 计算与内部一致性复核",
+        "termination": "结论分级 + 输出契约",
+        "evidence": "report_evidence + rag_evidence",
+        "degradation": "basis_status + 证据不足与降级规则"
+      }
+    },
+    {
+      "ordinal": 14,
+      "skill_name": "review-eia-hazardous-waste-identification",
+      "display_name": "危险废物识别审核",
+      "description": "依据来源工序、组成、状态、危害特性、名录或鉴别证据复核危险废物识别、代码、贮存和去向。用于固废及废活性炭等识别；不得仅凭名称、惯例或相似项目认定危险属性。",
+      "legacy_skill_id": "14_危险废物识别",
+      "legacy_workflow": "14-危险废物识别审核.yml",
+      "standard_card_ids": [
+        "STD-DIFY-14-001"
+      ],
+      "retrieval_query_template": "{skill_id} {report_section} 危险废物 GB18597 GB18599",
+      "skill_path": "E:\\实验文件整理_按论文逻辑\\04_知识库构建\\四层架构_正式库\\04_Skill检索路由_15个Skill\\skills\\review-eia-hazardous-waste-identification\\SKILL.md",
+      "skill_sha256": "ead69b4fe75bb7eb4540f5ee3e415d803897d3e24c0ba6e9bd04a732b54eac3d",
+      "contract": {
+        "activation": "description + 触发条件",
+        "procedure": "审核程序 + 计算与内部一致性复核",
+        "termination": "结论分级 + 输出契约",
+        "evidence": "report_evidence + rag_evidence",
+        "degradation": "basis_status + 证据不足与降级规则"
+      }
+    },
+    {
+      "ordinal": 15,
+      "skill_name": "review-eia-vocs-total-control",
+      "display_name": "VOCs总量控制审核",
+      "description": "核对VOCs产生、收集、处理、有组织和无组织排放、以新带老、替代削减及总量申请的口径和算术闭合。用于VOCs总量章节；源强、收集、治理参数和排放标准由相应Skill提供。",
+      "legacy_skill_id": "15_VOCs总量控制",
+      "legacy_workflow": "15-VOCs总量控制审核.yml",
+      "standard_card_ids": [
+        "STD-DIFY-15-001"
+      ],
+      "retrieval_query_template": "{skill_id} {report_section} VOCs总量 削减量 排放量",
+      "skill_path": "E:\\实验文件整理_按论文逻辑\\04_知识库构建\\四层架构_正式库\\04_Skill检索路由_15个Skill\\skills\\review-eia-vocs-total-control\\SKILL.md",
+      "skill_sha256": "df4b359c81ad475033c3be6333fb90aaff8c39137c3766bfea4b95d4b584ec07",
+      "contract": {
+        "activation": "description + 触发条件",
+        "procedure": "审核程序 + 计算与内部一致性复核",
+        "termination": "结论分级 + 输出契约",
+        "evidence": "report_evidence + rag_evidence",
+        "degradation": "basis_status + 证据不足与降级规则"
+      }
+    }
+  ]
+}

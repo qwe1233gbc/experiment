@@ -1,0 +1,29 @@
+{
+  "id": "chatcmpl-bbb0cd2e-a309-40bd-a942-f1d87631fccf",
+  "object": "chat.completion",
+  "created": 1787378675,
+  "model": "qwen3.8-max",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"scores\": [{\"response_id\": \"R1\", \"correctness\": 2, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": null, \"skill_workflow\": null, \"rationale\": \"结论与参考答案一致，判定标准选取合理。准确引用报告中GB18599-2020在措施章节的引用作为证据，并给出补充列示的建议，符合评分规则中关于额外真实问题不扣分的要求。\"}, {\"response_id\": \"R2\", \"correctness\": 1, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": 2, \"skill_workflow\": null, \"rationale\": \"虽识别出GB18599-2020未在标准章节列示的问题，但据此判定“部分完成”与参考答案“无误”的结论不一致。参考答案明确该标准非必须清单，报告已在措施中引用即视为完整，R2存在过度判定。\"}, {\"response_id\": \"R3\", \"correctness\": 1, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": null, \"skill_workflow\": 2, \"rationale\": \"判定“存在问题”与参考答案结论不符。虽然指出了标准列示位置差异及危废产生量自洽性等额外真实问题，但核心结论偏离了金标对标准选取合理性的认定，属于过度结论。\"}, {\"response_id\": \"R4\", \"correctness\": 1, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": 2, \"skill_workflow\": 2, \"rationale\": \"判定“存在问题”与参考答案不一致。尽管详细分析了标准适用边界、名称不一致及清单衔接等额外真实问题，但因核心结论未对齐金标“无误”的判定，导致正确性扣分。\"}]}"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6544,
+    "completion_tokens": 404,
+    "total_tokens": 6948,
+    "prompt_tokens_details": {
+      "text_tokens": 6544
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  }
+}

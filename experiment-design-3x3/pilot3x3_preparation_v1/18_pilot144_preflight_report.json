@@ -1,0 +1,115 @@
+{
+  "report_version": "1.0",
+  "generated_at": "2026-09-01",
+  "pilot_name": "pilot144_3x3",
+  "total_runs_planned": 144,
+  "status": "BLOCKED_BY_MODEL_GRADIENT",
+  "blocking_items": [
+    "MODEL_GRADIENT_NOT_VERIFIED",
+    "KNOWLEDGE_MANIPULATION_NOT_DONE",
+    "PROMPT_HASHES_NOT_FILLED",
+    "TOKEN_ESTIMATES_NOT_FILLED",
+    "PROMPT_LEAKAGE_NOT_AUDITED",
+    "EP_LABEL_SECOND_REVIEWER_PENDING",
+    "GOLD_REVIEW_NOT_COMPLETED",
+    "DETERMINISM_CHECK_NOT_DONE"
+  ],
+  "checks": {
+    "question_count": {
+      "total": 16,
+      "E0P0": 4,
+      "E0P1": 4,
+      "E1P0": 4,
+      "E1P1": 4,
+      "status": "PASS"
+    },
+    "label_balance": {
+      "total_correct": 12,
+      "total_incorrect": 4,
+      "E0P0": "4/0 (HIGH_CEILING_RISK)",
+      "E0P1": "3/1",
+      "E1P0": "4/0 (HIGH_CEILING_RISK)",
+      "E1P1": "2/2",
+      "status": "WARN"
+    },
+    "gold_deterministic": {
+      "total": 16,
+      "verified": 16,
+      "subjective": 0,
+      "status": "PASS_TBD",
+      "note": "已标注为A级/B级，待人工完整复核确认"
+    },
+    "model_gradient": {
+      "calibration_set_ready": true,
+      "calibration_size": 20,
+      "manipulation_check_done": false,
+      "gradient_verified": false,
+      "status": "FAIL"
+    },
+    "knowledge_conditions": {
+      "K1_defined": true,
+      "K2_defined": true,
+      "K3_defined": true,
+      "evidence_schema_aligned": false,
+      "token_budget_estimated": false,
+      "manipulation_check_done": false,
+      "status": "FAIL"
+    },
+    "prompt_template": {
+      "frozen": true,
+      "only_knowledge_differs": true,
+      "schema_consistent": true,
+      "leakage_audited": false,
+      "status": "WARN"
+    },
+    "model_parameters": {
+      "temperature": 0,
+      "max_tokens": 8192,
+      "consistent_across_conditions": true,
+      "status": "PASS"
+    },
+    "prompt_manifest": {
+      "total_entries": 144,
+      "hashes_pending": true,
+      "tokens_estimated": false,
+      "status": "WARN"
+    },
+    "ep_labeling": {
+      "reviewer_1_done": true,
+      "reviewer_2_done": false,
+      "kappa": null,
+      "target_kappa": 0.8,
+      "status": "FAIL"
+    },
+    "statistical_plan": {
+      "frozen": true,
+      "primary_outcome": "Final Correctness",
+      "primary_test": "Model x Knowledge interaction (GLMM)",
+      "power_simulation_template_ready": true,
+      "status": "PASS"
+    },
+    "determinism_check": {
+      "done": false,
+      "conclusion_agreement": null,
+      "target": 0.95,
+      "status": "FAIL"
+    }
+  },
+  "summary": {
+    "pass": 2,
+    "warn": 3,
+    "fail": 5,
+    "total_checks": 10
+  },
+  "next_actions": [
+    "1. 运行模型能力操纵检查（校准集 × 3模型 × K1条件），验证梯度",
+    "2. 安排第二审核人完成 EP 标签双盲审核，计算 Cohen's kappa",
+    "3. 完成 Pilot16 Gold 人工复核，确认 16/16 deterministic",
+    "4. 准备 K2/K3 检索结果，统一 Evidence Schema，估计 token budget",
+    "5. 完成知识操纵检查（E1题的 answer-bearing recall 等指标）",
+    "6. 生成真实 prompt，填充 hash 和 token 估计，完成泄露审计",
+    "7. 运行 temperature=0 稳定性检查（10题×3次）",
+    "8. 以上全部通过后，状态更新为 READY_FOR_PILOT144_API_RUN"
+  ],
+  "ready_for_pilot_api_run": false
+}

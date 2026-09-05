@@ -1,0 +1,53 @@
+{
+    "manifest_version":  "1.0",
+    "dataset_version":  "phase2-v1.0-20260812",
+    "frozen_date":  "2026-08-12",
+    "output":  {
+                   "path":  "E:\\实验文件整理_按论文逻辑\\05_QA测试集与样本\\第二阶段_21题正式评价集_冻结版_20260812.json",
+                   "sha256":  "37bf435ae24630da5ad4cba41f47a24e8917cd981d153ea0e0c1c96f765047f0",
+                   "bytes":  132027,
+                   "record_count":  21
+               },
+    "input_sources":  [
+                          {
+                              "path":  "E:\\实验文件整理_按论文逻辑\\05_QA测试集与样本\\人工核验问答对_21题.json",
+                              "sha256":  "7880f0c7a503087eae25dde6692704e89c6fef233dd5a74c0453f02414dea06c",
+                              "bytes":  18250
+                          },
+                          {
+                              "path":  "E:\\实验文件整理_按论文逻辑\\05_QA测试集与样本\\PL001-PL006_人工核验21题_答案与报告证据定位.json",
+                              "sha256":  "0a24478e06c98d450862bf38688b2b0b0cadd9461362cda9fed7f6079a666b1d",
+                              "bytes":  90562
+                          },
+                          {
+                              "path":  "E:\\实验文件整理_按论文逻辑\\05_QA测试集与样本\\人工核验21题_RAG知识库与Skill答案索引清单.md",
+                              "sha256":  "c38cdf44ffeff7dea67e9ce1d9abb89eb9dcc1bcfb087c56192b2b4a3e11ad19",
+                              "bytes":  17759
+                          },
+                          {
+                              "path":  "E:\\实验文件整理_按论文逻辑\\04_知识库构建\\四层架构_证据增强版_20260812\\04_Skill检索路由_证据增强版\\镇级污水处理标准回退规则_人工确认_20260812.md",
+                              "sha256":  "a00393bf9e9da8286955895c8aceb42851bce247ff4ecb509028e74679d7f112",
+                              "bytes":  2600
+                          },
+                          {
+                              "path":  "E:\\实验文件整理_按论文逻辑\\数据流对照_Zhou论文vs本研究.md",
+                              "sha256":  "52eeaf611c69d1f2cc54d8179e8109438e32d5c7c70243e4a234ceb483493d35",
+                              "bytes":  31200
+                          }
+                      ],
+    "missing_optional_sources":  [
+
+                                 ],
+    "validation":  {
+                       "unique_question_ids":  true,
+                       "all_questions_present":  true,
+                       "all_reference_answers_present":  true,
+                       "all_audit_types_present":  true,
+                       "all_report_evidence_present":  true,
+                       "all_skill_routes_present":  true,
+                       "manual_review_question_ids":  [
+
+                                                      ],
+                       "ready_for_stage3_after_manual_review":  true
+                   }
+}

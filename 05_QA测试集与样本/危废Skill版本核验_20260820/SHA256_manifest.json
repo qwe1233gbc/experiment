@@ -1,0 +1,17 @@
+{
+  "generated_at": "2026-08-20",
+  "note": "只读整理输出SHA256清单",
+  "files": {
+    "4题危废Skill影响分析.xlsx": "35e5cfbd74d6ee2ae2588574575d648fbf1e45fc0d3a859c5cb56929a7a3519e",
+    "hazard_skill_diff.txt": "dccceb16d782e090c9dea3690b6466b82fec28a863d73ee587377ffe1f31b398",
+    "hazard_skill_reference_chain.json": "1cdff20a82ad4930d86a6d312555cb37cccd3815f05dbd414457fb4419380b4a",
+    "两版本Skill及references原文副本\\A_正式库\\agents_openai.yaml": "ddb7491870b0b9c11f6074eff67853ba1b3a627067010aff4f02b2f55498abf1",
+    "两版本Skill及references原文副本\\A_正式库\\SKILL.md": "ead69b4fe75bb7eb4540f5ee3e415d803897d3e24c0ba6e9bd04a732b54eac3d",
+    "两版本Skill及references原文副本\\B_81源证据增强版\\agents_openai.yaml": "ddb7491870b0b9c11f6074eff67853ba1b3a627067010aff4f02b2f55498abf1",
+    "两版本Skill及references原文副本\\B_81源证据增强版\\references\\evidence-gates-20260812.md": "f331486185adb8bb9bd8c909d1c3955d7f62d2e8d2fed0214bec6a1c50b74a8a",
+    "两版本Skill及references原文副本\\B_81源证据增强版\\SKILL.md": "41fb4b13beefc747bba9650ff1d8ebc44dfb2416a70fd40b9a0ded3cb2c24c93",
+    "两版本Skill及references原文副本\\参考上下文_其他Skill的evidence-gates\\environmental-quality-data_evidence-gates-20260812.md": "05b199d2567bf1d94d799d960f098d4b05aa6c5295c14f115bf5e30edc2f36a1",
+    "两版本Skill及references原文副本\\参考上下文_其他Skill的evidence-gates\\pollutant-discharge-standards_evidence-gates-20260812.md": "5b4b58e2bae2f10d430552d3667e59d1489887ffe04c968f9dda8976e9af6635",
+    "危废Skill版本差异报告_20260820.md": "056d364c6d4947cde5c7316335c51ff8f66a23314940a7cdce85fd54af359a30"
+  }
+}

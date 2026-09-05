@@ -1,0 +1,13 @@
+{
+  "status": "complete",
+  "generated_at": "2026-08-20T03:10:39.004624+00:00",
+  "source_count": 81,
+  "baseline_sources": 73,
+  "new_evidence_sources": 8,
+  "parent_count": 409,
+  "child_count": 3459,
+  "bm25_terms": 100083,
+  "frozen_baseline_unchanged": true,
+  "version": "81q-extended-20260820",
+  "base_version": "正式实验RAG知识库_61题扩展版_20260819（61q-extended-20260819）"
+}

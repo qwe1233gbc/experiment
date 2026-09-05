@@ -1,0 +1,42 @@
+{
+  "question_id": "PL001_EnvQuality_Q01",
+  "prompt_chars": 11943,
+  "scores": [
+    {
+      "response_id": "R1",
+      "correctness": 1,
+      "evidence_use": 2,
+      "actionability": 2,
+      "regulatory_basis": null,
+      "skill_workflow": null,
+      "rationale": "无RAG下准确识别表格年份错乱及水体名称不一致等实质问题，证据定位精准。虽未确认核心数据正确性致结论偏保守，但属合理审慎，行动建议具体可执行。"
+    },
+    {
+      "response_id": "R2",
+      "correctness": 2,
+      "evidence_use": 2,
+      "actionability": 2,
+      "regulatory_basis": 2,
+      "skill_workflow": null,
+      "rationale": "利用RAG验证核心数据正确，同时指出表格年份及符号错误、水体名称错配等真实问题。结论兼顾数据准确性与引用规范性，依据充分，修改建议明确具体。"
+    },
+    {
+      "response_id": "R3",
+      "correctness": 1,
+      "evidence_use": 2,
+      "actionability": 2,
+      "regulatory_basis": null,
+      "skill_workflow": 2,
+      "rationale": "完整体现内部一致性核查流程，精准发现变化率符号及年份标注错误。因无外部核验判定为部分完成属合理边界，问题描述详实且具可操作性，工作流规范。"
+    },
+    {
+      "response_id": "R4",
+      "correctness": 2,
+      "evidence_use": 2,
+      "actionability": 2,
+      "regulatory_basis": 2,
+      "skill_workflow": 2,
+      "rationale": "结合RAG与技能流全面核查，既确认核心数据准确又指出表格及水体引用瑕疵。对更新公报处理审慎得当，证据链完整，法规依据正确，整改意见清晰可执行。"
+    }
+  ]
+}

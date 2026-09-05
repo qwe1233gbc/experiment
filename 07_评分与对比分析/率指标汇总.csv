@@ -1,0 +1,5 @@
+﻿group,config,n,hallucination_rate,abstention_rate,full_validation_rate,manual_review_rate,evidence_backcheck_rate,rag_backcheck_rate
+A,LLM only,21,61.9%,0.0%,95.2%,4.8%,85.7%,N/A
+B,LLM+RAG,21,0.0%,0.0%,28.6%,85.7%,95.2%,0.0%
+C,LLM+Skill,21,0.0%,0.0%,0.0%,28.6%,81.0%,N/A
+D,LLM+RAG+Skill,21,0.0%,0.0%,90.5%,9.5%,66.7%,90.5%

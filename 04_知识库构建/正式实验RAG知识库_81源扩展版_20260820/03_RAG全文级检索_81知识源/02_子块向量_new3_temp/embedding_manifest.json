@@ -1,0 +1,21 @@
+{
+  "status": "complete",
+  "started_at": "2026-08-19T14:27:54.660146+00:00",
+  "completed_at": "2026-08-19T14:27:55.262724+00:00",
+  "source_children_path": "E:\\实验文件整理_按论文逻辑\\04_知识库构建\\正式实验RAG知识库_61题扩展版_20260819\\03_RAG全文级检索_73知识源\\01_父子分块\\children_new3_only.jsonl",
+  "embedding_index_path": "E:\\实验文件整理_按论文逻辑\\04_知识库构建\\正式实验RAG知识库_61题扩展版_20260819\\03_RAG全文级检索_73知识源\\02_子块向量_new3_temp\\embedding_index_child.jsonl",
+  "model": "text-embedding-v4",
+  "dimensions": 1024,
+  "distance_metric": "cosine",
+  "embedding_policy": "children_only",
+  "child_count": 5,
+  "source_count": 3,
+  "run_reported_tokens": 1814,
+  "batch_size": 10,
+  "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings",
+  "reuse": {
+    "requested": false,
+    "reused": 0,
+    "pending_after_reuse": 5
+  }
+}

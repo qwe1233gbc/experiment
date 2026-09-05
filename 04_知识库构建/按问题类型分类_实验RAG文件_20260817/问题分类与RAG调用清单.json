@@ -1,0 +1,1286 @@
+[
+  {
+    "audit_type": "国民经济行业分类",
+    "question_id": "PL001_V01_Q01",
+    "project_id": "PL001",
+    "question": "请结合项目产品、原辅材料和生产工艺，判断该报告行业类别是否基本合理。",
+    "skill_id": "review-eia-industry-classification",
+    "core_answer_sources": [
+      {
+        "base_source_id": "SRC046",
+        "source_file": "national_economic_classification.jsonl"
+      }
+    ],
+    "actual_frozen_top5_hits": [
+      {
+        "rank": 1,
+        "enhanced_source_id": "SRC063",
+        "source_file": "national_economic_classification.json",
+        "parent_id": "SRC063_P0007",
+        "child_id": "SRC063_P0007_C008",
+        "score": 0.7802066362429887
+      },
+      {
+        "rank": 2,
+        "enhanced_source_id": "SRC064",
+        "source_file": "national_economic_classification.jsonl",
+        "parent_id": "SRC064_P0007",
+        "child_id": "SRC064_P0007_C007",
+        "score": 0.7398714605762676
+      },
+      {
+        "rank": 3,
+        "enhanced_source_id": "SRC065",
+        "source_file": "plastic_rubber_industry_classification_checked.md",
+        "parent_id": "SRC065_P0001",
+        "child_id": "SRC065_P0001_C001",
+        "score": 0.43084799156694653
+      },
+      {
+        "rank": 4,
+        "enhanced_source_id": "SRC015",
+        "source_file": "#9_塑料制品业产污系数_废气_官方手册.md",
+        "parent_id": "SRC015_P0001",
+        "child_id": "SRC015_P0001_C006",
+        "score": 0.4095401633883203
+      },
+      {
+        "rank": 5,
+        "enhanced_source_id": "SRC055",
+        "source_file": "HJ_1122-2020.md",
+        "parent_id": "SRC055_P0025",
+        "child_id": "SRC055_P0025_C003",
+        "score": 0.2922507047672352
+      }
+    ],
+    "snapshot_sha256": "9c906917751b3f8a55d3c6012508f9eddb58996b5b453edbe2acf93cafb0c1cc"
+  },
+  {
+    "audit_type": "国民经济行业分类",
+    "question_id": "PL002_V01_Q01",
+    "project_id": "PL002",
+    "question": "请结合项目产品、原辅材料和生产工艺，判断该报告是否适合作为塑胶行业种子问答样本，并判断行业类别是否基本合理。",
+    "skill_id": "review-eia-industry-classification",
+    "core_answer_sources": [
+      {
+        "base_source_id": "SRC046",
+        "source_file": "national_economic_classification.jsonl"
+      },
+      {
+        "base_source_id": "SRC047",
+        "source_file": "plastic_rubber_industry_classification_checked.md"
+      }
+    ],
+    "actual_frozen_top5_hits": [
+      {
+        "rank": 1,
+        "enhanced_source_id": "SRC064",
+        "source_file": "national_economic_classification.jsonl",
+        "parent_id": "SRC064_P0011",
+        "child_id": "SRC064_P0011_C001",
+        "score": 0.6152248494506734
+      },
+      {
+        "rank": 2,
+        "enhanced_source_id": "SRC065",
+        "source_file": "plastic_rubber_industry_classification_checked.md",
+        "parent_id": "SRC065_P0001",
+        "child_id": "SRC065_P0001_C003",
+        "score": 0.5188077535972315
+      },
+      {
+        "rank": 3,
+        "enhanced_source_id": "SRC016",
+        "source_file": "#9_塑料制品业产污系数_废气_速查.md",
+        "parent_id": "SRC016_P0001",
+        "child_id": "SRC016_P0001_C005",
+        "score": 0.5152301717166248
+      },
+      {
+        "rank": 4,
+        "enhanced_source_id": "SRC063",
+        "source_file": "national_economic_classification.json",
+        "parent_id": "SRC063_P0011",
+        "child_id": "SRC063_P0011_C003",
+        "score": 0.4893126802875867
+      },
+      {
+        "rank": 5,
+        "enhanced_source_id": "SRC013",
+        "source_file": "#8_塑料制品业典型污染源及执行标准.csv",
+        "parent_id": "SRC013_P0001",
+        "child_id": "SRC013_P0001_C002",
+        "score": 0.4244643684778938
+      }
+    ],
+    "snapshot_sha256": "dada7f9b18f1ddbb65ca3a338150bc8e9b69b3144e5c03ef9d517b42065f9b4a"
+  },
+  {
+    "audit_type": "国民经济行业分类",
+    "question_id": "PL003_V01_Q01",
+    "project_id": "PL003",
+    "question": "请结合项目产品、原辅材料和生产工艺，判断该报告行业类别是否基本合理。",
+    "skill_id": "review-eia-industry-classification",
+    "core_answer_sources": [
+      {
+        "base_source_id": "SRC046",
+        "source_file": "national_economic_classification.jsonl"
+      },
+      {
+        "base_source_id": "SRC047",
+        "source_file": "plastic_rubber_industry_classification_checked.md"
+      }
+    ],
+    "actual_frozen_top5_hits": [
+      {
+        "rank": 1,
+        "enhanced_source_id": "SRC065",
+        "source_file": "plastic_rubber_industry_classification_checked.md",
+        "parent_id": "SRC065_P0001",
+        "child_id": "SRC065_P0001_C001",
+        "score": 0.6921393273645164
+      },
+      {
+        "rank": 2,
+        "enhanced_source_id": "SRC015",
+        "source_file": "#9_塑料制品业产污系数_废气_官方手册.md",
+        "parent_id": "SRC015_P0002",
+        "child_id": "SRC015_P0002_C003",
+        "score": 0.5676460760845942
+      },
+      {
+        "rank": 3,
+        "enhanced_source_id": "SRC063",
+        "source_file": "national_economic_classification.json",
+        "parent_id": "SRC063_P0011",
+        "child_id": "SRC063_P0011_C001",
+        "score": 0.5636615137536527
+      },
+      {
+        "rank": 4,
+        "enhanced_source_id": "SRC056",
+        "source_file": "HJ_1207-2021.md",
+        "parent_id": "SRC056_P0002",
+        "child_id": "SRC056_P0002_C007",
+        "score": 0.44740036594654314
+      },
+      {
+        "rank": 5,
+        "enhanced_source_id": "SRC055",
+        "source_file": "HJ_1122-2020.md",
+        "parent_id": "SRC055_P0025",
+        "child_id": "SRC055_P0025_C003",
+        "score": 0.4454455175051372
+      }
+    ],
+    "snapshot_sha256": "8477fa81d1709a0b4d4f416ac8160930426ca300853235d7f696154fa847d2a6"
+  },
+  {
+    "audit_type": "国民经济行业分类",
+    "question_id": "PL004_V01_Q01",
+    "project_id": "PL004",
+    "question": "请结合项目产品、原辅材料和生产工艺，判断该报告行业类别是否基本合理。",
+    "skill_id": "review-eia-industry-classification",
+    "core_answer_sources": [
+      {
+        "base_source_id": "SRC046",
+        "source_file": "national_economic_classification.jsonl"
+      },
+      {
+        "base_source_id": "SRC047",
+        "source_file": "plastic_rubber_industry_classification_checked.md"
+      }
+    ],
+    "actual_frozen_top5_hits": [
+      {
+        "rank": 1,
+        "enhanced_source_id": "SRC064",
+        "source_file": "national_economic_classification.jsonl",
+        "parent_id": "SRC064_P0011",
+        "child_id": "SRC064_P0011_C001",
+        "score": 0.6081968685543994
+      },
+      {
+        "rank": 2,
+        "enhanced_source_id": "SRC015",
+        "source_file": "#9_塑料制品业产污系数_废气_官方手册.md",
+        "parent_id": "SRC015_P0004",
+        "child_id": "SRC015_P0004_C003",
+        "score": 0.5395464829433482
+      },
+      {
+        "rank": 3,
+        "enhanced_source_id": "SRC063",
+        "source_file": "national_economic_classification.json",
+        "parent_id": "SRC063_P0011",
+        "child_id": "SRC063_P0011_C003",
+        "score": 0.5163053426902211
+      },
+      {
+        "rank": 4,
+        "enhanced_source_id": "SRC014",
+        "source_file": "#8_塑料制品业典型污染源及执行标准.md",
+        "parent_id": "SRC014_P0001",
+        "child_id": "SRC014_P0001_C001",
+        "score": 0.4395554715660319
+      },
+      {
+        "rank": 5,
+        "enhanced_source_id": "SRC016",
+        "source_file": "#9_塑料制品业产污系数_废气_速查.md",
+        "parent_id": "SRC016_P0001",
+        "child_id": "SRC016_P0001_C005",
+        "score": 0.43659616435902904
+      }
+    ],
+    "snapshot_sha256": "acf09cc8111232adfcc44c29659c3e51c14154dbf015f02991639f9bba7c41f9"
+  },
+  {
+    "audit_type": "环境质量数据引用",
+    "question_id": "PL001_EnvQuality_Q01",
+    "project_id": "PL001",
+    "question": "请根据报告引用的环境质量公报及现状数据，判断大气和地表水环境质量现状数据引用是否准确。",
+    "skill_id": "review-eia-environmental-quality-data",
+    "core_answer_sources": [
+      {
+        "base_source_id": "SRC007",
+        "source_file": "#6_2023年佛山市顺德区生态环境状态公报.txt"
+      },
+      {
+        "base_source_id": "SRC008",
+        "source_file": "#6_2024年佛山市顺德区生态环境状态公报.txt"
+      }
+    ],
+    "actual_frozen_top5_hits": [
+      {
+        "rank": 1,
+        "enhanced_source_id": "SRC046",
+        "source_file": "GB_3095-2012.md",
+        "parent_id": "SRC046_P0001",
+        "child_id": "SRC046_P0001_C003",
+        "score": 1.2114814799196516
+      },
+      {
+        "rank": 2,
+        "enhanced_source_id": "SRC023",
+        "source_file": "EVID_ENV_SHUNDE_2022.md",
+        "parent_id": "SRC023_P0001",
+        "child_id": "SRC023_P0001_C001",
+        "score": 0.8866951493840524
+      },
+      {
+        "rank": 3,
+        "enhanced_source_id": "SRC007",
+        "source_file": "#6_2023年佛山市顺德区生态环境状态公报.txt",
+        "parent_id": "SRC007_P0001",
+        "child_id": "SRC007_P0001_C001",
+        "score": 0.7526343805558713
+      },
+      {
+        "rank": 4,
+        "enhanced_source_id": "SRC008",
+        "source_file": "#6_2024年佛山市顺德区生态环境状态公报.txt",
+        "parent_id": "SRC008_P0001",
+        "child_id": "SRC008_P0001_C001",
+        "score": 0.5771663575986942
+      },
+      {
+        "rank": 5,
+        "enhanced_source_id": "SRC011",
+        "source_file": "#7_环境质量标准限值速查.md",
+        "parent_id": "SRC011_P0001",
+        "child_id": "SRC011_P0001_C001",
+        "score": 0.4682390538003661
+      }
+    ],
+    "snapshot_sha256": "e8ef7aade6384b0b77c79db000ae407fc89f761c57c76c5d86cfa79023e1c101"
+  },
+  {
+    "audit_type": "环境质量数据引用",
+    "question_id": "PL002_EnvQuality_Q01",
+    "project_id": "PL002",
+    "question": "请根据报告引用的环境质量公报及现状数据，判断大气和地表水环境质量现状数据引用是否准确。",
+    "skill_id": "review-eia-environmental-quality-data",
+    "core_answer_sources": [
+      {
+        "base_source_id": "SRC007",
+        "source_file": "#6_2023年佛山市顺德区生态环境状态公报.txt"
+      },
+      {
+        "base_source_id": "SRC008",
+        "source_file": "#6_2024年佛山市顺德区生态环境状态公报.txt"
+      }
+    ],
+    "actual_frozen_top5_hits": [
+      {
+        "rank": 1,
+        "enhanced_source_id": "SRC046",
+        "source_file": "GB_3095-2012.md",
+        "parent_id": "SRC046_P0001",
+        "child_id": "SRC046_P0001_C003",
+        "score": 1.2114814799196516
+      },
+      {
+        "rank": 2,
+        "enhanced_source_id": "SRC023",
+        "source_file": "EVID_ENV_SHUNDE_2022.md",
+        "parent_id": "SRC023_P0001",
+        "child_id": "SRC023_P0001_C001",
+        "score": 0.8866951493840524
+      },
+      {
+        "rank": 3,
+        "enhanced_source_id": "SRC007",
+        "source_file": "#6_2023年佛山市顺德区生态环境状态公报.txt",
+        "parent_id": "SRC007_P0001",
+        "child_id": "SRC007_P0001_C001",
+        "score": 0.7526343805558713
+      },
+      {
+        "rank": 4,
+        "enhanced_source_id": "SRC008",
+        "source_file": "#6_2024年佛山市顺德区生态环境状态公报.txt",
+        "parent_id": "SRC008_P0001",
+        "child_id": "SRC008_P0001_C001",
+        "score": 0.5771663575986942
+      },
+      {
+        "rank": 5,
+        "enhanced_source_id": "SRC011",
+        "source_file": "#7_环境质量标准限值速查.md",
+        "parent_id": "SRC011_P0001",
+        "child_id": "SRC011_P0001_C001",
+        "score": 0.4682390538003661
+      }
+    ],
+    "snapshot_sha256": "c24c4cfee5ca3763e5517de5fbf3d2dd33cd504f06db1e7bd903b6cf6b5f657c"
+  },
+  {
+    "audit_type": "环境质量数据引用",
+    "question_id": "PL006_EnvQuality_Q01",
+    "project_id": "PL006",
+    "question": "请根据报告引用的环境质量公报及现状数据，判断大气和地表水环境质量现状数据引用是否准确。",
+    "skill_id": "review-eia-environmental-quality-data",
+    "core_answer_sources": [
+      {
+        "base_source_id": "SRC007",
+        "source_file": "#6_2023年佛山市顺德区生态环境状态公报.txt"
+      },
+      {
+        "base_source_id": "SRC008",
+        "source_file": "#6_2024年佛山市顺德区生态环境状态公报.txt"
+      }
+    ],
+    "actual_frozen_top5_hits": [
+      {
+        "rank": 1,
+        "enhanced_source_id": "SRC051",
+        "source_file": "GB_3838-2002.md",
+        "parent_id": "SRC051_P0001",
+        "child_id": "SRC051_P0001_C001",
+        "score": 1.472801204781655
+      },
+      {
+        "rank": 2,
+        "enhanced_source_id": "SRC046",
+        "source_file": "GB_3095-2012.md",
+        "parent_id": "SRC046_P0001",
+        "child_id": "SRC046_P0001_C002",
+        "score": 1.1949942050670055
+      },
+      {
+        "rank": 3,
+        "enhanced_source_id": "SRC007",
+        "source_file": "#6_2023年佛山市顺德区生态环境状态公报.txt",
+        "parent_id": "SRC007_P0001",
+        "child_id": "SRC007_P0001_C001",
+        "score": 0.8045313608190742
+      },
+      {
+        "rank": 4,
+        "enhanced_source_id": "SRC008",
+        "source_file": "#6_2024年佛山市顺德区生态环境状态公报.txt",
+        "parent_id": "SRC008_P0001",
+        "child_id": "SRC008_P0001_C001",
+        "score": 0.7839986935925497
+      },
+      {
+        "rank": 5,
+        "enhanced_source_id": "SRC023",
+        "source_file": "EVID_ENV_SHUNDE_2022.md",
+        "parent_id": "SRC023_P0001",
+        "child_id": "SRC023_P0001_C001",
+        "score": 0.7267832199475612
+      }
+    ],
+    "snapshot_sha256": "26fc66257defe9f95452a2cc9abb407162cc5ebc616837b0a2400e64a643e78b"
+  },
+  {
+    "audit_type": "环评投资概算",
+    "question_id": "PL003_V01_Q03",
+    "project_id": "PL003",
+    "question": "请根据报告中的总投资、环保投资和环保工程投资明细，判断环保投资核算是否前后一致、比例是否正确。",
+    "skill_id": "calculate-eia-environmental-investment-ratio",
+    "core_answer_sources": [
+      {
+        "base_source_id": "SRC005",
+        "source_file": "#2_环评投资核算指南.md"
+      }
+    ],
+    "actual_frozen_top5_hits": [
+      {
+        "rank": 1,
+        "enhanced_source_id": "SRC005",
+        "source_file": "#2_环评投资核算指南.md",
+        "parent_id": "SRC005_P0001",
+        "child_id": "SRC005_P0001_C001",
+        "score": 0.5357279412411401
+      },
+      {
+        "rank": 2,
+        "enhanced_source_id": "SRC061",
+        "source_file": "HJ_884-2018.md",
+        "parent_id": "SRC061_P0001",
+        "child_id": "SRC061_P0001_C002",
+        "score": 0.2663669493496843
+      },
+      {
+        "rank": 3,
+        "enhanced_source_id": "SRC018",
+        "source_file": "DB44_26-2001.md",
+        "parent_id": "SRC018_P0001",
+        "child_id": "SRC018_P0001_C002",
+        "score": 0.2565867637231406
+      },
+      {
+        "rank": 4,
+        "enhanced_source_id": "SRC038",
+        "source_file": "EVID_HW_LIST_2025.md",
+        "parent_id": "SRC038_P0001",
+        "child_id": "SRC038_P0001_C002",
+        "score": 0.19229985437911187
+      },
+      {
+        "rank": 5,
+        "enhanced_source_id": "SRC065",
+        "source_file": "plastic_rubber_industry_classification_checked.md",
+        "parent_id": "SRC065_P0001",
+        "child_id": "SRC065_P0001_C001",
+        "score": 0.18174172634274793
+      }
+    ],
+    "snapshot_sha256": "55555750573787fa4dee528e8b7aeed0d33091495c46ac903266bccedf90f8c4"
+  },
+  {
+    "audit_type": "大气污染物排放标准",
+    "question_id": "PL002_Emission_大气",
+    "project_id": "PL002",
+    "question": "请根据项目行业类别、生产工艺和污染因子，判断大气污染物排放标准选取是否合理。要求分析：污染源覆盖是否完整（列出所有大气污染源及对应标准），是否存在缺漏的污染源或标准。",
+    "skill_id": "review-eia-pollutant-discharge-standards",
+    "core_answer_sources": [
+      {
+        "base_source_id": "SRC030",
+        "source_file": "GB_31572-2015.md"
+      },
+      {
+        "base_source_id": "SRC024",
+        "source_file": "GB_14554-93.md"
+      },
+      {
+        "base_source_id": "SRC017",
+        "source_file": "DB44_2367-2022.md"
+      }
+    ],
+    "actual_frozen_top5_hits": [
+      {
+        "rank": 1,
+        "enhanced_source_id": "SRC017",
+        "source_file": "DB44_2367-2022.md",
+        "parent_id": "SRC017_P0001",
+        "child_id": "SRC017_P0001_C002",
+        "score": 1.3917099893451375
+      },
+      {
+        "rank": 2,
+        "enhanced_source_id": "SRC048",
+        "source_file": "GB_31572-2015.md",
+        "parent_id": "SRC048_P0001",
+        "child_id": "SRC048_P0001_C001",
+        "score": 1.3570800002310819
+      },
+      {
+        "rank": 3,
+        "enhanced_source_id": "SRC042",
+        "source_file": "GB_14554-93.md",
+        "parent_id": "SRC042_P0001",
+        "child_id": "SRC042_P0001_C009",
+        "score": 1.2964874115759166
+      },
+      {
+        "rank": 4,
+        "enhanced_source_id": "SRC012",
+        "source_file": "#8_GB31572表4排放限值.md",
+        "parent_id": "SRC012_P0001",
+        "child_id": "SRC012_P0001_C001",
+        "score": 0.5900445276964925
+      },
+      {
+        "rank": 5,
+        "enhanced_source_id": "SRC055",
+        "source_file": "HJ_1122-2020.md",
+        "parent_id": "SRC055_P0022",
+        "child_id": "SRC055_P0022_C005",
+        "score": 0.49927492446717997
+      }
+    ],
+    "snapshot_sha256": "a648b20455fc8d18005faa78c029a00a801a5015bb3d07b5f5f2937436895525"
+  },
+  {
+    "audit_type": "水污染物排放标准",
+    "question_id": "PL003_Emission_水污",
+    "project_id": "PL003",
+    "question": "请根据报告中的废水类型、预处理方式、排放去向、企业排口标准、污水处理厂名称、尾水排放河道和尾水执行标准，判断水污染物排放标准选取是否合理。要求对比：生活污水排放标准+排入污水处理厂名称+尾水排放河道+尾水排放执行标准，报告与知识库是否一致。",
+    "skill_id": "review-eia-pollutant-discharge-standards",
+    "core_answer_sources": [
+      {
+        "base_source_id": "SRC010",
+        "source_file": "#7_收纳水体地表水执行标准.csv"
+      },
+      {
+        "base_source_id": "SRC018",
+        "source_file": "DB44_26-2001.md"
+      }
+    ],
+    "actual_frozen_top5_hits": [
+      {
+        "rank": 1,
+        "enhanced_source_id": "SRC051",
+        "source_file": "GB_3838-2002.md",
+        "parent_id": "SRC051_P0001",
+        "child_id": "SRC051_P0001_C001",
+        "score": 1.3392736655702495
+      },
+      {
+        "rank": 2,
+        "enhanced_source_id": "SRC018",
+        "source_file": "DB44_26-2001.md",
+        "parent_id": "SRC018_P0001",
+        "child_id": "SRC018_P0001_C001",
+        "score": 1.295150755036927
+      },
+      {
+        "rank": 3,
+        "enhanced_source_id": "SRC046",
+        "source_file": "GB_3095-2012.md",
+        "parent_id": "SRC046_P0001",
+        "child_id": "SRC046_P0001_C009",
+        "score": 1.16316783183062
+      },
+      {
+        "rank": 4,
+        "enhanced_source_id": "SRC011",
+        "source_file": "#7_环境质量标准限值速查.md",
+        "parent_id": "SRC011_P0002",
+        "child_id": "SRC011_P0002_C008",
+        "score": 0.4559508978119549
+      },
+      {
+        "rank": 5,
+        "enhanced_source_id": "SRC010",
+        "source_file": "#7_收纳水体地表水执行标准.csv",
+        "parent_id": "SRC010_P0001",
+        "child_id": "SRC010_P0001_C003",
+        "score": 0.4164251478389035
+      }
+    ],
+    "snapshot_sha256": "2f9f9ecebdb1cf49b3b34cf2d6be9f117bb68445845ea629c6ef9976de65465c"
+  },
+  {
+    "audit_type": "水污染物排放标准",
+    "question_id": "PL004_Emission_水污",
+    "project_id": "PL004",
+    "question": "请根据报告中的废水类型、预处理方式、排放去向、企业排口标准、污水处理厂名称、尾水排放河道和尾水执行标准，判断水污染物排放标准选取是否合理。要求对比：生活污水排放标准+排入污水处理厂名称+尾水排放河道+尾水排放执行标准，报告与知识库是否一致。",
+    "skill_id": "review-eia-pollutant-discharge-standards",
+    "core_answer_sources": [
+      {
+        "base_source_id": "SRC010",
+        "source_file": "#7_收纳水体地表水执行标准.csv"
+      },
+      {
+        "base_source_id": "SRC018",
+        "source_file": "DB44_26-2001.md"
+      },
+      {
+        "base_source_id": "SRC036",
+        "source_file": "GB_T_18920-2020.md"
+      }
+    ],
+    "actual_frozen_top5_hits": [
+      {
+        "rank": 1,
+        "enhanced_source_id": "SRC054",
+        "source_file": "GB_T_18920-2020.md",
+        "parent_id": "SRC054_P0001",
+        "child_id": "SRC054_P0001_C002",
+        "score": 1.3502447125920907
+      },
+      {
+        "rank": 2,
+        "enhanced_source_id": "SRC013",
+        "source_file": "#8_塑料制品业典型污染源及执行标准.csv",
+        "parent_id": "SRC013_P0001",
+        "child_id": "SRC013_P0001_C006",
+        "score": 0.8146244427212479
+      },
+      {
+        "rank": 3,
+        "enhanced_source_id": "SRC014",
+        "source_file": "#8_塑料制品业典型污染源及执行标准.md",
+        "parent_id": "SRC014_P0001",
+        "child_id": "SRC014_P0001_C003",
+        "score": 0.7188559121334862
+      },
+      {
+        "rank": 4,
+        "enhanced_source_id": "SRC011",
+        "source_file": "#7_环境质量标准限值速查.md",
+        "parent_id": "SRC011_P0002",
+        "child_id": "SRC011_P0002_C009",
+        "score": 0.6763011254688233
+      },
+      {
+        "rank": 5,
+        "enhanced_source_id": "SRC025",
+        "source_file": "EVID_GB18918_CURRENT.md",
+        "parent_id": "SRC025_P0001",
+        "child_id": "SRC025_P0001_C005",
+        "score": 0.6446637066861216
+      }
+    ],
+    "snapshot_sha256": "1d3cf12eb36ffd518541e688b8412ed3ccf7580f9b3dcae5a276b2138944d022"
+  },
+  {
+    "audit_type": "水污染物排放标准",
+    "question_id": "PL005_Emission_水污",
+    "project_id": "PL005",
+    "question": "请根据报告中的废水类型、预处理方式、排放去向、企业排口标准、污水处理厂名称、尾水排放河道和尾水执行标准，判断水污染物排放标准选取是否合理。要求对比：生活污水排放标准+排入污水处理厂名称+尾水排放河道+尾水排放执行标准，报告与知识库是否一致。",
+    "skill_id": "review-eia-pollutant-discharge-standards",
+    "core_answer_sources": [
+      {
+        "base_source_id": "SRC010",
+        "source_file": "#7_收纳水体地表水执行标准.csv"
+      },
+      {
+        "base_source_id": "SRC018",
+        "source_file": "DB44_26-2001.md"
+      },
+      {
+        "base_source_id": "SRC036",
+        "source_file": "GB_T_18920-2020.md"
+      }
+    ],
+    "actual_frozen_top5_hits": [
+      {
+        "rank": 1,
+        "enhanced_source_id": "SRC054",
+        "source_file": "GB_T_18920-2020.md",
+        "parent_id": "SRC054_P0001",
+        "child_id": "SRC054_P0001_C001",
+        "score": 1.4196487552906083
+      },
+      {
+        "rank": 2,
+        "enhanced_source_id": "SRC018",
+        "source_file": "DB44_26-2001.md",
+        "parent_id": "SRC018_P0001",
+        "child_id": "SRC018_P0001_C001",
+        "score": 1.2076300636349027
+      },
+      {
+        "rank": 3,
+        "enhanced_source_id": "SRC011",
+        "source_file": "#7_环境质量标准限值速查.md",
+        "parent_id": "SRC011_P0002",
+        "child_id": "SRC011_P0002_C009",
+        "score": 0.3781928684031807
+      },
+      {
+        "rank": 4,
+        "enhanced_source_id": "SRC010",
+        "source_file": "#7_收纳水体地表水执行标准.csv",
+        "parent_id": "SRC010_P0001",
+        "child_id": "SRC010_P0001_C004",
+        "score": 0.30337488946902014
+      },
+      {
+        "rank": 5,
+        "enhanced_source_id": "SRC014",
+        "source_file": "#8_塑料制品业典型污染源及执行标准.md",
+        "parent_id": "SRC014_P0001",
+        "child_id": "SRC014_P0001_C003",
+        "score": 0.2953736115401985
+      }
+    ],
+    "snapshot_sha256": "ffbbe58d60bbb9919cb989be273d68edca0d49dac1702241a8f0ad0af985015c"
+  },
+  {
+    "audit_type": "噪声排放标准",
+    "question_id": "PL002_Emission_噪声",
+    "project_id": "PL002",
+    "question": "请根据项目所属声环境功能区类别，判断噪声排放标准选取是否合理。要求总结声功能区类型、厂界执行标准（GB12348-2008）及昼夜限值，并与环评编制内容进行一致性分析。",
+    "skill_id": "review-eia-pollutant-discharge-standards",
+    "core_answer_sources": [
+      {
+        "base_source_id": "SRC023",
+        "source_file": "GB_12348-2008.md"
+      },
+      {
+        "base_source_id": "SRC009",
+        "source_file": "#7_GB12348噪声排放限值.md"
+      }
+    ],
+    "actual_frozen_top5_hits": [
+      {
+        "rank": 1,
+        "enhanced_source_id": "SRC041",
+        "source_file": "GB_12348-2008.md",
+        "parent_id": "SRC041_P0001",
+        "child_id": "SRC041_P0001_C001",
+        "score": 1.6951793649682663
+      },
+      {
+        "rank": 2,
+        "enhanced_source_id": "SRC047",
+        "source_file": "GB_3096-2008.md",
+        "parent_id": "SRC047_P0002",
+        "child_id": "SRC047_P0002_C001",
+        "score": 1.4470097372275958
+      },
+      {
+        "rank": 3,
+        "enhanced_source_id": "SRC026",
+        "source_file": "EVID_GB34330_2017.md",
+        "parent_id": "SRC026_P0001",
+        "child_id": "SRC026_P0001_C001",
+        "score": 1.3199065208614391
+      },
+      {
+        "rank": 4,
+        "enhanced_source_id": "SRC018",
+        "source_file": "DB44_26-2001.md",
+        "parent_id": "SRC018_P0001",
+        "child_id": "SRC018_P0001_C001",
+        "score": 1.1965130475588126
+      },
+      {
+        "rank": 5,
+        "enhanced_source_id": "SRC009",
+        "source_file": "#7_GB12348噪声排放限值.md",
+        "parent_id": "SRC009_P0001",
+        "child_id": "SRC009_P0001_C001",
+        "score": 0.7507228589278325
+      }
+    ],
+    "snapshot_sha256": "95b25888c157ba78803d27c01796f4b2f5602fae731aba4eb46c19c4fd50ea4e"
+  },
+  {
+    "audit_type": "噪声排放标准",
+    "question_id": "PL003_Emission_噪声",
+    "project_id": "PL003",
+    "question": "请根据项目所属声环境功能区类别，判断噪声排放标准选取是否合理。要求总结声功能区类型、厂界执行标准（GB12348-2008）及昼夜限值，并与环评编制内容进行一致性分析。",
+    "skill_id": "review-eia-pollutant-discharge-standards",
+    "core_answer_sources": [
+      {
+        "base_source_id": "SRC023",
+        "source_file": "GB_12348-2008.md"
+      },
+      {
+        "base_source_id": "SRC009",
+        "source_file": "#7_GB12348噪声排放限值.md"
+      }
+    ],
+    "actual_frozen_top5_hits": [
+      {
+        "rank": 1,
+        "enhanced_source_id": "SRC041",
+        "source_file": "GB_12348-2008.md",
+        "parent_id": "SRC041_P0001",
+        "child_id": "SRC041_P0001_C007",
+        "score": 1.7832449113229867
+      },
+      {
+        "rank": 2,
+        "enhanced_source_id": "SRC044",
+        "source_file": "GB_18597-2023.md",
+        "parent_id": "SRC044_P0002",
+        "child_id": "SRC044_P0002_C004",
+        "score": 1.4712832834778493
+      },
+      {
+        "rank": 3,
+        "enhanced_source_id": "SRC026",
+        "source_file": "EVID_GB34330_2017.md",
+        "parent_id": "SRC026_P0001",
+        "child_id": "SRC026_P0001_C001",
+        "score": 1.4316429400507675
+      },
+      {
+        "rank": 4,
+        "enhanced_source_id": "SRC020",
+        "source_file": "DB44_814-2010.md",
+        "parent_id": "SRC020_P0001",
+        "child_id": "SRC020_P0001_C007",
+        "score": 1.383203018203601
+      },
+      {
+        "rank": 5,
+        "enhanced_source_id": "SRC009",
+        "source_file": "#7_GB12348噪声排放限值.md",
+        "parent_id": "SRC009_P0001",
+        "child_id": "SRC009_P0001_C001",
+        "score": 0.8059048860413396
+      }
+    ],
+    "snapshot_sha256": "4e41535d9a1eb29e0bfb7f8dd323034790c7f480c8c4eec1a842daeab0c29e8d"
+  },
+  {
+    "audit_type": "噪声排放标准",
+    "question_id": "PL004_Emission_噪声",
+    "project_id": "PL004",
+    "question": "请根据项目所属声环境功能区类别，判断噪声排放标准选取是否合理。要求总结声功能区类型、厂界执行标准（GB12348-2008）及昼夜限值，并与环评编制内容进行一致性分析。",
+    "skill_id": "review-eia-pollutant-discharge-standards",
+    "core_answer_sources": [
+      {
+        "base_source_id": "SRC023",
+        "source_file": "GB_12348-2008.md"
+      },
+      {
+        "base_source_id": "SRC009",
+        "source_file": "#7_GB12348噪声排放限值.md"
+      }
+    ],
+    "actual_frozen_top5_hits": [
+      {
+        "rank": 1,
+        "enhanced_source_id": "SRC041",
+        "source_file": "GB_12348-2008.md",
+        "parent_id": "SRC041_P0001",
+        "child_id": "SRC041_P0001_C001",
+        "score": 1.7205035776919277
+      },
+      {
+        "rank": 2,
+        "enhanced_source_id": "SRC047",
+        "source_file": "GB_3096-2008.md",
+        "parent_id": "SRC047_P0001",
+        "child_id": "SRC047_P0001_C003",
+        "score": 1.4144050558726227
+      },
+      {
+        "rank": 3,
+        "enhanced_source_id": "SRC026",
+        "source_file": "EVID_GB34330_2017.md",
+        "parent_id": "SRC026_P0001",
+        "child_id": "SRC026_P0001_C001",
+        "score": 1.3937748154946958
+      },
+      {
+        "rank": 4,
+        "enhanced_source_id": "SRC018",
+        "source_file": "DB44_26-2001.md",
+        "parent_id": "SRC018_P0001",
+        "child_id": "SRC018_P0001_C002",
+        "score": 1.206929110174535
+      },
+      {
+        "rank": 5,
+        "enhanced_source_id": "SRC054",
+        "source_file": "GB_T_18920-2020.md",
+        "parent_id": "SRC054_P0001",
+        "child_id": "SRC054_P0001_C001",
+        "score": 1.1916240574513484
+      }
+    ],
+    "snapshot_sha256": "c6d944b5c18202c888b5222647d6c9020859404a4ce5466b7340b9bab1aa2e88"
+  },
+  {
+    "audit_type": "噪声排放标准",
+    "question_id": "PL005_Emission_噪声",
+    "project_id": "PL005",
+    "question": "请根据项目所属声环境功能区类别，判断噪声排放标准选取是否合理。要求总结声功能区类型、厂界执行标准（GB12348-2008）及昼夜限值，并与环评编制内容进行一致性分析。",
+    "skill_id": "review-eia-pollutant-discharge-standards",
+    "core_answer_sources": [
+      {
+        "base_source_id": "SRC023",
+        "source_file": "GB_12348-2008.md"
+      },
+      {
+        "base_source_id": "SRC009",
+        "source_file": "#7_GB12348噪声排放限值.md"
+      }
+    ],
+    "actual_frozen_top5_hits": [
+      {
+        "rank": 1,
+        "enhanced_source_id": "SRC041",
+        "source_file": "GB_12348-2008.md",
+        "parent_id": "SRC041_P0001",
+        "child_id": "SRC041_P0001_C001",
+        "score": 1.7097692741592596
+      },
+      {
+        "rank": 2,
+        "enhanced_source_id": "SRC044",
+        "source_file": "GB_18597-2023.md",
+        "parent_id": "SRC044_P0002",
+        "child_id": "SRC044_P0002_C004",
+        "score": 1.4224607580516604
+      },
+      {
+        "rank": 3,
+        "enhanced_source_id": "SRC018",
+        "source_file": "DB44_26-2001.md",
+        "parent_id": "SRC018_P0001",
+        "child_id": "SRC018_P0001_C002",
+        "score": 1.2289036864983913
+      },
+      {
+        "rank": 4,
+        "enhanced_source_id": "SRC042",
+        "source_file": "GB_14554-93.md",
+        "parent_id": "SRC042_P0001",
+        "child_id": "SRC042_P0001_C001",
+        "score": 1.197712674684726
+      },
+      {
+        "rank": 5,
+        "enhanced_source_id": "SRC053",
+        "source_file": "GB_41616-2022.md",
+        "parent_id": "SRC053_P0001",
+        "child_id": "SRC053_P0001_C001",
+        "score": 1.1973197146792844
+      }
+    ],
+    "snapshot_sha256": "f8c3b81569dd9e6879d2a683e39214bb9fda796ad57dd7fc309182c3e5914f22"
+  },
+  {
+    "audit_type": "固体废物控制标准",
+    "question_id": "PL001_Emission_固体",
+    "project_id": "PL001",
+    "question": "请根据项目产生的固体废物和危险废物类型，判断固体废物控制标准选取是否合理。要求总结一般工业固体废物和危险废物执行标准的标准名称及编号，分析是否缺少必要标准条目。",
+    "skill_id": "review-eia-pollutant-discharge-standards",
+    "core_answer_sources": [
+      {
+        "base_source_id": "SRC026",
+        "source_file": "GB_18597-2023.md"
+      },
+      {
+        "base_source_id": "SRC027",
+        "source_file": "GB_18599-2020.md"
+      },
+      {
+        "base_source_id": "SRC013",
+        "source_file": "#8_塑料制品业典型污染源及执行标准.csv"
+      }
+    ],
+    "actual_frozen_top5_hits": [
+      {
+        "rank": 1,
+        "enhanced_source_id": "SRC026",
+        "source_file": "EVID_GB34330_2017.md",
+        "parent_id": "SRC026_P0001",
+        "child_id": "SRC026_P0001_C001",
+        "score": 1.6890745318698333
+      },
+      {
+        "rank": 2,
+        "enhanced_source_id": "SRC045",
+        "source_file": "GB_18599-2020.md",
+        "parent_id": "SRC045_P0001",
+        "child_id": "SRC045_P0001_C001",
+        "score": 1.6674622322931043
+      },
+      {
+        "rank": 3,
+        "enhanced_source_id": "SRC019",
+        "source_file": "DB44_27-2001.md",
+        "parent_id": "SRC019_P0001",
+        "child_id": "SRC019_P0001_C003",
+        "score": 1.4889412179820853
+      },
+      {
+        "rank": 4,
+        "enhanced_source_id": "SRC044",
+        "source_file": "GB_18597-2023.md",
+        "parent_id": "SRC044_P0002",
+        "child_id": "SRC044_P0002_C004",
+        "score": 1.4238637204259312
+      },
+      {
+        "rank": 5,
+        "enhanced_source_id": "SRC042",
+        "source_file": "GB_14554-93.md",
+        "parent_id": "SRC042_P0001",
+        "child_id": "SRC042_P0001_C009",
+        "score": 1.2269362932556653
+      }
+    ],
+    "snapshot_sha256": "6e4c8b0224e50da13a2fabfd0a8a6925b81b08383ef100271ae722ce33f7d490"
+  },
+  {
+    "audit_type": "固体废物控制标准",
+    "question_id": "PL002_Emission_固体",
+    "project_id": "PL002",
+    "question": "请根据项目产生的固体废物和危险废物类型，判断固体废物控制标准选取是否合理。要求总结一般工业固体废物和危险废物执行标准的标准名称及编号，分析是否缺少必要标准条目。",
+    "skill_id": "review-eia-pollutant-discharge-standards",
+    "core_answer_sources": [
+      {
+        "base_source_id": "SRC026",
+        "source_file": "GB_18597-2023.md"
+      },
+      {
+        "base_source_id": "SRC027",
+        "source_file": "GB_18599-2020.md"
+      },
+      {
+        "base_source_id": "SRC013",
+        "source_file": "#8_塑料制品业典型污染源及执行标准.csv"
+      }
+    ],
+    "actual_frozen_top5_hits": [
+      {
+        "rank": 1,
+        "enhanced_source_id": "SRC026",
+        "source_file": "EVID_GB34330_2017.md",
+        "parent_id": "SRC026_P0001",
+        "child_id": "SRC026_P0001_C001",
+        "score": 1.7290786989488187
+      },
+      {
+        "rank": 2,
+        "enhanced_source_id": "SRC045",
+        "source_file": "GB_18599-2020.md",
+        "parent_id": "SRC045_P0001",
+        "child_id": "SRC045_P0001_C001",
+        "score": 1.7253980886329137
+      },
+      {
+        "rank": 3,
+        "enhanced_source_id": "SRC044",
+        "source_file": "GB_18597-2023.md",
+        "parent_id": "SRC044_P0001",
+        "child_id": "SRC044_P0001_C003",
+        "score": 1.456144262215855
+      },
+      {
+        "rank": 4,
+        "enhanced_source_id": "SRC048",
+        "source_file": "GB_31572-2015.md",
+        "parent_id": "SRC048_P0004",
+        "child_id": "SRC048_P0004_C001",
+        "score": 1.4032217294091271
+      },
+      {
+        "rank": 5,
+        "enhanced_source_id": "SRC012",
+        "source_file": "#8_GB31572表4排放限值.md",
+        "parent_id": "SRC012_P0001",
+        "child_id": "SRC012_P0001_C001",
+        "score": 1.2931436034826913
+      }
+    ],
+    "snapshot_sha256": "7ae1867a5fc17ba5151ed66ba76fef2cfbf00eb0c87d43430ab1a3e3f6f4a447"
+  },
+  {
+    "audit_type": "固体废物控制标准",
+    "question_id": "PL003_Emission_固体",
+    "project_id": "PL003",
+    "question": "请根据项目产生的固体废物和危险废物类型，判断固体废物控制标准选取是否合理。要求总结一般工业固体废物和危险废物执行标准的标准名称及编号，分析是否缺少必要标准条目。",
+    "skill_id": "review-eia-pollutant-discharge-standards",
+    "core_answer_sources": [
+      {
+        "base_source_id": "SRC026",
+        "source_file": "GB_18597-2023.md"
+      },
+      {
+        "base_source_id": "SRC027",
+        "source_file": "GB_18599-2020.md"
+      },
+      {
+        "base_source_id": "SRC013",
+        "source_file": "#8_塑料制品业典型污染源及执行标准.csv"
+      }
+    ],
+    "actual_frozen_top5_hits": [
+      {
+        "rank": 1,
+        "enhanced_source_id": "SRC026",
+        "source_file": "EVID_GB34330_2017.md",
+        "parent_id": "SRC026_P0001",
+        "child_id": "SRC026_P0001_C001",
+        "score": 1.731130704097592
+      },
+      {
+        "rank": 2,
+        "enhanced_source_id": "SRC044",
+        "source_file": "GB_18597-2023.md",
+        "parent_id": "SRC044_P0001",
+        "child_id": "SRC044_P0001_C003",
+        "score": 1.5405840746286446
+      },
+      {
+        "rank": 3,
+        "enhanced_source_id": "SRC041",
+        "source_file": "GB_12348-2008.md",
+        "parent_id": "SRC041_P0001",
+        "child_id": "SRC041_P0001_C002",
+        "score": 1.4697625651853226
+      },
+      {
+        "rank": 4,
+        "enhanced_source_id": "SRC045",
+        "source_file": "GB_18599-2020.md",
+        "parent_id": "SRC045_P0001",
+        "child_id": "SRC045_P0001_C003",
+        "score": 0.5416200243373973
+      },
+      {
+        "rank": 5,
+        "enhanced_source_id": "SRC034",
+        "source_file": "EVID_GB5085_7_2019.md",
+        "parent_id": "SRC034_P0001",
+        "child_id": "SRC034_P0001_C002",
+        "score": 0.5220121199728015
+      }
+    ],
+    "snapshot_sha256": "191c50a3778b30a2069234ed89d6935c37b229b8ae35914853c7f5f8f793d7d4"
+  },
+  {
+    "audit_type": "固体废物控制标准",
+    "question_id": "PL004_Emission_固体",
+    "project_id": "PL004",
+    "question": "请根据项目产生的固体废物和危险废物类型，判断固体废物控制标准选取是否合理。要求总结一般工业固体废物和危险废物执行标准的标准名称及编号，分析是否缺少必要标准条目。",
+    "skill_id": "review-eia-pollutant-discharge-standards",
+    "core_answer_sources": [
+      {
+        "base_source_id": "SRC026",
+        "source_file": "GB_18597-2023.md"
+      },
+      {
+        "base_source_id": "SRC027",
+        "source_file": "GB_18599-2020.md"
+      },
+      {
+        "base_source_id": "SRC013",
+        "source_file": "#8_塑料制品业典型污染源及执行标准.csv"
+      }
+    ],
+    "actual_frozen_top5_hits": [
+      {
+        "rank": 1,
+        "enhanced_source_id": "SRC045",
+        "source_file": "GB_18599-2020.md",
+        "parent_id": "SRC045_P0001",
+        "child_id": "SRC045_P0001_C001",
+        "score": 1.7186198692526304
+      },
+      {
+        "rank": 2,
+        "enhanced_source_id": "SRC026",
+        "source_file": "EVID_GB34330_2017.md",
+        "parent_id": "SRC026_P0001",
+        "child_id": "SRC026_P0001_C001",
+        "score": 1.7121838729844503
+      },
+      {
+        "rank": 3,
+        "enhanced_source_id": "SRC018",
+        "source_file": "DB44_26-2001.md",
+        "parent_id": "SRC018_P0001",
+        "child_id": "SRC018_P0001_C001",
+        "score": 1.6281056101971565
+      },
+      {
+        "rank": 4,
+        "enhanced_source_id": "SRC044",
+        "source_file": "GB_18597-2023.md",
+        "parent_id": "SRC044_P0001",
+        "child_id": "SRC044_P0001_C003",
+        "score": 1.4276615120849538
+      },
+      {
+        "rank": 5,
+        "enhanced_source_id": "SRC048",
+        "source_file": "GB_31572-2015.md",
+        "parent_id": "SRC048_P0001",
+        "child_id": "SRC048_P0001_C002",
+        "score": 1.352812369307824
+      }
+    ],
+    "snapshot_sha256": "4007b384734e52831fdc9ec71441e5b0e55a77c58612d823962412672575bb00"
+  },
+  {
+    "audit_type": "固体废物控制标准",
+    "question_id": "PL005_Emission_固体",
+    "project_id": "PL005",
+    "question": "请根据项目产生的固体废物和危险废物类型，判断固体废物控制标准选取是否合理。要求总结一般工业固体废物和危险废物执行标准的标准名称及编号，分析是否缺少必要标准条目。",
+    "skill_id": "review-eia-pollutant-discharge-standards",
+    "core_answer_sources": [
+      {
+        "base_source_id": "SRC026",
+        "source_file": "GB_18597-2023.md"
+      },
+      {
+        "base_source_id": "SRC027",
+        "source_file": "GB_18599-2020.md"
+      },
+      {
+        "base_source_id": "SRC013",
+        "source_file": "#8_塑料制品业典型污染源及执行标准.csv"
+      }
+    ],
+    "actual_frozen_top5_hits": [
+      {
+        "rank": 1,
+        "enhanced_source_id": "SRC018",
+        "source_file": "DB44_26-2001.md",
+        "parent_id": "SRC018_P0001",
+        "child_id": "SRC018_P0001_C002",
+        "score": 1.575535940873834
+      },
+      {
+        "rank": 2,
+        "enhanced_source_id": "SRC044",
+        "source_file": "GB_18597-2023.md",
+        "parent_id": "SRC044_P0001",
+        "child_id": "SRC044_P0001_C003",
+        "score": 1.5629948523744897
+      },
+      {
+        "rank": 3,
+        "enhanced_source_id": "SRC048",
+        "source_file": "GB_31572-2015.md",
+        "parent_id": "SRC048_P0001",
+        "child_id": "SRC048_P0001_C002",
+        "score": 1.30337488946902
+      },
+      {
+        "rank": 4,
+        "enhanced_source_id": "SRC053",
+        "source_file": "GB_41616-2022.md",
+        "parent_id": "SRC053_P0001",
+        "child_id": "SRC053_P0001_C001",
+        "score": 1.2668205273556803
+      },
+      {
+        "rank": 5,
+        "enhanced_source_id": "SRC017",
+        "source_file": "DB44_2367-2022.md",
+        "parent_id": "SRC017_P0001",
+        "child_id": "SRC017_P0001_C002",
+        "score": 1.1828508593402305
+      }
+    ],
+    "snapshot_sha256": "8447e22c75d25e7d5f9c76294a467bf3f1446096e1b2cc873e003bf9755a07af"
+  }
+]

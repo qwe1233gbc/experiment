@@ -1,0 +1,29 @@
+{
+  "id": "chatcmpl-d6f74261-d200-48b4-b724-a8c19af93831",
+  "object": "chat.completion",
+  "created": 1787378745,
+  "model": "qwen3.8-max",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"scores\": [{\"response_id\": \"R1\", \"correctness\": 1, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": null, \"skill_workflow\": null, \"rationale\": \"结论方向正确但判定过严。准确识别GB18599新旧混用及条目缺失问题，证据定位精准。因rag不可用未扣分法规依据，但将参考答案认可的额外引用视为不合规，导致结论与金标“无误”存在偏差。\"}, {\"response_id\": \"R2\", \"correctness\": 1, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": 2, \"skill_workflow\": null, \"rationale\": \"结论偏严但分析深入。利用RAG准确指出GB18599-2001已废止及适用边界问题，证据扎实。虽与金标“无误”结论不完全一致，但指出的标准版本冲突为报告真实缺陷，符合额外真实问题不扣分原则。\"}, {\"response_id\": \"R3\", \"correctness\": 1, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": null, \"skill_workflow\": 2, \"rationale\": \"体现完整审核工作流，发现标准章节缺失及代码不一致等实质问题。因无RAG未评法规依据。结论虽与金标有异，但指出的内部一致性问题是报告真实缺陷，分析逻辑严密，行动建议具体可执行。\"}, {\"response_id\": \"R4\", \"correctness\": 1, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": 2, \"skill_workflow\": 2, \"rationale\": \"综合表现最优。结合RAG与工作流，精准识别危废代码前后矛盾、标准版本冲突及适用边界缺失等多重实质问题。证据链完整，法规依据充分，虽结论严于金标，但揭示了报告真实且关键的合规风险。\"}]}"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6989,
+    "completion_tokens": 432,
+    "total_tokens": 7421,
+    "prompt_tokens_details": {
+      "text_tokens": 6989
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  }
+}

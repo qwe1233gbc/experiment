@@ -1,0 +1,242 @@
+[
+  {
+    "audit_type": "噪声排放标准",
+    "question_id": "PL002_Emission_噪声",
+    "project_id": "PL002",
+    "question": "请根据项目所属声环境功能区类别，判断噪声排放标准选取是否合理。要求总结声功能区类型、厂界执行标准（GB12348-2008）及昼夜限值，并与环评编制内容进行一致性分析。",
+    "skill_id": "review-eia-pollutant-discharge-standards",
+    "core_answer_sources": [
+      {
+        "base_source_id": "SRC023",
+        "source_file": "GB_12348-2008.md"
+      },
+      {
+        "base_source_id": "SRC009",
+        "source_file": "#7_GB12348噪声排放限值.md"
+      }
+    ],
+    "actual_frozen_top5_hits": [
+      {
+        "rank": 1,
+        "enhanced_source_id": "SRC041",
+        "source_file": "GB_12348-2008.md",
+        "parent_id": "SRC041_P0001",
+        "child_id": "SRC041_P0001_C001",
+        "score": 1.6951793649682663
+      },
+      {
+        "rank": 2,
+        "enhanced_source_id": "SRC047",
+        "source_file": "GB_3096-2008.md",
+        "parent_id": "SRC047_P0002",
+        "child_id": "SRC047_P0002_C001",
+        "score": 1.4470097372275958
+      },
+      {
+        "rank": 3,
+        "enhanced_source_id": "SRC026",
+        "source_file": "EVID_GB34330_2017.md",
+        "parent_id": "SRC026_P0001",
+        "child_id": "SRC026_P0001_C001",
+        "score": 1.3199065208614391
+      },
+      {
+        "rank": 4,
+        "enhanced_source_id": "SRC018",
+        "source_file": "DB44_26-2001.md",
+        "parent_id": "SRC018_P0001",
+        "child_id": "SRC018_P0001_C001",
+        "score": 1.1965130475588126
+      },
+      {
+        "rank": 5,
+        "enhanced_source_id": "SRC009",
+        "source_file": "#7_GB12348噪声排放限值.md",
+        "parent_id": "SRC009_P0001",
+        "child_id": "SRC009_P0001_C001",
+        "score": 0.7507228589278325
+      }
+    ],
+    "snapshot_sha256": "95b25888c157ba78803d27c01796f4b2f5602fae731aba4eb46c19c4fd50ea4e"
+  },
+  {
+    "audit_type": "噪声排放标准",
+    "question_id": "PL003_Emission_噪声",
+    "project_id": "PL003",
+    "question": "请根据项目所属声环境功能区类别，判断噪声排放标准选取是否合理。要求总结声功能区类型、厂界执行标准（GB12348-2008）及昼夜限值，并与环评编制内容进行一致性分析。",
+    "skill_id": "review-eia-pollutant-discharge-standards",
+    "core_answer_sources": [
+      {
+        "base_source_id": "SRC023",
+        "source_file": "GB_12348-2008.md"
+      },
+      {
+        "base_source_id": "SRC009",
+        "source_file": "#7_GB12348噪声排放限值.md"
+      }
+    ],
+    "actual_frozen_top5_hits": [
+      {
+        "rank": 1,
+        "enhanced_source_id": "SRC041",
+        "source_file": "GB_12348-2008.md",
+        "parent_id": "SRC041_P0001",
+        "child_id": "SRC041_P0001_C007",
+        "score": 1.7832449113229867
+      },
+      {
+        "rank": 2,
+        "enhanced_source_id": "SRC044",
+        "source_file": "GB_18597-2023.md",
+        "parent_id": "SRC044_P0002",
+        "child_id": "SRC044_P0002_C004",
+        "score": 1.4712832834778493
+      },
+      {
+        "rank": 3,
+        "enhanced_source_id": "SRC026",
+        "source_file": "EVID_GB34330_2017.md",
+        "parent_id": "SRC026_P0001",
+        "child_id": "SRC026_P0001_C001",
+        "score": 1.4316429400507675
+      },
+      {
+        "rank": 4,
+        "enhanced_source_id": "SRC020",
+        "source_file": "DB44_814-2010.md",
+        "parent_id": "SRC020_P0001",
+        "child_id": "SRC020_P0001_C007",
+        "score": 1.383203018203601
+      },
+      {
+        "rank": 5,
+        "enhanced_source_id": "SRC009",
+        "source_file": "#7_GB12348噪声排放限值.md",
+        "parent_id": "SRC009_P0001",
+        "child_id": "SRC009_P0001_C001",
+        "score": 0.8059048860413396
+      }
+    ],
+    "snapshot_sha256": "4e41535d9a1eb29e0bfb7f8dd323034790c7f480c8c4eec1a842daeab0c29e8d"
+  },
+  {
+    "audit_type": "噪声排放标准",
+    "question_id": "PL004_Emission_噪声",
+    "project_id": "PL004",
+    "question": "请根据项目所属声环境功能区类别，判断噪声排放标准选取是否合理。要求总结声功能区类型、厂界执行标准（GB12348-2008）及昼夜限值，并与环评编制内容进行一致性分析。",
+    "skill_id": "review-eia-pollutant-discharge-standards",
+    "core_answer_sources": [
+      {
+        "base_source_id": "SRC023",
+        "source_file": "GB_12348-2008.md"
+      },
+      {
+        "base_source_id": "SRC009",
+        "source_file": "#7_GB12348噪声排放限值.md"
+      }
+    ],
+    "actual_frozen_top5_hits": [
+      {
+        "rank": 1,
+        "enhanced_source_id": "SRC041",
+        "source_file": "GB_12348-2008.md",
+        "parent_id": "SRC041_P0001",
+        "child_id": "SRC041_P0001_C001",
+        "score": 1.7205035776919277
+      },
+      {
+        "rank": 2,
+        "enhanced_source_id": "SRC047",
+        "source_file": "GB_3096-2008.md",
+        "parent_id": "SRC047_P0001",
+        "child_id": "SRC047_P0001_C003",
+        "score": 1.4144050558726227
+      },
+      {
+        "rank": 3,
+        "enhanced_source_id": "SRC026",
+        "source_file": "EVID_GB34330_2017.md",
+        "parent_id": "SRC026_P0001",
+        "child_id": "SRC026_P0001_C001",
+        "score": 1.3937748154946958
+      },
+      {
+        "rank": 4,
+        "enhanced_source_id": "SRC018",
+        "source_file": "DB44_26-2001.md",
+        "parent_id": "SRC018_P0001",
+        "child_id": "SRC018_P0001_C002",
+        "score": 1.206929110174535
+      },
+      {
+        "rank": 5,
+        "enhanced_source_id": "SRC054",
+        "source_file": "GB_T_18920-2020.md",
+        "parent_id": "SRC054_P0001",
+        "child_id": "SRC054_P0001_C001",
+        "score": 1.1916240574513484
+      }
+    ],
+    "snapshot_sha256": "c6d944b5c18202c888b5222647d6c9020859404a4ce5466b7340b9bab1aa2e88"
+  },
+  {
+    "audit_type": "噪声排放标准",
+    "question_id": "PL005_Emission_噪声",
+    "project_id": "PL005",
+    "question": "请根据项目所属声环境功能区类别，判断噪声排放标准选取是否合理。要求总结声功能区类型、厂界执行标准（GB12348-2008）及昼夜限值，并与环评编制内容进行一致性分析。",
+    "skill_id": "review-eia-pollutant-discharge-standards",
+    "core_answer_sources": [
+      {
+        "base_source_id": "SRC023",
+        "source_file": "GB_12348-2008.md"
+      },
+      {
+        "base_source_id": "SRC009",
+        "source_file": "#7_GB12348噪声排放限值.md"
+      }
+    ],
+    "actual_frozen_top5_hits": [
+      {
+        "rank": 1,
+        "enhanced_source_id": "SRC041",
+        "source_file": "GB_12348-2008.md",
+        "parent_id": "SRC041_P0001",
+        "child_id": "SRC041_P0001_C001",
+        "score": 1.7097692741592596
+      },
+      {
+        "rank": 2,
+        "enhanced_source_id": "SRC044",
+        "source_file": "GB_18597-2023.md",
+        "parent_id": "SRC044_P0002",
+        "child_id": "SRC044_P0002_C004",
+        "score": 1.4224607580516604
+      },
+      {
+        "rank": 3,
+        "enhanced_source_id": "SRC018",
+        "source_file": "DB44_26-2001.md",
+        "parent_id": "SRC018_P0001",
+        "child_id": "SRC018_P0001_C002",
+        "score": 1.2289036864983913
+      },
+      {
+        "rank": 4,
+        "enhanced_source_id": "SRC042",
+        "source_file": "GB_14554-93.md",
+        "parent_id": "SRC042_P0001",
+        "child_id": "SRC042_P0001_C001",
+        "score": 1.197712674684726
+      },
+      {
+        "rank": 5,
+        "enhanced_source_id": "SRC053",
+        "source_file": "GB_41616-2022.md",
+        "parent_id": "SRC053_P0001",
+        "child_id": "SRC053_P0001_C001",
+        "score": 1.1973197146792844
+      }
+    ],
+    "snapshot_sha256": "f8c3b81569dd9e6879d2a683e39214bb9fda796ad57dd7fc309182c3e5914f22"
+  }
+]

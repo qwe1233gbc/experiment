@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "EIA Skill Input Contract",
+  "type": "object",
+  "required": [
+    "question",
+    "audit_category",
+    "report_evidence",
+    "rag_evidence",
+    "project_metadata",
+    "case_hints"
+  ],
+  "properties": {
+    "question": {
+      "type": "string"
+    },
+    "audit_category": {
+      "type": "string"
+    },
+    "report_evidence": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "rag_evidence": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "project_metadata": {
+      "type": "object"
+    },
+    "case_hints": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    }
+  },
+  "additionalProperties": false
+}

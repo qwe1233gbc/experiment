@@ -1,0 +1,322 @@
+[
+  {
+    "audit_type": "固体废物控制标准",
+    "question_id": "PL001_Emission_固体",
+    "project_id": "PL001",
+    "question": "请根据项目产生的固体废物和危险废物类型，判断固体废物控制标准选取是否合理。要求总结一般工业固体废物和危险废物执行标准的标准名称及编号，分析是否缺少必要标准条目。",
+    "skill_id": "review-eia-pollutant-discharge-standards",
+    "core_answer_sources": [
+      {
+        "base_source_id": "SRC026",
+        "source_file": "GB_18597-2023.md"
+      },
+      {
+        "base_source_id": "SRC027",
+        "source_file": "GB_18599-2020.md"
+      },
+      {
+        "base_source_id": "SRC013",
+        "source_file": "#8_塑料制品业典型污染源及执行标准.csv"
+      }
+    ],
+    "actual_frozen_top5_hits": [
+      {
+        "rank": 1,
+        "enhanced_source_id": "SRC026",
+        "source_file": "EVID_GB34330_2017.md",
+        "parent_id": "SRC026_P0001",
+        "child_id": "SRC026_P0001_C001",
+        "score": 1.6890745318698333
+      },
+      {
+        "rank": 2,
+        "enhanced_source_id": "SRC045",
+        "source_file": "GB_18599-2020.md",
+        "parent_id": "SRC045_P0001",
+        "child_id": "SRC045_P0001_C001",
+        "score": 1.6674622322931043
+      },
+      {
+        "rank": 3,
+        "enhanced_source_id": "SRC019",
+        "source_file": "DB44_27-2001.md",
+        "parent_id": "SRC019_P0001",
+        "child_id": "SRC019_P0001_C003",
+        "score": 1.4889412179820853
+      },
+      {
+        "rank": 4,
+        "enhanced_source_id": "SRC044",
+        "source_file": "GB_18597-2023.md",
+        "parent_id": "SRC044_P0002",
+        "child_id": "SRC044_P0002_C004",
+        "score": 1.4238637204259312
+      },
+      {
+        "rank": 5,
+        "enhanced_source_id": "SRC042",
+        "source_file": "GB_14554-93.md",
+        "parent_id": "SRC042_P0001",
+        "child_id": "SRC042_P0001_C009",
+        "score": 1.2269362932556653
+      }
+    ],
+    "snapshot_sha256": "6e4c8b0224e50da13a2fabfd0a8a6925b81b08383ef100271ae722ce33f7d490"
+  },
+  {
+    "audit_type": "固体废物控制标准",
+    "question_id": "PL002_Emission_固体",
+    "project_id": "PL002",
+    "question": "请根据项目产生的固体废物和危险废物类型，判断固体废物控制标准选取是否合理。要求总结一般工业固体废物和危险废物执行标准的标准名称及编号，分析是否缺少必要标准条目。",
+    "skill_id": "review-eia-pollutant-discharge-standards",
+    "core_answer_sources": [
+      {
+        "base_source_id": "SRC026",
+        "source_file": "GB_18597-2023.md"
+      },
+      {
+        "base_source_id": "SRC027",
+        "source_file": "GB_18599-2020.md"
+      },
+      {
+        "base_source_id": "SRC013",
+        "source_file": "#8_塑料制品业典型污染源及执行标准.csv"
+      }
+    ],
+    "actual_frozen_top5_hits": [
+      {
+        "rank": 1,
+        "enhanced_source_id": "SRC026",
+        "source_file": "EVID_GB34330_2017.md",
+        "parent_id": "SRC026_P0001",
+        "child_id": "SRC026_P0001_C001",
+        "score": 1.7290786989488187
+      },
+      {
+        "rank": 2,
+        "enhanced_source_id": "SRC045",
+        "source_file": "GB_18599-2020.md",
+        "parent_id": "SRC045_P0001",
+        "child_id": "SRC045_P0001_C001",
+        "score": 1.7253980886329137
+      },
+      {
+        "rank": 3,
+        "enhanced_source_id": "SRC044",
+        "source_file": "GB_18597-2023.md",
+        "parent_id": "SRC044_P0001",
+        "child_id": "SRC044_P0001_C003",
+        "score": 1.456144262215855
+      },
+      {
+        "rank": 4,
+        "enhanced_source_id": "SRC048",
+        "source_file": "GB_31572-2015.md",
+        "parent_id": "SRC048_P0004",
+        "child_id": "SRC048_P0004_C001",
+        "score": 1.4032217294091271
+      },
+      {
+        "rank": 5,
+        "enhanced_source_id": "SRC012",
+        "source_file": "#8_GB31572表4排放限值.md",
+        "parent_id": "SRC012_P0001",
+        "child_id": "SRC012_P0001_C001",
+        "score": 1.2931436034826913
+      }
+    ],
+    "snapshot_sha256": "7ae1867a5fc17ba5151ed66ba76fef2cfbf00eb0c87d43430ab1a3e3f6f4a447"
+  },
+  {
+    "audit_type": "固体废物控制标准",
+    "question_id": "PL003_Emission_固体",
+    "project_id": "PL003",
+    "question": "请根据项目产生的固体废物和危险废物类型，判断固体废物控制标准选取是否合理。要求总结一般工业固体废物和危险废物执行标准的标准名称及编号，分析是否缺少必要标准条目。",
+    "skill_id": "review-eia-pollutant-discharge-standards",
+    "core_answer_sources": [
+      {
+        "base_source_id": "SRC026",
+        "source_file": "GB_18597-2023.md"
+      },
+      {
+        "base_source_id": "SRC027",
+        "source_file": "GB_18599-2020.md"
+      },
+      {
+        "base_source_id": "SRC013",
+        "source_file": "#8_塑料制品业典型污染源及执行标准.csv"
+      }
+    ],
+    "actual_frozen_top5_hits": [
+      {
+        "rank": 1,
+        "enhanced_source_id": "SRC026",
+        "source_file": "EVID_GB34330_2017.md",
+        "parent_id": "SRC026_P0001",
+        "child_id": "SRC026_P0001_C001",
+        "score": 1.731130704097592
+      },
+      {
+        "rank": 2,
+        "enhanced_source_id": "SRC044",
+        "source_file": "GB_18597-2023.md",
+        "parent_id": "SRC044_P0001",
+        "child_id": "SRC044_P0001_C003",
+        "score": 1.5405840746286446
+      },
+      {
+        "rank": 3,
+        "enhanced_source_id": "SRC041",
+        "source_file": "GB_12348-2008.md",
+        "parent_id": "SRC041_P0001",
+        "child_id": "SRC041_P0001_C002",
+        "score": 1.4697625651853226
+      },
+      {
+        "rank": 4,
+        "enhanced_source_id": "SRC045",
+        "source_file": "GB_18599-2020.md",
+        "parent_id": "SRC045_P0001",
+        "child_id": "SRC045_P0001_C003",
+        "score": 0.5416200243373973
+      },
+      {
+        "rank": 5,
+        "enhanced_source_id": "SRC034",
+        "source_file": "EVID_GB5085_7_2019.md",
+        "parent_id": "SRC034_P0001",
+        "child_id": "SRC034_P0001_C002",
+        "score": 0.5220121199728015
+      }
+    ],
+    "snapshot_sha256": "191c50a3778b30a2069234ed89d6935c37b229b8ae35914853c7f5f8f793d7d4"
+  },
+  {
+    "audit_type": "固体废物控制标准",
+    "question_id": "PL004_Emission_固体",
+    "project_id": "PL004",
+    "question": "请根据项目产生的固体废物和危险废物类型，判断固体废物控制标准选取是否合理。要求总结一般工业固体废物和危险废物执行标准的标准名称及编号，分析是否缺少必要标准条目。",
+    "skill_id": "review-eia-pollutant-discharge-standards",
+    "core_answer_sources": [
+      {
+        "base_source_id": "SRC026",
+        "source_file": "GB_18597-2023.md"
+      },
+      {
+        "base_source_id": "SRC027",
+        "source_file": "GB_18599-2020.md"
+      },
+      {
+        "base_source_id": "SRC013",
+        "source_file": "#8_塑料制品业典型污染源及执行标准.csv"
+      }
+    ],
+    "actual_frozen_top5_hits": [
+      {
+        "rank": 1,
+        "enhanced_source_id": "SRC045",
+        "source_file": "GB_18599-2020.md",
+        "parent_id": "SRC045_P0001",
+        "child_id": "SRC045_P0001_C001",
+        "score": 1.7186198692526304
+      },
+      {
+        "rank": 2,
+        "enhanced_source_id": "SRC026",
+        "source_file": "EVID_GB34330_2017.md",
+        "parent_id": "SRC026_P0001",
+        "child_id": "SRC026_P0001_C001",
+        "score": 1.7121838729844503
+      },
+      {
+        "rank": 3,
+        "enhanced_source_id": "SRC018",
+        "source_file": "DB44_26-2001.md",
+        "parent_id": "SRC018_P0001",
+        "child_id": "SRC018_P0001_C001",
+        "score": 1.6281056101971565
+      },
+      {
+        "rank": 4,
+        "enhanced_source_id": "SRC044",
+        "source_file": "GB_18597-2023.md",
+        "parent_id": "SRC044_P0001",
+        "child_id": "SRC044_P0001_C003",
+        "score": 1.4276615120849538
+      },
+      {
+        "rank": 5,
+        "enhanced_source_id": "SRC048",
+        "source_file": "GB_31572-2015.md",
+        "parent_id": "SRC048_P0001",
+        "child_id": "SRC048_P0001_C002",
+        "score": 1.352812369307824
+      }
+    ],
+    "snapshot_sha256": "4007b384734e52831fdc9ec71441e5b0e55a77c58612d823962412672575bb00"
+  },
+  {
+    "audit_type": "固体废物控制标准",
+    "question_id": "PL005_Emission_固体",
+    "project_id": "PL005",
+    "question": "请根据项目产生的固体废物和危险废物类型，判断固体废物控制标准选取是否合理。要求总结一般工业固体废物和危险废物执行标准的标准名称及编号，分析是否缺少必要标准条目。",
+    "skill_id": "review-eia-pollutant-discharge-standards",
+    "core_answer_sources": [
+      {
+        "base_source_id": "SRC026",
+        "source_file": "GB_18597-2023.md"
+      },
+      {
+        "base_source_id": "SRC027",
+        "source_file": "GB_18599-2020.md"
+      },
+      {
+        "base_source_id": "SRC013",
+        "source_file": "#8_塑料制品业典型污染源及执行标准.csv"
+      }
+    ],
+    "actual_frozen_top5_hits": [
+      {
+        "rank": 1,
+        "enhanced_source_id": "SRC018",
+        "source_file": "DB44_26-2001.md",
+        "parent_id": "SRC018_P0001",
+        "child_id": "SRC018_P0001_C002",
+        "score": 1.575535940873834
+      },
+      {
+        "rank": 2,
+        "enhanced_source_id": "SRC044",
+        "source_file": "GB_18597-2023.md",
+        "parent_id": "SRC044_P0001",
+        "child_id": "SRC044_P0001_C003",
+        "score": 1.5629948523744897
+      },
+      {
+        "rank": 3,
+        "enhanced_source_id": "SRC048",
+        "source_file": "GB_31572-2015.md",
+        "parent_id": "SRC048_P0001",
+        "child_id": "SRC048_P0001_C002",
+        "score": 1.30337488946902
+      },
+      {
+        "rank": 4,
+        "enhanced_source_id": "SRC053",
+        "source_file": "GB_41616-2022.md",
+        "parent_id": "SRC053_P0001",
+        "child_id": "SRC053_P0001_C001",
+        "score": 1.2668205273556803
+      },
+      {
+        "rank": 5,
+        "enhanced_source_id": "SRC017",
+        "source_file": "DB44_2367-2022.md",
+        "parent_id": "SRC017_P0001",
+        "child_id": "SRC017_P0001_C002",
+        "score": 1.1828508593402305
+      }
+    ],
+    "snapshot_sha256": "8447e22c75d25e7d5f9c76294a467bf3f1446096e1b2cc873e003bf9755a07af"
+  }
+]

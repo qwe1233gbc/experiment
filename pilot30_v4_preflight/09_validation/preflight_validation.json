@@ -37,8 +37,8 @@
       "detail": "剩余 PENDING_AUDIT: 0 处（需逐题审计完成）"
     },
     "runnable_from_clean_checkout": {
-      "passed": false,
-      "detail": "frozen_config存在: True; 脚本数: 0; 硬编码路径: 0"
+      "passed": true,
+      "detail": "frozen_config存在: True; 脚本数: 1; 硬编码路径: 0"
     }
   },
   "checks": [
@@ -98,8 +98,8 @@
     },
     {
       "name": "runnable_from_clean_checkout",
-      "passed": false,
-      "detail": "frozen_config存在: True; 脚本数: 0; 硬编码路径: 0",
+      "passed": true,
+      "detail": "frozen_config存在: True; 脚本数: 1; 硬编码路径: 0",
       "type": "gate"
     },
     {
@@ -144,23 +144,21 @@
     "word_parsed_fidelity_pass: 0/11 个项目完整保真度核验通过；11 个项目JSON解析正常但缺原始Word无法核验",
     "required_report_evidence_in_prompt: 逐题证据包: 0/23（待生成最小充分证据包）",
     "required_external_clause_in_topk: 0/23 题外部知识覆盖已确认；其余为 PARTIAL/MISSING，需审计是否包含决定性条款",
-    "K2_web_hash_equals_K3_web_hash: 尚未生成统一Web/RAG快照；K3必须复用K2的同一Web证据",
-    "runnable_from_clean_checkout: frozen_config存在: True; 脚本数: 0; 硬编码路径: 0"
+    "K2_web_hash_equals_K3_web_hash: 尚未生成统一Web/RAG快照；K3必须复用K2的同一Web证据"
   ],
   "warnings": [],
   "summary": {
     "preflight_decision": "FAIL",
     "total_gates": 10,
-    "passed_gates": 4,
-    "failed_gates": 6,
+    "passed_gates": 5,
+    "failed_gates": 5,
     "total_checks": 16,
     "errors": [
       "human_gold_confirmed: 0/23 题已人工确认金标 — 未确认: ['NEW_PL001_invest_ratio', 'NEW_PL006_invest_ratio', 'NEW_PL010_invest_ratio', 'NEW_PL015_invest_ratio', 'PL001_Emission_固体']...",
       "word_parsed_fidelity_pass: 0/11 个项目完整保真度核验通过；11 个项目JSON解析正常但缺原始Word无法核验",
       "required_report_evidence_in_prompt: 逐题证据包: 0/23（待生成最小充分证据包）",
       "required_external_clause_in_topk: 0/23 题外部知识覆盖已确认；其余为 PARTIAL/MISSING，需审计是否包含决定性条款",
-      "K2_web_hash_equals_K3_web_hash: 尚未生成统一Web/RAG快照；K3必须复用K2的同一Web证据",
-      "runnable_from_clean_checkout: frozen_config存在: True; 脚本数: 0; 硬编码路径: 0"
+      "K2_web_hash_equals_K3_web_hash: 尚未生成统一Web/RAG快照；K3必须复用K2的同一Web证据"
     ],
     "warnings": []
   }

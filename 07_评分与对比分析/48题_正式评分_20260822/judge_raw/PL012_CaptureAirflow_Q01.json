@@ -1,0 +1,29 @@
+{
+  "id": "chatcmpl-c0c0ec23-cef9-43ad-bb87-50b69bd604df",
+  "object": "chat.completion",
+  "created": 1787378825,
+  "model": "qwen3.8-max",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"scores\": [{\"response_id\": \"R1\", \"correctness\": 2, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": null, \"skill_workflow\": null, \"rationale\": \"虽结论与参考答案相反，但准确指出报告中收集形式（上吸式公式）与效率取值（包围型65%）存在实质矛盾，属证据支持的额外真实问题。证据定位清晰，修改建议具体可执行，符合不扣分规则。\"}, {\"response_id\": \"R2\", \"correctness\": 2, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": 2, \"skill_workflow\": null, \"rationale\": \"判定存在问题基于报告内部形式与效率不一致的真实缺陷，且引用RAG验证了漏风率及设计余量等合规风险。证据详实，法规依据正确支撑了额外发现，行动建议具体，符合评分金标例外条款。\"}, {\"response_id\": \"R3\", \"correctness\": 2, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": null, \"skill_workflow\": 2, \"rationale\": \"通过复算发现参数混淆及形式不一致等实质性计算错误，虽结论为待复核，但揭示了参考答案未覆盖的真实隐患。完整体现分步核查与边界界定，证据链完整，修改指向明确，符合额外真实问题不扣分原则。\"}, {\"response_id\": \"R4\", \"correctness\": 2, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": 2, \"skill_workflow\": 2, \"rationale\": \"在确认理论风量算术正确的同时，精准识别收集形式表述矛盾及设计余量不足等真实合规风险。RAG引用规范，工作流完整，既验证了基准数据又补充了关键缺陷分析，结论有据可依，符合额外问题评分标准。\"}]}"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6594,
+    "completion_tokens": 418,
+    "total_tokens": 7012,
+    "prompt_tokens_details": {
+      "text_tokens": 6594
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  }
+}

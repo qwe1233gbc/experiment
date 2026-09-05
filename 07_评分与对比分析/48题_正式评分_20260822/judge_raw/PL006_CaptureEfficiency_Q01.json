@@ -1,0 +1,29 @@
+{
+  "id": "chatcmpl-4d03772a-d555-498b-aeb6-628644c85433",
+  "object": "chat.completion",
+  "created": 1787378782,
+  "model": "qwen3.8-max",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"scores\": [{\"response_id\": \"R1\", \"correctness\": 2, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": null, \"skill_workflow\": null, \"rationale\": \"结论正确且理由充分；在无RAG条件下准确提取报告证据并验证风量逻辑，边界说明清晰，符合无外部依据时的最佳实践。\"}, {\"response_id\": \"R2\", \"correctness\": 2, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": 2, \"skill_workflow\": null, \"rationale\": \"结论与金标一致；准确使用RAG验证95%上限并指出报告表述差异但不影响合理性，证据定位精准，法规依据完整有效。\"}, {\"response_id\": \"R3\", \"correctness\": 1, \"evidence_use\": 2, \"actionability\": 1, \"regulatory_basis\": null, \"skill_workflow\": 2, \"rationale\": \"内部核查详尽但判定为“部分完成”过于保守；虽体现完整工作流，但未能在无RAG时基于报告自证给出确定性合理结论。\"}, {\"response_id\": \"R4\", \"correctness\": 1, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": 2, \"skill_workflow\": 2, \"rationale\": \"分析深入且发现依据不一致问题，但判定“部分完成”偏离金标“合理”结论；工作流与法规引用优秀，但核心结论置信度不足。\"}]}"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4572,
+    "completion_tokens": 338,
+    "total_tokens": 4910,
+    "prompt_tokens_details": {
+      "text_tokens": 4572
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  }
+}

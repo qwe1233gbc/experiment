@@ -1,0 +1,29 @@
+{
+  "id": "chatcmpl-68b5d6ca-7c31-4a4b-9793-6ac1c3eb02b2",
+  "object": "chat.completion",
+  "created": 1786533518,
+  "model": "qwen3.8-max",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"scores\": [{\"response_id\": \"R1\", \"correctness\": 2, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": null, \"skill_workflow\": null, \"rationale\": \"结论与参考答案一致，正确识别GB18599-2020缺失问题。证据引用准确，修改建议具体可执行。虽rag不可用，但基于报告文本的判断符合金标要求，未发现幻觉。\"}, {\"response_id\": \"R2\", \"correctness\": 2, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": 2, \"skill_workflow\": null, \"rationale\": \"结论正确，准确指出缺少GB18599-2020。利用RAG验证了标准适用性，证据链完整，修改建议明确。法规依据充分，完全符合评分规则中对额外真实问题的认可。\"}, {\"response_id\": \"R3\", \"correctness\": 2, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": null, \"skill_workflow\": 2, \"rationale\": \"结论正确，除识别GB18599缺失外，还发现泥垢代码不一致等报告内部真实问题。工作流体现完整核查步骤，建议具体。符合不扣分规则，审核深度优于仅对标答案者。\"}, {\"response_id\": \"R4\", \"correctness\": 2, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": 2, \"skill_workflow\": 2, \"rationale\": \"结论正确，结合RAG与技能流全面审核。既指出GB18599缺失，又发现代码不一致及标准名称表述问题。证据详实，依据充分，体现了高水平盲评应有的完整性与准确性。\"}]}"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 7033,
+    "completion_tokens": 399,
+    "total_tokens": 7432,
+    "prompt_tokens_details": {
+      "text_tokens": 7033
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  }
+}

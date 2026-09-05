@@ -1,0 +1,29 @@
+{
+  "id": "chatcmpl-bc44701e-fb9b-46a0-a5f1-de2b403d4b41",
+  "object": "chat.completion",
+  "created": 1786533496,
+  "model": "qwen3.8-max",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"scores\": [{\"response_id\": \"R1\", \"correctness\": 2, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": null, \"skill_workflow\": null, \"rationale\": \"结论与参考答案一致，准确识别产品及工艺支持C2929分类。额外指出VOCs及原辅料数据不一致问题，证据定位清晰，修改建议具体可执行，符合评分规则对真实问题的加分项。\"}, {\"response_id\": \"R2\", \"correctness\": 1, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": 2, \"skill_workflow\": null, \"rationale\": \"虽引用RAG提示C2651边界风险，但过度质疑导致结论为“待复核”，与金标“正确”存在实质偏差。证据使用充分，法规依据详实，指出了数据问题并给出核验动作，但因核心结论未完全对齐扣correctness分。\"}, {\"response_id\": \"R3\", \"correctness\": 1, \"evidence_use\": 2, \"actionability\": 1, \"regulatory_basis\": 1, \"skill_workflow\": 2, \"rationale\": \"分析逻辑正确但结论保守为“待复核”，未明确肯定行业分类合理性。体现了完整审核工作流，证据引用准确，但因缺乏外部法规验证且仅给出方向性复核建议，actionability和regulatory_basis略低。\"}, {\"response_id\": \"R4\", \"correctness\": 1, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": 2, \"skill_workflow\": 2, \"rationale\": \"结合RAG深入分析C2651边界，体现完整技能流和法规依据。但因过度谨慎将结论定为“待复核”，与参考答案“正确”有偏差。证据扎实，针对产品用途缺失给出了具体核验动作，整体质量高但结论对齐度不足。\"}]}"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5946,
+    "completion_tokens": 423,
+    "total_tokens": 6369,
+    "prompt_tokens_details": {
+      "text_tokens": 5946
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  }
+}

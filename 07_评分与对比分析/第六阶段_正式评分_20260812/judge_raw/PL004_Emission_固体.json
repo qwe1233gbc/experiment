@@ -1,0 +1,29 @@
+{
+  "id": "chatcmpl-84bc9ef3-cb4d-4eb5-a7df-dd924ff818a3",
+  "object": "chat.completion",
+  "created": 1786533525,
+  "model": "qwen3.8-max",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"scores\": [{\"response_id\": \"R1\", \"correctness\": 2, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": null, \"skill_workflow\": null, \"rationale\": \"结论与参考答案一致，准确识别标准选取合理但存在名称不规范及列示位置问题。证据定位精准，修改建议具体可执行。因rag_available=false，法规与技能维度按规则置null。\"}, {\"response_id\": \"R2\", \"correctness\": 1, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": 2, \"skill_workflow\": null, \"rationale\": \"方向正确但判定为“部分完成”略显保守。有效利用RAG指出标准适用性边界，证据扎实。虽提及RAG缺失限制，但已用现有依据充分支撑结论，法规依据得分2。\"}, {\"response_id\": \"R3\", \"correctness\": 2, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": null, \"skill_workflow\": 2, \"rationale\": \"结论准确，完整体现审核工作流，分步核查清晰。精准指出标准列示不完整及名称错误，整改意见明确。因rag_available=false，法规维度按规则置null，技能维度满分。\"}, {\"response_id\": \"R4\", \"correctness\": 2, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": 2, \"skill_workflow\": 2, \"rationale\": \"结论正确且深度最佳。利用RAG发现GB18599适用范围争议及代码/周期不一致等额外真实问题，符合评分规则不扣分项。证据链完整，法规与技能维度均满分，行动建议极具价值。\"}]}"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 7004,
+    "completion_tokens": 389,
+    "total_tokens": 7393,
+    "prompt_tokens_details": {
+      "text_tokens": 7004
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  }
+}

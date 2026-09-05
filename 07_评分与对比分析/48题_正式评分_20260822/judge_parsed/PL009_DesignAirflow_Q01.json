@@ -1,0 +1,42 @@
+{
+  "question_id": "PL009_DesignAirflow_Q01",
+  "prompt_chars": 10770,
+  "scores": [
+    {
+      "response_id": "R1",
+      "correctness": 2,
+      "evidence_use": 2,
+      "actionability": 2,
+      "regulatory_basis": null,
+      "skill_workflow": null,
+      "rationale": "结论与参考答案一致，准确复算理论风量及余量；证据定位精准；在无RAG条件下正确识别报告内部不一致等额外真实问题并给出具体修改建议，边界清晰。"
+    },
+    {
+      "response_id": "R2",
+      "correctness": 1,
+      "evidence_use": 2,
+      "actionability": 2,
+      "regulatory_basis": 2,
+      "skill_workflow": null,
+      "rationale": "认可风量数值合理但因排气筒流速判为部分完成，属过度结论；该流速问题非本题核心且报告已有依据；证据充分，法规引用正确，给出了明确复核动作。"
+    },
+    {
+      "response_id": "R3",
+      "correctness": 1,
+      "evidence_use": 2,
+      "actionability": 2,
+      "regulatory_basis": null,
+      "skill_workflow": 2,
+      "rationale": "发现表格数据矛盾这一真实问题不应扣分，但因该瑕疵将整体判定为部分完成略显严苛；证据详实，工作流完整体现分步核查与内部一致性校验，修改建议具体可执行。"
+    },
+    {
+      "response_id": "R4",
+      "correctness": 0,
+      "evidence_use": 2,
+      "actionability": 2,
+      "regulatory_basis": 2,
+      "skill_workflow": 2,
+      "rationale": "虽验证了风量计算闭合，但因排气筒流速和管道数据缺失判定存在问题，关键结论与参考答案相反；该偏离属于过度延伸审核边界，尽管技能和证据使用优秀，核心正确性仍不达标。"
+    }
+  ]
+}

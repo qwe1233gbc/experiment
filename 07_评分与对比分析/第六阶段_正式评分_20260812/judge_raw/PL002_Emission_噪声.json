@@ -1,0 +1,29 @@
+{
+  "id": "chatcmpl-04c34f1e-f9db-4c27-ae78-eb9f2c0cfa07",
+  "object": "chat.completion",
+  "created": 1786533504,
+  "model": "qwen3.8-max",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"scores\": [{\"response_id\": \"R1\", \"correctness\": 2, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": null, \"skill_workflow\": null, \"rationale\": \"准确识别标准限值及GB3096引用错误，指出功能区依据缺失。证据定位精准，修改建议具体可执行。无RAG/Skill条件下表现最优，结论与金标一致且补充了真实问题。\"}, {\"response_id\": \"R2\", \"correctness\": 2, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": 2, \"skill_workflow\": null, \"rationale\": \"利用RAG验证限值正确，识别GB3096引用错误及功能区依据缺失。证据充分，法规依据完整，给出了明确的核实与修正建议，审核质量高。\"}, {\"response_id\": \"R3\", \"correctness\": 2, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": null, \"skill_workflow\": 2, \"rationale\": \"体现完整审核工作流，识别标准引用错误及功能区依据缺失，额外发现夜间监测逻辑矛盾。证据链完整，行动建议具体，Skill应用规范。\"}, {\"response_id\": \"R4\", \"correctness\": 2, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": 2, \"skill_workflow\": 2, \"rationale\": \"结合RAG与Skill全面审核，识别GB3096误用、功能区依据缺失及监测计划矛盾。法规与工作流均满分，证据详实，建议可操作性强，综合表现最佳。\"}]}"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6100,
+    "completion_tokens": 367,
+    "total_tokens": 6467,
+    "prompt_tokens_details": {
+      "text_tokens": 6100
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  }
+}

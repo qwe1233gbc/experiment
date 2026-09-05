@@ -1,0 +1,7 @@
+﻿dimension,n_pairs,exact_agreement,within_1_agreement,quadratic_weighted_kappa,ICC_2_1,ICC_F,pearson_r,spearman_rho,mean_r1,mean_r2,mean_diff_r2_minus_r1,sd_diff,paired_t_p,wilcoxon_p,both_NA,NA_status_flips,n_both_numeric
+correctness,84,0.9643,1.0,0.9228,0.9236,25.0,0.9231,0.9231,1.643,1.631,-0.0119,0.1897,0.5668,0.5637,,,
+evidence_use,84,0.9762,1.0,0.7879,0.7899,8.6,0.8062,0.8062,1.952,1.929,-0.0238,0.1534,0.1585,0.1573,,,
+actionability,84,0.9405,1.0,0.6441,0.6468,4.7,0.6864,0.6585,1.94,1.905,-0.0357,0.2428,0.1813,0.1797,,,
+common_3d_score,84,0.9167,0.9643,0.7844,0.7864,8.5,0.7996,0.868,5.536,5.464,-0.0714,0.4331,0.1345,0.1653,,,
+regulatory_basis,84,1.0,1.0,1.0,1.0,,,,,,0.0,,,,39.0,4.0,41.0
+skill_workflow,84,0.9762,1.0,0.0,-0.0,,,,,,-0.0238,,,,42.0,0.0,42.0

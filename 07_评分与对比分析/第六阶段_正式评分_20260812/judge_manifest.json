@@ -1,0 +1,8 @@
+{
+  "status": "complete",
+  "questions": 21,
+  "scored_outputs": 84,
+  "model": "qwen3.8-max",
+  "blinding": "A/B/C/D hidden as R1/R2/R3/R4; only RAG/Skill availability disclosed for N/A rules",
+  "score_file_sha256": "4cd3296ddcbceed3e343743569a42aeb73d15254a6e382dab9c4847e1ad3a343"
+}

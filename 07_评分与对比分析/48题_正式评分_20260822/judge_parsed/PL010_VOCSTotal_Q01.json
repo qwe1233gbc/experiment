@@ -1,0 +1,42 @@
+{
+  "question_id": "PL010_VOCSTotal_Q01",
+  "prompt_chars": 11755,
+  "scores": [
+    {
+      "response_id": "R1",
+      "correctness": 2,
+      "evidence_use": 2,
+      "actionability": 2,
+      "regulatory_basis": null,
+      "skill_workflow": null,
+      "rationale": "准确识别总量不闭合及多处数据冲突，证据定位精准。虽无RAG但内部核查完整，指出附表倒置等额外真实问题，修改建议具体可执行。"
+    },
+    {
+      "response_id": "R2",
+      "correctness": 2,
+      "evidence_use": 2,
+      "actionability": 2,
+      "regulatory_basis": 2,
+      "skill_workflow": null,
+      "rationale": "结论正确且证据详实，额外验证了治理措施与效率闭合性。引用RAG指南支持核算逻辑，明确列出缺失的外部政策文件，审核维度全面。"
+    },
+    {
+      "response_id": "R3",
+      "correctness": 2,
+      "evidence_use": 2,
+      "actionability": 2,
+      "regulatory_basis": null,
+      "skill_workflow": 2,
+      "rationale": "完整体现分步核查工作流，复算了源强算术闭合性。准确识别总量矛盾与口径冲突，证据链清晰，在无RAG情况下仍给出具体核验动作。"
+    },
+    {
+      "response_id": "R4",
+      "correctness": 2,
+      "evidence_use": 2,
+      "actionability": 2,
+      "regulatory_basis": 2,
+      "skill_workflow": 2,
+      "rationale": "兼具完整工作流与法规依据，精准识别总量不闭合、附表倒置及口径冲突。引用RAG指南并明确外部合规边界，审核深度与广度均为最优。"
+    }
+  ]
+}

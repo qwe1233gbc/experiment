@@ -1,0 +1,2 @@
+﻿"category","question_id","project_id","question","skill_id","core_answer_sources","actual_top5_sources"
+"大气污染物排放标准","PL002_Emission_大气","PL002","请根据项目行业类别、生产工艺和污染因子，判断大气污染物排放标准选取是否合理。要求分析：污染源覆盖是否完整（列出所有大气污染源及对应标准），是否存在缺漏的污染源或标准。","review-eia-pollutant-discharge-standards","GB_31572-2015.md；GB_14554-93.md；DB44_2367-2022.md","DB44_2367-2022.md；GB_31572-2015.md；GB_14554-93.md；#8_GB31572表4排放限值.md；HJ_1122-2020.md"
