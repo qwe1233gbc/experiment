@@ -1,0 +1,10 @@
+{
+  "question_id": "PL005_Emission_固体",
+  "query": "结合报告中一般工业固体废物采用库房暂存以及危险废物识别、贮存情况，判断固体废物管理依据是否适用、完整。请分别列明一般固废和危险废物依据，并指出是否缺少必须引用的标准。 任务类型：固体废物控制标准 污染物排放标准 排放限值",
+  "query_provenance": [
+    "question_text (first 300 chars)",
+    "task_type (from question metadata)",
+    "question_id keyword hint: 固体废物控制标准"
+  ],
+  "gold_leakage_check": "PASSED (query built from question text + task type + domain keywords only; no gold verdict/answer leaked)"
+}

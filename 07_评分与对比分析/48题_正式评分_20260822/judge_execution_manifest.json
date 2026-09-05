@@ -1,0 +1,35 @@
+{
+  "status": "complete",
+  "questions_total": 48,
+  "scored_outputs": 192,
+  "model": "qwen3.8-max",
+  "temperature": 0,
+  "max_tokens": 1800,
+  "enable_thinking": false,
+  "concurrency": 3,
+  "timeout_s": 240,
+  "max_attempts": 2,
+  "blinding": "A/B/C/D hidden as R1/R2/R3/R4 (fixed mapping, same as 20260812); only RAG/Skill availability disclosed for N/A rules",
+  "dataset": "01_final_analysis_dataset_v2.xlsx (old21=phase5 frozen experiment, new27=20260820 experiment)",
+  "failures": 0,
+  "qc_status": "ALL PASS (15/15)",
+  "scored_questions": 48,
+  "gold_sources": {
+    "old21": "第二阶段_21题正式评价集_冻结版_20260812.json (21题)",
+    "new27": "40题Gold证据索引_20260820.json (27题)"
+  },
+  "na_rules": "A.regulatory_basis & A/B.skill_workflow mandatory null; regulatory_basis/skill_workflow schema 0|1|2|null",
+  "discretionary_na": [
+    "PL004_Emission_水污.B",
+    "PL011_Construction_Q01.B",
+    "PL011_Construction_Q01.D"
+  ],
+  "retry_records": {
+    "PL002_EnvQuality_Q01": "attempt1: ValueError R1法规依据必须为null -> attempt2 success"
+  },
+  "file_hashes": {
+    "04_formal_scoring_results.csv": "519d3827a3a2e00a3c817bf55bb16fe44b76c1a19b8dcf1bcc498add202f9f17",
+    "02_blind_mapping.csv": "087a898ef14975e469ae1fa6ec817f1be75bdf9c26986b19ab27d1305554ca8f",
+    "03_formal_scoring_results.xlsx": "0cd7504bd17e8a3ea530923cbdeff5a6fba4a41a395e942cd8484250f217f970"
+  }
+}

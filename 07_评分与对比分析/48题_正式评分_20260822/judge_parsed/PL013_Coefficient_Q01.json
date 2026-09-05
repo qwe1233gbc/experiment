@@ -1,0 +1,42 @@
+{
+  "question_id": "PL013_Coefficient_Q01",
+  "prompt_chars": 10450,
+  "scores": [
+    {
+      "response_id": "R1",
+      "correctness": 1,
+      "evidence_use": 2,
+      "actionability": 2,
+      "regulatory_basis": null,
+      "skill_workflow": null,
+      "rationale": "结论偏保守，未确认核心系数适用性；但准确识别补焊原料不匹配及源强不一致等真实问题，证据定位精准，修改建议具体可执行。"
+    },
+    {
+      "response_id": "R2",
+      "correctness": 1,
+      "evidence_use": 2,
+      "actionability": 2,
+      "regulatory_basis": 2,
+      "skill_workflow": null,
+      "rationale": "确认核心系数适用但判定过严；利用RAG验证数值并指出污染物指标口径差异及补焊表述错误，依据充分，整改建议明确具体。"
+    },
+    {
+      "response_id": "R3",
+      "correctness": 1,
+      "evidence_use": 2,
+      "actionability": 1,
+      "regulatory_basis": null,
+      "skill_workflow": 2,
+      "rationale": "审核流程完整，发现源强计算偏差及版本缺失等实质问题；但因缺RAG无法确认适用性致结论悬置，行动建议偏向补充材料而非直接修正。"
+    },
+    {
+      "response_id": "R4",
+      "correctness": 1,
+      "evidence_use": 2,
+      "actionability": 2,
+      "regulatory_basis": 2,
+      "skill_workflow": 2,
+      "rationale": "综合表现最优，既验证系数数值又指出指标口径、版本信息及补焊表述等多维问题，证据链完整，法规依据准确，修改指令清晰可落地。"
+    }
+  ]
+}

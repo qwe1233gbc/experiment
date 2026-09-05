@@ -1,0 +1,518 @@
+[
+  {
+    "standard_id": "STD-DIFY-06-001",
+    "title": "环境空气质量标准 GB3095 一级/二级适用",
+    "domain": "环境质量标准",
+    "card_type": "limit",
+    "skill_ids": [
+      "06_环境质量执行标准"
+    ],
+    "workflow_ids": [
+      "7-环境质量执行标准准确性判断"
+    ],
+    "source_files": [
+      "03_指南解析_明文标准库/Dify工作流知识库/#7_环境质量标准限值速查.md",
+      "03_指南解析_明文标准库/Dify工作流知识库/GB_3095-2012.md"
+    ],
+    "source_basis": [
+      "GB 3095-2012；2018年修改单；Dify 环境质量标准限值速查"
+    ],
+    "applicable_scope": "用于判断大气环境质量功能区与执行等级是否匹配。",
+    "trigger_keywords": [
+      "GB3095",
+      "环境空气",
+      "一级标准",
+      "二级标准",
+      "SO2",
+      "NO2",
+      "PM10",
+      "PM2.5",
+      "O3",
+      "CO"
+    ],
+    "evidence_fields": [
+      "环境空气功能区类别",
+      "执行等级",
+      "污染因子",
+      "报告限值"
+    ],
+    "normative_requirements": [
+      "一类区执行 GB3095 一级标准。",
+      "二类区执行 GB3095 二级标准。",
+      "常规因子应至少覆盖 SO2、NO2、PM10、PM2.5、O3、CO。"
+    ],
+    "thresholds": [
+      {
+        "factor": "SO2",
+        "period": "年平均",
+        "level1": "20 μg/m³",
+        "level2": "60 μg/m³"
+      },
+      {
+        "factor": "PM10",
+        "period": "年平均",
+        "level1": "40 μg/m³",
+        "level2": "70 μg/m³"
+      },
+      {
+        "factor": "PM2.5",
+        "period": "年平均",
+        "level1": "15 μg/m³",
+        "level2": "35 μg/m³"
+      },
+      {
+        "factor": "O3",
+        "period": "日最大8小时平均",
+        "level1": "100 μg/m³",
+        "level2": "160 μg/m³"
+      }
+    ],
+    "formulas": [],
+    "check_logic": [],
+    "output_fields": [
+      "standard_id",
+      "matched_evidence",
+      "judgement",
+      "risk_level",
+      "reason",
+      "suggested_revision"
+    ],
+    "manual_review": [],
+    "retrieval_tags": [
+      "GB3095",
+      "环境空气质量标准",
+      "大气环境",
+      "PM2.5",
+      "O3"
+    ],
+    "confidence": "parsed_from_dify_kb",
+    "notes": "",
+    "created_at": "2026-06-29",
+    "version": "v1.0"
+  },
+  {
+    "standard_id": "STD-DIFY-06-002",
+    "title": "地表水环境质量标准 GB3838 类别限值",
+    "domain": "环境质量标准",
+    "card_type": "limit",
+    "skill_ids": [
+      "06_环境质量执行标准"
+    ],
+    "workflow_ids": [
+      "7-环境质量执行标准准确性判断"
+    ],
+    "source_files": [
+      "03_指南解析_明文标准库/Dify工作流知识库/#7_环境质量标准限值速查.md",
+      "03_指南解析_明文标准库/Dify工作流知识库/GB_3838-2002.md"
+    ],
+    "source_basis": [
+      "GB 3838-2002；Dify 环境质量标准限值速查"
+    ],
+    "applicable_scope": "用于判断受纳水体水质类别、评价因子和限值是否匹配。",
+    "trigger_keywords": [
+      "GB3838",
+      "地表水",
+      "III类",
+      "IV类",
+      "COD",
+      "BOD5",
+      "氨氮",
+      "总磷",
+      "pH"
+    ],
+    "evidence_fields": [
+      "受纳水体",
+      "水质目标",
+      "评价类别",
+      "污染因子",
+      "报告限值"
+    ],
+    "normative_requirements": [
+      "地表水 pH 值 I–V 类均为 6–9。",
+      "III 类 COD≤20mg/L、氨氮≤1.0mg/L。",
+      "IV 类 COD≤30mg/L、氨氮≤1.5mg/L。"
+    ],
+    "thresholds": [
+      {
+        "factor": "pH",
+        "class_I_to_V": "6-9"
+      },
+      {
+        "factor": "COD",
+        "class_III": "≤20 mg/L",
+        "class_IV": "≤30 mg/L",
+        "class_V": "≤40 mg/L"
+      },
+      {
+        "factor": "NH3-N",
+        "class_III": "≤1.0 mg/L",
+        "class_IV": "≤1.5 mg/L",
+        "class_V": "≤2.0 mg/L"
+      },
+      {
+        "factor": "BOD5",
+        "class_III": "≤4 mg/L",
+        "class_IV": "≤6 mg/L",
+        "class_V": "≤10 mg/L"
+      }
+    ],
+    "formulas": [],
+    "check_logic": [],
+    "output_fields": [
+      "standard_id",
+      "matched_evidence",
+      "judgement",
+      "risk_level",
+      "reason",
+      "suggested_revision"
+    ],
+    "manual_review": [],
+    "retrieval_tags": [
+      "GB3838",
+      "地表水",
+      "COD",
+      "氨氮",
+      "水质类别"
+    ],
+    "confidence": "parsed_from_dify_kb",
+    "notes": "",
+    "created_at": "2026-06-29",
+    "version": "v1.0"
+  },
+  {
+    "standard_id": "STD-DIFY-06-003",
+    "title": "顺德污水厂受纳水体与地表水类别速查",
+    "domain": "环境质量标准",
+    "card_type": "lookup",
+    "skill_ids": [
+      "06_环境质量执行标准"
+    ],
+    "workflow_ids": [
+      "7-环境质量执行标准准确性判断"
+    ],
+    "source_files": [
+      "03_指南解析_明文标准库/Dify工作流知识库/#7_收纳水体地表水执行标准.csv",
+      "03_指南解析_明文标准库/Dify工作流知识库/#7_环境质量标准限值速查.md"
+    ],
+    "source_basis": [
+      "顺德区污水处理厂入河排污口受纳水体与水质目标整理表"
+    ],
+    "applicable_scope": "用于核对报告所接入污水厂、受纳水体、地表水目标类别是否一致。",
+    "trigger_keywords": [
+      "污水处理厂",
+      "受纳水体",
+      "桂洲水道",
+      "洪奇沥水道",
+      "李家沙水道",
+      "潭洲水道",
+      "III类",
+      "II类",
+      "IV类"
+    ],
+    "evidence_fields": [
+      "污水处理厂名称",
+      "排入水体",
+      "受纳水体",
+      "报告执行水质类别"
+    ],
+    "normative_requirements": [
+      "报告应按污水厂尾水实际受纳水体确定地表水类别。",
+      "不能只写项目附近河涌类别而忽略污水厂尾水受纳水体。"
+    ],
+    "thresholds": [],
+    "formulas": [],
+    "check_logic": [
+      "抽取报告接入污水处理厂。",
+      "检索标准库中的对应排污口、排入水体、受纳水体和水质类别。",
+      "比对报告写法，输出一致/不一致/缺证据。"
+    ],
+    "output_fields": [
+      "standard_id",
+      "matched_evidence",
+      "judgement",
+      "risk_level",
+      "reason",
+      "suggested_revision"
+    ],
+    "manual_review": [],
+    "retrieval_tags": [
+      "顺德污水厂",
+      "受纳水体",
+      "地表水执行标准",
+      "GB3838"
+    ],
+    "confidence": "parsed_from_dify_kb",
+    "notes": "",
+    "created_at": "2026-06-29",
+    "version": "v1.0"
+  },
+  {
+    "standard_id": "STD-DIFY-06-004",
+    "title": "声环境质量标准 GB3096 功能区限值",
+    "domain": "环境质量标准",
+    "card_type": "limit",
+    "skill_ids": [
+      "06_环境质量执行标准"
+    ],
+    "workflow_ids": [
+      "7-环境质量执行标准准确性判断"
+    ],
+    "source_files": [
+      "03_指南解析_明文标准库/Dify工作流知识库/#7_环境质量标准限值速查.md",
+      "03_指南解析_明文标准库/Dify工作流知识库/GB_3096-2008.md"
+    ],
+    "source_basis": [
+      "GB 3096-2008；Dify 环境质量标准限值速查；已加入一致性校验"
+    ],
+    "applicable_scope": "用于判断声环境功能区类别与昼夜限值是否匹配。",
+    "trigger_keywords": [
+      "GB3096",
+      "声环境",
+      "昼间",
+      "夜间",
+      "2类",
+      "3类",
+      "4a类",
+      "4b类"
+    ],
+    "evidence_fields": [
+      "声环境功能区类别",
+      "昼间限值",
+      "夜间限值",
+      "厂界/环境质量场景"
+    ],
+    "normative_requirements": [
+      "0类：昼间50、夜间40 dB(A)。",
+      "1类：昼间55、夜间45 dB(A)。",
+      "2类：昼间60、夜间50 dB(A)。",
+      "3类：昼间65、夜间55 dB(A)。",
+      "4a类：昼间70、夜间55 dB(A)。",
+      "4b类：昼间70、夜间60 dB(A)。"
+    ],
+    "thresholds": [
+      {
+        "class": "0",
+        "day": 50,
+        "night": 40,
+        "unit": "dB(A)"
+      },
+      {
+        "class": "1",
+        "day": 55,
+        "night": 45,
+        "unit": "dB(A)"
+      },
+      {
+        "class": "2",
+        "day": 60,
+        "night": 50,
+        "unit": "dB(A)"
+      },
+      {
+        "class": "3",
+        "day": 65,
+        "night": 55,
+        "unit": "dB(A)"
+      },
+      {
+        "class": "4a",
+        "day": 70,
+        "night": 55,
+        "unit": "dB(A)"
+      },
+      {
+        "class": "4b",
+        "day": 70,
+        "night": 60,
+        "unit": "dB(A)"
+      }
+    ],
+    "formulas": [],
+    "check_logic": [],
+    "output_fields": [
+      "standard_id",
+      "matched_evidence",
+      "judgement",
+      "risk_level",
+      "reason",
+      "suggested_revision"
+    ],
+    "manual_review": [
+      "Dify 原速查文件局部文字存在 3类/4a类夜间限值误写为40 dB(A) 的风险；本卡按 GB3096-2008 表1校正。"
+    ],
+    "retrieval_tags": [
+      "GB3096",
+      "声环境质量标准",
+      "噪声",
+      "昼间",
+      "夜间"
+    ],
+    "confidence": "parsed_from_dify_kb",
+    "notes": "",
+    "created_at": "2026-06-29",
+    "version": "v1.0"
+  },
+  {
+    "standard_id": "STD-DIFY-06-005",
+    "title": "城市污水再生利用 城市杂用水水质 GB/T 18920-2020 限值",
+    "domain": "环境质量标准",
+    "card_type": "limit",
+    "skill_ids": [
+      "06_环境质量执行标准",
+      "07_污染物排放标准"
+    ],
+    "workflow_ids": [
+      "7-环境质量执行标准准确性判断",
+      "8-污染物排放标准内容判断"
+    ],
+    "source_files": [
+      "03_指南解析_明文标准库/Dify工作流知识库/GB_T_18920-2020.md"
+    ],
+    "source_basis": [
+      "GB/T 18920-2020 城市污水再生利用 城市杂用水水质"
+    ],
+    "applicable_scope": "用于项目使用再生水作为城市杂用水（冲厕、车辆冲洗、建筑施工、消防、混凝土生产、道路清扫、绿化灌溉等）时的水质标准核对。",
+    "trigger_keywords": [
+      "GB/T 18920",
+      "城市杂用水",
+      "再生水",
+      "城市污水再生利用",
+      "冲厕用水",
+      "车辆冲洗",
+      "消防用水",
+      "建筑施工用水",
+      "绿化灌溉",
+      "道路清扫"
+    ],
+    "evidence_fields": [
+      "用水用途",
+      "再生水来源",
+      "水质指标",
+      "报告限值",
+      "执行标准"
+    ],
+    "normative_requirements": [
+      "冲厕、道路清扫、城市绿化用再生水应符合表1第3列限值。",
+      "车辆冲洗、建筑施工、消防、混凝土生产用再生水应符合表1第4列限值。",
+      "基本控制项目包括pH、悬浮物、色度、浊度、BOD5、氨氮、阴离子表面活性剂、铁、锰、溶解性总固体、溶解氧、总余氯、粪大肠菌群共13项。",
+      "选择控制项目包括氯离子和硫酸根，限值分别为≤350 mg/L和≤500 mg/L。"
+    ],
+    "thresholds": [
+      {
+        "factor": "pH",
+        "limit": "6.0-9.0",
+        "scenario": "所有杂用水用途"
+      },
+      {
+        "factor": "悬浮物(SS)",
+        "limit": "≤15 mg/L (冲厕/道路清扫/绿化); ≤30 mg/L (车辆冲洗/建筑施工/消防/混凝土)",
+        "unit": "mg/L"
+      },
+      {
+        "factor": "色度",
+        "limit": "≤30",
+        "scenario": "所有杂用水用途"
+      },
+      {
+        "factor": "浊度",
+        "limit": "≤5 NTU (冲厕/道路清扫/绿化); ≤10 NTU (车辆冲洗/建筑施工/消防/混凝土)",
+        "unit": "NTU"
+      },
+      {
+        "factor": "BOD5",
+        "limit": "≤10 mg/L",
+        "scenario": "所有杂用水用途"
+      },
+      {
+        "factor": "氨氮",
+        "limit": "≤5 mg/L (冲厕/道路清扫/绿化); ≤8 mg/L (车辆冲洗/建筑施工/消防/混凝土); ≤2.5 mg/L (混凝土生产)",
+        "unit": "mg/L"
+      },
+      {
+        "factor": "阴离子表面活性剂",
+        "limit": "≤0.5 mg/L",
+        "scenario": "所有杂用水用途"
+      },
+      {
+        "factor": "铁",
+        "limit": "≤0.3 mg/L (冲厕/道路清扫/绿化); 无要求 (车辆冲洗/建筑施工/消防/混凝土)",
+        "unit": "mg/L"
+      },
+      {
+        "factor": "锰",
+        "limit": "≤0.1 mg/L (冲厕/道路清扫/绿化); 无要求 (车辆冲洗/建筑施工/消防/混凝土)",
+        "unit": "mg/L"
+      },
+      {
+        "factor": "溶解性总固体",
+        "limit": "≤1000 mg/L (2000 mg/L上限)",
+        "unit": "mg/L"
+      },
+      {
+        "factor": "溶解氧",
+        "limit": "≥2.0 mg/L",
+        "scenario": "所有杂用水用途"
+      },
+      {
+        "factor": "总余氯",
+        "limit": "≥1.0 mg/L (管网末端); ≥0.2 mg/L (管网末端)",
+        "unit": "mg/L"
+      },
+      {
+        "factor": "粪大肠菌群",
+        "limit": "不得检出",
+        "unit": "MPN/100mL 或 CFU/100mL"
+      },
+      {
+        "factor": "氯离子(Cl-)",
+        "limit": "≤350 mg/L",
+        "scenario": "选择控制项目"
+      },
+      {
+        "factor": "硫酸根(SO4²-)",
+        "limit": "≤500 mg/L",
+        "scenario": "选择控制项目"
+      }
+    ],
+    "formulas": [],
+    "check_logic": [
+      "识别报告中再生水用途类型（冲厕/车辆冲洗/建筑施工/消防/混凝土生产/道路清扫/绿化灌溉）。",
+      "根据用途选择表1对应列的限值进行核对。",
+      "逐项核对报告中的水质指标是否满足对应限值。",
+      "检查是否遗漏基本控制项目（13项必查）。",
+      "如有混凝土生产用途，额外核对氨氮≤2.5 mg/L。",
+      "核对选择控制项目（氯离子、硫酸根）是否已检测。",
+      "报告中未列明再生水用途时，提示补充用途分类。"
+    ],
+    "output_fields": [
+      "standard_id",
+      "matched_evidence",
+      "judgement",
+      "risk_level",
+      "reason",
+      "suggested_revision"
+    ],
+    "manual_review": [
+      "报告未明确再生水具体用途。",
+      "基本控制项目不完整（少于13项）。",
+      "再生水用途为混凝土生产但未检测氨氮。",
+      "总余氯未标注取样位置（管网末端）。"
+    ],
+    "retrieval_tags": [
+      "GB/T 18920",
+      "城市杂用水",
+      "再生水",
+      "杂用水水质",
+      "冲厕",
+      "车辆冲洗",
+      "消防用水",
+      "建筑施工",
+      "绿化灌溉",
+      "道路清扫"
+    ],
+    "confidence": "parsed_from_pdf_and_reconstructed",
+    "notes": "标准卡基于GB/T 18920-2020 PDF原文提取构建，PDF使用自定义CID字体编码，数值和标准编号已交叉验证。",
+    "created_at": "2026-08-07",
+    "version": "v1.0"
+  }
+]

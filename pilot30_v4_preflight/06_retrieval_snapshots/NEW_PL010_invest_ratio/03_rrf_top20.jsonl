@@ -1,0 +1,1 @@
+{"retrieval_abstained": true, "reason": "REPORT_ONLY_CONTROL 题，仅用报告内数据即可回答，不需要外部知识", "analysis_role": "REPORT_ONLY_CONTROL", "rag_items": []}

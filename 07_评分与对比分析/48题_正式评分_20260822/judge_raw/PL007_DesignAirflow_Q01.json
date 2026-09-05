@@ -1,0 +1,29 @@
+{
+  "id": "chatcmpl-30d06ce7-1aba-4899-b90c-fb4969d59885",
+  "object": "chat.completion",
+  "created": 1787378795,
+  "model": "qwen3.8-max",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"scores\": [{\"response_id\": \"R1\", \"correctness\": 0, \"evidence_use\": 2, \"actionability\": 1, \"regulatory_basis\": null, \"skill_workflow\": null, \"rationale\": \"结论判为合理，与参考答案“不合理”相反。虽正确复算理论风量并指出余量8.5%，但未识别该余量低于规范最低要求，导致关键审核结论错误。\"}, {\"response_id\": \"R2\", \"correctness\": 2, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": 2, \"skill_workflow\": null, \"rationale\": \"结论及理由与参考答案一致，准确引用RAG中漏风系数及HJ2026标准，证据定位清晰，给出了补充计算依据或提高风量的具体可执行建议。\"}, {\"response_id\": \"R3\", \"correctness\": 0, \"evidence_use\": 2, \"actionability\": 0, \"regulatory_basis\": null, \"skill_workflow\": 1, \"rationale\": \"结论判为合理，与金标相反。仅验证了内部算术一致性，未利用Skill核查设计余量合规性，遗漏关键审核点，且未提出任何整改意见。\"}, {\"response_id\": \"R4\", \"correctness\": 1, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": 2, \"skill_workflow\": 2, \"rationale\": \"识别出余量不足及风速偏低等实质问题，依据充分且建议具体。但结论为“待人工复核”而非明确判定不合理，属于方向一致但结论表述有保留。\"}]}"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5667,
+    "completion_tokens": 366,
+    "total_tokens": 6033,
+    "prompt_tokens_details": {
+      "text_tokens": 5667
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  }
+}

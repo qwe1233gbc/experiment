@@ -1,0 +1,10 @@
+{
+  "status": "BM25 complete; dense embeddings pending",
+  "source_count": 70,
+  "baseline_sources": 52,
+  "new_evidence_sources": 18,
+  "parent_count": 398,
+  "child_count": 3433,
+  "bm25_terms": 98798,
+  "frozen_baseline_unchanged": true
+}

@@ -1,0 +1,45 @@
+{
+  "check_date": "2026-09-04",
+  "total_files": 5,
+  "consistent_count": 5,
+  "mismatch_count": 0,
+  "mismatched_files": [],
+  "files": {
+    "child_embeddings_l2_normalized.npy": {
+      "registry_sha256": "0b893cde7752c458e1ced787c79f96ff4ecc26d5fe86a1b40837797ead014c0b",
+      "actual_sha256": "0b893cde7752c458e1ced787c79f96ff4ecc26d5fe86a1b40837797ead014c0b",
+      "registry_bytes": 14168192,
+      "actual_bytes": 14168192,
+      "consistent": true
+    },
+    "child_cosine_flat.index": {
+      "registry_sha256": "ef6fa0000526ac459fc11ba369776c0ae839c8af3c96991528984501f0c1d6a0",
+      "actual_sha256": "ef6fa0000526ac459fc11ba369776c0ae839c8af3c96991528984501f0c1d6a0",
+      "registry_bytes": 14168109,
+      "actual_bytes": 14168109,
+      "consistent": true
+    },
+    "child_metadata.jsonl": {
+      "registry_sha256": "28b938e291085f68b7f8139069ff7702bc94af586ec1f26167a45b03b6951ba2",
+      "actual_sha256": "28b938e291085f68b7f8139069ff7702bc94af586ec1f26167a45b03b6951ba2",
+      "registry_bytes": 6332325,
+      "actual_bytes": 6332325,
+      "consistent": true
+    },
+    "parent_contexts.jsonl": {
+      "registry_sha256": "ba994129121105892b0a2ba8527e915210e402225ad80d7ea18b2417db9e0cdb",
+      "actual_sha256": "ba994129121105892b0a2ba8527e915210e402225ad80d7ea18b2417db9e0cdb",
+      "registry_bytes": 4476762,
+      "actual_bytes": 4476762,
+      "consistent": true
+    },
+    "bm25_index.json": {
+      "registry_sha256": "c194831cd0f8ec355d0985a1af889ef86d500a8e7fdd001540958e09f8b062e0",
+      "actual_sha256": "c194831cd0f8ec355d0985a1af889ef86d500a8e7fdd001540958e09f8b062e0",
+      "registry_bytes": 57236586,
+      "actual_bytes": 57236586,
+      "consistent": true
+    }
+  },
+  "conclusion": "ALL_CONSISTENT"
+}

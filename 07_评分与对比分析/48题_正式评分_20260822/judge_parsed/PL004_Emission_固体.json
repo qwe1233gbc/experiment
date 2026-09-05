@@ -1,0 +1,42 @@
+{
+  "question_id": "PL004_Emission_固体",
+  "prompt_chars": 13674,
+  "scores": [
+    {
+      "response_id": "R1",
+      "correctness": 2,
+      "evidence_use": 2,
+      "actionability": 2,
+      "regulatory_basis": null,
+      "skill_workflow": null,
+      "rationale": "结论与参考答案一致，准确识别标准选取合理但存在列示不完整及名称不规范问题。证据定位精准，修改建议具体可执行。因rag_available=false，法规与技能维度不适用。"
+    },
+    {
+      "response_id": "R2",
+      "correctness": 1,
+      "evidence_use": 2,
+      "actionability": 2,
+      "regulatory_basis": 2,
+      "skill_workflow": null,
+      "rationale": "方向正确但判定为“部分完成”略显保守。有效利用RAG指出标准适用性边界及名称错误，证据扎实。虽提及RAG缺失限制，但对已有依据分析充分，故法规依据给2分。"
+    },
+    {
+      "response_id": "R3",
+      "correctness": 2,
+      "evidence_use": 2,
+      "actionability": 2,
+      "regulatory_basis": null,
+      "skill_workflow": 2,
+      "rationale": "结论准确，完整体现审核工作流。精准指出标准汇总缺失及名称重复问题，并额外发现监督检查清单遗漏，属于报告真实问题，不扣分。证据链完整，建议明确。"
+    },
+    {
+      "response_id": "R4",
+      "correctness": 2,
+      "evidence_use": 2,
+      "actionability": 2,
+      "regulatory_basis": 2,
+      "skill_workflow": 2,
+      "rationale": "结论正确且深度最佳。利用RAG指出GB18599-2020对库房贮存的适用性争议，并发现代码不一致、贮存周期矛盾等额外真实问题。证据详实，工作流完整，建议极具操作性。"
+    }
+  ]
+}

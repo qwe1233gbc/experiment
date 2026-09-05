@@ -1,0 +1,29 @@
+{
+  "id": "chatcmpl-408401d9-5c2d-42e0-8e86-fb1b88946401",
+  "object": "chat.completion",
+  "created": 1786533498,
+  "model": "qwen3.8-max",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"scores\": [{\"response_id\": \"R1\", \"correctness\": 2, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": null, \"skill_workflow\": null, \"rationale\": \"结论判定存在问题合理，准确识别限值不一致、标准列示不全及臭气高度匹配等实质问题。证据引用精准定位报告内部矛盾，修改建议具体可执行。虽无RAG/Skill，但基于报告内容的审核深度与完整性优于其他回答。\"}, {\"response_id\": \"R2\", \"correctness\": 2, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": 2, \"skill_workflow\": null, \"rationale\": \"正确识别限值不一致及单位产品排放量缺失等关键问题，法规依据充分。证据使用规范，建议具备可操作性。相比R1/R4，未深入分析臭气浓度排气筒高度与标准值的匹配逻辑，细节核查略逊一筹。\"}, {\"response_id\": \"R3\", \"correctness\": 2, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": null, \"skill_workflow\": 2, \"rationale\": \"完整体现审核工作流，准确发现限值矛盾、因子不统一及标准缺漏。证据链清晰，整改意见明确。受限于无RAG，未能像R4那样结合外部标准条款验证臭气高度取值合理性，外部合规性校验稍弱。\"}, {\"response_id\": \"R4\", \"correctness\": 2, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": 2, \"skill_workflow\": 2, \"rationale\": \"审核最全面，除共性限值问题外，利用RAG精准指出臭气30m排气筒直接套用25m限值的方法错误及特征污染物缺失。工作流完整，法规依据确凿，证据定位准确，修改建议针对性强，体现了最高审核水准。\"}]}"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 9482,
+    "completion_tokens": 426,
+    "total_tokens": 9908,
+    "prompt_tokens_details": {
+      "text_tokens": 9482
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  }
+}

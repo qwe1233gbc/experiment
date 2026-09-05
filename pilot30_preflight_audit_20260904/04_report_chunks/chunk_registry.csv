@@ -1,0 +1,12 @@
+﻿project_id,chunk_count,chunk_index_file,chunk_format,avg_chunk_chars,has_parent_child,section_field_present,notes
+PL001,0,retrieval_index/child_metadata.jsonl,JSONL,0,YES,NO,
+PL002,0,retrieval_index/child_metadata.jsonl,JSONL,0,YES,NO,
+PL004,0,retrieval_index/child_metadata.jsonl,JSONL,0,YES,NO,
+PL005,0,retrieval_index/child_metadata.jsonl,JSONL,0,YES,NO,
+PL006,0,retrieval_index/child_metadata.jsonl,JSONL,0,YES,NO,
+PL007,0,retrieval_index/child_metadata.jsonl,JSONL,0,YES,NO,
+PL008,0,retrieval_index/child_metadata.jsonl,JSONL,0,YES,NO,
+PL010,0,retrieval_index/child_metadata.jsonl,JSONL,0,YES,NO,
+PL013,0,retrieval_index/child_metadata.jsonl,JSONL,0,YES,NO,
+PL014,0,retrieval_index/child_metadata.jsonl,JSONL,0,YES,NO,
+PL015,0,retrieval_index/child_metadata.jsonl,JSONL,0,YES,NO,

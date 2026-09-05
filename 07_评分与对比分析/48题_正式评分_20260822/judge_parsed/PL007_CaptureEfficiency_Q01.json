@@ -1,0 +1,42 @@
+{
+  "question_id": "PL007_CaptureEfficiency_Q01",
+  "prompt_chars": 10812,
+  "scores": [
+    {
+      "response_id": "R1",
+      "correctness": 2,
+      "evidence_use": 2,
+      "actionability": 2,
+      "regulatory_basis": null,
+      "skill_workflow": null,
+      "rationale": "结论与参考答案对已设收集设施效率判定一致，且依据评分规则指出实验室无组织排放这一报告真实问题不扣分。证据定位准确，给出了补充收集措施的具体可执行建议。因rag/skill不可用，相关项为null。"
+    },
+    {
+      "response_id": "R2",
+      "correctness": 2,
+      "evidence_use": 2,
+      "actionability": 2,
+      "regulatory_basis": 2,
+      "skill_workflow": null,
+      "rationale": "确认主要工序效率取值合理，同时基于RAG指出实验室废气未收集违规，符合额外真实问题不扣分规则。引用了DB44/2367及GB37822等正确法规依据，证据充分，修改建议具体可执行。skill不可用故为null。"
+    },
+    {
+      "response_id": "R3",
+      "correctness": 1,
+      "evidence_use": 2,
+      "actionability": 2,
+      "regulatory_basis": null,
+      "skill_workflow": 2,
+      "rationale": "认可主体效率取值但判定为待复核，未明确给出“合理”结论，与参考答案方向部分一致。发现了表4-2数据冲突及投料工况证据不足等实质问题，体现了完整审核工作流。因rag不可用，法规项为null。"
+    },
+    {
+      "response_id": "R4",
+      "correctness": 1,
+      "evidence_use": 2,
+      "actionability": 2,
+      "regulatory_basis": 2,
+      "skill_workflow": 2,
+      "rationale": "识别出投料口风量核算与直连方式矛盾这一关键疑点，判定待复核而非直接合理，属部分一致。法规引用正确，审核工作流完整，指出了需人工确认密闭状态的具体核验动作，具备高可操作性。"
+    }
+  ]
+}

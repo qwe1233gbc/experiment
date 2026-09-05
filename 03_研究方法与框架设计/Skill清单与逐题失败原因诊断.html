@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skill清单与逐题失败原因诊断</title>
+<style>
+:root {
+  --bg: #f7f8fa;
+  --surface: #ffffff;
+  --border: #e5e7eb;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --caption: #9ca3af;
+  --brand: #7c3aed;
+  --brand-bg: #f5f3ff;
+  --green: #10b981;
+  --green-bg: rgba(16,185,129,0.1);
+  --red: #ef4444;
+  --red-bg: rgba(239,68,68,0.1);
+  --amber: #f59e0b;
+  --amber-bg: rgba(245,158,11,0.1);
+  --blue: #6366f1;
+  --blue-bg: rgba(99,102,241,0.1);
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Microsoft YaHei', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; padding: 20px; max-width: 1200px; margin: 0 auto; }
+h1 { font-size: 22px; margin-bottom: 4px; }
+.subtitle { color: var(--muted); font-size: 14px; margin-bottom: 24px; }
+h2 { font-size: 18px; margin: 28px 0 12px; padding-bottom: 8px; border-bottom: 2px solid var(--brand); }
+h3 { font-size: 15px; margin: 20px 0 8px; color: var(--brand); }
+
+/* Skill清单卡片 */
+.skill-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; margin-bottom: 16px; }
+.skill-card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 14px; border-left: 4px solid var(--brand); }
+.skill-card .num { font-size: 12px; color: var(--brand); font-weight: 700; }
+.skill-card .name { font-size: 14px; font-weight: 600; margin: 2px 0 6px; }
+.skill-card .desc { font-size: 13px; color: var(--muted); margin-bottom: 6px; }
+.skill-card .meta { display: flex; gap: 8px; flex-wrap: wrap; }
+.tag { font-size: 11px; padding: 2px 8px; border-radius: 999px; font-weight: 600; }
+.tag.cover { background: var(--green-bg); color: var(--green); }
+.tag.need { background: var(--amber-bg); color: var(--amber); }
+.tag.no-need { background: var(--green-bg); color: var(--green); }
+
+/* 表格 */
+table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 13px; background: var(--surface); border-radius: 8px; overflow: hidden; border: 1px solid var(--border); }
+th { background: var(--bg); padding: 8px 10px; text-align: left; font-weight: 600; color: var(--muted); font-size: 12px; white-space: nowrap; }
+td { padding: 6px 10px; border-top: 1px solid var(--border); vertical-align: top; }
+tr:hover td { background: var(--bg); }
+
+/* 失败标签 */
+.fail-tag { font-size: 11px; padding: 2px 6px; border-radius: 4px; font-weight: 600; white-space: nowrap; }
+.fail-tag.ext { background: var(--red-bg); color: var(--red); }
+.fail-tag.partial { background: var(--amber-bg); color: var(--amber); }
+.fail-tag.ok { background: var(--green-bg); color: var(--green); }
+.fail-tag.manual { background: var(--blue-bg); color: var(--blue); }
+
+/* 失败原因分类卡 */
+.reason-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px; margin: 12px 0; }
+.reason-card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 14px; }
+.reason-card.r1 { border-left: 4px solid var(--red); }
+.reason-card.r2 { border-left: 4px solid var(--amber); }
+.reason-card.r3 { border-left: 4px solid var(--blue); }
+.reason-card.r4 { border-left: 4px solid var(--green); }
+.reason-card .r-title { font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+.reason-card .r-count { font-size: 12px; color: var(--muted); margin-bottom: 8px; }
+.reason-card .r-list { font-size: 13px; color: var(--muted); }
+.reason-card .r-list li { margin-left: 16px; margin-bottom: 2px; }
+
+/* 对比条 */
+.bar-container { display: flex; align-items: center; gap: 8px; margin: 4px 0; }
+.bar-label { font-size: 12px; width: 80px; text-align: right; color: var(--muted); }
+.bar-track { flex: 1; height: 18px; background: var(--bg); border-radius: 4px; overflow: hidden; position: relative; }
+.bar-fill { height: 100%; border-radius: 4px; display: flex; align-items: center; padding-left: 6px; font-size: 11px; color: white; font-weight: 600; }
+.bar-fill.c { background: var(--red); }
+.bar-fill.d { background: var(--green); }
+.bar-fill.a { background: var(--blue); }
+
+/* 结论 */
+.conclusion { background: var(--brand-bg); border-radius: 8px; padding: 16px; margin-top: 20px; }
+.conclusion h3 { color: var(--brand); margin-top: 0; }
+.conclusion p { font-size: 14px; color: var(--text); margin-bottom: 8px; }
+</style>
+</head>
+<body>
+
+<h1>Skill清单与逐题失败原因诊断</h1>
+<div class="subtitle">C组（纯Skill，无RAG）21题 × Qwen3.8-Max | 对比 A组（基线）和 D组（Skill+RAG）</div>
+
+<h2>一、当前使用的Skill清单</h2>
+
+<h3>4个主Skill</h3>
+<div class="skill-grid">
+  <div class="skill-card">
+    <div class="num">Skill 01</div>
+    <div class="name">国民经济行业分类审核</div>
+    <div class="desc">审核报告填报的行业代码是否正确，核对GB/T 4754-2017分类注释</div>
+    <div class="meta">
+      <span class="tag cover">覆盖4题</span>
+      <span class="tag need">需分类标准原文</span>
+    </div>
+  </div>
+  <div class="skill-card">
+    <div class="num">Skill 02</div>
+    <div class="name">环保投资核算审核</div>
+    <div class="desc">审核报告投资概算的数值一致性和计算合理性</div>
+    <div class="meta">
+      <span class="tag cover">覆盖1题</span>
+      <span class="tag no-need">纯内部审核</span>
+    </div>
+  </div>
+  <div class="skill-card">
+    <div class="num">Skill 05</div>
+    <div class="name">环境质量数据引用审核</div>
+    <div class="desc">审核报告引用的环境公报数值是否与官方原文一致</div>
+    <div class="meta">
+      <span class="tag cover">覆盖3题</span>
+      <span class="tag need">需环境公报原文</span>
+    </div>
+  </div>
+  <div class="skill-card">
+    <div class="num">Skill 07</div>
+    <div class="name">污染物排放控制标准审核</div>
+    <div class="desc">综合审核废水/废气/噪声/固废排放标准的适用性和限值正确性，含4个子流程</div>
+    <div class="meta">
+      <span class="tag cover">覆盖13题</span>
+      <span class="tag need">需标准原文限值</span>
+    </div>
+  </div>
+</div>
+
+<h3>Skill 07 的4个子流程</h3>
+<table>
+  <tr><th>子流程</th><th>审核路径</th><th>审核重点</th><th>覆盖题数</th></tr>
+  <tr><td>A 废水</td><td>废水类型→处理→回用→排口→纳管→标准</td><td>各节点标准是否混用、名称/河道一致性</td><td>3题</td></tr>
+  <tr><td>B 大气</td><td>产气工序→污染物→收集→治理→排气筒→标准</td><td>有组织/厂界/厂区内是否混淆、限值一致性</td><td>1题</td></tr>
+  <tr><td>C 噪声</td><td>项目位置→声功能区→厂界→昼夜间→标准类别→限值</td><td>声功能区类别、昼夜评价、预测监测一致性</td><td>4题</td></tr>
+  <tr><td>D 固废</td><td>废物名称→工序→类别代码→数量→贮存→处置去向</td><td>危废代码/属性正确性、数量一致性</td><td>5题</td></tr>
+</table>
+
+<h2>二、21题 × Skill映射表</h2>
+<table>
+  <tr>
+    <th>Question ID</th>
+    <th>审核类别</th>
+    <th>调用Skill</th>
+    <th>C组评分</th>
+    <th>C组结论</th>
+    <th>外部审核状态</th>
+    <th>D组评分</th>
+    <th>C-D分差</th>
+    <th>失败原因分类</th>
+  </tr>
+  <tr><td>PL001_Emission_固体</td><td>固废</td><td>07-D固废</td><td>62</td><td><span class="fail-tag ext">无法可靠判断</span></td><td>not_performed</td><td>90</td><td style="color:var(--red)">-28</td><td>需GB18597危废代码原文</td></tr>
+  <tr><td>PL001_EnvQuality_Q01</td><td>环境质量</td><td>05</td><td>71</td><td><span class="fail-tag manual">人工复核</span></td><td>not_performed</td><td>100</td><td style="color:var(--red)">-29</td><td>需环境公报原文核验</td></tr>
+  <tr><td>PL001_V01_Q01</td><td>行业分类</td><td>01</td><td>90</td><td><span class="fail-tag ext">无法可靠判断</span></td><td>not_performed</td><td>95</td><td style="color:var(--red)">-5</td><td>需GB/T 4754分类注释</td></tr>
+  <tr><td>PL002_Emission_大气</td><td>大气</td><td>07-B大气</td><td>35</td><td><span class="fail-tag ext">无法可靠判断</span></td><td>not_performed</td><td>92</td><td style="color:var(--red)">-57</td><td>需GB31572表5限值原文</td></tr>
+  <tr><td>PL002_Emission_固体</td><td>固废</td><td>07-D固废</td><td>65</td><td><span class="fail-tag partial">部分正确</span></td><td>not_performed</td><td>89</td><td style="color:var(--red)">-24</td><td>需GB18597危废属性核验</td></tr>
+  <tr><td>PL002_Emission_噪声</td><td>噪声</td><td>07-C噪声</td><td>100</td><td><span class="fail-tag ok">正确</span></td><td>not_performed</td><td>100</td><td>0</td><td>内部审核已足够（报告一致）</td></tr>
+  <tr><td>PL002_EnvQuality_Q01</td><td>环境质量</td><td>05</td><td>35</td><td><span class="fail-tag ext">无法可靠判断</span></td><td>not_performed</td><td>100</td><td style="color:var(--red)">-65</td><td>需环境公报原文核验</td></tr>
+  <tr><td>PL002_V01_Q01</td><td>行业分类</td><td>01</td><td>100</td><td><span class="fail-tag ok">正确</span></td><td>not_performed</td><td>100</td><td>0</td><td>内部审核已足够（报告明确）</td></tr>
+  <tr><td>PL003_Emission_固体</td><td>固废</td><td>07-D固废</td><td>90</td><td><span class="fail-tag ext">无法可靠判断</span></td><td>not_performed</td><td>80</td><td style="color:var(--green)">+10</td><td>需GB18597但内部审核好</td></tr>
+  <tr><td>PL003_Emission_水污</td><td>水污</td><td>07-A废水</td><td>78</td><td><span class="fail-tag ext">无法可靠判断</span></td><td>not_performed</td><td>35</td><td style="color:var(--green)">+43</td><td>需DB44/26限值（D组RAG也不全）</td></tr>
+  <tr><td>PL003_Emission_噪声</td><td>噪声</td><td>07-C噪声</td><td>100</td><td><span class="fail-tag ok">正确</span></td><td>not_performed</td><td>100</td><td>0</td><td>内部审核已足够</td></tr>
+  <tr><td>PL003_V01_Q01</td><td>行业分类</td><td>01</td><td>100</td><td><span class="fail-tag ok">正确</span></td><td>not_performed</td><td>100</td><td>0</td><td>内部审核已足够</td></tr>
+  <tr><td>PL003_V01_Q03</td><td>投资概算</td><td>02</td><td>100</td><td><span class="fail-tag ok">正确</span></td><td>not_required</td><td>100</td><td>0</td><td>纯内部计算审核</td></tr>
+  <tr><td>PL004_Emission_固体</td><td>固废</td><td>07-D固废</td><td>71</td><td><span class="fail-tag manual">人工复核</span></td><td>not_performed</td><td>77</td><td style="color:var(--red)">-6</td><td>需GB18597危废代码</td></tr>
+  <tr><td>PL004_Emission_水污</td><td>水污</td><td>07-A废水</td><td>35</td><td><span class="fail-tag ext">无法可靠判断</span></td><td>not_performed</td><td>100</td><td style="color:var(--red)">-65</td><td>需DB44/26标准限值</td></tr>
+  <tr><td>PL004_Emission_噪声</td><td>噪声</td><td>07-C噪声</td><td>60</td><td><span class="fail-tag ext">无法可靠判断</span></td><td>not_performed</td><td>100</td><td style="color:var(--red)">-40</td><td>需GB12348标准原文</td></tr>
+  <tr><td>PL004_V01_Q01</td><td>行业分类</td><td>01</td><td>35</td><td><span class="fail-tag manual">人工复核</span></td><td>not_performed</td><td>100</td><td style="color:var(--red)">-65</td><td>需GB/T 4754分类注释</td></tr>
+  <tr><td>PL005_Emission_固体</td><td>固废</td><td>07-D固废</td><td>55</td><td><span class="fail-tag ext">无法可靠判断</span></td><td>not_performed</td><td>76</td><td style="color:var(--red)">-21</td><td>需GB18597危废代码</td></tr>
+  <tr><td>PL005_Emission_水污</td><td>水污</td><td>07-A废水</td><td>35</td><td><span class="fail-tag ext">无法可靠判断</span></td><td>not_performed</td><td>100</td><td style="color:var(--red)">-65</td><td>需DB44/26标准限值</td></tr>
+  <tr><td>PL005_Emission_噪声</td><td>噪声</td><td>07-C噪声</td><td>75</td><td><span class="fail-tag manual">人工复核</span></td><td>not_performed</td><td>100</td><td style="color:var(--red)">-25</td><td>需GB12348标准原文</td></tr>
+  <tr><td>PL006_EnvQuality_Q01</td><td>环境质量</td><td>05</td><td>35</td><td><span class="fail-tag ext">无法可靠判断</span></td><td>not_performed</td><td>90</td><td style="color:var(--red)">-55</td><td>需环境公报原文核验</td></tr>
+</table>
+
+<h2>三、失败原因分类</h2>
+
+<div class="reason-grid">
+  <div class="reason-card r1">
+    <div class="r-title">外部标准限值缺失</div>
+    <div class="r-count">8题 | 平均C-D分差: -40.4</div>
+    <ul class="r-list">
+      <li>PL002_大气: 需GB31572表5限值(60mg/m³)</li>
+      <li>PL004_水污: 需DB44/26第二时段限值</li>
+      <li>PL005_水污: 需DB44/26标准限值</li>
+      <li>PL004_噪声: 需GB12348标准原文</li>
+      <li>PL001_固废: 需GB18597危废代码</li>
+      <li>PL002_固废: 需GB18597危废属性</li>
+      <li>PL005_固废: 需GB18597危废代码</li>
+      <li>PL003_水污: 需DB44/26限值(D组RAG也不全)</li>
+    </ul>
+  </div>
+  <div class="reason-card r2">
+    <div class="r-title">外部公报/分类原文缺失</div>
+    <div class="r-count">5题 | 平均C-D分差: -44.8</div>
+    <ul class="r-list">
+      <li>PL001_环境质量: 需环境公报原文</li>
+      <li>PL002_环境质量: 需环境公报原文</li>
+      <li>PL006_环境质量: 需环境公报原文</li>
+      <li>PL001_行业分类: 需GB/T 4754注释</li>
+      <li>PL004_行业分类: 需GB/T 4754注释</li>
+    </ul>
+  </div>
+  <div class="reason-card r4">
+    <div class="r-title">内部审核已足够</div>
+    <div class="r-count">4题 | C组均分: 100</div>
+    <ul class="r-list">
+      <li>PL002_噪声: 报告内部一致</li>
+      <li>PL003_噪声: 报告内部一致</li>
+      <li>PL002_行业分类: 报告内部明确</li>
+      <li>PL003_行业分类: 报告内部明确</li>
+      <li>PL003_投资概算: 纯内部计算</li>
+    </ul>
+    <div style="margin-top:8px;font-size:12px;color:var(--green)">这4题Skill在无RAG时也满分，说明Skill内部审核逻辑本身有效</div>
+  </div>
+  <div class="reason-card r3">
+    <div class="r-title">人工复核（关键证据部分缺失）</div>
+    <div class="r-count">2题 | 平均C-D分差: -47</div>
+    <ul class="r-list">
+      <li>PL001_环境质量: 公报数值无法核验</li>
+      <li>PL004_行业分类: 分类注释无法核验</li>
+    </ul>
+  </div>
+</div>
+
+<h2>四、分维度对比：C组 vs A组 vs D组</h2>
+
+<h3>外部依据维度（/20）— 失败核心</h3>
+<div class="bar-container"><div class="bar-label">A组(基线)</div><div class="bar-track"><div class="bar-fill a" style="width:95%">19.0</div></div></div>
+<div class="bar-container"><div class="bar-label">C组(Skill)</div><div class="bar-track"><div class="bar-fill c" style="width:57%">11.4</div></div></div>
+<div class="bar-container"><div class="bar-label">D组(S+RAG)</div><div class="bar-track"><div class="bar-fill d" style="width:100%">22.6</div></div></div>
+
+<h3>报告证据维度（/30）— Skill不差</h3>
+<div class="bar-container"><div class="bar-label">A组(基线)</div><div class="bar-track"><div class="bar-fill a" style="width:95%">23.8</div></div></div>
+<div class="bar-container"><div class="bar-label">C组(Skill)</div><div class="bar-track"><div class="bar-fill c" style="width:91%">22.8</div></div></div>
+<div class="bar-container"><div class="bar-label">D组(S+RAG)</div><div class="bar-track"><div class="bar-fill d" style="width:96%">24.0</div></div></div>
+
+<h3>结论正确性维度（/30）— Skill拖后腿</h3>
+<div class="bar-container"><div class="bar-label">A组(基线)</div><div class="bar-track"><div class="bar-fill a" style="width:79%">23.8</div></div></div>
+<div class="bar-container"><div class="bar-label">C组(Skill)</div><div class="bar-track"><div class="bar-fill c" style="width:55%">16.6</div></div></div>
+<div class="bar-container"><div class="bar-label">D组(S+RAG)</div><div class="bar-track"><div class="bar-fill d" style="width:89%">26.8</div></div></div>
+
+<div class="conclusion">
+  <h3>核心结论</h3>
+  <p><strong>1. Skill本身设计合格：</strong>4题在无RAG时也满分，报告证据分(22.8)接近A组(23.8)和D组(24.0)，说明Skill的内部审核逻辑有效。</p>
+  <p><strong>2. 13/21题失败的根因是外部审核 not_performed：</strong>Skill要求"不把报告自己引用的标准视为已被外部验证"，无RAG时外部审核无法执行，评审大模型将"部分完成"判为低分。</p>
+  <p><strong>3. 结论正确性暴跌的机制：</strong>Skill的禁止事项"不使用模型参数记忆补充限值"导致模型在无RAG时放弃回答，8题被判"无法可靠判断"。而A组（无此禁止）模型用参数知识回答，即使不完美也得较高分。</p>
+  <p><strong>4. 改进方向（不微调）：</strong>调整Skill的禁止规则——允许模型在无RAG时用参数知识做"初步判断"并标注"未外部核验"，而非直接放弃。或在评审量规中将"内部审核质量"和"外部审核质量"分开计分。</p>
+</div>
+
+</body>
+</html>

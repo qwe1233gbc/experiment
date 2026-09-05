@@ -1,0 +1,5 @@
+﻿group,n,correctness_mean,correctness_n,evidence_use_mean,evidence_use_n,actionability_mean,actionability_n,regulatory_basis_mean,regulatory_basis_n,skill_workflow_mean,skill_workflow_n,shared_score_100_mean,normalized_score_100_mean
+A,21,1.6667,21,1.9524,21,1.9524,21,N/A,0,N/A,0,92.8571,92.8562
+B,21,1.6667,21,1.9524,21,1.9048,21,1.9524,21,N/A,0,92.0635,93.4524
+C,21,1.5238,21,1.9524,21,1.9048,21,1.0,1,2.0,21,89.6825,92.0238
+D,21,1.7143,21,1.9524,21,2.0,21,2.0,21,2.0,21,94.4444,96.6667

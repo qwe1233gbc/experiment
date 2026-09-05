@@ -1,0 +1,238 @@
+[
+  {
+    "audit_type": "国民经济行业分类",
+    "question_id": "PL001_V01_Q01",
+    "project_id": "PL001",
+    "question": "请结合项目产品、原辅材料和生产工艺，判断该报告行业类别是否基本合理。",
+    "skill_id": "review-eia-industry-classification",
+    "core_answer_sources": [
+      {
+        "base_source_id": "SRC046",
+        "source_file": "national_economic_classification.jsonl"
+      }
+    ],
+    "actual_frozen_top5_hits": [
+      {
+        "rank": 1,
+        "enhanced_source_id": "SRC063",
+        "source_file": "national_economic_classification.json",
+        "parent_id": "SRC063_P0007",
+        "child_id": "SRC063_P0007_C008",
+        "score": 0.7802066362429887
+      },
+      {
+        "rank": 2,
+        "enhanced_source_id": "SRC064",
+        "source_file": "national_economic_classification.jsonl",
+        "parent_id": "SRC064_P0007",
+        "child_id": "SRC064_P0007_C007",
+        "score": 0.7398714605762676
+      },
+      {
+        "rank": 3,
+        "enhanced_source_id": "SRC065",
+        "source_file": "plastic_rubber_industry_classification_checked.md",
+        "parent_id": "SRC065_P0001",
+        "child_id": "SRC065_P0001_C001",
+        "score": 0.43084799156694653
+      },
+      {
+        "rank": 4,
+        "enhanced_source_id": "SRC015",
+        "source_file": "#9_塑料制品业产污系数_废气_官方手册.md",
+        "parent_id": "SRC015_P0001",
+        "child_id": "SRC015_P0001_C006",
+        "score": 0.4095401633883203
+      },
+      {
+        "rank": 5,
+        "enhanced_source_id": "SRC055",
+        "source_file": "HJ_1122-2020.md",
+        "parent_id": "SRC055_P0025",
+        "child_id": "SRC055_P0025_C003",
+        "score": 0.2922507047672352
+      }
+    ],
+    "snapshot_sha256": "9c906917751b3f8a55d3c6012508f9eddb58996b5b453edbe2acf93cafb0c1cc"
+  },
+  {
+    "audit_type": "国民经济行业分类",
+    "question_id": "PL002_V01_Q01",
+    "project_id": "PL002",
+    "question": "请结合项目产品、原辅材料和生产工艺，判断该报告是否适合作为塑胶行业种子问答样本，并判断行业类别是否基本合理。",
+    "skill_id": "review-eia-industry-classification",
+    "core_answer_sources": [
+      {
+        "base_source_id": "SRC046",
+        "source_file": "national_economic_classification.jsonl"
+      },
+      {
+        "base_source_id": "SRC047",
+        "source_file": "plastic_rubber_industry_classification_checked.md"
+      }
+    ],
+    "actual_frozen_top5_hits": [
+      {
+        "rank": 1,
+        "enhanced_source_id": "SRC064",
+        "source_file": "national_economic_classification.jsonl",
+        "parent_id": "SRC064_P0011",
+        "child_id": "SRC064_P0011_C001",
+        "score": 0.6152248494506734
+      },
+      {
+        "rank": 2,
+        "enhanced_source_id": "SRC065",
+        "source_file": "plastic_rubber_industry_classification_checked.md",
+        "parent_id": "SRC065_P0001",
+        "child_id": "SRC065_P0001_C003",
+        "score": 0.5188077535972315
+      },
+      {
+        "rank": 3,
+        "enhanced_source_id": "SRC016",
+        "source_file": "#9_塑料制品业产污系数_废气_速查.md",
+        "parent_id": "SRC016_P0001",
+        "child_id": "SRC016_P0001_C005",
+        "score": 0.5152301717166248
+      },
+      {
+        "rank": 4,
+        "enhanced_source_id": "SRC063",
+        "source_file": "national_economic_classification.json",
+        "parent_id": "SRC063_P0011",
+        "child_id": "SRC063_P0011_C003",
+        "score": 0.4893126802875867
+      },
+      {
+        "rank": 5,
+        "enhanced_source_id": "SRC013",
+        "source_file": "#8_塑料制品业典型污染源及执行标准.csv",
+        "parent_id": "SRC013_P0001",
+        "child_id": "SRC013_P0001_C002",
+        "score": 0.4244643684778938
+      }
+    ],
+    "snapshot_sha256": "dada7f9b18f1ddbb65ca3a338150bc8e9b69b3144e5c03ef9d517b42065f9b4a"
+  },
+  {
+    "audit_type": "国民经济行业分类",
+    "question_id": "PL003_V01_Q01",
+    "project_id": "PL003",
+    "question": "请结合项目产品、原辅材料和生产工艺，判断该报告行业类别是否基本合理。",
+    "skill_id": "review-eia-industry-classification",
+    "core_answer_sources": [
+      {
+        "base_source_id": "SRC046",
+        "source_file": "national_economic_classification.jsonl"
+      },
+      {
+        "base_source_id": "SRC047",
+        "source_file": "plastic_rubber_industry_classification_checked.md"
+      }
+    ],
+    "actual_frozen_top5_hits": [
+      {
+        "rank": 1,
+        "enhanced_source_id": "SRC065",
+        "source_file": "plastic_rubber_industry_classification_checked.md",
+        "parent_id": "SRC065_P0001",
+        "child_id": "SRC065_P0001_C001",
+        "score": 0.6921393273645164
+      },
+      {
+        "rank": 2,
+        "enhanced_source_id": "SRC015",
+        "source_file": "#9_塑料制品业产污系数_废气_官方手册.md",
+        "parent_id": "SRC015_P0002",
+        "child_id": "SRC015_P0002_C003",
+        "score": 0.5676460760845942
+      },
+      {
+        "rank": 3,
+        "enhanced_source_id": "SRC063",
+        "source_file": "national_economic_classification.json",
+        "parent_id": "SRC063_P0011",
+        "child_id": "SRC063_P0011_C001",
+        "score": 0.5636615137536527
+      },
+      {
+        "rank": 4,
+        "enhanced_source_id": "SRC056",
+        "source_file": "HJ_1207-2021.md",
+        "parent_id": "SRC056_P0002",
+        "child_id": "SRC056_P0002_C007",
+        "score": 0.44740036594654314
+      },
+      {
+        "rank": 5,
+        "enhanced_source_id": "SRC055",
+        "source_file": "HJ_1122-2020.md",
+        "parent_id": "SRC055_P0025",
+        "child_id": "SRC055_P0025_C003",
+        "score": 0.4454455175051372
+      }
+    ],
+    "snapshot_sha256": "8477fa81d1709a0b4d4f416ac8160930426ca300853235d7f696154fa847d2a6"
+  },
+  {
+    "audit_type": "国民经济行业分类",
+    "question_id": "PL004_V01_Q01",
+    "project_id": "PL004",
+    "question": "请结合项目产品、原辅材料和生产工艺，判断该报告行业类别是否基本合理。",
+    "skill_id": "review-eia-industry-classification",
+    "core_answer_sources": [
+      {
+        "base_source_id": "SRC046",
+        "source_file": "national_economic_classification.jsonl"
+      },
+      {
+        "base_source_id": "SRC047",
+        "source_file": "plastic_rubber_industry_classification_checked.md"
+      }
+    ],
+    "actual_frozen_top5_hits": [
+      {
+        "rank": 1,
+        "enhanced_source_id": "SRC064",
+        "source_file": "national_economic_classification.jsonl",
+        "parent_id": "SRC064_P0011",
+        "child_id": "SRC064_P0011_C001",
+        "score": 0.6081968685543994
+      },
+      {
+        "rank": 2,
+        "enhanced_source_id": "SRC015",
+        "source_file": "#9_塑料制品业产污系数_废气_官方手册.md",
+        "parent_id": "SRC015_P0004",
+        "child_id": "SRC015_P0004_C003",
+        "score": 0.5395464829433482
+      },
+      {
+        "rank": 3,
+        "enhanced_source_id": "SRC063",
+        "source_file": "national_economic_classification.json",
+        "parent_id": "SRC063_P0011",
+        "child_id": "SRC063_P0011_C003",
+        "score": 0.5163053426902211
+      },
+      {
+        "rank": 4,
+        "enhanced_source_id": "SRC014",
+        "source_file": "#8_塑料制品业典型污染源及执行标准.md",
+        "parent_id": "SRC014_P0001",
+        "child_id": "SRC014_P0001_C001",
+        "score": 0.4395554715660319
+      },
+      {
+        "rank": 5,
+        "enhanced_source_id": "SRC016",
+        "source_file": "#9_塑料制品业产污系数_废气_速查.md",
+        "parent_id": "SRC016_P0001",
+        "child_id": "SRC016_P0001_C005",
+        "score": 0.43659616435902904
+      }
+    ],
+    "snapshot_sha256": "acf09cc8111232adfcc44c29659c3e51c14154dbf015f02991639f9bba7c41f9"
+  }
+]

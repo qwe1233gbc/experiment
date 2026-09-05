@@ -1,0 +1,10 @@
+{
+  "question_id": "H07_PL015_HWStorageStandard",
+  "query": "判断报告中危险废物贮存设施的描述是否符合《危险废物贮存污染控制标准》要求。 任务类型：危废贮存标准判定 危险废物贮存 贮存标准 贮存设施",
+  "query_provenance": [
+    "question_text (first 300 chars)",
+    "task_type (from question metadata)",
+    "question_id keyword hint: 危废贮存标准判定"
+  ],
+  "gold_leakage_check": "PASSED (query built from question text + task type + domain keywords only; no gold verdict/answer leaked)"
+}

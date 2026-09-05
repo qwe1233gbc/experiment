@@ -1,0 +1,42 @@
+{
+  "question_id": "PL005_Emission_噪声",
+  "prompt_chars": 10192,
+  "scores": [
+    {
+      "response_id": "R1",
+      "correctness": 2,
+      "evidence_use": 2,
+      "actionability": 2,
+      "regulatory_basis": null,
+      "skill_workflow": null,
+      "rationale": "结论正确，准确引用报告证据验证了功能区、标准及限值的一致性。无RAG条件下未强行核验外部法规，符合规则。审核步骤完整，明确了保持项与边界，无实质遗漏。"
+    },
+    {
+      "response_id": "R2",
+      "correctness": 2,
+      "evidence_use": 2,
+      "actionability": 2,
+      "regulatory_basis": 2,
+      "skill_workflow": null,
+      "rationale": "结论正确，结合报告证据与RAG中GB12348-2008原文验证了标准选取合理性。证据链完整，法规依据充分支持结论。虽skill不可用但审核逻辑严密，明确了核验边界与缺失项。"
+    },
+    {
+      "response_id": "R3",
+      "correctness": 1,
+      "evidence_use": 2,
+      "actionability": 1,
+      "regulatory_basis": null,
+      "skill_workflow": 2,
+      "rationale": "内部一致性分析正确且证据充分，体现了完整审核工作流。但因缺少外部资料将结论降级为“部分完成”，相对于仅要求内部一致性的题目而言属于过度保守，影响了正确性与行动建议的明确性。"
+    },
+    {
+      "response_id": "R4",
+      "correctness": 1,
+      "evidence_use": 2,
+      "actionability": 1,
+      "regulatory_basis": 2,
+      "skill_workflow": 2,
+      "rationale": "结合了RAG验证与内部一致性核查，工作流完整。但同样因区划文件缺失将结论判为“部分完成”，对于本题核心诉求（判断报告内部选取合理性）而言略显过度谨慎，导致正确性与行动指引扣分。"
+    }
+  ]
+}

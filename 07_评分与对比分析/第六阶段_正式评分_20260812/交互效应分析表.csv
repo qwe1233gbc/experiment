@@ -1,0 +1,5 @@
+﻿outcome,A_mean,B_mean,C_mean,D_mean,rag_main_effect,skill_main_effect,beta3_interaction
+correctness,1.6667,1.6667,1.5238,1.7143,0.0952,-0.0476,0.1905
+evidence_use,1.9524,1.9524,1.9524,1.9524,0.0,0.0,0.0
+actionability,1.9524,1.9048,1.9048,2.0,0.0238,0.0238,0.1429
+shared_score_100,92.8562,92.0629,89.6814,94.4433,1.9843,-0.3971,5.5552

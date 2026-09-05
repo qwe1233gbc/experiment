@@ -1,0 +1,92 @@
+{
+  "skill_id": "review-eia-hazardous-waste-identification",
+  "version_A": {
+    "label": "A_正式Skill库版本（四层架构_正式库）",
+    "skill_path": "E:\\实验文件整理_按论文逻辑\\04_知识库构建\\四层架构_正式库\\04_Skill检索路由_15个Skill\\skills\\review-eia-hazardous-waste-identification\\SKILL.md",
+    "skill_sha256": "ead69b4fe75bb7eb4540f5ee3e415d803897d3e24c0ba6e9bd04a732b54eac3d",
+    "size_bytes": 7398,
+    "agents": {
+      "path": "E:\\实验文件整理_按论文逻辑\\04_知识库构建\\四层架构_正式库\\04_Skill检索路由_15个Skill\\skills\\review-eia-hazardous-waste-identification\\agents\\openai.yaml",
+      "sha256": "ddb7491870b0b9c11f6074eff67853ba1b3a627067010aff4f02b2f55498abf1"
+    },
+    "references": [],
+    "note": "SKILL.md无任何references引用；skill目录下不存在references文件夹。"
+  },
+  "version_B": {
+    "label": "B_81源知识库证据增强版（正式实验RAG知识库_81源扩展版_20260820）",
+    "skill_path": "E:\\实验文件整理_按论文逻辑\\04_知识库构建\\正式实验RAG知识库_81源扩展版_20260820\\04_Skill检索路由_证据增强版\\skills\\review-eia-hazardous-waste-identification\\SKILL.md",
+    "skill_sha256": "41fb4b13beefc747bba9650ff1d8ebc44dfb2416a70fd40b9a0ded3cb2c24c93",
+    "size_bytes": 7616,
+    "agents": {
+      "path": "E:\\实验文件整理_按论文逻辑\\04_知识库构建\\正式实验RAG知识库_81源扩展版_20260820\\04_Skill检索路由_证据增强版\\skills\\review-eia-hazardous-waste-identification\\agents\\openai.yaml",
+      "sha256": "ddb7491870b0b9c11f6074eff67853ba1b3a627067010aff4f02b2f55498abf1"
+    },
+    "references": [
+      {
+        "ref_name": "references/evidence-gates-20260812.md",
+        "path": "E:\\实验文件整理_按论文逻辑\\04_知识库构建\\正式实验RAG知识库_81源扩展版_20260820\\04_Skill检索路由_证据增强版\\skills\\review-eia-hazardous-waste-identification\\references\\evidence-gates-20260812.md",
+        "sha256": "f331486185adb8bb9bd8c909d1c3955d7f62d2e8d2fed0214bec6a1c50b74a8a",
+        "size_bytes": 844,
+        "full_text": "# 危险废物识别证据门槛（2026-08-12）\n\n1. 先按审核时点适用的GB 34330判断物质是否属于固体废物：GB 34330—2017适用于2026-02-28及以前，GB 34330—2025自2026-03-01起适用。\n2. 再按审核时点适用名录匹配来源行业、产生工序、废物描述与代码：2021年版适用于2024-12-31及以前，2025年版自2025-01-01起适用。\n3. 未列入名录但可能具有危险特性时，依GB 5085.1—6、GB 5085.7—2019和HJ 298—2019开展鉴别；名称相似或同类项目经验不能替代鉴别。\n4. 只有报告自报代码而缺少工序、成分或名录条目映射时，不得确认代码，输出 `basis_status=insufficient`。\n5. 报告时点与审核时点版本不同，要分别给出“历史合规性”和“当前整改建议”，禁止用新版本倒推历史错误。\n",
+        "referenced_by_skill_line": 8,
+        "purpose": "优先约束固废判定、名录匹配、危险特性鉴别和审核时点版本（5条证据门槛）"
+      }
+    ]
+  },
+  "lineage": {
+    "四层架构_证据增强版_20260812": {
+      "hazardous_skill_sha256": "41fb4b13beefc747bba9650ff1d8ebc44dfb2416a70fd40b9a0ded3cb2c24c93",
+      "evidence_gates_sha256": "f331486185adb8bb9bd8c909d1c3955d7f62d2e8d2fed0214bec6a1c50b74a8a"
+    },
+    "正式实验RAG知识库_61题扩展版_20260819": {
+      "hazardous_skill_sha256": "41fb4b13beefc747bba9650ff1d8ebc44dfb2416a70fd40b9a0ded3cb2c24c93",
+      "evidence_gates_sha256": "f331486185adb8bb9bd8c909d1c3955d7f62d2e8d2fed0214bec6a1c50b74a8a"
+    },
+    "正式实验RAG知识库_81源扩展版_20260820": {
+      "hazardous_skill_sha256": "41fb4b13beefc747bba9650ff1d8ebc44dfb2416a70fd40b9a0ded3cb2c24c93",
+      "evidence_gates_sha256": "f331486185adb8bb9bd8c909d1c3955d7f62d2e8d2fed0214bec6a1c50b74a8a"
+    }
+  },
+  "sibling_evidence_gates_in_evidence_enhanced_bank": [
+    {
+      "skill": "review-eia-environmental-quality-data",
+      "path": "E:\\实验文件整理_按论文逻辑\\04_知识库构建\\正式实验RAG知识库_81源扩展版_20260820\\04_Skill检索路由_证据增强版\\skills\\review-eia-environmental-quality-data\\references\\evidence-gates-20260812.md",
+      "sha256": "05b199d2567bf1d94d799d960f098d4b05aa6c5295c14f115bf5e30edc2f36a1",
+      "size_bytes": 627
+    },
+    {
+      "skill": "review-eia-pollutant-discharge-standards",
+      "path": "E:\\实验文件整理_按论文逻辑\\04_知识库构建\\正式实验RAG知识库_81源扩展版_20260820\\04_Skill检索路由_证据增强版\\skills\\review-eia-pollutant-discharge-standards\\references\\evidence-gates-20260812.md",
+      "sha256": "5b4b58e2bae2f10d430552d3667e59d1489887ffe04c968f9dda8976e9af6635",
+      "size_bytes": 1983
+    }
+  ],
+  "formal_definition": {
+    "论文项目版本主线_20260819.md": "正式定义库=四层架构_正式库/04_Skill检索路由_15个Skill/；证据增强版manifest指向同一正式Skill路径与SHA-256，非第二套定义；40题路由指向61题扩展版04层；冻结C/D提示词↔Skill manifest逐文件哈希绑定=UNRESOLVED",
+    "FORMAL_SOURCE_OF_TRUTH.md": "正式Skill路径=四层架构_正式库/04_Skill检索路由_15个Skill/；证据增强版manifest指向同一正式Skill路径和SHA-256，没有形成另一套定义；冻结C/D提示词哈希绑定=UNRESOLVED",
+    "skill_bank_registry.json(正式库)": {
+      "skill_sha256": "ead69b4fe75bb7eb4540f5ee3e415d803897d3e24c0ba6e9bd04a732b54eac3d",
+      "skill_path": "E:\\实验文件整理_按论文逻辑\\04_知识库构建\\四层架构_正式库\\04_Skill检索路由_15个Skill\\skills\\review-eia-hazardous-waste-identification\\SKILL.md"
+    },
+    "skill_bank_manifest.csv(正式库)": {
+      "SHA256": "ead69b4fe75bb7eb4540f5ee3e415d803897d3e24c0ba6e9bd04a732b54eac3d"
+    },
+    "skill_bank_registry.json(81源库)": {
+      "skill_sha256": "ead69b4fe75bb7eb4540f5ee3e415d803897d3e24c0ba6e9bd04a732b54eac3d",
+      "skill_path": "E:\\实验文件整理_按论文逻辑\\04_知识库构建\\四层架构_正式库\\04_Skill检索路由_15个Skill\\skills\\review-eia-hazardous-waste-identification\\SKILL.md"
+    },
+    "skill_bank_manifest.csv(81源库)": {
+      "SHA256": "ead69b4fe75bb7eb4540f5ee3e415d803897d3e24c0ba6e9bd04a732b54eac3d"
+    }
+  },
+  "loading_chain_facts": [
+    "build_40q_skill_dryrun.py load_skill(): 仅读取 SKILL.md 文本，不读 references/。",
+    "build_skill_layer_v2.py: 仅复制 SKILL.md 到目标层，不处理 references/。",
+    "validate_skill_layer_v2.py: 校验 SKILL.md + agents/*.yaml + router references/routing-catalog.md 存在性，不读 evidence-gates。",
+    "build_phase4_frozen_prompts.py(21题): 从既有21题C prompt文本提取skill组件，不读 references/。",
+    "router SKILL.md 引用 references/routing-catalog.md（不含 evidence-gates）。",
+    "hybrid_retrieval.py / run_40q_frozen_v3_1.py: 不引用任何Skill。",
+    "21题 legacy skill_package 曾将 references 内联进C/D prompt（如 PL001_V01_Q01 含 answer-schema.json / manual-audit-guide.md），但该机制用于21题运行副本，未用于当前正式15-Skill库与40题builder。"
+  ],
+  "conclusion_evidence_gates_loading": "A版执行链不会间接加载 evidence-gates-20260812.md：当前正式15-Skill库无references目录，prompt构建/校验/检索代码均不读取该文件；即使选择B版，在当前builder下evidence-gates也不会被自动注入prompt，B版SKILL.md第8行只是指向不可见文件的指令文本。"
+}

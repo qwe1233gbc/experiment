@@ -1,0 +1,10 @@
+{
+  "question_id": "PL007_CaptureEfficiency_Q01",
+  "query": "请根据废气产生工序、收集设施类型、密闭或集气罩条件及报告采用的收集效率，判断废气收集效率取值是否合理。 任务类型：废气收集效率 废气收集效率 集气罩 捕集率",
+  "query_provenance": [
+    "question_text (first 300 chars)",
+    "task_type (from question metadata)",
+    "question_id keyword hint: 废气收集效率"
+  ],
+  "gold_leakage_check": "PASSED (query built from question text + task type + domain keywords only; no gold verdict/answer leaked)"
+}

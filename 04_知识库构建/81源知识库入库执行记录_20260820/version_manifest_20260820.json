@@ -1,0 +1,168 @@
+{
+  "version": "81q-extended-20260820",
+  "created_at": "2026-08-20T03:10:39.004624+00:00",
+  "base_version": "正式实验RAG知识库_61题扩展版_20260819（73源；61q-extended-20260819）",
+  "purpose": "PL006-PL015新增40题知识补齐（#23-#30）后的81源RAG知识库；分块/嵌入/检索参数与基线完全一致",
+  "changes": "仅新增8个知识源（#23-#30）；广东VOCs版本路由按方案B存于Skill路由层manual_policy_files（不占业务源编号）；原73源401父块3438子块ID与内容逐字保留",
+  "source_count_before": 73,
+  "source_count_after": 81,
+  "parent_count_before": 401,
+  "parent_count_after": 409,
+  "child_count_before": 3438,
+  "child_count_after": 3459,
+  "chunk_params": {
+    "parent_target_tokens": 4000,
+    "child_window_tokens": 500,
+    "child_overlap_tokens": 100,
+    "token_estimator": "o200k_base"
+  },
+  "version_route": {
+    "file": "版本路由_广东VOCs核算方法2021与2023.md",
+    "location": "04_Skill检索路由_证据增强版\\（manual_policy_files机制，同镇级污水处理标准回退规则先例）",
+    "registered_skills": [
+      "09_产污系数定量核算",
+      "12_废气收集效率",
+      "15_VOCs总量控制"
+    ],
+    "not_a_corpus_source": true
+  },
+  "new_sources": [
+    {
+      "source_id": "SRC074",
+      "file": "#23_机械行业产污系数手册摘录_33-37_431-434.md",
+      "sha256": "b4301104e5643d68cc0008078455673300b40b7ad1579176858473a4d619ae81",
+      "origin_category": "01_正式入库知识",
+      "skills": [
+        "review-eia-pollutant-coefficient-applicability",
+        "calculate-eia-pollutant-source-strength"
+      ],
+      "tasks": [
+        "下料5.30/预处理2.19/焊接9.19/喷塑300/喷塑后烘干VOCs1.20系数核验",
+        "机械加工边界（无通用颗粒物条目）",
+        "PL009/PL010/PL015系数适用性"
+      ],
+      "package": "E:\\实验文件整理_按论文逻辑\\04_知识库构建\\待入库解压_20260820\\待入库正式知识文件_23-30_20260820\\01_正式入库知识\\#23_机械行业产污系数手册摘录_33-37_431-434.md",
+      "added_at": "2026-08-20T03:10:39.004624+00:00"
+    },
+    {
+      "source_id": "SRC075",
+      "file": "#24_电子电气行业产污系数手册摘录_38-40.md",
+      "sha256": "a0437dc774d841b1cb89528dce829a10b1ec4b640119d42b8b76303de3a66008",
+      "origin_category": "01_正式入库知识",
+      "skills": [
+        "review-eia-pollutant-coefficient-applicability",
+        "calculate-eia-pollutant-source-strength"
+      ],
+      "tasks": [
+        "无铅锡膏回流焊3.638e-1",
+        "无铅锡条波峰焊4.134e-1",
+        "含铅/无铅/焊料形态/工艺对照边界"
+      ],
+      "package": "E:\\实验文件整理_按论文逻辑\\04_知识库构建\\待入库解压_20260820\\待入库正式知识文件_23-30_20260820\\01_正式入库知识\\#24_电子电气行业产污系数手册摘录_38-40.md",
+      "added_at": "2026-08-20T03:10:39.004624+00:00"
+    },
+    {
+      "source_id": "SRC076",
+      "file": "#25_涂料制造行业产污系数手册摘录_2641.md",
+      "sha256": "831b6069fa96ed07972c9d426ec59a0a2a750e3539007f9450dc97fca9de238f",
+      "origin_category": "01_正式入库知识",
+      "skills": [
+        "review-eia-pollutant-coefficient-applicability",
+        "calculate-eia-pollutant-source-strength"
+      ],
+      "tasks": [
+        "水性工业涂料VOCs2.00",
+        "溶剂型10.00",
+        "UV/光固化无条目负证据"
+      ],
+      "package": "E:\\实验文件整理_按论文逻辑\\04_知识库构建\\待入库解压_20260820\\待入库正式知识文件_23-30_20260820\\01_正式入库知识\\#25_涂料制造行业产污系数手册摘录_2641.md",
+      "added_at": "2026-08-20T03:10:39.004624+00:00"
+    },
+    {
+      "source_id": "SRC077",
+      "file": "#26_废弃资源综合利用行业系数摘录_4220.md",
+      "sha256": "ae20b1d422e84ce4a89bb20fdd5fbfa05858a727dbbcc34d48a4cfc9f2bf22f8",
+      "origin_category": "01_正式入库知识",
+      "skills": [
+        "review-eia-pollutant-coefficient-applicability"
+      ],
+      "tasks": [
+        "废PET375/PVC450/PEPP375/PSABS425干法破碎",
+        "4220资源化加工适用边界"
+      ],
+      "package": "E:\\实验文件整理_按论文逻辑\\04_知识库构建\\待入库解压_20260820\\待入库正式知识文件_23-30_20260820\\01_正式入库知识\\#26_废弃资源综合利用行业系数摘录_4220.md",
+      "added_at": "2026-08-20T03:10:39.004624+00:00"
+    },
+    {
+      "source_id": "SRC078",
+      "file": "#27_污染物源强产生收集处理排放闭合核算指南.md",
+      "sha256": "a81ed14f8d896849223175362c176f182b425cb71ff809b3a24bd0748deee098",
+      "origin_category": "01_正式入库知识",
+      "skills": [
+        "calculate-eia-pollutant-source-strength",
+        "review-eia-vocs-total-control"
+      ],
+      "tasks": [
+        "产生-收集-治理-排放闭合链条",
+        "串联治理η总=1-(1-η1)(1-η2)",
+        "总排放=有组织+无组织",
+        "时间单位与三方一致性"
+      ],
+      "package": "E:\\实验文件整理_按论文逻辑\\04_知识库构建\\待入库解压_20260820\\待入库正式知识文件_23-30_20260820\\01_正式入库知识\\#27_污染物源强产生收集处理排放闭合核算指南.md",
+      "added_at": "2026-08-20T03:10:39.004624+00:00"
+    },
+    {
+      "source_id": "SRC079",
+      "file": "#28_活性炭吸附治理参数核算审核指南.md",
+      "sha256": "15bdd886380c695f1e8acd9c3745a92f04402932650c93aab28137f589124a23",
+      "origin_category": "01_正式入库知识",
+      "skills": [
+        "review-eia-activated-carbon-parameters"
+      ],
+      "tasks": [
+        "设计风量120%",
+        "流速/炭层/碘值",
+        "15%吸附比例（广东2023）",
+        "20%不得作通用规范值"
+      ],
+      "package": "E:\\实验文件整理_按论文逻辑\\04_知识库构建\\待入库解压_20260820\\待入库正式知识文件_23-30_20260820\\01_正式入库知识\\#28_活性炭吸附治理参数核算审核指南.md",
+      "added_at": "2026-08-20T03:10:39.004624+00:00"
+    },
+    {
+      "source_id": "SRC080",
+      "file": "#29_VOCs排放核算与总量一致性审核指南.md",
+      "sha256": "0d7e4b453a67033f40a1cc2f9aa7d2874c4e1585811adbf64b19283bcedfc228",
+      "origin_category": "01_正式入库知识",
+      "skills": [
+        "review-eia-vocs-total-control",
+        "calculate-eia-pollutant-source-strength"
+      ],
+      "tasks": [
+        "物料衡算E排放=E投用-E回收-E去除",
+        "有组织/无组织/总量一致性",
+        "内部核算与行政总量政策分层"
+      ],
+      "package": "E:\\实验文件整理_按论文逻辑\\04_知识库构建\\待入库解压_20260820\\待入库正式知识文件_23-30_20260820\\01_正式入库知识\\#29_VOCs排放核算与总量一致性审核指南.md",
+      "added_at": "2026-08-20T03:10:39.004624+00:00"
+    },
+    {
+      "source_id": "SRC081",
+      "file": "#30_废气收集形式与排风量计算审核指南.md",
+      "sha256": "158f235ac888e109d6241b22fa9d0b93a718eca61b05a4fae8b2e2c72e6d865e",
+      "origin_category": "01_正式入库知识",
+      "skills": [
+        "calculate-eia-exhaust-capture-airflow",
+        "review-eia-exhaust-design-airflow",
+        "review-eia-exhaust-capture-efficiency"
+      ],
+      "tasks": [
+        "HJ2026设计风量120%",
+        "周长法Q=KPHV×3600仅为工程参考",
+        "12/60次换气次数不作通用阈值",
+        "收集效率不得折减理论通风量"
+      ],
+      "package": "E:\\实验文件整理_按论文逻辑\\04_知识库构建\\待入库解压_20260820\\待入库正式知识文件_23-30_20260820\\01_正式入库知识\\#30_废气收集形式与排风量计算审核指南.md",
+      "added_at": "2026-08-20T03:10:39.004624+00:00"
+    }
+  ]
+}

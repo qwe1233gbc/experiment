@@ -1,0 +1,104 @@
+{
+  "validation_status": "PASS",
+  "total_checks": 19,
+  "passed": 19,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "25个唯一question_id",
+      "passed": true,
+      "detail": "实际25个"
+    },
+    {
+      "name": "16+7+2状态数量正确",
+      "passed": true,
+      "detail": "已实验16, heldout7, 暂缓2"
+    },
+    {
+      "name": "SHA256可复算: pilot17_rag_snapshot_v3_4.jsonl",
+      "passed": true,
+      "detail": "73e9f6b963e13104..."
+    },
+    {
+      "name": "SHA256可复算: pilot17_v3_5_full_results_144.jsonl",
+      "passed": true,
+      "detail": "d6e948c00676012c..."
+    },
+    {
+      "name": "项目-报告映射完整",
+      "passed": true,
+      "detail": "题目项目11个, 登记项目11个, 缺0个: set()"
+    },
+    {
+      "name": "运行记录数",
+      "passed": true,
+      "detail": "实际144条"
+    },
+    {
+      "name": "排除记录数≤2",
+      "passed": true,
+      "detail": "实际1条"
+    },
+    {
+      "name": "3模型×3知识条件",
+      "passed": true,
+      "detail": "模型3个: {'A3', 'A1', 'A2'}, 知识条件3个: {'K3', 'K1', 'K2'}"
+    },
+    {
+      "name": "JSON可解析: kb_snapshot_manifest.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "JSON可解析: scoring_status.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "JSON可解析: missing_materials.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "JSONL可解析: pilot17_rag_snapshot_v3_4.jsonl",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "JSONL可解析: pilot17_v3_5_full_results_144.jsonl",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "KB覆盖表覆盖全部题目",
+      "passed": true,
+      "detail": "表中25题, 题目清单25题, 差异set()"
+    },
+    {
+      "name": "CSV字段齐全: 01_questions/current_25_questions.csv",
+      "passed": true,
+      "detail": "25行"
+    },
+    {
+      "name": "CSV字段齐全: 10_audit_tables/question_root_cause_matrix.csv",
+      "passed": true,
+      "detail": "25行"
+    },
+    {
+      "name": "CSV字段齐全: 09_scoring_and_gold/gold_version_lineage.csv",
+      "passed": true,
+      "detail": "25行"
+    },
+    {
+      "name": "README_FOR_GPT.md存在",
+      "passed": true,
+      "detail": "size: 6037"
+    },
+    {
+      "name": "缺失清单存在",
+      "passed": true,
+      "detail": "已生成"
+    }
+  ],
+  "errors": []
+}

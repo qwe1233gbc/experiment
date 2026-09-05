@@ -1,0 +1,42 @@
+{
+  "question_id": "PL010_Coefficient_Q01",
+  "prompt_chars": 12971,
+  "scores": [
+    {
+      "response_id": "R1",
+      "correctness": 2,
+      "evidence_use": 2,
+      "actionability": 2,
+      "regulatory_basis": null,
+      "skill_workflow": null,
+      "rationale": "结论与参考答案一致，准确识别下料系数误用及核算不闭合问题。虽无RAG但基于报告证据有效复核，指出了抛光打磨表述不符等额外真实问题，修改建议具体可执行。"
+    },
+    {
+      "response_id": "R2",
+      "correctness": 2,
+      "evidence_use": 2,
+      "actionability": 2,
+      "regulatory_basis": 2,
+      "skill_workflow": null,
+      "rationale": "结论正确，利用RAG精准验证了喷粉适用性及下料系数边界违规。证据定位清晰，指出固化VOCs基准需复核等实质问题，法规依据充分，修改建议明确。"
+    },
+    {
+      "response_id": "R3",
+      "correctness": 1,
+      "evidence_use": 2,
+      "actionability": 1,
+      "regulatory_basis": null,
+      "skill_workflow": 2,
+      "rationale": "审核流程完整，发现了计算不一致等关键证据，但因缺乏外部依据将结论定为“待人工复核”而非“部分不适用”，导致判定方向与金标有偏差，行动建议偏保守。"
+    },
+    {
+      "response_id": "R4",
+      "correctness": 2,
+      "evidence_use": 2,
+      "actionability": 2,
+      "regulatory_basis": 2,
+      "skill_workflow": 2,
+      "rationale": "结论准确，结合RAG与报告证据全面核查。既确认了核心错误（下料系数误用、数据不闭合），又体现了完整审核工作流，法规引用规范，整改建议具体且覆盖额外发现的问题。"
+    }
+  ]
+}

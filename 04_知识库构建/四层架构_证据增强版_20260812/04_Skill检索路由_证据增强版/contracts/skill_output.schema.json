@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "EIA Skill Output Contract",
+  "type": "object",
+  "required": [
+    "skill_id",
+    "conclusion",
+    "report_evidence_used",
+    "rag_basis_used",
+    "basis_status",
+    "applicability_check",
+    "calculation_trace",
+    "missing_evidence",
+    "risk_hints",
+    "manual_review_needed",
+    "review_comment"
+  ],
+  "properties": {
+    "skill_id": {
+      "type": "string"
+    },
+    "conclusion": {
+      "enum": [
+        "匹配",
+        "不匹配",
+        "部分匹配",
+        "无法判断",
+        "不适用"
+      ]
+    },
+    "report_evidence_used": {
+      "type": "array"
+    },
+    "rag_basis_used": {
+      "type": "array"
+    },
+    "basis_status": {
+      "enum": [
+        "available",
+        "insufficient",
+        "not_required"
+      ]
+    },
+    "applicability_check": {
+      "type": "array"
+    },
+    "calculation_trace": {
+      "type": "array"
+    },
+    "missing_evidence": {
+      "type": "array"
+    },
+    "risk_hints": {
+      "type": "array"
+    },
+    "manual_review_needed": {
+      "type": "boolean"
+    },
+    "review_comment": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

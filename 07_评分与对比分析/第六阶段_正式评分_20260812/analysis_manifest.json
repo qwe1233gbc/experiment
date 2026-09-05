@@ -1,0 +1,20 @@
+{
+  "status": "complete",
+  "questions": 21,
+  "outputs": 84,
+  "automatic_metric_tokenization": "CJK character + Latin/number token",
+  "cosine_model": "text-embedding-v4 (1024d)",
+  "bertscore_status": "complete: bert-base-chinese, bert-score 0.3.13",
+  "files": {
+    "Zhou论文自动指标.csv": "bd294db1a96bcea54c732c5a80a8a9b2cbaee4df37dd236e91966cf6e58863ac",
+    "五分制转换得分.csv": "4f03a23b78bbc2d818e47bff84f53ffcc6274e6aec724829ac2425f860a41d49",
+    "交互效应分析表.csv": "0a80757a9f71224da70c21e97b271bd01e6d36edaa178e72711f87b8cea04e12",
+    "每题得分明细.csv": "4cd3296ddcbceed3e343743569a42aeb73d15254a6e382dab9c4847e1ad3a343",
+    "率指标汇总.csv": "45755d64ee527f71b7b51f77b0f31f2ce6a81e9c30538d748a8f779aff77e59c",
+    "组级汇总.csv": "60c22bf64364e2f87c142117ed764d447fbe70fc02747e9b438e622050fbc512",
+    "结构化代理指标.csv": "1e490f7c718ce8de91f910a44e908bf76a86e5c4dae2535e0d1ad57d2f2cec26",
+    "自动指标逐题明细.csv": "3598813cc0dc3822ca94c18e8b6afb95e77b5ff8765bdc6a45191293b0a69afd",
+    "逐题beta3分布.csv": "6531bf4a56d6a2b841175309d710e10c6cd272234d3b2e843af074b2ab099aab",
+    "配对检验与效应量.csv": "246bfbc931f97b82885808d8af21fbc3cd0eedf5f663c7b4d8902f00d8889f66"
+  }
+}

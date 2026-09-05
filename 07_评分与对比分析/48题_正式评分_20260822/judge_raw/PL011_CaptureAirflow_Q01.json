@@ -1,0 +1,29 @@
+{
+  "id": "chatcmpl-d099aaf0-ada6-4390-9e20-fa04aa820220",
+  "object": "chat.completion",
+  "created": 1787378814,
+  "model": "qwen3.8-max",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"scores\": [{\"response_id\": \"R1\", \"correctness\": 1, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": null, \"skill_workflow\": null, \"rationale\": \"结论与参考答案方向一致但判定为存在问题，属部分一致；准确引用报告证据并发现注塑工位表述错误等真实问题；给出了具体修改建议；因rag_available=false，法规依据和技能工作流评分为null。\"}, {\"response_id\": \"R2\", \"correctness\": 1, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": 2, \"skill_workflow\": null, \"rationale\": \"判定部分完成，与参考答案总体合理但有瑕疵的方向部分一致；证据引用完整且定位清晰；提出了补充结构图、对照核算等可执行动作；正确引用冻结RAG中HJ 2026及指南条款支持判断；skill_available=false故技能项为null。\"}, {\"response_id\": \"R3\", \"correctness\": 1, \"evidence_use\": 2, \"actionability\": 1, \"regulatory_basis\": null, \"skill_workflow\": 1, \"rationale\": \"结论部分一致，识别出风量取整和注塑工位表述等实质问题；证据使用充分；但修改建议偏方向性，缺乏具体核验动作；因无RAG，法规依据为null；体现了分步核查流程但未完整覆盖边界，技能工作流得1分。\"}, {\"response_id\": \"R4\", \"correctness\": 1, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": 2, \"skill_workflow\": 2, \"rationale\": \"判定部分完成，与参考答案方向部分一致且指出额外真实问题；证据链完整；给出补充构造图、面积法对照核算等具体可执行动作；正确引用HJ 2026及RAG指南条款；完整体现审核类型的分步核查、证据链和边界条件。\"}]}"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6111,
+    "completion_tokens": 435,
+    "total_tokens": 6546,
+    "prompt_tokens_details": {
+      "text_tokens": 6111
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  }
+}

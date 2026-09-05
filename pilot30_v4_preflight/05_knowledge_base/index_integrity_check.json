@@ -1,0 +1,30 @@
+{
+  "bm25_index": {
+    "registry_sha256": "MISSING",
+    "actual_sha256": "c194831cd0f8ec355d0985a1af889ef86d500a8e7fdd001540958e09f8b062e0",
+    "registry_bytes": 0,
+    "actual_bytes": 57236586,
+    "consistent": false,
+    "issue": "大小和哈希均不匹配，说明登记表过期或文件版本混用"
+  },
+  "child_metadata.jsonl": {
+    "actual_sha256": "28b938e291085f68b7f8139069ff7702bc94af586ec1f26167a45b03b6951ba2",
+    "actual_bytes": 6332325,
+    "in_registry": false
+  },
+  "parent_contexts.jsonl": {
+    "actual_sha256": "ba994129121105892b0a2ba8527e915210e402225ad80d7ea18b2417db9e0cdb",
+    "actual_bytes": 4476762,
+    "in_registry": false
+  },
+  "child_cosine_flat.index": {
+    "actual_sha256": "ef6fa0000526ac459fc11ba369776c0ae839c8af3c96991528984501f0c1d6a0",
+    "actual_bytes": 14168109,
+    "in_registry": false
+  },
+  "child_embeddings_l2_normalized.npy": {
+    "actual_sha256": "0b893cde7752c458e1ced787c79f96ff4ecc26d5fe86a1b40837797ead014c0b",
+    "actual_bytes": 14168192,
+    "in_registry": false
+  }
+}

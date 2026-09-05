@@ -1,0 +1,14 @@
+{
+  "scoring_status": "PROVISIONAL_AUTO_PRESCORING_ONLY",
+  "scorer": "auto_prescore（仅结构化结论匹配）",
+  "note": "正式多维度GPT打分待进行；当前仅有结构化结论自动评分",
+  "scoring_dimensions_available": [
+    "conclusion_score"
+  ],
+  "scoring_dimensions_pending": [
+    "evidence_score",
+    "reasoning_score",
+    "knowledge_utilization_score",
+    "composite_score"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "chatcmpl-91f95be9-73c8-473d-982a-e00dec25d354",
+  "object": "chat.completion",
+  "created": 1787378831,
+  "model": "qwen3.8-max",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"scores\": [{\"response_id\": \"R1\", \"correctness\": 2, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": null, \"skill_workflow\": null, \"rationale\": \"结论修正为存在问题合理，因发现参考答案未提及的废弃线路板遗漏及表间不一致等真实问题。证据定位精准，修改建议具体可执行。无RAG/Skill故法规与流程项为null。\"}, {\"response_id\": \"R2\", \"correctness\": 2, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": 1, \"skill_workflow\": null, \"rationale\": \"准确识别危废遗漏及数据矛盾，结论正确且证据详实。引用了贮存标准但缺失核心的《国家危险废物名录》作为判定代码匹配的依据，法规依据部分充分。无Skill故流程项为null。\"}, {\"response_id\": \"R3\", \"correctness\": 2, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": null, \"skill_workflow\": 2, \"rationale\": \"基于内部证据发现实质性遗漏与不一致，结论正确。完整体现了审核Skill的分步核查与边界界定。无RAG故法规项为null。证据链完整，整改建议明确。\"}, {\"response_id\": \"R4\", \"correctness\": 2, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": 1, \"skill_workflow\": 2, \"rationale\": \"综合RAG与Skill发现关键遗漏及核算错误，结论正确。完整体现审核工作流。虽引用贮存与鉴别标准，但缺少判定危废代码匹配性的核心名录依据，法规项得1分。\"}]}"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6008,
+    "completion_tokens": 384,
+    "total_tokens": 6392,
+    "prompt_tokens_details": {
+      "text_tokens": 6008
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  }
+}

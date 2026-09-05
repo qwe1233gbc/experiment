@@ -1,0 +1,398 @@
+[
+  {
+    "id": "ENV_SHUNDE_2022",
+    "title": "2022年度佛山市顺德区生态环境状况公报及佛环顺函〔2023〕26号",
+    "url": "local-official-pdf",
+    "status": "current_for_2022_observation",
+    "archived_file": "E:\\实验文件整理_按论文逻辑\\RAG知识库源文件\\02_PDF原件_需转文本\\2022年度佛山市顺德区生态环境状况公报_佛环顺函2023_26号.pdf",
+    "archived_sha256": "c8aa50e8082a6dae60157c18d6f463640be8c1c91318fe035229c7bfb4077899",
+    "rag_file": "EVID_ENV_SHUNDE_2022.md",
+    "page_count": 11,
+    "rag_sha256": "73c022986aedeb92e59e35f9c92d7869475b86660ea70872df62767b3de3994d"
+  },
+  {
+    "id": "NOISE_FOSHAN_2024",
+    "title": "佛山市声环境功能区划（佛环〔2024〕1号）",
+    "url": "http://sthj.foshan.gov.cn/attachment/0/401/401712/5882542.pdf",
+    "status": "current",
+    "archived_file": "E:\\实验文件整理_按论文逻辑\\RAG知识库源文件\\02_PDF原件_需转文本\\01_噪声标准\\佛山市声环境功能区划_官方附件.pdf",
+    "archived_sha256": "68b6133338df06228dfa0a8a14df5f9dd7990b6f7108724fc0aea033f00beb50",
+    "rag_file": "EVID_NOISE_FOSHAN_2024.md",
+    "page_count": 79,
+    "rag_sha256": "25653d6d9c0bbf1bff251ad5c8de5b6502d1fcf67df261cd8bf3795348f764e4"
+  },
+  {
+    "id": "GB18918_CURRENT",
+    "title": "GB 18918—2002（含2006年、2025年修改单）",
+    "url": "https://www.mee.gov.cn/ywgz/fgbz/bz/bzwb/shjbh/swrwpfbz/200307/W020260206765128897192.pdf",
+    "status": "current_since_2026-03-01",
+    "archived_file": "E:\\实验文件整理_按论文逻辑\\RAG知识库源文件\\02_PDF原件_需转文本\\03_水质标准\\GB_18918-2002_consolidated_2006_2025.pdf",
+    "archived_sha256": "a86f8fa1cb22a8a23451b71296546d311993095df653710579055063d372cfdf",
+    "rag_file": "EVID_GB18918_CURRENT.md",
+    "page_count": 12,
+    "rag_sha256": "601a59fc0a6b24ce1db6c879669f454bb58ac28bb506fdbf0d28e27ffb8b1d63"
+  },
+  {
+    "id": "GB18918_AMD_2025",
+    "title": "GB 18918—2002 2025年修改单",
+    "url": "https://www.mee.gov.cn/xxgk2018/xxgk/xxgk01/202512/W020251209362803739215.pdf",
+    "status": "effective_2026-03-01",
+    "archived_file": "E:\\实验文件整理_按论文逻辑\\RAG知识库源文件\\02_PDF原件_需转文本\\03_水质标准\\GB18918-2002_2025修改单_官方.pdf",
+    "archived_sha256": "799898a0ae784032f8fafad8e2f8413fa065208aae4d489ea95fb39964cb42a8",
+    "rag_file": "EVID_GB18918_AMD_2025.md",
+    "page_count": 4,
+    "rag_sha256": "0e6fa6468b311a7b682f83bca8f5f673ec04f187ea8eab1113c38d4c23741c82"
+  },
+  {
+    "id": "SOLID_WASTE_LAW_2020",
+    "title": "中华人民共和国固体废物污染环境防治法（2020修订）",
+    "url": "https://www.miit.gov.cn/jgsj/zfs/fl/art/2022/art_f2d9c145e29e4c93a442c8663c2c32ff.html",
+    "status": "current",
+    "archived_file": "E:\\实验文件整理_按论文逻辑\\RAG知识库源文件\\02_PDF原件_需转文本\\02_固废标准\\中华人民共和国固体废物污染环境防治法_官方页.html",
+    "archived_sha256": "a2935df788fb000be8446a05186af301700c8c70a7121bbd8b9cb4c28980eed8",
+    "rag_file": "EVID_SOLID_WASTE_LAW_2020.md",
+    "page_count": 1,
+    "rag_sha256": "813273090f735ff68f474feb8ac35f33d5e7e1a3ca92627b7be776b502b663d3"
+  },
+  {
+    "id": "GD_SOLID_WASTE_REG",
+    "title": "广东省固体废物污染环境防治条例（现行整合文本）",
+    "url": "https://www.hengqin.gov.cn/lab/flfg/sfg/content/post_3508610.html",
+    "status": "current_checked_2026-08-12",
+    "archived_file": "E:\\实验文件整理_按论文逻辑\\RAG知识库源文件\\02_PDF原件_需转文本\\02_固废标准\\广东省固体废物污染环境防治条例_官方政府页.html",
+    "archived_sha256": "f236f3af3a6a12012bfbdc740cdab7436991109de578956a4d6d660d7aef6934",
+    "rag_file": "EVID_GD_SOLID_WASTE_REG.md",
+    "page_count": 1,
+    "rag_sha256": "daa4864eaa0a455867536a5a32911058fbae27696d97551d247c1295311c84e4"
+  },
+  {
+    "id": "HW_LIST_2021",
+    "title": "国家危险废物名录（2021年版）",
+    "url": "https://www.mee.gov.cn/xxgk2018/xxgk/xxgk02/202011/t20201127_810202.html",
+    "status": "historical_until_2024-12-31",
+    "archived_file": "E:\\实验文件整理_按论文逻辑\\RAG知识库源文件\\02_PDF原件_需转文本\\02_固废标准\\国家危险废物名录_2021年版_官方历史.pdf",
+    "archived_sha256": "bc74e035bfb5e008b7b480acb2ed3ba663f8ac02e14c6d32ea130d0851417fb9",
+    "rag_file": "EVID_HW_LIST_2021.md",
+    "page_count": 35,
+    "rag_sha256": "3d6587107dfe2af33462a9f504fd5746e8177e5c10b47479daf4799118e47c9e"
+  },
+  {
+    "id": "HW_LIST_2025",
+    "title": "国家危险废物名录（2025年版）",
+    "url": "https://www.mee.gov.cn/gzk/gz/202411/t20241129_1097688.shtml",
+    "status": "current_since_2025-01-01",
+    "archived_file": "E:\\实验文件整理_按论文逻辑\\RAG知识库源文件\\02_PDF原件_需转文本\\02_固废标准\\国家危险废物名录_2025年版_官方.pdf",
+    "archived_sha256": "632308f341d0b9dff96bd8bb2c0e5797fa1cbd406c1121059319e8404528c78a",
+    "rag_file": "EVID_HW_LIST_2025.md",
+    "page_count": 41,
+    "rag_sha256": "ff593a895d7a1999484b5ad242b450f57742f4a4d6adbf0cce66bf2f274715ef"
+  },
+  {
+    "id": "GB34330_2017",
+    "title": "GB 34330—2017 固体废物鉴别标准 通则",
+    "url": "official_archived_pdf",
+    "status": "historical_until_2026-02-28",
+    "archived_file": "E:\\实验文件整理_按论文逻辑\\RAG知识库源文件\\02_PDF原件_需转文本\\02_固废标准\\GB34330-2017_官方历史原文.pdf",
+    "archived_sha256": "b70f663e4b2c5aaf79746145f53c267a579310c6948cb5193512acbdf31eb6c6",
+    "rag_file": "EVID_GB34330_2017.md",
+    "page_count": 8,
+    "rag_sha256": "f14780b5e13072c598b54c9578617c9cc236359f681a62e79a39380b740802de"
+  },
+  {
+    "id": "GB34330_2025",
+    "title": "GB 34330—2025 固体废物鉴别标准 通则",
+    "url": "https://www.mee.gov.cn/ywgz/fgbz/bz/bzwb/gthw/gtfwwrkzbz/202512/W020251212378469380265.pdf",
+    "status": "current_since_2026-03-01",
+    "archived_file": "E:\\实验文件整理_按论文逻辑\\RAG知识库源文件\\02_PDF原件_需转文本\\02_固废标准\\GB34330-2025_官方原文.pdf",
+    "archived_sha256": "d635c808e4b0c30132d7540236ddb658b40bd0325cc1efdb81d0d44b6f148266",
+    "rag_file": "EVID_GB34330_2025.md",
+    "page_count": 13,
+    "rag_sha256": "039911b2cd1c27abdd8dd3fb3a46b65c6e420b77ce83a6243dcc75422fd067c5"
+  },
+  {
+    "id": "GB5085_1",
+    "title": "GB 5085.1—2007 危险废物鉴别标准",
+    "url": "https://www.mee.gov.cn/ywgz/fgbz/bz/bzwb/gthw/wxfwjbffbz/200705/W020111214514241465669.pdf",
+    "status": "current",
+    "archived_file": "E:\\实验文件整理_按论文逻辑\\RAG知识库源文件\\02_PDF原件_需转文本\\02_固废标准\\GB_5085.1-2007.pdf",
+    "archived_sha256": "893002e26f4d4ee9196f5fabef1bce23c553e76ee7be3154445ab7804c813ce8",
+    "rag_file": "EVID_GB5085_1.md",
+    "page_count": 4,
+    "rag_sha256": "7c2f33607349cd1a177529161eeb8d1c5b971d076b30c2b2803da94ee2274923"
+  },
+  {
+    "id": "GB5085_2",
+    "title": "GB 5085.2—2007 危险废物鉴别标准",
+    "url": "https://www.mee.gov.cn/ywgz/fgbz/bz/bzwb/gthw/wxfwjbffbz/200705/W020111214515087821081.pdf",
+    "status": "current",
+    "archived_file": "E:\\实验文件整理_按论文逻辑\\RAG知识库源文件\\02_PDF原件_需转文本\\02_固废标准\\GB_5085.2-2007.pdf",
+    "archived_sha256": "4b69a5c254659f846f978a597c49cda9dcb83f86fc0199581692af2aec4a13bb",
+    "rag_file": "EVID_GB5085_2.md",
+    "page_count": 4,
+    "rag_sha256": "e10589917cca45893da4f763e2541f5880621d3eb26ac81f3c6fdb680f458ab2"
+  },
+  {
+    "id": "GB5085_3",
+    "title": "GB 5085.3—2007 危险废物鉴别标准",
+    "url": "https://www.mee.gov.cn/ywgz/fgbz/bz/bzwb/gthw/wxfwjbffbz/200705/W020120104532752182600.pdf",
+    "status": "current",
+    "archived_file": "E:\\实验文件整理_按论文逻辑\\RAG知识库源文件\\02_PDF原件_需转文本\\02_固废标准\\GB_5085.3-2007.pdf",
+    "archived_sha256": "ed37859762c500a0bd6d7f7c7eeeff63ad4aa3ae15fafbdbdd1e155ce3e7b430",
+    "rag_file": "EVID_GB5085_3.md",
+    "page_count": 204,
+    "rag_sha256": "0a419a83bf41f111b1014cce0d28e114dfa75417fb4fcd8de355e8ad3b14bb78"
+  },
+  {
+    "id": "GB5085_4",
+    "title": "GB 5085.4—2007 危险废物鉴别标准",
+    "url": "https://www.mee.gov.cn/ywgz/fgbz/bz/bzwb/gthw/wxfwjbffbz/200705/W020111214515902101920.pdf",
+    "status": "current",
+    "archived_file": "E:\\实验文件整理_按论文逻辑\\RAG知识库源文件\\02_PDF原件_需转文本\\02_固废标准\\GB_5085.4-2007.pdf",
+    "archived_sha256": "1fe6b8b14d76b7ac6f8a9ac469f6b52bd07f9dd0941b9d0115fd0a35d699f8ba",
+    "rag_file": "EVID_GB5085_4.md",
+    "page_count": 8,
+    "rag_sha256": "3b8c20455996af79752dd24f0b19bef4980037b07803ad257b624e2e9f38e6b3"
+  },
+  {
+    "id": "GB5085_5",
+    "title": "GB 5085.5—2007 危险废物鉴别标准",
+    "url": "https://www.mee.gov.cn/ywgz/fgbz/bz/bzwb/gthw/wxfwjbffbz/200705/W020120104534850695292.pdf",
+    "status": "current",
+    "archived_file": "E:\\实验文件整理_按论文逻辑\\RAG知识库源文件\\02_PDF原件_需转文本\\02_固废标准\\GB_5085.5-2007.pdf",
+    "archived_sha256": "4318cb070a0f1b29f83f1c2721e3f58986ba30d22e27426324e59f1a63e0cdfe",
+    "rag_file": "EVID_GB5085_5.md",
+    "page_count": 9,
+    "rag_sha256": "bd1c7728fdeddeb513dfcc36ae323c1e6ef8cb0110eb3cdbb1737014c8f01b90"
+  },
+  {
+    "id": "GB5085_6",
+    "title": "GB 5085.6—2007 危险废物鉴别标准",
+    "url": "https://www.mee.gov.cn/ywgz/fgbz/bz/bzwb/gthw/wxfwjbffbz/200705/W020120104542749675309.pdf",
+    "status": "current",
+    "archived_file": "E:\\实验文件整理_按论文逻辑\\RAG知识库源文件\\02_PDF原件_需转文本\\02_固废标准\\GB_5085.6-2007.pdf",
+    "archived_sha256": "c8b55f0927d524206cf14e592afc9bab30c890e3892a58f92686521ee51b92c1",
+    "rag_file": "EVID_GB5085_6.md",
+    "page_count": 89,
+    "rag_sha256": "856a73ffde9e722316bf5ff5454674a59908dba94477ba06c096fc8739c5b40d"
+  },
+  {
+    "id": "GB5085_7_2019",
+    "title": "GB 5085.7—2019 危险废物鉴别标准 通则",
+    "url": "https://www.mee.gov.cn/ywgz/fgbz/bz/bzwb/gthw/wxfwjbffbz/201911/W020191115568392646754.pdf",
+    "status": "current_since_2020-01-01",
+    "archived_file": "E:\\实验文件整理_按论文逻辑\\RAG知识库源文件\\02_PDF原件_需转文本\\02_固废标准\\GB_5085.7-2019.pdf",
+    "archived_sha256": "a1bfc556f3eeb727160b8b59b6f98705f4727453ffa97cb8ae09152c2947f9b3",
+    "rag_file": "EVID_GB5085_7_2019.md",
+    "page_count": 5,
+    "rag_sha256": "f9dc4c0642bee7c66bd7d0eb414624b11f9a15138c6d1f46606be32011ba4777"
+  },
+  {
+    "id": "HJ298_2019",
+    "title": "HJ 298—2019 危险废物鉴别技术规范",
+    "url": "https://www.mee.gov.cn/ywgz/fgbz/bz/bzwb/gthw/wxfwjbffbz/201911/W020191115580652492819.pdf",
+    "status": "current_since_2020-01-01",
+    "archived_file": "E:\\实验文件整理_按论文逻辑\\RAG知识库源文件\\02_PDF原件_需转文本\\02_固废标准\\HJ_298-2019.pdf",
+    "archived_sha256": "f00083de94e28dadebf5d9e1df595b73bd332fa0549f07ba7a268bfb72cf994f",
+    "rag_file": "EVID_HJ298_2019.md",
+    "page_count": 12,
+    "rag_sha256": "439aabdacd1fc480ed577ef4acf6fd26714344b56cb92e6e59cfd9fd3087a9fc"
+  },
+  {
+    "note": "20260819新增3源，详见version_manifest_20260819.json",
+    "new_sources": [
+      {
+        "source_id": "SRC071",
+        "file": "#20_循环冷却水补水排污核算指南.md",
+        "sha256": "df409a898c811f6a21ce55c262d75fd2420ed38ab04078248b28ffd1d2744710",
+        "origin_category": "01_建议直接入库",
+        "skills": [
+          "calculate-eia-pollutant-source-strength"
+        ],
+        "tasks": [
+          "循环冷却水量Qr",
+          "蒸发水量Qe",
+          "排污水量Qb",
+          "补充水量Qm",
+          "水量平衡复算",
+          "浓缩倍数/温差/风吹损失参数审核"
+        ],
+        "package": "E:\\实验文件整理_按论文逻辑\\04_知识库构建\\候选知识_暂存解压_20260819\\PL006-PL015_新增知识候选入库包_20260819\\01_建议直接入库\\#20_循环冷却水补水排污核算指南.md",
+        "added_at": "2026-08-19T14:27:29.367058+00:00"
+      },
+      {
+        "source_id": "SRC072",
+        "file": "#21_循环冷却水蒸发损失系数K速查.md",
+        "sha256": "03de9538a6540b92c8ad85395f41a14d721098e46b3b237a1660caff37f09b8c",
+        "origin_category": "01_建议直接入库",
+        "skills": [
+          "calculate-eia-pollutant-source-strength"
+        ],
+        "tasks": [
+          "蒸发损失系数k取值核验",
+          "蒸发水量Qe复算"
+        ],
+        "package": "E:\\实验文件整理_按论文逻辑\\04_知识库构建\\候选知识_暂存解压_20260819\\PL006-PL015_新增知识候选入库包_20260819\\01_建议直接入库\\#21_循环冷却水蒸发损失系数K速查.md",
+        "added_at": "2026-08-19T14:27:29.367058+00:00"
+      },
+      {
+        "source_id": "SRC073",
+        "file": "#22_塑料制品业废水类型与核算任务指南.md",
+        "sha256": "eb1d5b5cc630fadbeb8faef7fafe109bafc55a50077b27ca2172d9b3c2496493",
+        "origin_category": "02_清洗后可入库",
+        "skills": [
+          "calculate-eia-pollutant-source-strength",
+          "review-eia-construction-content-completeness"
+        ],
+        "tasks": [
+          "生活污水/间接冷却/直接冷却废水类型识别",
+          "水平衡字段完整性",
+          "废水源强核算任务路由"
+        ],
+        "package": "E:\\实验文件整理_按论文逻辑\\04_知识库构建\\候选知识_暂存解压_20260819\\PL006-PL015_新增知识候选入库包_20260819\\02_清洗后可入库\\#22_塑料制品业废水类型与核算任务指南.md",
+        "added_at": "2026-08-19T14:27:29.367058+00:00"
+      }
+    ]
+  },
+  {
+    "note": "20260820新增8源（#23-#30），详见version_manifest_20260820.json",
+    "new_sources": [
+      {
+        "source_id": "SRC074",
+        "file": "#23_机械行业产污系数手册摘录_33-37_431-434.md",
+        "sha256": "b4301104e5643d68cc0008078455673300b40b7ad1579176858473a4d619ae81",
+        "origin_category": "01_正式入库知识",
+        "skills": [
+          "review-eia-pollutant-coefficient-applicability",
+          "calculate-eia-pollutant-source-strength"
+        ],
+        "tasks": [
+          "下料5.30/预处理2.19/焊接9.19/喷塑300/喷塑后烘干VOCs1.20系数核验",
+          "机械加工边界（无通用颗粒物条目）",
+          "PL009/PL010/PL015系数适用性"
+        ],
+        "package": "E:\\实验文件整理_按论文逻辑\\04_知识库构建\\待入库解压_20260820\\待入库正式知识文件_23-30_20260820\\01_正式入库知识\\#23_机械行业产污系数手册摘录_33-37_431-434.md",
+        "added_at": "2026-08-20T03:10:39.004624+00:00"
+      },
+      {
+        "source_id": "SRC075",
+        "file": "#24_电子电气行业产污系数手册摘录_38-40.md",
+        "sha256": "a0437dc774d841b1cb89528dce829a10b1ec4b640119d42b8b76303de3a66008",
+        "origin_category": "01_正式入库知识",
+        "skills": [
+          "review-eia-pollutant-coefficient-applicability",
+          "calculate-eia-pollutant-source-strength"
+        ],
+        "tasks": [
+          "无铅锡膏回流焊3.638e-1",
+          "无铅锡条波峰焊4.134e-1",
+          "含铅/无铅/焊料形态/工艺对照边界"
+        ],
+        "package": "E:\\实验文件整理_按论文逻辑\\04_知识库构建\\待入库解压_20260820\\待入库正式知识文件_23-30_20260820\\01_正式入库知识\\#24_电子电气行业产污系数手册摘录_38-40.md",
+        "added_at": "2026-08-20T03:10:39.004624+00:00"
+      },
+      {
+        "source_id": "SRC076",
+        "file": "#25_涂料制造行业产污系数手册摘录_2641.md",
+        "sha256": "831b6069fa96ed07972c9d426ec59a0a2a750e3539007f9450dc97fca9de238f",
+        "origin_category": "01_正式入库知识",
+        "skills": [
+          "review-eia-pollutant-coefficient-applicability",
+          "calculate-eia-pollutant-source-strength"
+        ],
+        "tasks": [
+          "水性工业涂料VOCs2.00",
+          "溶剂型10.00",
+          "UV/光固化无条目负证据"
+        ],
+        "package": "E:\\实验文件整理_按论文逻辑\\04_知识库构建\\待入库解压_20260820\\待入库正式知识文件_23-30_20260820\\01_正式入库知识\\#25_涂料制造行业产污系数手册摘录_2641.md",
+        "added_at": "2026-08-20T03:10:39.004624+00:00"
+      },
+      {
+        "source_id": "SRC077",
+        "file": "#26_废弃资源综合利用行业系数摘录_4220.md",
+        "sha256": "ae20b1d422e84ce4a89bb20fdd5fbfa05858a727dbbcc34d48a4cfc9f2bf22f8",
+        "origin_category": "01_正式入库知识",
+        "skills": [
+          "review-eia-pollutant-coefficient-applicability"
+        ],
+        "tasks": [
+          "废PET375/PVC450/PEPP375/PSABS425干法破碎",
+          "4220资源化加工适用边界"
+        ],
+        "package": "E:\\实验文件整理_按论文逻辑\\04_知识库构建\\待入库解压_20260820\\待入库正式知识文件_23-30_20260820\\01_正式入库知识\\#26_废弃资源综合利用行业系数摘录_4220.md",
+        "added_at": "2026-08-20T03:10:39.004624+00:00"
+      },
+      {
+        "source_id": "SRC078",
+        "file": "#27_污染物源强产生收集处理排放闭合核算指南.md",
+        "sha256": "a81ed14f8d896849223175362c176f182b425cb71ff809b3a24bd0748deee098",
+        "origin_category": "01_正式入库知识",
+        "skills": [
+          "calculate-eia-pollutant-source-strength",
+          "review-eia-vocs-total-control"
+        ],
+        "tasks": [
+          "产生-收集-治理-排放闭合链条",
+          "串联治理η总=1-(1-η1)(1-η2)",
+          "总排放=有组织+无组织",
+          "时间单位与三方一致性"
+        ],
+        "package": "E:\\实验文件整理_按论文逻辑\\04_知识库构建\\待入库解压_20260820\\待入库正式知识文件_23-30_20260820\\01_正式入库知识\\#27_污染物源强产生收集处理排放闭合核算指南.md",
+        "added_at": "2026-08-20T03:10:39.004624+00:00"
+      },
+      {
+        "source_id": "SRC079",
+        "file": "#28_活性炭吸附治理参数核算审核指南.md",
+        "sha256": "15bdd886380c695f1e8acd9c3745a92f04402932650c93aab28137f589124a23",
+        "origin_category": "01_正式入库知识",
+        "skills": [
+          "review-eia-activated-carbon-parameters"
+        ],
+        "tasks": [
+          "设计风量120%",
+          "流速/炭层/碘值",
+          "15%吸附比例（广东2023）",
+          "20%不得作通用规范值"
+        ],
+        "package": "E:\\实验文件整理_按论文逻辑\\04_知识库构建\\待入库解压_20260820\\待入库正式知识文件_23-30_20260820\\01_正式入库知识\\#28_活性炭吸附治理参数核算审核指南.md",
+        "added_at": "2026-08-20T03:10:39.004624+00:00"
+      },
+      {
+        "source_id": "SRC080",
+        "file": "#29_VOCs排放核算与总量一致性审核指南.md",
+        "sha256": "0d7e4b453a67033f40a1cc2f9aa7d2874c4e1585811adbf64b19283bcedfc228",
+        "origin_category": "01_正式入库知识",
+        "skills": [
+          "review-eia-vocs-total-control",
+          "calculate-eia-pollutant-source-strength"
+        ],
+        "tasks": [
+          "物料衡算E排放=E投用-E回收-E去除",
+          "有组织/无组织/总量一致性",
+          "内部核算与行政总量政策分层"
+        ],
+        "package": "E:\\实验文件整理_按论文逻辑\\04_知识库构建\\待入库解压_20260820\\待入库正式知识文件_23-30_20260820\\01_正式入库知识\\#29_VOCs排放核算与总量一致性审核指南.md",
+        "added_at": "2026-08-20T03:10:39.004624+00:00"
+      },
+      {
+        "source_id": "SRC081",
+        "file": "#30_废气收集形式与排风量计算审核指南.md",
+        "sha256": "158f235ac888e109d6241b22fa9d0b93a718eca61b05a4fae8b2e2c72e6d865e",
+        "origin_category": "01_正式入库知识",
+        "skills": [
+          "calculate-eia-exhaust-capture-airflow",
+          "review-eia-exhaust-design-airflow",
+          "review-eia-exhaust-capture-efficiency"
+        ],
+        "tasks": [
+          "HJ2026设计风量120%",
+          "周长法Q=KPHV×3600仅为工程参考",
+          "12/60次换气次数不作通用阈值",
+          "收集效率不得折减理论通风量"
+        ],
+        "package": "E:\\实验文件整理_按论文逻辑\\04_知识库构建\\待入库解压_20260820\\待入库正式知识文件_23-30_20260820\\01_正式入库知识\\#30_废气收集形式与排风量计算审核指南.md",
+        "added_at": "2026-08-20T03:10:39.004624+00:00"
+      }
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+{
+  "id": "chatcmpl-e85ed9f8-27b4-4025-98f7-2d44ee050eff",
+  "object": "chat.completion",
+  "created": 1787378745,
+  "model": "qwen3.8-max",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"scores\": [{\"response_id\": \"R1\", \"correctness\": 2, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": null, \"skill_workflow\": null, \"rationale\": \"准确识别标准限值及内部一致性，敏锐指出GB3096误用问题。因RAG不可用未核验区划属合理边界，给出具体复核建议，符合评分规则对额外真实问题的认可。\"}, {\"response_id\": \"R2\", \"correctness\": 2, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": 2, \"skill_workflow\": null, \"rationale\": \"结合RAG验证限值正确，指出GB3096引用错误及区划依据缺失。证据定位精准，修改建议具体可执行，完全覆盖参考答案要点并补充了实质性审核发现。\"}, {\"response_id\": \"R3\", \"correctness\": 2, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": null, \"skill_workflow\": 2, \"rationale\": \"完整体现审核工作流，除标准误用和区划缺失外，额外发现夜间监测逻辑矛盾。虽无RAG但内部核查深入，指出的问题均有报告证据支持，行动建议明确。\"}, {\"response_id\": \"R4\", \"correctness\": 2, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": 2, \"skill_workflow\": 2, \"rationale\": \"综合RAG与工作流，全面核查标准一致性、引用规范性及监测逻辑。证据链完整，指出的GB3096误用及区划依据不足均为关键实质问题，修改意见具体可行。\"}]}"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6100,
+    "completion_tokens": 381,
+    "total_tokens": 6481,
+    "prompt_tokens_details": {
+      "text_tokens": 6100
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  }
+}

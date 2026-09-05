@@ -1,0 +1,29 @@
+{
+  "id": "chatcmpl-2869734e-5119-4e3d-8d43-f09882e5526e",
+  "object": "chat.completion",
+  "created": 1787378751,
+  "model": "qwen3.8-max",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"scores\": [{\"response_id\": \"R1\", \"correctness\": 2, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": null, \"skill_workflow\": null, \"rationale\": \"结论虽与参考答案不同，但准确识别出报告中NMHC限值前后矛盾、臭气高度匹配错误及标准列示不全等实质问题，证据定位精准，修改建议具体可执行，符合评分规则中关于额外真实问题的判定。\"}, {\"response_id\": \"R2\", \"correctness\": 2, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": 2, \"skill_workflow\": null, \"rationale\": \"正确指出NMHC限值不一致及单位产品排放量指标缺失等报告实质缺陷，证据引用充分，法规依据准确，给出了统一限值和补充核算的具体建议，体现了对标准体系的深入理解。\"}, {\"response_id\": \"R3\", \"correctness\": 2, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": null, \"skill_workflow\": 2, \"rationale\": \"完整体现审核工作流，精准发现NMHC限值矛盾、因子名称不统一及厂界限值缺漏等问题，证据链清晰，虽无外部RAG支持，但基于报告内部一致性的核查结论可靠且具可操作性。\"}, {\"response_id\": \"R4\", \"correctness\": 2, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": 2, \"skill_workflow\": 2, \"rationale\": \"综合运用RAG与Skill，不仅发现限值矛盾，还利用外部标准指出臭气浓度30m排气筒取值方法错误及特征污染物识别不足，法规依据详实，整改建议极具针对性和专业性。\"}]}"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 9482,
+    "completion_tokens": 390,
+    "total_tokens": 9872,
+    "prompt_tokens_details": {
+      "text_tokens": 9482
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  }
+}

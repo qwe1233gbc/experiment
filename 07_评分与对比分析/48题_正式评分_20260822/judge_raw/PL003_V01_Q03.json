@@ -1,0 +1,29 @@
+{
+  "id": "chatcmpl-7fe64cc3-3c96-4e5e-9dee-921d1ab67359",
+  "object": "chat.completion",
+  "created": 1787378765,
+  "model": "qwen3.8-max",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"scores\": [{\"response_id\": \"R1\", \"correctness\": 2, \"evidence_use\": 1, \"actionability\": 2, \"regulatory_basis\": null, \"skill_workflow\": null, \"rationale\": \"基础核算正确，且依据评分规则指出报告后文废气投资不一致及沉淀池漏列等真实问题，不应扣分。但所引证据位置（root[8]）超出提供片段范围，定位模糊，故证据使用扣1分。修改建议具体可执行。\"}, {\"response_id\": \"R2\", \"correctness\": 2, \"evidence_use\": 1, \"actionability\": 2, \"regulatory_basis\": 2, \"skill_workflow\": null, \"rationale\": \"结论正确并识别出额外真实不一致问题。引用了有效的内部审核指南作为法规依据。但核心矛盾证据定位至未提供的root[8]，证据完整性不足。给出了明确的核实与补充说明建议，可操作性强。\"}, {\"response_id\": \"R3\", \"correctness\": 2, \"evidence_use\": 1, \"actionability\": 2, \"regulatory_basis\": null, \"skill_workflow\": 2, \"rationale\": \"准确完成基础核算并发现额外真实问题，符合不扣分规则。体现了完整的分步核查流程。但关键不一致证据指向未提供的文本段落，证据链存在断点。虽无外部法规引用，但内部一致性复核逻辑严密，行动建议明确。\"}, {\"response_id\": \"R4\", \"correctness\": 2, \"evidence_use\": 1, \"actionability\": 2, \"regulatory_basis\": 2, \"skill_workflow\": 2, \"rationale\": \"全面覆盖基础核算与额外真实问题，结论准确。结合了RAG指南与完整工作流。同样因引用未提供片段的证据导致定位扣分。提出了三项具体整改点，包括固废暂存设施明细澄清， actionable程度最高。\"}]}"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5150,
+    "completion_tokens": 417,
+    "total_tokens": 5567,
+    "prompt_tokens_details": {
+      "text_tokens": 5150
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  }
+}

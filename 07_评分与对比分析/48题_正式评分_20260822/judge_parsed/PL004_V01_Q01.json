@@ -1,0 +1,42 @@
+{
+  "question_id": "PL004_V01_Q01",
+  "prompt_chars": 9662,
+  "scores": [
+    {
+      "response_id": "R1",
+      "correctness": 2,
+      "evidence_use": 2,
+      "actionability": 2,
+      "regulatory_basis": null,
+      "skill_workflow": null,
+      "rationale": "结论正确，准确识别产品工艺与行业匹配。虽无RAG但基于报告证据充分论证合理性，并指出代码细化建议，符合无外部知识时的最佳实践。"
+    },
+    {
+      "response_id": "R2",
+      "correctness": 2,
+      "evidence_use": 2,
+      "actionability": 2,
+      "regulatory_basis": 2,
+      "skill_workflow": null,
+      "rationale": "结论正确，结合RAG中行业分类及产污系数验证了C2929的适用性。证据链完整，分析逻辑严密，完全符合参考答案要求。"
+    },
+    {
+      "response_id": "R3",
+      "correctness": 2,
+      "evidence_use": 2,
+      "actionability": 2,
+      "regulatory_basis": null,
+      "skill_workflow": 2,
+      "rationale": "结论正确，体现了完整的审核工作流。在无RAG情况下准确判断行业合理性，并规范提示需核对国标代码，边界清晰，动作明确。"
+    },
+    {
+      "response_id": "R4",
+      "correctness": 1,
+      "evidence_use": 2,
+      "actionability": 1,
+      "regulatory_basis": 2,
+      "skill_workflow": 2,
+      "rationale": "过度审慎。问题仅问“基本合理”，报告证据已支持方向正确，却判“待人工复核”。虽指出了填报规范性问题，但偏离了核心判定目标。"
+    }
+  ]
+}

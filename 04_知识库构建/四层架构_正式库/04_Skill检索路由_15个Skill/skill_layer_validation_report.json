@@ -1,0 +1,355 @@
+{
+  "status": "PASS",
+  "layer": "Skill程序与路由层",
+  "professional_skills": 15,
+  "meta_routers": 1,
+  "checks": 69,
+  "failures": [],
+  "details": [
+    {
+      "check": "registry_count",
+      "passed": true,
+      "detail": "15/15"
+    },
+    {
+      "check": "route_count",
+      "passed": true,
+      "detail": "15/15"
+    },
+    {
+      "check": "unique_skill_names",
+      "passed": true,
+      "detail": "15/15 unique"
+    },
+    {
+      "check": "route_card_coverage",
+      "passed": true,
+      "detail": "all skills map to >=1 card"
+    },
+    {
+      "check": "review-eia-industry-classification:frontmatter",
+      "passed": true,
+      "detail": "name and description"
+    },
+    {
+      "check": "review-eia-industry-classification:procedure_contract",
+      "passed": true,
+      "detail": "missing="
+    },
+    {
+      "check": "review-eia-industry-classification:agent_metadata",
+      "passed": true,
+      "detail": "agents/openai.yaml with explicit default prompt"
+    },
+    {
+      "check": "review-eia-industry-classification:no_todo",
+      "passed": true,
+      "detail": "no placeholders"
+    },
+    {
+      "check": "calculate-eia-environmental-investment-ratio:frontmatter",
+      "passed": true,
+      "detail": "name and description"
+    },
+    {
+      "check": "calculate-eia-environmental-investment-ratio:procedure_contract",
+      "passed": true,
+      "detail": "missing="
+    },
+    {
+      "check": "calculate-eia-environmental-investment-ratio:agent_metadata",
+      "passed": true,
+      "detail": "agents/openai.yaml with explicit default prompt"
+    },
+    {
+      "check": "calculate-eia-environmental-investment-ratio:no_todo",
+      "passed": true,
+      "detail": "no placeholders"
+    },
+    {
+      "check": "review-eia-three-lines-one-list-consistency:frontmatter",
+      "passed": true,
+      "detail": "name and description"
+    },
+    {
+      "check": "review-eia-three-lines-one-list-consistency:procedure_contract",
+      "passed": true,
+      "detail": "missing="
+    },
+    {
+      "check": "review-eia-three-lines-one-list-consistency:agent_metadata",
+      "passed": true,
+      "detail": "agents/openai.yaml with explicit default prompt"
+    },
+    {
+      "check": "review-eia-three-lines-one-list-consistency:no_todo",
+      "passed": true,
+      "detail": "no placeholders"
+    },
+    {
+      "check": "review-eia-construction-content-completeness:frontmatter",
+      "passed": true,
+      "detail": "name and description"
+    },
+    {
+      "check": "review-eia-construction-content-completeness:procedure_contract",
+      "passed": true,
+      "detail": "missing="
+    },
+    {
+      "check": "review-eia-construction-content-completeness:agent_metadata",
+      "passed": true,
+      "detail": "agents/openai.yaml with explicit default prompt"
+    },
+    {
+      "check": "review-eia-construction-content-completeness:no_todo",
+      "passed": true,
+      "detail": "no placeholders"
+    },
+    {
+      "check": "review-eia-environmental-quality-data:frontmatter",
+      "passed": true,
+      "detail": "name and description"
+    },
+    {
+      "check": "review-eia-environmental-quality-data:procedure_contract",
+      "passed": true,
+      "detail": "missing="
+    },
+    {
+      "check": "review-eia-environmental-quality-data:agent_metadata",
+      "passed": true,
+      "detail": "agents/openai.yaml with explicit default prompt"
+    },
+    {
+      "check": "review-eia-environmental-quality-data:no_todo",
+      "passed": true,
+      "detail": "no placeholders"
+    },
+    {
+      "check": "review-eia-environmental-quality-standards:frontmatter",
+      "passed": true,
+      "detail": "name and description"
+    },
+    {
+      "check": "review-eia-environmental-quality-standards:procedure_contract",
+      "passed": true,
+      "detail": "missing="
+    },
+    {
+      "check": "review-eia-environmental-quality-standards:agent_metadata",
+      "passed": true,
+      "detail": "agents/openai.yaml with explicit default prompt"
+    },
+    {
+      "check": "review-eia-environmental-quality-standards:no_todo",
+      "passed": true,
+      "detail": "no placeholders"
+    },
+    {
+      "check": "review-eia-pollutant-discharge-standards:frontmatter",
+      "passed": true,
+      "detail": "name and description"
+    },
+    {
+      "check": "review-eia-pollutant-discharge-standards:procedure_contract",
+      "passed": true,
+      "detail": "missing="
+    },
+    {
+      "check": "review-eia-pollutant-discharge-standards:agent_metadata",
+      "passed": true,
+      "detail": "agents/openai.yaml with explicit default prompt"
+    },
+    {
+      "check": "review-eia-pollutant-discharge-standards:no_todo",
+      "passed": true,
+      "detail": "no placeholders"
+    },
+    {
+      "check": "review-eia-pollutant-coefficient-applicability:frontmatter",
+      "passed": true,
+      "detail": "name and description"
+    },
+    {
+      "check": "review-eia-pollutant-coefficient-applicability:procedure_contract",
+      "passed": true,
+      "detail": "missing="
+    },
+    {
+      "check": "review-eia-pollutant-coefficient-applicability:agent_metadata",
+      "passed": true,
+      "detail": "agents/openai.yaml with explicit default prompt"
+    },
+    {
+      "check": "review-eia-pollutant-coefficient-applicability:no_todo",
+      "passed": true,
+      "detail": "no placeholders"
+    },
+    {
+      "check": "calculate-eia-pollutant-source-strength:frontmatter",
+      "passed": true,
+      "detail": "name and description"
+    },
+    {
+      "check": "calculate-eia-pollutant-source-strength:procedure_contract",
+      "passed": true,
+      "detail": "missing="
+    },
+    {
+      "check": "calculate-eia-pollutant-source-strength:agent_metadata",
+      "passed": true,
+      "detail": "agents/openai.yaml with explicit default prompt"
+    },
+    {
+      "check": "calculate-eia-pollutant-source-strength:no_todo",
+      "passed": true,
+      "detail": "no placeholders"
+    },
+    {
+      "check": "calculate-eia-exhaust-capture-airflow:frontmatter",
+      "passed": true,
+      "detail": "name and description"
+    },
+    {
+      "check": "calculate-eia-exhaust-capture-airflow:procedure_contract",
+      "passed": true,
+      "detail": "missing="
+    },
+    {
+      "check": "calculate-eia-exhaust-capture-airflow:agent_metadata",
+      "passed": true,
+      "detail": "agents/openai.yaml with explicit default prompt"
+    },
+    {
+      "check": "calculate-eia-exhaust-capture-airflow:no_todo",
+      "passed": true,
+      "detail": "no placeholders"
+    },
+    {
+      "check": "review-eia-exhaust-design-airflow:frontmatter",
+      "passed": true,
+      "detail": "name and description"
+    },
+    {
+      "check": "review-eia-exhaust-design-airflow:procedure_contract",
+      "passed": true,
+      "detail": "missing="
+    },
+    {
+      "check": "review-eia-exhaust-design-airflow:agent_metadata",
+      "passed": true,
+      "detail": "agents/openai.yaml with explicit default prompt"
+    },
+    {
+      "check": "review-eia-exhaust-design-airflow:no_todo",
+      "passed": true,
+      "detail": "no placeholders"
+    },
+    {
+      "check": "review-eia-exhaust-capture-efficiency:frontmatter",
+      "passed": true,
+      "detail": "name and description"
+    },
+    {
+      "check": "review-eia-exhaust-capture-efficiency:procedure_contract",
+      "passed": true,
+      "detail": "missing="
+    },
+    {
+      "check": "review-eia-exhaust-capture-efficiency:agent_metadata",
+      "passed": true,
+      "detail": "agents/openai.yaml with explicit default prompt"
+    },
+    {
+      "check": "review-eia-exhaust-capture-efficiency:no_todo",
+      "passed": true,
+      "detail": "no placeholders"
+    },
+    {
+      "check": "review-eia-activated-carbon-parameters:frontmatter",
+      "passed": true,
+      "detail": "name and description"
+    },
+    {
+      "check": "review-eia-activated-carbon-parameters:procedure_contract",
+      "passed": true,
+      "detail": "missing="
+    },
+    {
+      "check": "review-eia-activated-carbon-parameters:agent_metadata",
+      "passed": true,
+      "detail": "agents/openai.yaml with explicit default prompt"
+    },
+    {
+      "check": "review-eia-activated-carbon-parameters:no_todo",
+      "passed": true,
+      "detail": "no placeholders"
+    },
+    {
+      "check": "review-eia-hazardous-waste-identification:frontmatter",
+      "passed": true,
+      "detail": "name and description"
+    },
+    {
+      "check": "review-eia-hazardous-waste-identification:procedure_contract",
+      "passed": true,
+      "detail": "missing="
+    },
+    {
+      "check": "review-eia-hazardous-waste-identification:agent_metadata",
+      "passed": true,
+      "detail": "agents/openai.yaml with explicit default prompt"
+    },
+    {
+      "check": "review-eia-hazardous-waste-identification:no_todo",
+      "passed": true,
+      "detail": "no placeholders"
+    },
+    {
+      "check": "review-eia-vocs-total-control:frontmatter",
+      "passed": true,
+      "detail": "name and description"
+    },
+    {
+      "check": "review-eia-vocs-total-control:procedure_contract",
+      "passed": true,
+      "detail": "missing="
+    },
+    {
+      "check": "review-eia-vocs-total-control:agent_metadata",
+      "passed": true,
+      "detail": "agents/openai.yaml with explicit default prompt"
+    },
+    {
+      "check": "review-eia-vocs-total-control:no_todo",
+      "passed": true,
+      "detail": "no placeholders"
+    },
+    {
+      "check": "router_exists",
+      "passed": true,
+      "detail": "E:\\实验文件整理_按论文逻辑\\04_知识库构建\\四层架构_正式库\\04_Skill检索路由_15个Skill\\router\\route-eia-audit-skills"
+    },
+    {
+      "check": "router_minimum_set_rule",
+      "passed": true,
+      "detail": "minimum sufficient set enforced"
+    },
+    {
+      "check": "router_catalog",
+      "passed": true,
+      "detail": "15-skill catalog"
+    },
+    {
+      "check": "schema:skill_input.schema.json",
+      "passed": true,
+      "detail": "valid JSON"
+    },
+    {
+      "check": "schema:skill_output.schema.json",
+      "passed": true,
+      "detail": "valid JSON"
+    }
+  ]
+}

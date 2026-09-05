@@ -1,0 +1,42 @@
+{
+  "question_id": "PL003_V01_Q01",
+  "prompt_chars": 9945,
+  "scores": [
+    {
+      "response_id": "R1",
+      "correctness": 2,
+      "evidence_use": 2,
+      "actionability": 2,
+      "regulatory_basis": null,
+      "skill_workflow": null,
+      "rationale": "结论正确，证据引用准确。虽无外部标准核验，但基于报告内部证据链完整论证了行业分类合理性，且明确了审核边界与缺失依据，符合无RAG场景下的最佳实践。"
+    },
+    {
+      "response_id": "R2",
+      "correctness": 2,
+      "evidence_use": 2,
+      "actionability": 2,
+      "regulatory_basis": 2,
+      "skill_workflow": null,
+      "rationale": "结论正确，充分利用RAG检索到的国标定义及校验说明佐证C2921归类，证据链完整且定位精准，法规依据充分支持结论，分析逻辑严密。"
+    },
+    {
+      "response_id": "R3",
+      "correctness": 2,
+      "evidence_use": 2,
+      "actionability": 2,
+      "regulatory_basis": null,
+      "skill_workflow": 2,
+      "rationale": "结论正确，体现了完整的分步核查工作流（代码一致性、产品、原料、工艺），证据引用详实。在无RAG条件下明确边界并指出缺失标准，技能执行规范。"
+    },
+    {
+      "response_id": "R4",
+      "correctness": 2,
+      "evidence_use": 2,
+      "actionability": 2,
+      "regulatory_basis": 2,
+      "skill_workflow": 2,
+      "rationale": "结论正确，结合了完整技能工作流与RAG外部标准验证。将项目工业保护膜用途与国标中工业薄膜定义精准匹配，证据与法规依据最为充分完善。"
+    }
+  ]
+}

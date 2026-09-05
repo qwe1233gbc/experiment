@@ -1,0 +1,29 @@
+{
+  "id": "chatcmpl-9a0b1784-9fb5-434a-a27a-31e65401e214",
+  "object": "chat.completion",
+  "created": 1787378808,
+  "model": "qwen3.8-max",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"scores\": [{\"response_id\": \"R1\", \"correctness\": 1, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": null, \"skill_workflow\": null, \"rationale\": \"核算复核正确，但将脱附缺依据判为部分完成属过度结论；证据定位精准；给出了补充核算的具体动作；无RAG故法规与技能项不适用。\"}, {\"response_id\": \"R2\", \"correctness\": 1, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": 1, \"skill_workflow\": null, \"rationale\": \"指出平面布局不一致等真实问题，但因外部依据不足未确认合理性；证据详实；修改建议具体可执行；引用了RAG但条款完整性一般；技能不可用。\"}, {\"response_id\": \"R3\", \"correctness\": 1, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": null, \"skill_workflow\": 2, \"rationale\": \"内部复算准确，因缺外部依据判定保守合理；证据引用规范；明确了需人工复核的边界与动作；无RAG故法规项不适用；完整体现了审核工作流。\"}, {\"response_id\": \"R4\", \"correctness\": 1, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": 1, \"skill_workflow\": 2, \"rationale\": \"复算无误且指出集气罩形式混用等实质问题；证据链完整；核验动作具体；RAG依据部分充分；完整执行了分步核查与边界界定流程。\"}]}"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6631,
+    "completion_tokens": 361,
+    "total_tokens": 6992,
+    "prompt_tokens_details": {
+      "text_tokens": 6631
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "result_file": "pilot17_v3_5_full_results_pre_scoring.jsonl",
+  "total_records": 144,
+  "status_breakdown": {
+    "OK": 143,
+    "EXCLUDED_HARD": 1
+  },
+  "model_count": 3,
+  "knowledge_condition_count": 3,
+  "question_count": 16,
+  "excluded_count": 1,
+  "truncated_count": 0,
+  "label_conflict_count": 5
+}

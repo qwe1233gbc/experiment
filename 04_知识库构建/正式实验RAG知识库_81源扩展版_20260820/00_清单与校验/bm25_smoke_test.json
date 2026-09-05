@@ -1,0 +1,170 @@
+{
+  "status": "pass",
+  "queries": [
+    {
+      "query": "2022年度佛山市顺德区生态环境状况公报 佛环顺函 2023 26号",
+      "top": [
+        {
+          "score": 283.63,
+          "doc_index": 262,
+          "child_id": "SRC023_P0001_C001",
+          "parent_id": "SRC023_P0001",
+          "source_id": "SRC023",
+          "source_file": "EVID_ENV_SHUNDE_2022.md",
+          "doc_length": 764
+        },
+        {
+          "score": 129.58,
+          "doc_index": 261,
+          "child_id": "SRC022_P0001_C002",
+          "parent_id": "SRC022_P0001",
+          "source_id": "SRC022",
+          "source_file": "DIFY_KB_INDEX.md",
+          "doc_length": 383
+        },
+        {
+          "score": 78.21,
+          "doc_index": 1227,
+          "child_id": "SRC039_P0011_C002",
+          "parent_id": "SRC039_P0011",
+          "source_id": "SRC039",
+          "source_file": "EVID_NOISE_FOSHAN_2024.md",
+          "doc_length": 840
+        }
+      ],
+      "passed": true
+    },
+    {
+      "query": "吉佑北水工业区片区 3328 3类",
+      "top": [
+        {
+          "score": 97.76,
+          "doc_index": 1163,
+          "child_id": "SRC039_P0004_C005",
+          "parent_id": "SRC039_P0004",
+          "source_id": "SRC039",
+          "source_file": "EVID_NOISE_FOSHAN_2024.md",
+          "doc_length": 735
+        },
+        {
+          "score": 55.02,
+          "doc_index": 1160,
+          "child_id": "SRC039_P0004_C002",
+          "parent_id": "SRC039_P0004",
+          "source_id": "SRC039",
+          "source_file": "EVID_NOISE_FOSHAN_2024.md",
+          "doc_length": 723
+        },
+        {
+          "score": 54.97,
+          "doc_index": 1161,
+          "child_id": "SRC039_P0004_C003",
+          "parent_id": "SRC039_P0004",
+          "source_id": "SRC039",
+          "source_file": "EVID_NOISE_FOSHAN_2024.md",
+          "doc_length": 748
+        }
+      ],
+      "passed": true
+    },
+    {
+      "query": "GB 18918 2025 修改单 2026年3月1日",
+      "top": [
+        {
+          "score": 44.8,
+          "doc_index": 310,
+          "child_id": "SRC027_P0001_C002",
+          "parent_id": "SRC027_P0001",
+          "source_id": "SRC027",
+          "source_file": "EVID_GB34330_2025.md",
+          "doc_length": 993
+        },
+        {
+          "score": 44.76,
+          "doc_index": 279,
+          "child_id": "SRC025_P0001_C001",
+          "parent_id": "SRC025_P0001",
+          "source_id": "SRC025",
+          "source_file": "EVID_GB18918_CURRENT.md",
+          "doc_length": 654
+        },
+        {
+          "score": 44.18,
+          "doc_index": 311,
+          "child_id": "SRC027_P0001_C003",
+          "parent_id": "SRC027_P0001",
+          "source_id": "SRC027",
+          "source_file": "EVID_GB34330_2025.md",
+          "doc_length": 1008
+        }
+      ],
+      "passed": true
+    },
+    {
+      "query": "国家危险废物名录 2025 GB34330 2025",
+      "top": [
+        {
+          "score": 74.85,
+          "doc_index": 1060,
+          "child_id": "SRC038_P0001_C001",
+          "parent_id": "SRC038_P0001",
+          "source_id": "SRC038",
+          "source_file": "EVID_HW_LIST_2025.md",
+          "doc_length": 852
+        },
+        {
+          "score": 69.29,
+          "doc_index": 41,
+          "child_id": "SRC013_P0001_C007",
+          "parent_id": "SRC013_P0001",
+          "source_id": "SRC013",
+          "source_file": "#8_塑料制品业典型污染源及执行标准.csv",
+          "doc_length": 179
+        },
+        {
+          "score": 65.19,
+          "doc_index": 955,
+          "child_id": "SRC034_P0001_C004",
+          "parent_id": "SRC034_P0001",
+          "source_id": "SRC034",
+          "source_file": "EVID_GB5085_7_2019.md",
+          "doc_length": 944
+        }
+      ],
+      "passed": true
+    },
+    {
+      "query": "危险废物鉴别 GB5085 HJ298",
+      "top": [
+        {
+          "score": 55.71,
+          "doc_index": 338,
+          "child_id": "SRC029_P0001_C003",
+          "parent_id": "SRC029_P0001",
+          "source_id": "SRC029",
+          "source_file": "EVID_GB5085_2.md",
+          "doc_length": 761
+        },
+        {
+          "score": 55.59,
+          "doc_index": 333,
+          "child_id": "SRC028_P0001_C003",
+          "parent_id": "SRC028_P0001",
+          "source_id": "SRC028",
+          "source_file": "EVID_GB5085_1.md",
+          "doc_length": 757
+        },
+        {
+          "score": 55.52,
+          "doc_index": 750,
+          "child_id": "SRC031_P0001_C004",
+          "parent_id": "SRC031_P0001",
+          "source_id": "SRC031",
+          "source_file": "EVID_GB5085_4.md",
+          "doc_length": 691
+        }
+      ],
+      "passed": true
+    }
+  ]
+}

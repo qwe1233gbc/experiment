@@ -1,0 +1,29 @@
+{
+  "id": "chatcmpl-52f7d9ba-8bc5-4e38-ac36-805e764d356a",
+  "object": "chat.completion",
+  "created": 1787378784,
+  "model": "qwen3.8-max",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"scores\": [{\"response_id\": \"R1\", \"correctness\": 2, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": null, \"skill_workflow\": null, \"rationale\": \"结论与金标一致，准确识别机油缺失、喷枪数量不一致等真实问题。证据定位清晰，修改建议具体可执行。因rag/skill不可用，法规与流程项为null。\"}, {\"response_id\": \"R2\", \"correctness\": 2, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": 1, \"skill_workflow\": null, \"rationale\": \"结论正确且证据充分。虽判定完整，但未发现报告中设备表与噪声表数据矛盾等实质瑕疵，审核深度略逊于R1/R3。法规引用相关但非直接针对完整性条款，得1分。\"}, {\"response_id\": \"R3\", \"correctness\": 2, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": null, \"skill_workflow\": 2, \"rationale\": \"结论正确，精准指出VOC含量单位混淆及表格乱码等真实缺陷，符合额外问题不扣分原则。证据详实，建议具体。完整体现审核工作流，因rag不可用法规项为null。\"}, {\"response_id\": \"R4\", \"correctness\": 2, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": 1, \"skill_workflow\": 2, \"rationale\": \"结论正确，挖掘出水平衡计算错误及设备清单缺项等关键真实问题。证据链完整，建议极具操作性。完整体现技能流；法规依据相关但非建设内容完整性直接条款，得1分。\"}]}"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5489,
+    "completion_tokens": 388,
+    "total_tokens": 5877,
+    "prompt_tokens_details": {
+      "text_tokens": 5489
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "PL014_Coefficient_Q01",
+  "prompt_chars": 11227,
+  "scores": [
+    {
+      "response_id": "R1",
+      "correctness": 2,
+      "evidence_use": 2,
+      "actionability": 2,
+      "regulatory_basis": null,
+      "skill_workflow": null,
+      "rationale": "结论与参考答案一致，准确识别水性涂料适用及UV涂料系数依据不足。证据定位精准，指出排放系数误用为产污系数的实质问题。修改建议具体可执行。因rag_available=false，法规与技能维度依规置null。"
+    },
+    {
+      "response_id": "R2",
+      "correctness": 1,
+      "evidence_use": 2,
+      "actionability": 2,
+      "regulatory_basis": 2,
+      "skill_workflow": null,
+      "rationale": "核心判断方向正确但结论表述为“待人工复核”而非明确的“部分适用”，与参考答案存在细微偏差。证据使用充分，额外指出颗粒物系数选取问题属有效补充。法规依据引用得当。skill_available=false故技能维置null。"
+    },
+    {
+      "response_id": "R3",
+      "correctness": 1,
+      "evidence_use": 2,
+      "actionability": 2,
+      "regulatory_basis": null,
+      "skill_workflow": 2,
+      "rationale": "分析逻辑完整且复算验证了水性涂料系数，但结论未明确判定“部分适用”而是“待复核”，与金标有差距。额外发现实验环节系数混用问题有价值。技能工作流体现良好。无RAG故法规维置null。"
+    },
+    {
+      "response_id": "R4",
+      "correctness": 1,
+      "evidence_use": 2,
+      "actionability": 2,
+      "regulatory_basis": 2,
+      "skill_workflow": 2,
+      "rationale": "核查过程详尽，对水性涂料四要素匹配验证充分，但结论仍为“待人工复核”未直接给出“部分适用”定论。证据链完整，法规与技能工作流均表现优秀。主要扣分点在于结论明确度略逊于参考答案。"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "chatcmpl-6cb489bd-ce0a-4c81-b421-a5c1706b3ee7",
+  "object": "chat.completion",
+  "created": 1787378752,
+  "model": "qwen3.8-max",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"scores\": [{\"response_id\": \"R1\", \"correctness\": 2, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": null, \"skill_workflow\": null, \"rationale\": \"结论与参考答案一致，准确识别产品及工艺支持C2929分类。额外指出VOCs及原辅料数据不一致问题，证据定位清晰，给出了具体清洗复核建议，符合评分规则对真实问题的包容性。\"}, {\"response_id\": \"R2\", \"correctness\": 1, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": 2, \"skill_workflow\": null, \"rationale\": \"虽认可基本合理，但对C2929归类提出边界不确定性并建议复核，与参考答案明确正确的结论存在实质偏差。尽管引用了RAG依据且发现了数据问题，但在行业判定核心结论上未完全对齐金标。\"}, {\"response_id\": \"R3\", \"correctness\": 2, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": null, \"skill_workflow\": 2, \"rationale\": \"结论与参考答案一致，确认行业类别基本合理且适合做样本。完整体现了审核工作流，额外发现的数据不一致问题有据可依，给出了明确的人工复核建议，无外部法规依赖下表现优秀。\"}, {\"response_id\": \"R4\", \"correctness\": 1, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": 2, \"skill_workflow\": 2, \"rationale\": \"虽然工作流和法规引用完善，但对行业类别判定持保留态度并要求复核C2651可能性，与参考答案“正确”的定论存在实质差异。过度质疑导致核心结论偏离金标，即便发现了额外数据问题也无法弥补判定偏差。\"}]}"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5946,
+    "completion_tokens": 401,
+    "total_tokens": 6347,
+    "prompt_tokens_details": {
+      "text_tokens": 5946
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  }
+}

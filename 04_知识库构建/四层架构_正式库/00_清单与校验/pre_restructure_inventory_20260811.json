@@ -1,0 +1,777 @@
+﻿[
+    {
+        "relative_path":  "README.md",
+        "bytes":  537,
+        "sha256":  "c87361c666746b44fa0fdf8443ffcf90f1f78c113df38c37bda4cb064c157fdf"
+    },
+    {
+        "relative_path":  "第四层_EIA_SkillBank_v2_20260811.zip",
+        "bytes":  77381,
+        "sha256":  "e9e397a6257467bfc881e8f7b8edcb5b4e4af9a2cd78f1bfda3d42ccda1a3589"
+    },
+    {
+        "relative_path":  "00_清单与校验\\52文件全文RAG入库验收清单_20260810.xlsx",
+        "bytes":  17257,
+        "sha256":  "25df2f54ec344bdafd9f7704f05fccf044256803c3fc328d5cdfbda8b88453db"
+    },
+    {
+        "relative_path":  "00_清单与校验\\52文件全文RAG入库验收清单_20260810.xlsx.inspect.ndjson",
+        "bytes":  336206,
+        "sha256":  "ef31dbd481b0fb700c9f1911732760f7d0da171957e0134bdc2f8792da12c639"
+    },
+    {
+        "relative_path":  "00_清单与校验\\52文件全文RAG入库验收清单_摘要预览.png",
+        "bytes":  108544,
+        "sha256":  "8d13a00817bd3cbb3d4105a7ef9b6e505cd17791c320b80bbbfcb3435630f400"
+    },
+    {
+        "relative_path":  "00_清单与校验\\build_summary.json",
+        "bytes":  690,
+        "sha256":  "559f9c615bd587b030aa06a0ddcd2f9e8ec9c40083c94a54ef525b397039ce7c"
+    },
+    {
+        "relative_path":  "00_清单与校验\\file_hashes.csv",
+        "bytes":  11533,
+        "sha256":  "625e4d4ce34a0e2a6ea2076843a8b1116bfa324276c52e705d81e7aa541b8ff4"
+    },
+    {
+        "relative_path":  "00_清单与校验\\file_hashes.json",
+        "bytes":  17209,
+        "sha256":  "f50cc3a682e75f170854df5c37e3a53e88383a9c87b0eeb3f2c708c68da4c8d0"
+    },
+    {
+        "relative_path":  "00_清单与校验\\Phase1_四层知识库入库验收报告_20260810.md",
+        "bytes":  3268,
+        "sha256":  "7c8d7121a6c3936c9a8f430bcfe5a907cbe680252c5f7b76d19d290953370042"
+    },
+    {
+        "relative_path":  "00_清单与校验\\source_provenance.json",
+        "bytes":  42427,
+        "sha256":  "d1b838531c45bfb32bcfa1c0d3382381a418c5118448ee3ebeccae162d756ce3"
+    },
+    {
+        "relative_path":  "01_标准全文_52文件\\#10_产污系数定量核算指南.md",
+        "bytes":  562,
+        "sha256":  "a1954b843790fd2ec5fa734a3e8de8a56b08e317ed51ddd9f64f7f84f16137be"
+    },
+    {
+        "relative_path":  "01_标准全文_52文件\\#17_废气收集形式及排气量计算指南.md",
+        "bytes":  624,
+        "sha256":  "152add41393fd50fce1145fddd0523d1fb00546a8b899a3230073fe246e52f19"
+    },
+    {
+        "relative_path":  "01_标准全文_52文件\\#18_废气收集风量与设计风量核算指南.md",
+        "bytes":  552,
+        "sha256":  "4a4c7ec76f6014ccfbf944a84e31d4047a8db105654b0abc9e32d56c9a336d88"
+    },
+    {
+        "relative_path":  "01_标准全文_52文件\\#19_废气收集效率判定指南.md",
+        "bytes":  699,
+        "sha256":  "dccd6026c060ab606f4dec98ca714b44dd46658a6f48718d6d04370d84e82d6e"
+    },
+    {
+        "relative_path":  "01_标准全文_52文件\\#2_环评投资核算指南.md",
+        "bytes":  366,
+        "sha256":  "148e5c9d9c991c671536192f19d8f3334be73b64af88e775d49d56f6db1c3c0d"
+    },
+    {
+        "relative_path":  "01_标准全文_52文件\\#5_建设内容编制完整性指南.md",
+        "bytes":  485,
+        "sha256":  "ab0dc732b7706c63febf091905f686d9d3e507b042961ed9b9478bbc52a1b859"
+    },
+    {
+        "relative_path":  "01_标准全文_52文件\\#6_2023年佛山市顺德区生态环境状态公报.txt",
+        "bytes":  3561,
+        "sha256":  "31487d7dc5ced8cfbbfab120035556d15d9bc1a5fcab62828c437762ed60b0d9"
+    },
+    {
+        "relative_path":  "01_标准全文_52文件\\#6_2024年佛山市顺德区生态环境状态公报.txt",
+        "bytes":  3138,
+        "sha256":  "70d6a0966106900a6ffe428ccf1b986480fe68f5b5ba420f829e2d9eca9e236d"
+    },
+    {
+        "relative_path":  "01_标准全文_52文件\\#7_GB12348噪声排放限值.md",
+        "bytes":  143,
+        "sha256":  "cd428b8178c03d3743cb4e05d8bbac3c4c40a6909863ea0da59d538519df0534"
+    },
+    {
+        "relative_path":  "01_标准全文_52文件\\#7_收纳水体地表水执行标准.csv",
+        "bytes":  6809,
+        "sha256":  "9d11719ae7e5e9e901f73984ecf2059f9568fbc6bd70e0d9bd727203008116ac"
+    },
+    {
+        "relative_path":  "01_标准全文_52文件\\#7_环境质量标准限值速查.md",
+        "bytes":  15425,
+        "sha256":  "3f4db8f509f1fa0a545a54c6a4a93ac45cf0763b89c87961e6985e7ee320ab87"
+    },
+    {
+        "relative_path":  "01_标准全文_52文件\\#8_GB31572表4排放限值.md",
+        "bytes":  2166,
+        "sha256":  "2bce5e33461ba4c8376e1de66d4878ef75de16a0335b380d5d5eb5ea0b4dae41"
+    },
+    {
+        "relative_path":  "01_标准全文_52文件\\#8_塑料制品业典型污染源及执行标准.csv",
+        "bytes":  7067,
+        "sha256":  "c3ebd6ecb3a314ee2b1ce3478eafb224c1a0f8c7999e2cb5bb939db995fd8e15"
+    },
+    {
+        "relative_path":  "01_标准全文_52文件\\#8_塑料制品业典型污染源及执行标准.md",
+        "bytes":  3519,
+        "sha256":  "ebd01f6c56f8107ba3b29be2186931040170619ca9cdfa8f62cdc040f0bc4a4c"
+    },
+    {
+        "relative_path":  "01_标准全文_52文件\\#9_塑料制品业产污系数_废气.json",
+        "bytes":  201002,
+        "sha256":  "e7a25dde2f705caa4045893877c85d025adf6a1867db1ffd59183ad3311faae7"
+    },
+    {
+        "relative_path":  "01_标准全文_52文件\\#9_塑料制品业产污系数_废气_速查.md",
+        "bytes":  5686,
+        "sha256":  "43dacc3eee243a04b8650d0636360a69704053a07542de9b5f24ab6d130eacab"
+    },
+    {
+        "relative_path":  "01_标准全文_52文件\\DB44_2367-2022.md",
+        "bytes":  40953,
+        "sha256":  "264cf199c9dca85e5d525be0c853071c31b0129cc5969827d462045ab2ee20c3"
+    },
+    {
+        "relative_path":  "01_标准全文_52文件\\DB44_26-2001.md",
+        "bytes":  53074,
+        "sha256":  "d42d2a095e0e9879a365309e94c4ef56b2052570307858a62f3a93d495d0fe9f"
+    },
+    {
+        "relative_path":  "01_标准全文_52文件\\DB44_27-2001.md",
+        "bytes":  50974,
+        "sha256":  "3408257edf02cb6d7fa324cd848cf8521277c659243cc19c950b3b66f7b62380"
+    },
+    {
+        "relative_path":  "01_标准全文_52文件\\DB44_814-2010.md",
+        "bytes":  18897,
+        "sha256":  "83ed57049f431197fe3d6ce48fe3cdb5d54db7941f85b6b04fb8685cb57db417"
+    },
+    {
+        "relative_path":  "01_标准全文_52文件\\DB44_815-2010.md",
+        "bytes":  28651,
+        "sha256":  "b13ee07dcf6016e3e8c1d0afdb24a00b6f1f10673719734068fadc1250cd54f5"
+    },
+    {
+        "relative_path":  "01_标准全文_52文件\\DIFY_KB_INDEX.md",
+        "bytes":  2195,
+        "sha256":  "8d1dcf777240ab8c4c4f8feeaba81259630da075e58814560e7743a79a68121a"
+    },
+    {
+        "relative_path":  "01_标准全文_52文件\\GB_12348-2008.md",
+        "bytes":  16412,
+        "sha256":  "d8b1ab8db64013c43ed7f93de0a6534974cbf210cbfdfda47ab87ea6513b42c5"
+    },
+    {
+        "relative_path":  "01_标准全文_52文件\\GB_14554-93.md",
+        "bytes":  10710,
+        "sha256":  "ec30cff8b2856a700618017a7f2b548111b9e421df18959bfd88f8ef6fb55dd7"
+    },
+    {
+        "relative_path":  "01_标准全文_52文件\\GB_16297-1996.md",
+        "bytes":  48059,
+        "sha256":  "61f707c466831caa53082a360cd5af37f595e1a9b21ce95f74e89e76f29bbf10"
+    },
+    {
+        "relative_path":  "01_标准全文_52文件\\GB_18597-2023.md",
+        "bytes":  20220,
+        "sha256":  "805c19df30859a20df99ca05f13ac2f3484fe36c3d568b243d1b29fdd82d74bf"
+    },
+    {
+        "relative_path":  "01_标准全文_52文件\\GB_18599-2020.md",
+        "bytes":  26764,
+        "sha256":  "bfe9daafab090c164d291523bb33411fa1893c71e0eff2a6af162542db44a35b"
+    },
+    {
+        "relative_path":  "01_标准全文_52文件\\GB_3095-2012.md",
+        "bytes":  19189,
+        "sha256":  "cb39c81db4410d07d47df6ee57f3962b1ee80070859d164246fae4532b60b95d"
+    },
+    {
+        "relative_path":  "01_标准全文_52文件\\GB_3096-2008.md",
+        "bytes":  28688,
+        "sha256":  "8a730ba3830b721e7f81b752c47547a2d24ae1c9327550fd472f123586b19ed0"
+    },
+    {
+        "relative_path":  "01_标准全文_52文件\\GB_31572-2015.md",
+        "bytes":  59624,
+        "sha256":  "6832b4a13d2dbdd0eec35f9cfa2681950d32d7ec0dfb08a5ec3ab0772f632fe5"
+    },
+    {
+        "relative_path":  "01_标准全文_52文件\\GB_33372-2020.md",
+        "bytes":  33873,
+        "sha256":  "838e54d4c54fb891d3cf9c3d33404ed44ccbe4a7d9c06a5655b2b712944ec867"
+    },
+    {
+        "relative_path":  "01_标准全文_52文件\\GB_37822-2019.md",
+        "bytes":  34850,
+        "sha256":  "f4832638f7a74ca1958562fc5281fd3d1d1a4cdaba39cd073bc0c6178e48e030"
+    },
+    {
+        "relative_path":  "01_标准全文_52文件\\GB_3838-2002.md",
+        "bytes":  32995,
+        "sha256":  "10f73c7a954df549a25ea19cf497c0de59ea062fa2d455b4c2c9e0568e505eec"
+    },
+    {
+        "relative_path":  "01_标准全文_52文件\\GB_38508-2020.md",
+        "bytes":  8173,
+        "sha256":  "35b4850ca9ed2fd911027b85c52629424a10b9b01e97fb7a48ad4b175051ae67"
+    },
+    {
+        "relative_path":  "01_标准全文_52文件\\GB_41616-2022.md",
+        "bytes":  26707,
+        "sha256":  "0110e66b65b1317394d237899fd8bed8fcb83aa4ef51fcaa922a4d00418f994d"
+    },
+    {
+        "relative_path":  "01_标准全文_52文件\\GB_T_18920-2020.md",
+        "bytes":  9659,
+        "sha256":  "25eef0be2ba14686c217afe7a4adeb0c0c1a84f290bc3dc9d139e616c96368c6"
+    },
+    {
+        "relative_path":  "01_标准全文_52文件\\HJ_1122-2020.md",
+        "bytes":  457227,
+        "sha256":  "2699b119e20c133e11afa7c1a0ade6c0514e154ea23d3b2e00f6ddb00c872ebc"
+    },
+    {
+        "relative_path":  "01_标准全文_52文件\\HJ_1207-2021.md",
+        "bytes":  33831,
+        "sha256":  "acda5e58aa68a95473bf59c2c7b55aa957de1233fd81451bea584df0ada6a5f0"
+    },
+    {
+        "relative_path":  "01_标准全文_52文件\\HJ_169-2018.md",
+        "bytes":  136626,
+        "sha256":  "796e02218c2f89d42bae5d3be356d7062001cfdf8b3f7494cae81fe5301e9a6d"
+    },
+    {
+        "relative_path":  "01_标准全文_52文件\\HJ_2025-2012.md",
+        "bytes":  17330,
+        "sha256":  "a8d3d5796dab812e682a32dfd4ef204e2f7314a323df19a105e69bdd6024759b"
+    },
+    {
+        "relative_path":  "01_标准全文_52文件\\HJ_2026-2013.md",
+        "bytes":  27344,
+        "sha256":  "7987b42ebcea6402acc392264233f73b1333181b38c901884d941b1b085ead09"
+    },
+    {
+        "relative_path":  "01_标准全文_52文件\\HJ_819-2017.md",
+        "bytes":  27081,
+        "sha256":  "44d34be107e87ab9513d7df851ddb4ff793b33b14b12887faca6e5a8fe4e91a9"
+    },
+    {
+        "relative_path":  "01_标准全文_52文件\\HJ_884-2018.md",
+        "bytes":  23908,
+        "sha256":  "eb0813a14f360ff4ee29b71e969ff491e466c798bad114b17526f49eccb085d9"
+    },
+    {
+        "relative_path":  "01_标准全文_52文件\\HJ_942.md",
+        "bytes":  12969,
+        "sha256":  "43858d25aa74c5fdbd54b371c8d13cae19f3c5728054842f580bc264fe6d378d"
+    },
+    {
+        "relative_path":  "01_标准全文_52文件\\national_economic_classification.json",
+        "bytes":  494581,
+        "sha256":  "d9274e96488f687b5cc4c1f1d894825f4d464d0a76db5aad31141a19db75c957"
+    },
+    {
+        "relative_path":  "01_标准全文_52文件\\national_economic_classification.jsonl",
+        "bytes":  425548,
+        "sha256":  "8b093eaa02ca54a06262e14b9336ba21e18d064d7b5e2a3439135ca48a8d1161"
+    },
+    {
+        "relative_path":  "01_标准全文_52文件\\plastic_rubber_industry_classification_checked.md",
+        "bytes":  3825,
+        "sha256":  "758827ee6d34940c4161258b707316f9d8387a605de200dea16defa79da029c2"
+    },
+    {
+        "relative_path":  "01_标准全文_52文件\\三线一单_全部管控单元表格.json",
+        "bytes":  560414,
+        "sha256":  "dbefee2ceaaf8c27ec22c9571a0369cd700940e4073c9d59d7f35530c8b0e4fc"
+    },
+    {
+        "relative_path":  "01_标准全文_52文件\\三线一单_顺德管控单元.json",
+        "bytes":  2734,
+        "sha256":  "b07630c68152220102ba712d78f6decfe0d89cfde651a55ab3343c85c7021b3b"
+    },
+    {
+        "relative_path":  "01_标准全文_52文件\\三线一单_顺德管控单元_完整.json",
+        "bytes":  151335,
+        "sha256":  "58fd74a62fcc00a8c611fd753acec56d7c0985a6d87bc9bd27ebdf73ec3ceda8"
+    },
+    {
+        "relative_path":  "01_标准全文_52文件\\三线一单_顺德管控单元准入清单.json",
+        "bytes":  152966,
+        "sha256":  "87c2d4317ed88bc8c393aa3633064ccdc9ac5789f4ade1d0c026a42abb6b0b9f"
+    },
+    {
+        "relative_path":  "01_标准全文_52文件\\三线一单_顺德管控单元准入清单.md",
+        "bytes":  66339,
+        "sha256":  "a5106045ba9f1e184578a1418df3acb0c1fced6dc4d8ef69e921af42041e908a"
+    },
+    {
+        "relative_path":  "02_标准卡片_38张\\card_schema.json",
+        "bytes":  2020,
+        "sha256":  "2f69a117d1ce49fa37869b128ba0b36742a76175f4a6442ae8434acead6f8b21"
+    },
+    {
+        "relative_path":  "02_标准卡片_38张\\standard_cards.json",
+        "bytes":  81161,
+        "sha256":  "ab926fe14880a97c84008d583ec44860c7ef1adbceeea9ba4358f50f57930c16"
+    },
+    {
+        "relative_path":  "02_标准卡片_38张\\standard_cards.jsonl",
+        "bytes":  65642,
+        "sha256":  "9b2a5792e51199c759eb86cce087e9075b86141889bda28e31bc020cd0a4df45"
+    },
+    {
+        "relative_path":  "02_标准卡片_38张\\by_domain\\三线一单.json",
+        "bytes":  4144,
+        "sha256":  "60d284824fde6b1f62035174aa50b61c236d9b4733c754f108b2da967cdc5537"
+    },
+    {
+        "relative_path":  "02_标准卡片_38张\\by_domain\\产污系数.json",
+        "bytes":  4563,
+        "sha256":  "cc1c3e835831a21ff37e743a4bd4ddea3bd116789c04ad2c388c2c7ad407f279"
+    },
+    {
+        "relative_path":  "02_标准卡片_38张\\by_domain\\固体废物.json",
+        "bytes":  2248,
+        "sha256":  "3328c1c847acb19ac1c1f4964a8af318cb13cad484e52afaac06d534b31fd1e0"
+    },
+    {
+        "relative_path":  "02_标准卡片_38张\\by_domain\\废气收集.json",
+        "bytes":  11541,
+        "sha256":  "cd05815a391fdbf1e2df69afe54c9095924c55fefdf9e7cb41645a98caa48c6c"
+    },
+    {
+        "relative_path":  "02_标准卡片_38张\\by_domain\\废气治理.json",
+        "bytes":  2372,
+        "sha256":  "a332d73ed9b6862e4331f34a867c56332dac00ab2f1fe261812b656c6e0ded3b"
+    },
+    {
+        "relative_path":  "02_标准卡片_38张\\by_domain\\建设内容.json",
+        "bytes":  2123,
+        "sha256":  "513629e5cf02c47b3b49c7c1d539d157cfafd2b61d0020cb968b24ff8c54e60f"
+    },
+    {
+        "relative_path":  "02_标准卡片_38张\\by_domain\\总量控制.json",
+        "bytes":  2919,
+        "sha256":  "9992903c562dd8dafcc001e044c65485299ff6fb68bf5948051cd4b7df7d31e4"
+    },
+    {
+        "relative_path":  "02_标准卡片_38张\\by_domain\\排放标准.json",
+        "bytes":  12243,
+        "sha256":  "9f47b6efe617de6e46a85135818a21a802acfa89fb3fc814c29d6eb8b704ed20"
+    },
+    {
+        "relative_path":  "02_标准卡片_38张\\by_domain\\标准全文引用.json",
+        "bytes":  15648,
+        "sha256":  "ed23b69485d175dafb996d479c9f598fe42956a5c838c11a7befb7e4d6e0a246"
+    },
+    {
+        "relative_path":  "02_标准卡片_38张\\by_domain\\环境质量标准.json",
+        "bytes":  14706,
+        "sha256":  "9fa766149f90ade50cd8ddb7e735739371a02d1d3d372ad42690da6e001d3656"
+    },
+    {
+        "relative_path":  "02_标准卡片_38张\\by_domain\\环境质量现状.json",
+        "bytes":  2151,
+        "sha256":  "7b29129a2e7fe28afdd954c3e2ed7b39b819f1d622325edebd9f71b3a9bbf923"
+    },
+    {
+        "relative_path":  "02_标准卡片_38张\\by_domain\\行业分类.json",
+        "bytes":  4228,
+        "sha256":  "9c26069d9aaf80163e3a59d84aeac934954593ed87727b9e99969b9fdd6f73ba"
+    },
+    {
+        "relative_path":  "02_标准卡片_38张\\by_domain\\项目基本情况.json",
+        "bytes":  2311,
+        "sha256":  "0ab1503f5dcf5bca4edcf615d8ab93c4cf41681fd39eb00d9a5f1612604e3d98"
+    },
+    {
+        "relative_path":  "02_标准卡片_38张\\by_skill\\01_国民经济行业类别.json",
+        "bytes":  4228,
+        "sha256":  "9c26069d9aaf80163e3a59d84aeac934954593ed87727b9e99969b9fdd6f73ba"
+    },
+    {
+        "relative_path":  "02_标准卡片_38张\\by_skill\\02_环保投资.json",
+        "bytes":  2311,
+        "sha256":  "0ab1503f5dcf5bca4edcf615d8ab93c4cf41681fd39eb00d9a5f1612604e3d98"
+    },
+    {
+        "relative_path":  "02_标准卡片_38张\\by_skill\\03_三线一单.json",
+        "bytes":  4144,
+        "sha256":  "60d284824fde6b1f62035174aa50b61c236d9b4733c754f108b2da967cdc5537"
+    },
+    {
+        "relative_path":  "02_标准卡片_38张\\by_skill\\04_建设内容.json",
+        "bytes":  3667,
+        "sha256":  "8598c1029dbf707f8bc085395eec946045bb2cb3a6f5a68aa45d337f6540bcec"
+    },
+    {
+        "relative_path":  "02_标准卡片_38张\\by_skill\\05_环境质量现状数据.json",
+        "bytes":  2151,
+        "sha256":  "7b29129a2e7fe28afdd954c3e2ed7b39b819f1d622325edebd9f71b3a9bbf923"
+    },
+    {
+        "relative_path":  "02_标准卡片_38张\\by_skill\\06_环境质量执行标准.json",
+        "bytes":  14706,
+        "sha256":  "9fa766149f90ade50cd8ddb7e735739371a02d1d3d372ad42690da6e001d3656"
+    },
+    {
+        "relative_path":  "02_标准卡片_38张\\by_skill\\07_污染物排放标准.json",
+        "bytes":  30236,
+        "sha256":  "3c384efd5ec413331596909b20aa2fbaec24a7ddc9c40a1658113e8f0ed9ed1f"
+    },
+    {
+        "relative_path":  "02_标准卡片_38张\\by_skill\\08_产污系数合理性.json",
+        "bytes":  4311,
+        "sha256":  "17548b179cb8cb5d875de383ed4740f72bd4621c2cfd7af5d7a4e2333f998005"
+    },
+    {
+        "relative_path":  "02_标准卡片_38张\\by_skill\\09_产污系数定量核算.json",
+        "bytes":  7765,
+        "sha256":  "19bb035d46e516f9a813f83acbef4aed03d77cd928d2b6938e483f1815e7bf68"
+    },
+    {
+        "relative_path":  "02_标准卡片_38张\\by_skill\\10_废气收集形式及排气量.json",
+        "bytes":  4164,
+        "sha256":  "8df1bcdb2d224764570470a29276b80c52de5ba8a607ca2abbdaa7026ff91bea"
+    },
+    {
+        "relative_path":  "02_标准卡片_38张\\by_skill\\11_废气收集风量与设计风量.json",
+        "bytes":  4340,
+        "sha256":  "38f59f1de044afa0cf66e0dd7471e962a029c120f517f7d1fc3b5af8ce718133"
+    },
+    {
+        "relative_path":  "02_标准卡片_38张\\by_skill\\12_废气收集效率.json",
+        "bytes":  3043,
+        "sha256":  "65526fe6afbbb4732c10bf1aee238c7957b529474733df805e2febc86a1d2934"
+    },
+    {
+        "relative_path":  "02_标准卡片_38张\\by_skill\\13_活性炭参数.json",
+        "bytes":  2372,
+        "sha256":  "a332d73ed9b6862e4331f34a867c56332dac00ab2f1fe261812b656c6e0ded3b"
+    },
+    {
+        "relative_path":  "02_标准卡片_38张\\by_skill\\14_危险废物识别.json",
+        "bytes":  2248,
+        "sha256":  "3328c1c847acb19ac1c1f4964a8af318cb13cad484e52afaac06d534b31fd1e0"
+    },
+    {
+        "relative_path":  "02_标准卡片_38张\\by_skill\\15_VOCs总量控制.json",
+        "bytes":  2919,
+        "sha256":  "9992903c562dd8dafcc001e044c65485299ff6fb68bf5948051cd4b7df7d31e4"
+    },
+    {
+        "relative_path":  "03_RAG父子分块_79子块\\child_chunks.jsonl",
+        "bytes":  107628,
+        "sha256":  "8201db150384524d695acbbbc0411208a1e337d16982ae347677c2989265fe8f"
+    },
+    {
+        "relative_path":  "03_RAG父子分块_79子块\\chunk_manifest.csv",
+        "bytes":  10841,
+        "sha256":  "895aae69c62a01c7281ecb733ef2c1a7a6e0fdcacc3d9a5edc6b1272561c968a"
+    },
+    {
+        "relative_path":  "03_RAG父子分块_79子块\\chunk_quality_report.md",
+        "bytes":  554,
+        "sha256":  "45d2247dc25fb3a5049e9053e6a447d72e9c8c982893564b852929cc40b34a0c"
+    },
+    {
+        "relative_path":  "03_RAG父子分块_79子块\\parent_chunks.jsonl",
+        "bytes":  89012,
+        "sha256":  "99deed45a6ac6564a3291db1615aeba27864fa594cdfa0472ec3e0da8cce519f"
+    },
+    {
+        "relative_path":  "04_Skill检索路由_15个Skill\\skills_to_standard_mapping.yaml",
+        "bytes":  4898,
+        "sha256":  "aaf2fcc6bc245c29a92d09af0fe6d8bc7df1fc4ddf49da0d2a70260c5ced0093"
+    },
+    {
+        "relative_path":  "04_Skill检索路由_15个Skill\\skill_bank_manifest.csv",
+        "bytes":  5033,
+        "sha256":  "c52307359735aa60162dd90cc68912feb63dc318a267ba826c2d060582962cc8"
+    },
+    {
+        "relative_path":  "04_Skill检索路由_15个Skill\\skill_bank_registry.json",
+        "bytes":  21380,
+        "sha256":  "c12b5da4a9ebf8d0f52fd9dfd5e3e656fa207f35d7178ef80808e70707475f6b"
+    },
+    {
+        "relative_path":  "04_Skill检索路由_15个Skill\\skill_layer_validation_report.json",
+        "bytes":  10487,
+        "sha256":  "aacbd5c3b15cb22e166841411a015729a3ffbe8ab87f9f685526959d03c358d1"
+    },
+    {
+        "relative_path":  "04_Skill检索路由_15个Skill\\skill_layer_validation_report.md",
+        "bytes":  6371,
+        "sha256":  "63ac930fe57f21811bf6972e2c5e0fb94eac4b308db585f561e3ccddc35b0b85"
+    },
+    {
+        "relative_path":  "04_Skill检索路由_15个Skill\\skill_routes.json",
+        "bytes":  5364,
+        "sha256":  "c5d68bc2f8e66c96ffeec5eef150758d07917548932c915b331906ac82df9be1"
+    },
+    {
+        "relative_path":  "04_Skill检索路由_15个Skill\\contracts\\skill_input.schema.json",
+        "bytes":  829,
+        "sha256":  "6803e84fd80889eea115cd20256fff2236aeccb31eb2b0b0b57ac3238fc47105"
+    },
+    {
+        "relative_path":  "04_Skill检索路由_15个Skill\\contracts\\skill_output.schema.json",
+        "bytes":  1283,
+        "sha256":  "36bb4ec90db8f5639b1ec9ecf624c1d55470e1d312f1638298708a3107a55837"
+    },
+    {
+        "relative_path":  "04_Skill检索路由_15个Skill\\router\\route-eia-audit-skills\\SKILL.md",
+        "bytes":  2975,
+        "sha256":  "e2fd2b6796f89c7917c7540ff566737a715c6e64d186f7b0af26dd9136484adb"
+    },
+    {
+        "relative_path":  "04_Skill检索路由_15个Skill\\router\\route-eia-audit-skills\\agents\\openai.yaml",
+        "bytes":  284,
+        "sha256":  "395c3f78288fb1047cf70dafa29f74050ac6175af9ea190b718a0dc86cf04813"
+    },
+    {
+        "relative_path":  "04_Skill检索路由_15个Skill\\router\\route-eia-audit-skills\\references\\routing-catalog.md",
+        "bytes":  2363,
+        "sha256":  "d55eda9ee4ad7a77feed6f74dffc8eb50c09f9ac2c5ceb2afced8be823659a7b"
+    },
+    {
+        "relative_path":  "04_Skill检索路由_15个Skill\\skills\\calculate-eia-environmental-investment-ratio\\SKILL.md",
+        "bytes":  6587,
+        "sha256":  "8f4916b62d42eadfa38b6bc23ab9ba5aba6534ffb6e3a82e8fd77ef6017c07d5"
+    },
+    {
+        "relative_path":  "04_Skill检索路由_15个Skill\\skills\\calculate-eia-environmental-investment-ratio\\agents\\openai.yaml",
+        "bytes":  333,
+        "sha256":  "4c956d10e7c3015bddf21b8db5faada326aa8973c70e56b41937f99ea5e85ba8"
+    },
+    {
+        "relative_path":  "04_Skill检索路由_15个Skill\\skills\\calculate-eia-exhaust-capture-airflow\\SKILL.md",
+        "bytes":  6862,
+        "sha256":  "5c95c19aa5a7cc1afea4308422f579cd0c4dca697f74a7f215cba7828774cc2e"
+    },
+    {
+        "relative_path":  "04_Skill检索路由_15个Skill\\skills\\calculate-eia-exhaust-capture-airflow\\agents\\openai.yaml",
+        "bytes":  350,
+        "sha256":  "33f799e34e997b502d8b6bfe1be997528b560dc9484776a226335739e1aaf285"
+    },
+    {
+        "relative_path":  "04_Skill检索路由_15个Skill\\skills\\calculate-eia-pollutant-source-strength\\SKILL.md",
+        "bytes":  7956,
+        "sha256":  "918f052dc2b3e9abfa4d6df110bc802f405296f50f53e03305fdeee47f09d0ca"
+    },
+    {
+        "relative_path":  "04_Skill检索路由_15个Skill\\skills\\calculate-eia-pollutant-source-strength\\agents\\openai.yaml",
+        "bytes":  328,
+        "sha256":  "b01e0c23181fe382b867fd7bcf5a9b86708a8125f25b44398dc72b5ef03b776f"
+    },
+    {
+        "relative_path":  "04_Skill检索路由_15个Skill\\skills\\review-eia-activated-carbon-parameters\\SKILL.md",
+        "bytes":  8148,
+        "sha256":  "2802ba719e71bea0be9b7bb646a8e21b871f57c2edeb51e549b8761be8315ae3"
+    },
+    {
+        "relative_path":  "04_Skill检索路由_15个Skill\\skills\\review-eia-activated-carbon-parameters\\agents\\openai.yaml",
+        "bytes":  321,
+        "sha256":  "c475759bad664a612e569b45ff169a6493c067afa5b4e155ca15ac136cd574de"
+    },
+    {
+        "relative_path":  "04_Skill检索路由_15个Skill\\skills\\review-eia-construction-content-completeness\\SKILL.md",
+        "bytes":  6796,
+        "sha256":  "88bc2eff2f2450cf4ceda19d3410ad87f98d7e14b779cfc046140ff8230c4da7"
+    },
+    {
+        "relative_path":  "04_Skill检索路由_15个Skill\\skills\\review-eia-construction-content-completeness\\agents\\openai.yaml",
+        "bytes":  339,
+        "sha256":  "c468fbefe2b507f3098c7d5a9f885d7be15ced164c93091c12703a6215c74686"
+    },
+    {
+        "relative_path":  "04_Skill检索路由_15个Skill\\skills\\review-eia-environmental-quality-data\\SKILL.md",
+        "bytes":  7064,
+        "sha256":  "6b4c19f4d0a6ff9b59dab00605363b8d5e0c87fc0acd596f9d8b8acf9a17952a"
+    },
+    {
+        "relative_path":  "04_Skill检索路由_15个Skill\\skills\\review-eia-environmental-quality-data\\agents\\openai.yaml",
+        "bytes":  338,
+        "sha256":  "218bcd6313a2f37c3d5855d31858a61cc831b202c0ddc77e060dbada5fb8163d"
+    },
+    {
+        "relative_path":  "04_Skill检索路由_15个Skill\\skills\\review-eia-environmental-quality-standards\\SKILL.md",
+        "bytes":  7153,
+        "sha256":  "58f59e859a914ea4b55cf7d2a88839c511a2b3fc1031484136d42dfdbdf3e0f8"
+    },
+    {
+        "relative_path":  "04_Skill检索路由_15个Skill\\skills\\review-eia-environmental-quality-standards\\agents\\openai.yaml",
+        "bytes":  343,
+        "sha256":  "8ac4e09079d552edae89cae9aafe90946cef2c979725d3d85e90ca858dc21517"
+    },
+    {
+        "relative_path":  "04_Skill检索路由_15个Skill\\skills\\review-eia-exhaust-capture-efficiency\\SKILL.md",
+        "bytes":  6793,
+        "sha256":  "ddd777b73d48fd1435020e8127ae3678850013afdbb53a4d7dc789e999d73699"
+    },
+    {
+        "relative_path":  "04_Skill检索路由_15个Skill\\skills\\review-eia-exhaust-capture-efficiency\\agents\\openai.yaml",
+        "bytes":  326,
+        "sha256":  "35bab1c05f3be0c93b0a5c9418e8c52d58d038b6e545bd3330ed5ca7704b256f"
+    },
+    {
+        "relative_path":  "04_Skill检索路由_15个Skill\\skills\\review-eia-exhaust-design-airflow\\SKILL.md",
+        "bytes":  7539,
+        "sha256":  "9c288a67f1bc9d4a302f7baede1b31cbc6da3dd367474cf82f82309f84086041"
+    },
+    {
+        "relative_path":  "04_Skill检索路由_15个Skill\\skills\\review-eia-exhaust-design-airflow\\agents\\openai.yaml",
+        "bytes":  322,
+        "sha256":  "cfbf8f04766f1c52fc6ab92bef74b5963c500541c09958b1196d50d14e9cca8b"
+    },
+    {
+        "relative_path":  "04_Skill检索路由_15个Skill\\skills\\review-eia-hazardous-waste-identification\\SKILL.md",
+        "bytes":  7398,
+        "sha256":  "ead69b4fe75bb7eb4540f5ee3e415d803897d3e24c0ba6e9bd04a732b54eac3d"
+    },
+    {
+        "relative_path":  "04_Skill检索路由_15个Skill\\skills\\review-eia-hazardous-waste-identification\\agents\\openai.yaml",
+        "bytes":  330,
+        "sha256":  "ddb7491870b0b9c11f6074eff67853ba1b3a627067010aff4f02b2f55498abf1"
+    },
+    {
+        "relative_path":  "04_Skill检索路由_15个Skill\\skills\\review-eia-industry-classification\\SKILL.md",
+        "bytes":  6946,
+        "sha256":  "fb35925006e92f372ab4b00233790992f3e2e2da64491d52d4c816a9fa3fbb2f"
+    },
+    {
+        "relative_path":  "04_Skill检索路由_15个Skill\\skills\\review-eia-industry-classification\\agents\\openai.yaml",
+        "bytes":  335,
+        "sha256":  "752d10c9028ea52aba31015421888c8352d440badffcc56fcaa7f44f0ff3d601"
+    },
+    {
+        "relative_path":  "04_Skill检索路由_15个Skill\\skills\\review-eia-pollutant-coefficient-applicability\\SKILL.md",
+        "bytes":  6901,
+        "sha256":  "6b1050cf6c3de9e0abb6f44b91ddd2e8eeae4ca1e7c4a6de593894b335dc9077"
+    },
+    {
+        "relative_path":  "04_Skill检索路由_15个Skill\\skills\\review-eia-pollutant-coefficient-applicability\\agents\\openai.yaml",
+        "bytes":  341,
+        "sha256":  "c54f0117c4414f4a5cabda2a699436885b940dfe84fe706b7d342c5aeeaea438"
+    },
+    {
+        "relative_path":  "04_Skill检索路由_15个Skill\\skills\\review-eia-pollutant-discharge-standards\\SKILL.md",
+        "bytes":  8977,
+        "sha256":  "67dac913b75bd75a18a048105510072490ccdea976eca533d62325c0ea442b3f"
+    },
+    {
+        "relative_path":  "04_Skill检索路由_15个Skill\\skills\\review-eia-pollutant-discharge-standards\\agents\\openai.yaml",
+        "bytes":  335,
+        "sha256":  "9ff753bb54efcecb5b69fe53079316d1dc6a0acfe6a473420f306e260e83cc6d"
+    },
+    {
+        "relative_path":  "04_Skill检索路由_15个Skill\\skills\\review-eia-three-lines-one-list-consistency\\SKILL.md",
+        "bytes":  6727,
+        "sha256":  "94ecd07e445bcf0a7451243f9f5f6e4fb3b684d96c394b579238e5590b190ea7"
+    },
+    {
+        "relative_path":  "04_Skill检索路由_15个Skill\\skills\\review-eia-three-lines-one-list-consistency\\agents\\openai.yaml",
+        "bytes":  338,
+        "sha256":  "e6521cdbb9b59daf576bcbec4d62aba0894b723db3e17754a602568ee814accf"
+    },
+    {
+        "relative_path":  "04_Skill检索路由_15个Skill\\skills\\review-eia-vocs-total-control\\SKILL.md",
+        "bytes":  7121,
+        "sha256":  "df4b359c81ad475033c3be6333fb90aaff8c39137c3766bfea4b95d4b584ec07"
+    },
+    {
+        "relative_path":  "04_Skill检索路由_15个Skill\\skills\\review-eia-vocs-total-control\\agents\\openai.yaml",
+        "bytes":  314,
+        "sha256":  "e1b2213e60882b3dc599d256a6daa7ef2fcafee61620ab2c1917d42f3723f449"
+    },
+    {
+        "relative_path":  "05_本地BM25检索索引\\bm25_index.json",
+        "bytes":  772079,
+        "sha256":  "f5c02beadcd99da503b56752787ec1e7d9aacd17590800515491edfaf012fd68"
+    },
+    {
+        "relative_path":  "05_本地BM25检索索引\\skill_route_bm25_smoke_test.json",
+        "bytes":  48847,
+        "sha256":  "8e914ea405c62685cc4167c88002e91b17d6a8cf4cdefc2beeb20d6b550c881e"
+    },
+    {
+        "relative_path":  "06_标准全文父子分块_52文件\\children.jsonl",
+        "bytes":  10962606,
+        "sha256":  "08ae2fda5709f95ffbb98ebb3dee00df3913673a824d578449e626eb04724741"
+    },
+    {
+        "relative_path":  "06_标准全文父子分块_52文件\\chunking_config.json",
+        "bytes":  288,
+        "sha256":  "542f2a29917c6cd163454a5e57bbf86668e3b5074a993f90972b196fc151de91"
+    },
+    {
+        "relative_path":  "06_标准全文父子分块_52文件\\parents.jsonl",
+        "bytes":  4157783,
+        "sha256":  "b358c6c647f113c97b0aa343c61a8aba15b23f36b5414def5c5a90903b2c5d9c"
+    },
+    {
+        "relative_path":  "06_标准全文父子分块_52文件\\source_chunk_manifest.csv",
+        "bytes":  6341,
+        "sha256":  "61e3c23ae1724b72b31bd54ce256593a88f99c51520d07f119b9993fe43a6237"
+    },
+    {
+        "relative_path":  "06_标准全文父子分块_52文件\\source_chunk_manifest.json",
+        "bytes":  15458,
+        "sha256":  "b9c325ad612dd4b9455ad34a251d44aa3cd6bd94913b657fdcdbc5fbad68e681"
+    },
+    {
+        "relative_path":  "07_标准全文子块向量_text-embedding-v4_1024\\embedding_index_child.jsonl",
+        "bytes":  63168279,
+        "sha256":  "29fade8742d56f494e06be32972653cefda3ecd5bd0795aa2b566317289d85b6"
+    },
+    {
+        "relative_path":  "07_标准全文子块向量_text-embedding-v4_1024\\embedding_manifest.json",
+        "bytes":  809,
+        "sha256":  "0d19c48e83f839472fd530ce3bdba5a494aaff41972d6497405a7ba2293c391b"
+    },
+    {
+        "relative_path":  "07_标准全文子块向量_text-embedding-v4_1024\\smoke_test.json",
+        "bytes":  330,
+        "sha256":  "4f38cd9e47048d28e361cf4ab59bd2f3253418ba32cdc09a55dfbbaac0bdc7a6"
+    },
+    {
+        "relative_path":  "08_标准全文混合检索索引\\bm25_index.json",
+        "bytes":  44362213,
+        "sha256":  "e921a2b826cd24f583eec2550451719e82cbcf58c4678ce3a0f6c15253457fae"
+    },
+    {
+        "relative_path":  "08_标准全文混合检索索引\\child_cosine_flat.index",
+        "bytes":  11776045,
+        "sha256":  "91614262c18bc9849913d897101f5b3659c4ac9e904d2a156fabaed82f3251e6"
+    },
+    {
+        "relative_path":  "08_标准全文混合检索索引\\child_embeddings_l2_normalized.npy",
+        "bytes":  11776128,
+        "sha256":  "93bf1e585f2c33b516425c4da5882784d816acf54789b4954142e9cd5d2ecec1"
+    },
+    {
+        "relative_path":  "08_标准全文混合检索索引\\child_metadata.jsonl",
+        "bytes":  5807894,
+        "sha256":  "b29927d22815d44aa1fac5d517bf6311c51b75ff83718a2b07fbec8368300247"
+    },
+    {
+        "relative_path":  "08_标准全文混合检索索引\\hybrid_retrieval_smoke_test.json",
+        "bytes":  18400,
+        "sha256":  "175f8bbea3901eee5a19131a18f29fe3946bf3eda1621fcc0c62483fefe3e6dd"
+    },
+    {
+        "relative_path":  "08_标准全文混合检索索引\\parent_contexts.jsonl",
+        "bytes":  4150876,
+        "sha256":  "bc84278cedd5345491ed8352d20f20ef51c30f80d05702c3f592e51e0bf675cc"
+    },
+    {
+        "relative_path":  "08_标准全文混合检索索引\\retrieval_registry.json",
+        "bytes":  1350,
+        "sha256":  "e6f91b6e8897a6a9e19fe07d72d73adf870e140ef9043d5e59fb1293f50509f3"
+    }
+]

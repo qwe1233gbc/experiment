@@ -1,0 +1,29 @@
+{
+  "id": "chatcmpl-f6e8c3fe-aa24-4b8e-915e-a919da8e9971",
+  "object": "chat.completion",
+  "created": 1786533506,
+  "model": "qwen3.8-max",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"scores\": [{\"response_id\": \"R1\", \"correctness\": 2, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": null, \"skill_workflow\": null, \"rationale\": \"结论正确，证据引用准确。因rag_available=false，法规依据与技能流程按规则置null。无问题时明确了审核边界与保持项，行动性满分。\"}, {\"response_id\": \"R2\", \"correctness\": 2, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": 2, \"skill_workflow\": null, \"rationale\": \"结论正确，证据充分且定位精准。引用了GB/T4754等有效外部标准支持结论。因skill_available=false，技能流程置null。无问题下边界清晰，行动性满分。\"}, {\"response_id\": \"R3\", \"correctness\": 2, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": null, \"skill_workflow\": 2, \"rationale\": \"结论正确，内部证据链完整。因rag_available=false，法规依据置null。技能可用且体现了分步核查与边界界定，流程规范。无问题时行动建议明确。\"}, {\"response_id\": \"R4\", \"correctness\": 2, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": 2, \"skill_workflow\": 2, \"rationale\": \"结论正确，证据详实。结合了RAG检索到的国标定义与产污系数手册进行交叉验证，法规依据充分。技能流程完整体现分步核查与边界排除，各项指标均为最优。\"}]}"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4757,
+    "completion_tokens": 364,
+    "total_tokens": 5121,
+    "prompt_tokens_details": {
+      "text_tokens": 4757
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  }
+}

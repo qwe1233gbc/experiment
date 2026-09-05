@@ -1,0 +1,42 @@
+{
+  "question_id": "PL007_Construction_Q01",
+  "prompt_chars": 10161,
+  "scores": [
+    {
+      "response_id": "R1",
+      "correctness": 2,
+      "evidence_use": 2,
+      "actionability": 2,
+      "regulatory_basis": null,
+      "skill_workflow": null,
+      "rationale": "结论与参考答案一致，判定建设内容完整。证据引用准确且定位清晰。在无问题时明确了审核边界和保持项，符合评分规则中无问题也可得满分的要求。因rag/skill不可用，相关维度为null。"
+    },
+    {
+      "response_id": "R2",
+      "correctness": 1,
+      "evidence_use": 2,
+      "actionability": 2,
+      "regulatory_basis": 2,
+      "skill_workflow": null,
+      "rationale": "虽识别出废水数据不一致的真实问题，但据此将“建设内容完整性”判为“部分完成”属于过度结论，该问题实质属于源强核算一致性而非建设内容缺漏，与金标结论方向有偏差。证据和法规依据充分，修改建议具体可执行。"
+    },
+    {
+      "response_id": "R3",
+      "correctness": 1,
+      "evidence_use": 2,
+      "actionability": 2,
+      "regulatory_basis": null,
+      "skill_workflow": 2,
+      "rationale": "同R2，因数据口径问题判定“部分完成”偏离了建设内容完整性的核心定义，属过度结论。但指出的物料平衡及废水问题真实有效，体现了完整的分步核查工作流，修改建议具体。因rag不可用，法规依据为null。"
+    },
+    {
+      "response_id": "R4",
+      "correctness": 1,
+      "evidence_use": 2,
+      "actionability": 2,
+      "regulatory_basis": 2,
+      "skill_workflow": 2,
+      "rationale": "同样因内部数据不一致判定“部分完成”，混淆了内容完整性与数据准确性，导致结论与金标存在实质性偏差。但证据链完整，法规引用正确，工作流规范，且给出了极具操作性的校核与修改建议。"
+    }
+  ]
+}

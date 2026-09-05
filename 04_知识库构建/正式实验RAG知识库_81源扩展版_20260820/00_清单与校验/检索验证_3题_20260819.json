@@ -1,0 +1,153 @@
+{
+  "index_dir": "E:\\实验文件整理_按论文逻辑\\04_知识库构建\\正式实验RAG知识库_61题扩展版_20260819\\03_RAG全文级检索_73知识源\\03_混合检索索引",
+  "params": "candidate_top_k=30, final_top_k=5, rerank=gte-rerank-v2 (与正式实验一致)",
+  "tests": [
+    {
+      "test_id": "T1",
+      "query": "间接冷却水排污水量如何计算？浓缩倍数和风吹损失有什么要求？",
+      "expected_source": "#20_循环冷却水补水排污核算指南.md",
+      "target_hit": true,
+      "target_rank": 1,
+      "top5": [
+        {
+          "rank": 1,
+          "source_file": "#20_循环冷却水补水排污核算指南.md",
+          "child_id": "SRC071_P0001_C001",
+          "parent_id": "SRC071_P0001",
+          "score": 0.4982,
+          "child_content_head": "# 循环冷却水补水量、蒸发量与排污量核算指南\n\n## 适用范围\n用于环评报告中循环冷却水系统的水量平衡、补充水量、蒸发水量和排污水量复核。\n适用于污染源强定量核"
+        },
+        {
+          "rank": 2,
+          "source_file": "#22_塑料制品业废水类型与核算任务指南.md",
+          "child_id": "SRC073_P0001_C001",
+          "parent_id": "SRC073_P0001",
+          "score": 0.2385,
+          "child_content_head": "# 塑料制品业废水类型与核算任务指南\n\n## 用途\n该文件用于识别塑料制品项目常见废水类别，并将报告事实路由到相应核算任务。\n它是“审核任务路由/字段清单”，不"
+        },
+        {
+          "rank": 3,
+          "source_file": "HJ_884-2018.md",
+          "child_id": "SRC061_P0002_C004",
+          "parent_id": "SRC061_P0002",
+          "score": 0.1537,
+          "child_content_head": "治理措施</td><td colspan=\"4\">污染物排放</td><td rowspan=\"3\"></td></tr><tr><td>核算</td><td>"
+        },
+        {
+          "rank": 4,
+          "source_file": "HJ_1122-2020.md",
+          "child_id": "SRC055_P0016_C002",
+          "parent_id": "SRC055_P0016",
+          "score": 0.1512,
+          "child_content_head": " 加热装置（燃料</td><td>点补间</td><td>排风量</td><td>m²/h</td></tr><tr><td>生产公用单元</td><td>/电"
+        },
+        {
+          "rank": 5,
+          "source_file": "DB44_26-2001.md",
+          "child_id": "SRC018_P0003_C004",
+          "parent_id": "SRC018_P0003",
+          "score": 0.1384,
+          "child_content_head": "><td>5米°/1000米35毫米胶片</td></tr><tr><td>18</td><td colspan=\"2\">石油沥青工业</td><td>冷却池的"
+        }
+      ]
+    },
+    {
+      "test_id": "T2",
+      "query": "进塔大气温度30℃时，循环冷却水蒸发损失系数k是多少？",
+      "expected_source": "#21_循环冷却水蒸发损失系数K速查.md",
+      "target_hit": true,
+      "target_rank": 1,
+      "top5": [
+        {
+          "rank": 1,
+          "source_file": "#21_循环冷却水蒸发损失系数K速查.md",
+          "child_id": "SRC072_P0001_C001",
+          "parent_id": "SRC072_P0001",
+          "score": 0.8217,
+          "child_content_head": "# 循环冷却水蒸发损失系数 k 速查\n\n| 进塔大气温度（℃） | -10 | 0 | 10 | 20 | 30 | 40 |\n|---|---:|---:|-"
+        },
+        {
+          "rank": 2,
+          "source_file": "#20_循环冷却水补水排污核算指南.md",
+          "child_id": "SRC071_P0001_C001",
+          "parent_id": "SRC071_P0001",
+          "score": 0.3175,
+          "child_content_head": "# 循环冷却水补水量、蒸发量与排污量核算指南\n\n## 适用范围\n用于环评报告中循环冷却水系统的水量平衡、补充水量、蒸发水量和排污水量复核。\n适用于污染源强定量核"
+        },
+        {
+          "rank": 3,
+          "source_file": "#22_塑料制品业废水类型与核算任务指南.md",
+          "child_id": "SRC073_P0001_C001",
+          "parent_id": "SRC073_P0001",
+          "score": 0.1907,
+          "child_content_head": "# 塑料制品业废水类型与核算任务指南\n\n## 用途\n该文件用于识别塑料制品项目常见废水类别，并将报告事实路由到相应核算任务。\n它是“审核任务路由/字段清单”，不"
+        },
+        {
+          "rank": 4,
+          "source_file": "HJ_1122-2020.md",
+          "child_id": "SRC055_P0016_C002",
+          "parent_id": "SRC055_P0016",
+          "score": 0.151,
+          "child_content_head": " 加热装置（燃料</td><td>点补间</td><td>排风量</td><td>m²/h</td></tr><tr><td>生产公用单元</td><td>/电"
+        },
+        {
+          "rank": 5,
+          "source_file": "HJ_169-2018.md",
+          "child_id": "SRC057_P0009_C008",
+          "parent_id": "SRC057_P0009",
+          "score": 0.1376,
+          "child_content_head": "漏速率， $\\mathrm{kg/s}$ 。\n\n# F.1.4.2 热量蒸发估算\n\n当液体闪蒸不完全，有一部分液体在地面形成液池，并吸收地面热量而汽化，其蒸发速"
+        }
+      ]
+    },
+    {
+      "test_id": "T3",
+      "query": "塑料制品项目直接冷却废水应核查哪些参数？",
+      "expected_source": "#22_塑料制品业废水类型与核算任务指南.md",
+      "target_hit": true,
+      "target_rank": 2,
+      "top5": [
+        {
+          "rank": 1,
+          "source_file": "#20_循环冷却水补水排污核算指南.md",
+          "child_id": "SRC071_P0001_C002",
+          "parent_id": "SRC071_P0001",
+          "score": 0.4807,
+          "child_content_head": "运行时间。\n\n## 二、直接冷却水\n\n### 基本关系\n- Qr：由报告给出的冷却水槽尺寸、数量及循环运行参数确定。\n- Qe = k × Δt × Qr\n- "
+        },
+        {
+          "rank": 2,
+          "source_file": "#22_塑料制品业废水类型与核算任务指南.md",
+          "child_id": "SRC073_P0001_C001",
+          "parent_id": "SRC073_P0001",
+          "score": 0.3842,
+          "child_content_head": "# 塑料制品业废水类型与核算任务指南\n\n## 用途\n该文件用于识别塑料制品项目常见废水类别，并将报告事实路由到相应核算任务。\n它是“审核任务路由/字段清单”，不"
+        },
+        {
+          "rank": 3,
+          "source_file": "#9_塑料制品业产污系数_废气_速查.md",
+          "child_id": "SRC016_P0001_C001",
+          "parent_id": "SRC016_P0001",
+          "score": 0.1897,
+          "child_content_head": "# 塑料制品业产污系数_废气_速查\n\n本文件用于 Dify 检索时快速定位常用废气产污系数。完整抽取数据保留在 `#9_塑料制品业产污系数_废气_官方手册.md"
+        },
+        {
+          "rank": 4,
+          "source_file": "HJ_1122-2020.md",
+          "child_id": "SRC055_P0023_C001",
+          "parent_id": "SRC055_P0023",
+          "score": 0.1857,
+          "child_content_head": "<html><body><table><tr><td colspan=\"2\" rowspan=\"2\">监测点位</td><td rowspan=\"2\">监测指标"
+        },
+        {
+          "rank": 5,
+          "source_file": "HJ_1207-2021.md",
+          "child_id": "SRC056_P0003_C003",
+          "parent_id": "SRC056_P0003",
+          "score": 0.1853,
+          "child_content_head": "td><td>年</td></tr><tr><td rowspan=\"3\">所有类别的塑料制 品制造</td><td>印刷排气筒 有机废气治理设施（燃</td>"
+        }
+      ]
+    }
+  ]
+}

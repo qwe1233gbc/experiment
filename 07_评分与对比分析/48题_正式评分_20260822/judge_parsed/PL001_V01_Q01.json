@@ -1,0 +1,42 @@
+{
+  "question_id": "PL001_V01_Q01",
+  "prompt_chars": 9900,
+  "scores": [
+    {
+      "response_id": "R1",
+      "correctness": 2,
+      "evidence_use": 2,
+      "actionability": 2,
+      "regulatory_basis": null,
+      "skill_workflow": null,
+      "rationale": "结论正确，证据引用准确。因rag/skill不可用，法规与流程评分为null。无问题时明确了边界和保持项，actionability满分。"
+    },
+    {
+      "response_id": "R2",
+      "correctness": 2,
+      "evidence_use": 2,
+      "actionability": 2,
+      "regulatory_basis": 2,
+      "skill_workflow": null,
+      "rationale": "结论正确且证据充分。引用了RAG中的分类标准支持结论，法规依据得分2。skill不可用故为null。给出了增强论证的建议，具备可操作性。"
+    },
+    {
+      "response_id": "R3",
+      "correctness": 2,
+      "evidence_use": 2,
+      "actionability": 2,
+      "regulatory_basis": null,
+      "skill_workflow": 2,
+      "rationale": "结论正确，证据详实。体现了完整的分步核查流程（产品-原料-工艺匹配），skill得2分。rag不可用故法规为null。指出了数据缺失的边界，actionability满分。"
+    },
+    {
+      "response_id": "R4",
+      "correctness": 2,
+      "evidence_use": 2,
+      "actionability": 2,
+      "regulatory_basis": 2,
+      "skill_workflow": 2,
+      "rationale": "全维度最优。结论正确，证据链完整，引用RAG法规依据准确，且完整体现了审核工作流。对印刷工序的排除分析增强了结论可靠性，各项指标均满分。"
+    }
+  ]
+}

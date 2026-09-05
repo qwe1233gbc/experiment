@@ -1,0 +1,5 @@
+{
+  "question_id": "PL002_EnvQuality_Q01",
+  "attempt": 1,
+  "error": "ValueError: R1法规依据必须为null"
+}

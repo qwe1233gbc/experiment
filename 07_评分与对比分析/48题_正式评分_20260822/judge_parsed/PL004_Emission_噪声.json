@@ -1,0 +1,42 @@
+{
+  "question_id": "PL004_Emission_噪声",
+  "prompt_chars": 12765,
+  "scores": [
+    {
+      "response_id": "R1",
+      "correctness": 2,
+      "evidence_use": 2,
+      "actionability": 2,
+      "regulatory_basis": null,
+      "skill_workflow": null,
+      "rationale": "结论与参考答案一致，且准确识别出报告中GB3096误用及工况矛盾等真实问题。证据定位精准，修改建议具体可执行。因rag/skill不可用，相关维度依规置null。"
+    },
+    {
+      "response_id": "R2",
+      "correctness": 2,
+      "evidence_use": 2,
+      "actionability": 2,
+      "regulatory_basis": 2,
+      "skill_workflow": null,
+      "rationale": "结论正确并发现额外真实问题。引用RAG验证标准限值，证据充分。给出了具体的修正建议和补充夜间限值要求，可操作性强。法规依据正确完整。skill不可用置null。"
+    },
+    {
+      "response_id": "R3",
+      "correctness": 2,
+      "evidence_use": 2,
+      "actionability": 2,
+      "regulatory_basis": null,
+      "skill_workflow": 2,
+      "rationale": "结论正确，完整体现审核工作流，分步核查清晰。准确指出标准误用及工况矛盾，证据链完整。虽无RAG但内部一致性分析充分，行动建议明确。regulatory_basis因rag不可用置null。"
+    },
+    {
+      "response_id": "R4",
+      "correctness": 2,
+      "evidence_use": 2,
+      "actionability": 2,
+      "regulatory_basis": 2,
+      "skill_workflow": 2,
+      "rationale": "全维度表现最优。结合RAG与工作流，既确认标准选取合理，又精准指出工况矛盾、标准误用及限值缺失。证据详实，法规依据充分，修改建议具体明确，完全符合评分金标及额外问题不扣分原则。"
+    }
+  ]
+}

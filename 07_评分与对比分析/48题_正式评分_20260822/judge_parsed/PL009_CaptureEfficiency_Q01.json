@@ -1,0 +1,42 @@
+{
+  "question_id": "PL009_CaptureEfficiency_Q01",
+  "prompt_chars": 10034,
+  "scores": [
+    {
+      "response_id": "R1",
+      "correctness": 1,
+      "evidence_use": 2,
+      "actionability": 2,
+      "regulatory_basis": null,
+      "skill_workflow": null,
+      "rationale": "识别出注塑描述不一致及90%收集率矛盾等真实问题，证据定位准确。但因无RAG无法核验效率上限合理性，且将内部矛盾直接判定为‘存在问题’而非参考答案的‘数值合理但表述需统一’，结论偏严。"
+    },
+    {
+      "response_id": "R2",
+      "correctness": 2,
+      "evidence_use": 2,
+      "actionability": 2,
+      "regulatory_basis": 2,
+      "skill_workflow": null,
+      "rationale": "结论与参考答案高度一致，确认效率取值保守合理同时指出表述不一致。有效利用RAG验证上限，证据引用精准，并额外发现版本差异问题，修改建议具体可执行。"
+    },
+    {
+      "response_id": "R3",
+      "correctness": 1,
+      "evidence_use": 2,
+      "actionability": 2,
+      "regulatory_basis": null,
+      "skill_workflow": 2,
+      "rationale": "完整体现审核工作流，准确识别表述不一致及90%矛盾等额外真实问题。但因无RAG无法确认效率取值合理性，给出‘待人工复核’而非明确合理性判断，核心结论完整性略逊于参考答案。"
+    },
+    {
+      "response_id": "R4",
+      "correctness": 2,
+      "evidence_use": 2,
+      "actionability": 2,
+      "regulatory_basis": 2,
+      "skill_workflow": 2,
+      "rationale": "结论与参考答案一致，判定取值合理并指出表述问题。结合RAG与报告证据进行风量复算验证，工作流完整，法规依据充分，且审慎处理了90%收集率适用性问题，分析最为全面严谨。"
+    }
+  ]
+}

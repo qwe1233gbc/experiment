@@ -1,0 +1,29 @@
+{
+  "id": "chatcmpl-2d20f76b-6085-4289-85d1-f17540aac40b",
+  "object": "chat.completion",
+  "created": 1786533504,
+  "model": "qwen3.8-max",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"scores\": [{\"response_id\": \"R1\", \"correctness\": 1, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": null, \"skill_workflow\": null, \"rationale\": \"结论与参考答案基本一致但过度判定不合规。准确识别新旧标准混用问题，证据定位精准。因rag不可用未扣分，但将非必须项缺失作为否定依据略显严苛。\"}, {\"response_id\": \"R2\", \"correctness\": 1, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": 2, \"skill_workflow\": null, \"rationale\": \"正确指出GB18599版本冲突及适用边界问题，证据充分且法规依据准确。虽判“存在问题”与金标“无误”有偏差，但属对报告真实缺陷的合理补充，未盲目偏袒。\"}, {\"response_id\": \"R3\", \"correctness\": 1, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": null, \"skill_workflow\": 2, \"rationale\": \"完整体现审核工作流，发现代码不一致等额外真实问题。因无RAG无法验证标准有效性，但内部一致性核查到位，结论虽严但有据，符合技能要求。\"}, {\"response_id\": \"R4\", \"correctness\": 1, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": 2, \"skill_workflow\": 2, \"rationale\": \"综合表现最佳。既验证标准版本冲突，又发现危废代码不一致等实质问题，证据链完整，法规与工作流均达标。结论虽异于金标，但基于报告真实缺陷，不应扣分。\"}]}"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6989,
+    "completion_tokens": 382,
+    "total_tokens": 7371,
+    "prompt_tokens_details": {
+      "text_tokens": 6989
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  }
+}

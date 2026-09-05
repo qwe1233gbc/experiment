@@ -1,0 +1,72 @@
+{
+  "version": "61q-extended-20260819",
+  "created_at": "2026-08-19T14:27:29.367058+00:00",
+  "base_version": "四层架构_证据增强版_20260812（70源；复现完整包20260817的运行库）",
+  "purpose": "PL006-PL015新增40题（9类Skill）实验用扩展RAG知识库",
+  "changes": "仅新增3个知识源（#20/#21/#22）；分块/嵌入/检索参数与基线完全一致；原70源398父块3433子块ID与内容逐字保留",
+  "source_count_before": 70,
+  "source_count_after": 73,
+  "parent_count_before": 398,
+  "parent_count_after": 401,
+  "child_count_before": 3433,
+  "child_count_after": 3438,
+  "chunk_params": {
+    "parent_target_tokens": 4000,
+    "child_window_tokens": 500,
+    "child_overlap_tokens": 100,
+    "token_estimator": "o200k_base"
+  },
+  "new_sources": [
+    {
+      "source_id": "SRC071",
+      "file": "#20_循环冷却水补水排污核算指南.md",
+      "sha256": "df409a898c811f6a21ce55c262d75fd2420ed38ab04078248b28ffd1d2744710",
+      "origin_category": "01_建议直接入库",
+      "skills": [
+        "calculate-eia-pollutant-source-strength"
+      ],
+      "tasks": [
+        "循环冷却水量Qr",
+        "蒸发水量Qe",
+        "排污水量Qb",
+        "补充水量Qm",
+        "水量平衡复算",
+        "浓缩倍数/温差/风吹损失参数审核"
+      ],
+      "package": "E:\\实验文件整理_按论文逻辑\\04_知识库构建\\候选知识_暂存解压_20260819\\PL006-PL015_新增知识候选入库包_20260819\\01_建议直接入库\\#20_循环冷却水补水排污核算指南.md",
+      "added_at": "2026-08-19T14:27:29.367058+00:00"
+    },
+    {
+      "source_id": "SRC072",
+      "file": "#21_循环冷却水蒸发损失系数K速查.md",
+      "sha256": "03de9538a6540b92c8ad85395f41a14d721098e46b3b237a1660caff37f09b8c",
+      "origin_category": "01_建议直接入库",
+      "skills": [
+        "calculate-eia-pollutant-source-strength"
+      ],
+      "tasks": [
+        "蒸发损失系数k取值核验",
+        "蒸发水量Qe复算"
+      ],
+      "package": "E:\\实验文件整理_按论文逻辑\\04_知识库构建\\候选知识_暂存解压_20260819\\PL006-PL015_新增知识候选入库包_20260819\\01_建议直接入库\\#21_循环冷却水蒸发损失系数K速查.md",
+      "added_at": "2026-08-19T14:27:29.367058+00:00"
+    },
+    {
+      "source_id": "SRC073",
+      "file": "#22_塑料制品业废水类型与核算任务指南.md",
+      "sha256": "eb1d5b5cc630fadbeb8faef7fafe109bafc55a50077b27ca2172d9b3c2496493",
+      "origin_category": "02_清洗后可入库",
+      "skills": [
+        "calculate-eia-pollutant-source-strength",
+        "review-eia-construction-content-completeness"
+      ],
+      "tasks": [
+        "生活污水/间接冷却/直接冷却废水类型识别",
+        "水平衡字段完整性",
+        "废水源强核算任务路由"
+      ],
+      "package": "E:\\实验文件整理_按论文逻辑\\04_知识库构建\\候选知识_暂存解压_20260819\\PL006-PL015_新增知识候选入库包_20260819\\02_清洗后可入库\\#22_塑料制品业废水类型与核算任务指南.md",
+      "added_at": "2026-08-19T14:27:29.367058+00:00"
+    }
+  ]
+}

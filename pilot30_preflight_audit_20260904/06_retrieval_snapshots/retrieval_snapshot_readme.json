@@ -1,0 +1,14 @@
+{
+  "web_search_snapshot": "pilot17_web_snapshot_v3_4.jsonl",
+  "rag_retrieval_snapshot": "pilot17_rag_snapshot_v3_4.jsonl",
+  "note": "检索快照仅保留最终Top-K结果；BM25候选、Dense候选、Rerank中间排名等中间过程未单独持久化（NOT_LOGGED）",
+  "missing_intermediate_data": [
+    "BM25候选列表",
+    "Dense retrieval候选列表",
+    "RRF融合前的各自排名",
+    "Rerank前排名",
+    "Rerank后排名",
+    "原始检索query",
+    "query改写记录"
+  ]
+}

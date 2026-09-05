@@ -1,0 +1,29 @@
+{
+  "id": "chatcmpl-c6a6b000-1bfe-4b75-a457-67b8121e8819",
+  "object": "chat.completion",
+  "created": 1786533531,
+  "model": "qwen3.8-max",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"scores\": [{\"response_id\": \"R1\", \"correctness\": 2, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": null, \"skill_workflow\": null, \"rationale\": \"结论与参考答案一致，准确识别3类区及限值。证据引用精准定位报告内容。无问题下明确保持项与边界，行动建议具体。因rag/skill不可用，法规与流程评分为null。\"}, {\"response_id\": \"R2\", \"correctness\": 2, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": 2, \"skill_workflow\": null, \"rationale\": \"结论正确且与金标一致。利用RAG验证了标准限值，证据链完整。明确了核验边界与缺失项，可操作性强。法规依据充分。因skill不可用，流程评分为null。\"}, {\"response_id\": \"R3\", \"correctness\": 2, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": null, \"skill_workflow\": 2, \"rationale\": \"内部一致性分析正确，符合金标要求。证据引用详实。虽判“部分完成”但系因外部核验受限，已给出明确内部审核边界与缺失清单，体现完整审核工作流。法规评分为null。\"}, {\"response_id\": \"R4\", \"correctness\": 2, \"evidence_use\": 2, \"actionability\": 2, \"regulatory_basis\": 2, \"skill_workflow\": 2, \"rationale\": \"结合RAG与报告证据，结论正确且分析全面。准确指出区划文件缺失导致的外部核验局限，体现了严谨的审核工作流与法规适用性判断。各项指标均达满分标准。\"}]}"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5264,
+    "completion_tokens": 387,
+    "total_tokens": 5651,
+    "prompt_tokens_details": {
+      "text_tokens": 5264
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  }
+}

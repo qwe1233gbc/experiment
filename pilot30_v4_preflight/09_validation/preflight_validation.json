@@ -1,0 +1,165 @@
+{
+  "gates": {
+    "question_complete": {
+      "passed": true,
+      "detail": "23题全部完整"
+    },
+    "human_gold_confirmed": {
+      "passed": false,
+      "detail": "0/23 题已人工确认金标 — 未确认: ['NEW_PL001_invest_ratio', 'NEW_PL006_invest_ratio', 'NEW_PL010_invest_ratio', 'NEW_PL015_invest_ratio', 'PL001_Emission_固体']..."
+    },
+    "original_report_registered": {
+      "passed": true,
+      "detail": "11/11 个项目有解析文件登记"
+    },
+    "word_parsed_fidelity_pass": {
+      "passed": false,
+      "detail": "0/11 个项目完整保真度核验通过；11 个项目JSON解析正常但缺原始Word无法核验"
+    },
+    "required_report_evidence_in_prompt": {
+      "passed": false,
+      "detail": "逐题证据包: 0/23（待生成最小充分证据包）"
+    },
+    "required_external_clause_in_topk": {
+      "passed": false,
+      "detail": "0/23 题外部知识覆盖已确认；其余为 PARTIAL/MISSING，需审计是否包含决定性条款"
+    },
+    "K2_web_hash_equals_K3_web_hash": {
+      "passed": false,
+      "detail": "尚未生成统一Web/RAG快照；K3必须复用K2的同一Web证据"
+    },
+    "prompt_gold_leakage_zero": {
+      "passed": true,
+      "detail": "结论枚举值作为JSON Schema示例出现属正常现象；未发现具体题目的金标答案泄漏"
+    },
+    "unresolved_pending_audit_zero": {
+      "passed": true,
+      "detail": "剩余 PENDING_AUDIT: 0 处（需逐题审计完成）"
+    },
+    "runnable_from_clean_checkout": {
+      "passed": true,
+      "detail": "frozen_config存在: True; 脚本数: 1; 硬编码路径: 0"
+    }
+  },
+  "checks": [
+    {
+      "name": "question_complete",
+      "passed": true,
+      "detail": "23题全部完整",
+      "type": "gate"
+    },
+    {
+      "name": "human_gold_confirmed",
+      "passed": false,
+      "detail": "0/23 题已人工确认金标 — 未确认: ['NEW_PL001_invest_ratio', 'NEW_PL006_invest_ratio', 'NEW_PL010_invest_ratio', 'NEW_PL015_invest_ratio', 'PL001_Emission_固体']...",
+      "type": "gate"
+    },
+    {
+      "name": "original_report_registered",
+      "passed": true,
+      "detail": "11/11 个项目有解析文件登记",
+      "type": "gate"
+    },
+    {
+      "name": "word_parsed_fidelity_pass",
+      "passed": false,
+      "detail": "0/11 个项目完整保真度核验通过；11 个项目JSON解析正常但缺原始Word无法核验",
+      "type": "gate"
+    },
+    {
+      "name": "required_report_evidence_in_prompt",
+      "passed": false,
+      "detail": "逐题证据包: 0/23（待生成最小充分证据包）",
+      "type": "gate"
+    },
+    {
+      "name": "required_external_clause_in_topk",
+      "passed": false,
+      "detail": "0/23 题外部知识覆盖已确认；其余为 PARTIAL/MISSING，需审计是否包含决定性条款",
+      "type": "gate"
+    },
+    {
+      "name": "K2_web_hash_equals_K3_web_hash",
+      "passed": false,
+      "detail": "尚未生成统一Web/RAG快照；K3必须复用K2的同一Web证据",
+      "type": "gate"
+    },
+    {
+      "name": "prompt_gold_leakage_zero",
+      "passed": true,
+      "detail": "结论枚举值作为JSON Schema示例出现属正常现象；未发现具体题目的金标答案泄漏",
+      "type": "gate"
+    },
+    {
+      "name": "unresolved_pending_audit_zero",
+      "passed": true,
+      "detail": "剩余 PENDING_AUDIT: 0 处（需逐题审计完成）",
+      "type": "gate"
+    },
+    {
+      "name": "runnable_from_clean_checkout",
+      "passed": true,
+      "detail": "frozen_config存在: True; 脚本数: 1; 硬编码路径: 0",
+      "type": "gate"
+    },
+    {
+      "name": "BM25索引哈希一致",
+      "passed": true,
+      "detail": "5/5 索引文件哈希与登记一致",
+      "type": "check"
+    },
+    {
+      "name": "Prompt去锚定",
+      "passed": true,
+      "detail": "system prompt中conclusion示例已改为空占位符",
+      "type": "check"
+    },
+    {
+      "name": "金标枚举完整",
+      "passed": true,
+      "detail": "CORRECT/INCORRECT/PARTIALLY_CORRECT/INSUFFICIENT 四值完整",
+      "type": "check"
+    },
+    {
+      "name": "run_matrix生成",
+      "passed": true,
+      "detail": "主实验 69 条 run matrix 已生成（23题×3条件）",
+      "type": "check"
+    },
+    {
+      "name": "标准来源登记",
+      "passed": true,
+      "detail": "38 个标准来源已登记（可追溯性等级: CARD_EXISTS）",
+      "type": "check"
+    },
+    {
+      "name": "索引完整性",
+      "passed": true,
+      "detail": "5/5 索引文件存在且哈希一致",
+      "type": "check"
+    }
+  ],
+  "errors": [
+    "human_gold_confirmed: 0/23 题已人工确认金标 — 未确认: ['NEW_PL001_invest_ratio', 'NEW_PL006_invest_ratio', 'NEW_PL010_invest_ratio', 'NEW_PL015_invest_ratio', 'PL001_Emission_固体']...",
+    "word_parsed_fidelity_pass: 0/11 个项目完整保真度核验通过；11 个项目JSON解析正常但缺原始Word无法核验",
+    "required_report_evidence_in_prompt: 逐题证据包: 0/23（待生成最小充分证据包）",
+    "required_external_clause_in_topk: 0/23 题外部知识覆盖已确认；其余为 PARTIAL/MISSING，需审计是否包含决定性条款",
+    "K2_web_hash_equals_K3_web_hash: 尚未生成统一Web/RAG快照；K3必须复用K2的同一Web证据"
+  ],
+  "warnings": [],
+  "summary": {
+    "preflight_decision": "FAIL",
+    "total_gates": 10,
+    "passed_gates": 5,
+    "failed_gates": 5,
+    "total_checks": 16,
+    "errors": [
+      "human_gold_confirmed: 0/23 题已人工确认金标 — 未确认: ['NEW_PL001_invest_ratio', 'NEW_PL006_invest_ratio', 'NEW_PL010_invest_ratio', 'NEW_PL015_invest_ratio', 'PL001_Emission_固体']...",
+      "word_parsed_fidelity_pass: 0/11 个项目完整保真度核验通过；11 个项目JSON解析正常但缺原始Word无法核验",
+      "required_report_evidence_in_prompt: 逐题证据包: 0/23（待生成最小充分证据包）",
+      "required_external_clause_in_topk: 0/23 题外部知识覆盖已确认；其余为 PARTIAL/MISSING，需审计是否包含决定性条款",
+      "K2_web_hash_equals_K3_web_hash: 尚未生成统一Web/RAG快照；K3必须复用K2的同一Web证据"
+    ],
+    "warnings": []
+  }
+}

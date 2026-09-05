@@ -1,0 +1,10 @@
+{
+  "question_id": "H10_PL002_StackHeightRate",
+  "query": "判断报告中排气筒高度与排放速率的对应关系是否符合大气污染物排放标准中的高度修正要求。 任务类型：排气筒高度与排放速率关系 排气筒高度 排放速率 高度修正",
+  "query_provenance": [
+    "question_text (first 300 chars)",
+    "task_type (from question metadata)",
+    "question_id keyword hint: 排气筒高度与排放速率关系"
+  ],
+  "gold_leakage_check": "PASSED (query built from question text + task type + domain keywords only; no gold verdict/answer leaked)"
+}

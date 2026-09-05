@@ -1,0 +1,57 @@
+{
+  "overall": "PASS",
+  "checks": {
+    "1_40_40_success": {
+      "pass": true,
+      "detail": "count=40 failed=[]"
+    },
+    "2_exact_5_hits": {
+      "pass": true,
+      "detail": "not5=[]"
+    },
+    "3_no_dup_no_missing": {
+      "pass": true,
+      "detail": "dup=[] missing=[]"
+    },
+    "4_query_sha256_and_v31": {
+      "pass": true,
+      "detail": "bad=[]"
+    },
+    "5_rag_context_sha256": {
+      "pass": true,
+      "detail": "bad=[]"
+    },
+    "6_source_in_manifest": {
+      "pass": true,
+      "detail": "bad=[]"
+    },
+    "7_traceable": {
+      "pass": true,
+      "detail": "bad=[]"
+    },
+    "8_rag_context_consistent": {
+      "pass": true,
+      "detail": "bad=[]"
+    },
+    "9_pl007_008": {
+      "pass": true,
+      "detail": "path_ok=True v007_in=[]"
+    },
+    "10_no_gold_leak": {
+      "pass": true,
+      "detail": "query_leaks=[] context_overlap=[]"
+    },
+    "11_no_skill_in_query": {
+      "pass": true,
+      "detail": "bad=[]"
+    },
+    "12_params_parity": {
+      "pass": true,
+      "detail": "m40={'dense_top_k': 40, 'sparse_top_k': 100, 'candidate_top_k': 30, 'final_top_k': 5, 'use_rerank': True, 'rerank_model': 'gte-rerank-v2', 'rrf_k': 60, 'max_per_source_candidates': 3, 'bm25_exact_code_boost': 250, 'source_filename_code_boost': 500, 'rerank_exact_source_bonus': 1.0, 'source_dedup': True, 'parent_expansion': True}"
+    },
+    "13_kb_unchanged": {
+      "pass": true,
+      "detail": "v31=949c516895d995dbdb4e0ed74b007d9a9d8bbada67a14f6d06f58b011aef9ea4 old=949c516895d995dbdb4e0ed74b007d9a9d8bbada67a14f6d06f58b011aef9ea4"
+    }
+  }
+}

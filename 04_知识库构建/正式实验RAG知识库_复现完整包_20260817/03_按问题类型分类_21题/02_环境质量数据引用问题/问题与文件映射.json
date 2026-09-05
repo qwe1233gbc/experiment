@@ -1,0 +1,182 @@
+[
+  {
+    "audit_type": "环境质量数据引用",
+    "question_id": "PL001_EnvQuality_Q01",
+    "project_id": "PL001",
+    "question": "请根据报告引用的环境质量公报及现状数据，判断大气和地表水环境质量现状数据引用是否准确。",
+    "skill_id": "review-eia-environmental-quality-data",
+    "core_answer_sources": [
+      {
+        "base_source_id": "SRC007",
+        "source_file": "#6_2023年佛山市顺德区生态环境状态公报.txt"
+      },
+      {
+        "base_source_id": "SRC008",
+        "source_file": "#6_2024年佛山市顺德区生态环境状态公报.txt"
+      }
+    ],
+    "actual_frozen_top5_hits": [
+      {
+        "rank": 1,
+        "enhanced_source_id": "SRC046",
+        "source_file": "GB_3095-2012.md",
+        "parent_id": "SRC046_P0001",
+        "child_id": "SRC046_P0001_C003",
+        "score": 1.2114814799196516
+      },
+      {
+        "rank": 2,
+        "enhanced_source_id": "SRC023",
+        "source_file": "EVID_ENV_SHUNDE_2022.md",
+        "parent_id": "SRC023_P0001",
+        "child_id": "SRC023_P0001_C001",
+        "score": 0.8866951493840524
+      },
+      {
+        "rank": 3,
+        "enhanced_source_id": "SRC007",
+        "source_file": "#6_2023年佛山市顺德区生态环境状态公报.txt",
+        "parent_id": "SRC007_P0001",
+        "child_id": "SRC007_P0001_C001",
+        "score": 0.7526343805558713
+      },
+      {
+        "rank": 4,
+        "enhanced_source_id": "SRC008",
+        "source_file": "#6_2024年佛山市顺德区生态环境状态公报.txt",
+        "parent_id": "SRC008_P0001",
+        "child_id": "SRC008_P0001_C001",
+        "score": 0.5771663575986942
+      },
+      {
+        "rank": 5,
+        "enhanced_source_id": "SRC011",
+        "source_file": "#7_环境质量标准限值速查.md",
+        "parent_id": "SRC011_P0001",
+        "child_id": "SRC011_P0001_C001",
+        "score": 0.4682390538003661
+      }
+    ],
+    "snapshot_sha256": "e8ef7aade6384b0b77c79db000ae407fc89f761c57c76c5d86cfa79023e1c101"
+  },
+  {
+    "audit_type": "环境质量数据引用",
+    "question_id": "PL002_EnvQuality_Q01",
+    "project_id": "PL002",
+    "question": "请根据报告引用的环境质量公报及现状数据，判断大气和地表水环境质量现状数据引用是否准确。",
+    "skill_id": "review-eia-environmental-quality-data",
+    "core_answer_sources": [
+      {
+        "base_source_id": "SRC007",
+        "source_file": "#6_2023年佛山市顺德区生态环境状态公报.txt"
+      },
+      {
+        "base_source_id": "SRC008",
+        "source_file": "#6_2024年佛山市顺德区生态环境状态公报.txt"
+      }
+    ],
+    "actual_frozen_top5_hits": [
+      {
+        "rank": 1,
+        "enhanced_source_id": "SRC046",
+        "source_file": "GB_3095-2012.md",
+        "parent_id": "SRC046_P0001",
+        "child_id": "SRC046_P0001_C003",
+        "score": 1.2114814799196516
+      },
+      {
+        "rank": 2,
+        "enhanced_source_id": "SRC023",
+        "source_file": "EVID_ENV_SHUNDE_2022.md",
+        "parent_id": "SRC023_P0001",
+        "child_id": "SRC023_P0001_C001",
+        "score": 0.8866951493840524
+      },
+      {
+        "rank": 3,
+        "enhanced_source_id": "SRC007",
+        "source_file": "#6_2023年佛山市顺德区生态环境状态公报.txt",
+        "parent_id": "SRC007_P0001",
+        "child_id": "SRC007_P0001_C001",
+        "score": 0.7526343805558713
+      },
+      {
+        "rank": 4,
+        "enhanced_source_id": "SRC008",
+        "source_file": "#6_2024年佛山市顺德区生态环境状态公报.txt",
+        "parent_id": "SRC008_P0001",
+        "child_id": "SRC008_P0001_C001",
+        "score": 0.5771663575986942
+      },
+      {
+        "rank": 5,
+        "enhanced_source_id": "SRC011",
+        "source_file": "#7_环境质量标准限值速查.md",
+        "parent_id": "SRC011_P0001",
+        "child_id": "SRC011_P0001_C001",
+        "score": 0.4682390538003661
+      }
+    ],
+    "snapshot_sha256": "c24c4cfee5ca3763e5517de5fbf3d2dd33cd504f06db1e7bd903b6cf6b5f657c"
+  },
+  {
+    "audit_type": "环境质量数据引用",
+    "question_id": "PL006_EnvQuality_Q01",
+    "project_id": "PL006",
+    "question": "请根据报告引用的环境质量公报及现状数据，判断大气和地表水环境质量现状数据引用是否准确。",
+    "skill_id": "review-eia-environmental-quality-data",
+    "core_answer_sources": [
+      {
+        "base_source_id": "SRC007",
+        "source_file": "#6_2023年佛山市顺德区生态环境状态公报.txt"
+      },
+      {
+        "base_source_id": "SRC008",
+        "source_file": "#6_2024年佛山市顺德区生态环境状态公报.txt"
+      }
+    ],
+    "actual_frozen_top5_hits": [
+      {
+        "rank": 1,
+        "enhanced_source_id": "SRC051",
+        "source_file": "GB_3838-2002.md",
+        "parent_id": "SRC051_P0001",
+        "child_id": "SRC051_P0001_C001",
+        "score": 1.472801204781655
+      },
+      {
+        "rank": 2,
+        "enhanced_source_id": "SRC046",
+        "source_file": "GB_3095-2012.md",
+        "parent_id": "SRC046_P0001",
+        "child_id": "SRC046_P0001_C002",
+        "score": 1.1949942050670055
+      },
+      {
+        "rank": 3,
+        "enhanced_source_id": "SRC007",
+        "source_file": "#6_2023年佛山市顺德区生态环境状态公报.txt",
+        "parent_id": "SRC007_P0001",
+        "child_id": "SRC007_P0001_C001",
+        "score": 0.8045313608190742
+      },
+      {
+        "rank": 4,
+        "enhanced_source_id": "SRC008",
+        "source_file": "#6_2024年佛山市顺德区生态环境状态公报.txt",
+        "parent_id": "SRC008_P0001",
+        "child_id": "SRC008_P0001_C001",
+        "score": 0.7839986935925497
+      },
+      {
+        "rank": 5,
+        "enhanced_source_id": "SRC023",
+        "source_file": "EVID_ENV_SHUNDE_2022.md",
+        "parent_id": "SRC023_P0001",
+        "child_id": "SRC023_P0001_C001",
+        "score": 0.7267832199475612
+      }
+    ],
+    "snapshot_sha256": "26fc66257defe9f95452a2cc9abb407162cc5ebc616837b0a2400e64a643e78b"
+  }
+]

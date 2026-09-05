@@ -1,0 +1,11 @@
+{
+  "source_count": 52,
+  "parent_count": 323,
+  "child_count": 2747,
+  "parent_target_tokens": 4000,
+  "child_window_tokens": 500,
+  "child_overlap_tokens": 100,
+  "child_overlap_ratio": 0.2,
+  "token_estimator": "tiktoken:o200k_base",
+  "embedding_policy": "children_only"
+}

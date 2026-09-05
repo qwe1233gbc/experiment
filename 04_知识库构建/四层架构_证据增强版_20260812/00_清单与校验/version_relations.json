@@ -1,0 +1,29 @@
+{
+  "audit_date_rule": "Select the version effective on the report/audit reference date; never use a historical text as current.",
+  "relations": [
+    {
+      "family": "GB 18918—2002",
+      "current": "base text + 2006 amendment + 2025 amendment",
+      "effective": "2026-03-01",
+      "historical": "base text + 2006 amendment before 2026-03-01"
+    },
+    {
+      "family": "国家危险废物名录",
+      "current": "2025年版",
+      "effective": "2025-01-01",
+      "historical": "2021年版 through 2024-12-31"
+    },
+    {
+      "family": "GB 34330",
+      "current": "GB 34330—2025",
+      "effective": "2026-03-01",
+      "historical": "GB 34330—2017 through 2026-02-28"
+    },
+    {
+      "family": "危险废物鉴别",
+      "current": "GB 5085.1—6 + GB 5085.7—2019 + HJ 298—2019",
+      "effective": "as recorded in each source",
+      "historical": "GB 5085.7—2007 and HJ/T 298—2007 replaced"
+    }
+  ]
+}

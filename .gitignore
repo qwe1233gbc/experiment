@@ -1,21 +1,109 @@
-# API密钥
+# ============================================
+# .gitignore - experiment 仓库
+# 公开仓库专用：排除所有私有和敏感内容
+# ============================================
+
+# ===== 环境和密钥 =====
 .env
+.env.*
+*.key
+*.pem
+*.secret
 config/.env
 
-# 实验结果（可选提交）
-# 07_results/
+# ===== 原始报告（私有，含企业信息）=====
+01_原始文件输入/
+01_原始文件输入备份/
+*原始报告*
+*报告原件*
+*.doc
+*.docx
+*.pdf
+09_input_reports/
+实验/09_input_reports/
 
-# 临时文件
+# ===== 报告JSON解析件（含企业信息，谨慎处理）=====
+# 注意：如果需要公开，请先脱敏
+# 01_原始文件输入/*.json 先不上传，待脱敏审查
+01_原始文件输入/*.json
+
+# ===== 金标（私有，不公开）=====
+*gold*
+*金标*
+*final_gold*
+*private_gold*
+实验/02_evaluation_set/*gold*
+实验/02_evaluation_set/*金标*
+
+# ===== 个人和企业敏感信息 =====
+*身份证*
+*联系电话*
+*联系人*
+*地址*
+*私人*
+*private*
+
+# ===== 本地工作目录和缓存 =====
+.dsh/
+.trae-cn/
+.trae-html-share-packages/
+.workbuddy/
+.claude/
+node_modules/
 __pycache__/
 *.pyc
 *.pyo
 tmp/
-logs/
+temp/
+*.tmp
+tmp_sm.json
 
-# Excel临时文件
+# ===== 历史归档（太多，不进主仓库）=====
+_历史归档_20260826/
+06_ABCD四组实验结果/
+08_2x2析因实验统计_48题_20260822/
+12_RAG_Skill诊断_20260826/
+pilot16_*/
+pilot_qwen*/
+pilot_v3_*/
+diagnostic_*/
+validation*/
+skill_v2_*/
+skill_v3_*/
+skill_development_*/
+heldout64_*/
+heldout_validation16_*/
+benchmark_auditpoint_rebuild_*/
+benchmark_rebuild_package_*/
+preformal_manual_review_*/
+skill_revision_materials_for_human_*/
+人工专家盲审材料包_48题版本_待发送_20260824/
+RAG_Skill诊断分析分享包_20260828/
+
+# ===== 大文件（>10MB 不上传）=====
+*.zip
+*.tar
+*.gz
+*.rar
+*.7z
+*.npy
+*.index
+*.bin
+*.model
+
+# ===== 本地输出（结果目录太大）=====
+实验/07_results_v2/
+实验/07_results/
+实验/06_outputs/
+
+# ===== 盘点输出（本地用，不进公开仓库）=====
+00_研究资料总盘点_20260904/
+00_研究资料总盘点_20260904.zip
+00_研究写作思路导航舵/
+
+# ===== Office临时文件 =====
 ~$*.xlsx
-~$*.xls
-
-# 系统文件
-.DS_Store
+~$*.docx
+~$*.pptx
 Thumbs.db
+.DS_Store

@@ -1,0 +1,4 @@
+interface:
+  display_name: "危险废物识别审核"
+  short_description: "危险废物识别审核：按证据链执行可追溯、可降级的结构化环境专业审核"
+  default_prompt: "使用 $review-eia-hazardous-waste-identification 对给定环评报告证据执行审核，并输出可追溯的结构化结论。"

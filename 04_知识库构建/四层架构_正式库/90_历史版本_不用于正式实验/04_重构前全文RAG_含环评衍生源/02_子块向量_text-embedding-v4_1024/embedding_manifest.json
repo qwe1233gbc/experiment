@@ -1,0 +1,16 @@
+{
+  "status": "complete",
+  "started_at": "2026-08-10T14:43:30.352181+00:00",
+  "completed_at": "2026-08-10T14:48:53.029827+00:00",
+  "source_children_path": "E:\\实验文件整理_按论文逻辑\\04_知识库构建\\四层架构_正式库\\03_RAG全文级检索_52知识源\\01_父子分块_336父块_2875子块\\children.jsonl",
+  "embedding_index_path": "E:\\实验文件整理_按论文逻辑\\04_知识库构建\\四层架构_正式库\\03_RAG全文级检索_52知识源\\02_子块向量_text-embedding-v4_1024\\embedding_index_child.jsonl",
+  "model": "text-embedding-v4",
+  "dimensions": 1024,
+  "distance_metric": "cosine",
+  "embedding_policy": "children_only",
+  "child_count": 2875,
+  "source_count": 52,
+  "run_reported_tokens": 1325029,
+  "batch_size": 10,
+  "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings"
+}

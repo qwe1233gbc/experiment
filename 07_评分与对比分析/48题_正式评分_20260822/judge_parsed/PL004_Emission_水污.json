@@ -1,0 +1,42 @@
+{
+  "question_id": "PL004_Emission_水污",
+  "prompt_chars": 13674,
+  "scores": [
+    {
+      "response_id": "R1",
+      "correctness": 1,
+      "evidence_use": 2,
+      "actionability": 2,
+      "regulatory_basis": null,
+      "skill_workflow": null,
+      "rationale": "RAG不可用下正确识别内部一致性及名称/限值细节问题，但未完成外部核验任务要求，结论完整性受限。"
+    },
+    {
+      "response_id": "R2",
+      "correctness": 2,
+      "evidence_use": 2,
+      "actionability": 2,
+      "regulatory_basis": null,
+      "skill_workflow": null,
+      "rationale": "准确利用RAG发现尾水河道与知识库不一致的关键问题，证据定位精准，修改建议具体可执行，符合评分金标额外真实问题不扣分原则。"
+    },
+    {
+      "response_id": "R3",
+      "correctness": 1,
+      "evidence_use": 2,
+      "actionability": 2,
+      "regulatory_basis": 2,
+      "skill_workflow": 2,
+      "rationale": "技能流程完整，内部核查细致并发现单位/水量等额外真实问题，但因缺RAG未完成外部一致性核心任务，结论部分缺失。"
+    },
+    {
+      "response_id": "R4",
+      "correctness": 2,
+      "evidence_use": 2,
+      "actionability": 2,
+      "regulatory_basis": 2,
+      "skill_workflow": 2,
+      "rationale": "完整执行分步核查，精准指出尾水河道不一致及回用标准指标引用错误等实质问题，法规依据充分，工作流与证据链完备。"
+    }
+  ]
+}

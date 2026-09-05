@@ -1,0 +1,15 @@
+{
+  "snapshot_version": "v3.4",
+  "snapshot_date": "2026-09-03",
+  "embedding_model": "NOT_LOGGED",
+  "reranker_model": "NOT_LOGGED",
+  "bm25_config": {
+    "k1": 1.5,
+    "b": 0.75
+  },
+  "top_k": 5,
+  "fusion_method": "RRF",
+  "total_questions": 16,
+  "total_rag_records": 57,
+  "note": "仅RAG快照；检索中间过程（BM25候选、Dense候选、Rerank前后排名）未单独保存，嵌入在快照记录中"
+}

@@ -1,0 +1,10 @@
+{
+  "question_id": "PL008_DesignAirflow_Q01",
+  "query": "请根据理论排气量、收集点数量、同时运行情况、治理设施处理能力和排气筒风量，判断报告采用的废气设计风量是否合理。 任务类型：废气设计风量 设计风量 集气罩 控制风速 排气量计算",
+  "query_provenance": [
+    "question_text (first 300 chars)",
+    "task_type (from question metadata)",
+    "question_id keyword hint: 废气设计风量"
+  ],
+  "gold_leakage_check": "PASSED (query built from question text + task type + domain keywords only; no gold verdict/answer leaked)"
+}
